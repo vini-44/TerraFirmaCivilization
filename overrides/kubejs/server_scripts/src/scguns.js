@@ -42,9 +42,9 @@ ServerEvents.highPriorityData((event) => {
 			}
 
             if (_json.general.spread) {
-                _json.general.spread = _json.general.spread * 0.75;
+                _json.general.spread = _json.general.spread * 1;
             }
-
+				
 
 			_json.projectile.life = _json.projectile.life * 100;
 
