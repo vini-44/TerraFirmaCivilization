@@ -15,4 +15,5 @@
   <li>Make Bubbles Pop</li>
   <li>MaFgLib</li>
   <li>DistantHorizons</li>
+  <li>Sounds of the forest</li>
 </ul>
