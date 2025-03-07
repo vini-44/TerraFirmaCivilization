@@ -1,0 +1,60 @@
+{
+  "enableDropsForNonPlayer": false,
+  "enableCrashExplosion": true,
+  "enableCrashBlockDestruction": true,
+  "enableCrashFire": true,
+  "crashExplosionRadius": 20.0,
+  "crashDamage": 20.0,
+  "preventKillThroughCrash": false,
+  "healthBarRow": 0,
+  "damagePerHealthPoint": 10,
+  "separateCamera": true,
+  "useThirdPersonByDefault": true,
+  "enableTrails": true,
+  "renderDistance": 521.0,
+  "fuelConsumption": 1.0,
+  "windClearWeather": 1.0,
+  "windRainWeather": 2.0,
+  "windThunderWeather": 3.0,
+  "repairSpeed": 0.0125,
+  "repairExhaustion": 0.5,
+  "collisionDamage": true,
+  "collisionDamageMultiplier": 240.0,
+  "burnFuelInCreative": true,
+  "acceptVanillaFuel": false,
+  "useCustomKeybindSystem": true,
+  "showHotbarEngineGauge": true,
+  "weaponsAreDestructive": true,
+  "dropInventory": true,
+  "dropUpgrades": false,
+  "regenerateHealthEveryNTicks": 0,
+  "requireShiftForRepair": false,
+  "fuelList": {
+    "createdieselgenerators:ethanol_bucket": 2200,
+    "createdieselgenerators:biodiesel_bucket": 2400,
+    "createdieselgenerators:diesel_bucket": 2400,
+    "createdieselgenerators:gasoline_bucket": 2400,
+    "kubejs:ethanol_fuel_can": 2200,
+    "kubejs:biodiesel_fuel_can": 2400,
+    "kubejs:diesel_fuel_can": 2400,
+    "kubejs:gasoline_fuel_can": 2400
+  },
+  "validDimensions": {
+    "minecraft:the_nether": true,
+    "minecraft:the_end": true,
+    "minecraft:overworld": true
+  },
+  "gunpowderAmmunition": {
+    "createbigcannons:machine_gun_round": 100
+  },
+  "arrowAmmunition": {
+    "minecraft:spectral_arrow": 100,
+    "minecraft:arrow": 100,
+    "minecraft:tipped_arrow": 100
+  },
+  "bombBayAmmunition": {
+    "minecraft:tnt": 100
+  },
+  "version": 1,
+  "name": "default"
+}

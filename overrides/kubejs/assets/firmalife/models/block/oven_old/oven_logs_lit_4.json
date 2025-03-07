@@ -1,0 +1,61 @@
+{
+	"credit": "Made by Vexxel#9727 with Blockbench || https://github.com/Vexxel || 2022",
+	"parent": "block/block",
+	"textures": {
+		"1": "firmalife:block/oven/bottom/log_lit"
+	},
+	"elements": [
+		{
+			"from": [10, 4, 2],
+			"to": [13, 7, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9.5, 5.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 12, 4, 16], "texture": "#1"},
+				"east": {"uv": [2, 0, 16, 4], "texture": "#1"},
+				"south": {"uv": [0, 12, 4, 16], "texture": "#1"},
+				"west": {"uv": [1, 0, 15, 4], "texture": "#1"},
+				"up": {"uv": [1, 8, 15, 12], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [1, 4, 15, 8], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [2.5, 7, 9],
+			"to": [13.5, 10, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9.5, 8.5, 8]},
+			"faces": {
+				"north": {"uv": [2, 0, 16, 4], "texture": "#1"},
+				"east": {"uv": [0, 12, 4, 16], "texture": "#1"},
+				"south": {"uv": [1, 0, 15, 4], "texture": "#1"},
+				"west": {"uv": [0, 12, 4, 16], "texture": "#1"},
+				"up": {"uv": [2, 8, 16, 12], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [1, 4, 15, 8], "texture": "#1"}
+			}
+		},
+		{
+			"from": [2.68664, 7, 3.7912],
+			"to": [13.68664, 10, 6.7912],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8.18664, 8.5, 5.2912]},
+			"faces": {
+				"north": {"uv": [2, 0, 16, 4], "texture": "#1"},
+				"east": {"uv": [0, 12, 4, 16], "texture": "#1"},
+				"south": {"uv": [1, 0, 15, 4], "texture": "#1"},
+				"west": {"uv": [0, 12, 4, 16], "texture": "#1"},
+				"up": {"uv": [0, 8, 14, 12], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [1, 4, 15, 8], "texture": "#1"}
+			}
+		},
+		{
+			"from": [4.46194, 4, 2.30866],
+			"to": [7.46194, 7, 13.30866],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [5.96194, 5.5, 7.80866]},
+			"faces": {
+				"north": {"uv": [0, 12, 4, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 14, 4], "texture": "#1"},
+				"south": {"uv": [0, 12, 4, 16], "texture": "#1"},
+				"west": {"uv": [1, 0, 15, 4], "texture": "#1"},
+				"up": {"uv": [0, 8, 14, 12], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [1, 4, 15, 8], "rotation": 90, "texture": "#1"}
+			}
+		}
+	]
+}

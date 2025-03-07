@@ -1,0 +1,6 @@
+{
+    "entity": "tfc:skeletons",
+    "piercing": 150,
+    "slashing": 0,
+    "crushing": -50
+  }

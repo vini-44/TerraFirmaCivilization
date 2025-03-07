@@ -1,0 +1,19 @@
+{
+  "fluid": "#forge:plantoil",
+  "sound_speed": 2,
+  "normal": {
+    "speed": 128.0,
+    "strength": 2048.0,
+    "burn_rate": 1
+  },
+  "modular": {
+    "speed": 128.0,
+    "strength": 2048.0,
+    "burn_rate": 1
+  },
+  "huge": {
+    "speed": 128.0,
+    "strength": 4056.0,
+    "burn_rate": 1
+  }
+}

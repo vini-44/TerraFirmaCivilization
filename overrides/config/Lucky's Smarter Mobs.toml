@@ -1,0 +1,21 @@
+
+["General Mobs"]
+	"Mob View Range" = 256.0
+
+[Creepers]
+	"Attempt Breach" = true
+	"Creeper Breach Timer" = 60.0
+
+[Spiders]
+	"Can Shoot Web" = false
+	"Shoot Web Interval" = 180.0
+
+[Endermen]
+	"Can Teleport Player" = false
+	"Teleport Player Interval" = 60.0
+
+[Ravagers]
+	"Can Break Blocks" = true
+	"Ravager Charge Interval" = 120.0
+	"Ravager Break Block Hardness" = 2.0
+

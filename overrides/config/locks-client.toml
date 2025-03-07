@@ -1,0 +1,7 @@
+#Display visual feedback when trying to use a locked block for certain hearing impaired individuals
+#在尝试交互锁定方块时为某些听力障碍人士提供视觉反馈。
+"Deaf Mode" = true
+#Whether or not to display the lock's information overlay when holding the lock picker
+#是否在持有撬锁器时显示锁的信息覆盖层
+"Show Overlay" = true
+

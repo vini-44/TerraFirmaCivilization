@@ -1,0 +1,20 @@
+{
+    "variants": {
+     
+      "blaze=none": {
+        "model": "moreburners:block/electric_burner/electric_burner_upgraded"
+      },
+      "blaze=smouldering": {
+        "model": "moreburners:block/electric_burner/electric_burner_upgraded"
+      },
+      "blaze=fading": {
+        "model": "moreburners:block/electric_burner/electric_burner_kindled_upgraded"
+      },
+      "blaze=kindled": {
+        "model": "moreburners:block/electric_burner/electric_burner_kindled_upgraded"
+      },
+      "blaze=seething": {
+        "model": "moreburners:block/electric_burner/electric_burner_seething_upgraded"
+      }
+    }
+  }

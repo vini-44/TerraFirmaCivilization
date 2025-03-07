@@ -1,0 +1,49 @@
+[ChunkAnalysis]
+	#Whether chunk analysis should be enabled (full physics scans on the blocks of a chunk).
+	#Disabling chunk analysis can help to improve performance.
+	Enabled = false
+
+	#The range at which chunk analysis updates will be scheduled, based on nearby players.
+	#Reducing this value can help improve performance.
+	#Range: 0 ~ 32
+	ActiveRange = 6
+
+[Physics]
+	#The chance of blocks dropping their items when breaking due to physics.
+	#Range: 0.0 ~ 1.0
+	BrokenBlockItemDropChance = 1.0
+
+	#Whether falling blocks that fall into the same position should be relocated instead of broken.
+	FallingBlockRelocation = true
+
+	#Whether blocks should be able to connect to each other diagonally. Only blocks with 'CanAttachDiagonally' enabled will be affected.
+	DiagonalBlockConnections = true
+
+	#Whether blocks should be able to be crushed if the weight above them exceeds their strength.
+	BlocksCanBeCrushed = true
+
+	#A global dampening factor to apply to the base damage of entities when struck by falling blocks.
+	#	+ Increase this value to reduce the damage applied to entities when struck by falling blocks.
+	#	- Lower this value to increase the damage applied to entities when struck by falling blocks.
+	#Range: 1 ~ 5000
+	FallingBlockDamageDampening = 500
+
+[Performance]
+	#The maximum number of falling blocks that can be added to a level within a single tick.
+	#Range: 1 ~ 50
+	FallingBlockRate = 5
+
+	#Whether to perform more detailed integrity scans on blocks.
+	#When the support of a block is removed, but is not touching the block it was supporting, a scan can be performed on all potentially affected nearby blocks to recalculate physics.
+	DetailedIntegrityScans = false
+
+[Audio]
+	#The volume at which to sound falling blocks that have impacted with the ground.
+	#Range: 0.0 ~ 1.0
+	BlockImpactVolume = 1.0
+
+[Defaults]
+	#Specifies the default world definition to give to dimensions that do not have one specified.
+	#Leave this empty if you do not wish to apply physics to dimensions that do not have a specified world definition.
+	DefaultWorldDefinition = ""
+

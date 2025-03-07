@@ -1,0 +1,7 @@
+#Swaps the enchant glint from when auto pickup is enabled to when it's dissabled
+voidGlint = true
+#This determines whether shift right click toggles item voiding or item pickup for sacks
+shiftClickTogglesVoid = false
+#When enabled sacks will display their contents like how TFC vessels do
+displayItemContentsAsImages = true
+

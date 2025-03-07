@@ -1,0 +1,31 @@
+
+#General settings
+[general]
+	#Determining the spawn chance of sabigatana.
+	#Range: 0.0 ~ 1.0
+	sabigatana_spawn_chance = 0.05
+	#Determining the spawn chance of a broken sabigatana.
+	#Range: 0.0 ~ 1.0
+	broken_sabigatana_spawn_chance = 0.15
+	#Determines whether to make hunger effect repair slashblade.
+	#If enable, if player has hunger effect, your slashblade in hotbar will be repaired, cost player's hunger.
+	hunger_can_repair = true
+	#Determines whether to enable slashblade's PVP.
+	#If enable, player can attack player with SlashBlade.
+	pvp_enable = false
+	#Determines whether to enable slashblade's friendly fire.
+	#If enable, player can attack friendly entity with SlashBlade.
+	friendly_enable = false
+	#Determining the proud soul cost for single summon mirage blade.
+	#Range: > 1
+	summon_sword_cost = 2
+	#Determining the proud soul cost for summon blade arts.
+	#Range: > 1
+	summon_blade_art_cost = 20
+	#Determining the max proud soul count for single mobs kill.
+	#Range: > 1
+	max_proud_soul_got = 100
+	#Determining the base exhaustion for slashblade's self-repair.
+	#Range: 1.0E-4 ~ 1.7976931348623157E308
+	bewitched_hunger_exhaustion = 0.05
+

@@ -1,0 +1,7 @@
+
+#Generic configuration settings
+[misc]
+	#Enabled additional debug logs - May slow down the game and will increase log file size
+	#Only enable for special purposes
+	debug = false
+

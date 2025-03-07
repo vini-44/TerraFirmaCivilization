@@ -1,0 +1,75 @@
+
+#Config File for Trajan's Tank Mod
+["Tank Health"]
+	"Light Tank Health" = 100
+	"Medium Tank Health" = 135
+	"Heavy Tank Health" = 170
+
+	["Tank Health"."Panzer 2 Stats (Light Tank)"]
+		"Panzer 2 Speed" = 0.17
+		"Panzer 2 Shot Cooldown (1 = 1/20 second)" = 60
+		"Panzer 2 Healing Amount (on right click)" = 10.0
+		"Panzer 2 Max Fuel (seconds)" = 600.0
+
+	["Tank Health"."Luchs Stats (Light Tank)"]
+		"Luchs Speed" = 0.17
+		"Luchs Shoot Cooldown (1 = 1/20 second)" = 60
+		"Luchs Healing Amount (on right click)" = 10.0
+		"Luchs Max Fuel (seconds)" = 600.0
+
+	["Tank Health"."Somua Stats (Light Tank)"]
+		"Somua Speed" = 0.17
+		"Somua Shoot Cooldown (1 = 1/20 second)" = 60
+		"Somua Healing Amount (on right click)" = 10.0
+		"Somua Max Fuel (seconds)" = 600.0
+
+	["Tank Health"."Tiger Stats (Heavy Tank)"]
+		"Tiger Speed" = 0.15
+		"Tiger Shoot Cooldown (1 = 1/20 second" = 80
+		"Tiger Healing Amount (on right click)" = 10.0
+		"Tiger Max Fuel (seconds)" = 600.0
+
+	["Tank Health"."T-34 Stats (Medium Tank)"]
+		"T-34 Speed" = 0.16
+		"T-34 Shoot Cooldown (1 = 1/20 second" = 70
+		"T-34 Healing Amount (on right click)" = 10.0
+		"T-34 Max Fuel (seconds)" = 600.0
+
+	["Tank Health"."Cruiser MK1 Stats (Light Tank)"]
+		"Cruiser MK1 Speed" = 0.17
+		"Cruiser MK1 Shoot Cooldown (1 = 1/20 second" = 60
+		"Cruiser MK1 Healing Amount (on right click)" = 10.0
+		"Cruiser MK1 Max Fuel (seconds)" = 600.0
+
+	["Tank Health"."M4 Sherman Stats (Medium Tank)"]
+		"M4 Sherman Speed" = 0.14
+		"M4 Sherman Shoot Cooldown (1 = 1/20 second" = 70
+		"M4 Sherman Healing Amount (on right click)" = 10.0
+		"M4 Sherman Max Fuel (seconds)" = 600.0
+
+	["Tank Health"."Archer Stats (Medium Tank)"]
+		"Archer Speed" = 0.16
+		"Archer Shoot Cooldown (1 = 1/20 second" = 70
+		"Archer Healing Amount (on right click)" = 10.0
+		"Archer Max Fuel (seconds)" = 600.0
+
+	["Tank Health"."KV-2 Stats (Heavy Tank)"]
+		"KV-2 Speed" = 0.15
+		"KV-2 Shoot Cooldown (1 = 1/20 second" = 80
+		"KV-2 Healing Amount (on right click)" = 10.0
+		"KV-2 Max Fuel (seconds)" = 600.0
+
+	["Tank Health"."Jagdpanther Stats (Heavy Tank)"]
+		"Jagdpanther Speed" = 0.14
+		"Jagdpanther Shoot Cooldown (1 = 1/20 second" = 80
+		"Jagdpanther Healing Amount (on right click)" = 10.0
+		"Jagdpanther Max Fuel (seconds)" = 600.0
+
+	["Tank Health"."Pak-40 Stats"]
+		"Pak-40 Health" = 15
+		"Pak-40 Shot Cooldown (1 = 1/20 second)" = 75
+
+	["Tank Health"."Qf-6 Stats"]
+		"QF-6 Health" = 15
+		"QF-6 Shot Cooldown (1 = 1/20 second)" = 75
+

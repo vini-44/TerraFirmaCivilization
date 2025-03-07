@@ -1,0 +1,66 @@
+{
+	"type": "tfc:disc_vein",
+	"config": {
+		"rarity": 75,
+		"density": 0.75,
+		"min_y": -80,
+		"max_y": 20,
+		"size": 64,
+		"height": 5,
+		"random_name": "oil_shale_rich",
+		"blocks": [
+			{
+				"replace": ["tfc:rock/raw/shale"],
+				"with": [
+					{
+						"weight": 70,
+						"block": "kubejs:oil_shale"
+					},
+					{
+						"weight": 5,
+						"block": "kubejs:oil_shale"
+					}
+				]
+			},
+			{
+				"replace": ["tfc:rock/raw/slate"],
+				"with": [
+					{
+						"weight": 70,
+						"block": "kubejs:oil_slate"
+					},
+					{
+						"weight": 5,
+						"block": "kubejs:oil_slate"
+					}
+				]
+			},
+			{
+				"replace": ["tfc:rock/raw/claystone"],
+				"with": [
+					{
+						"weight": 70,
+						"block": "kubejs:oil_claystone"
+					},
+					{
+						"weight": 5,
+						"block": "kubejs:oil_claystone"
+					}
+				]
+			},
+			{
+				"replace": ["tfc:rock/raw/phyllite"],
+				"with": [
+					{
+						"weight": 70,
+						"block": "kubejs:oil_phyllite"
+					},
+					{
+						"weight": 5,
+						"block": "kubejs:oil_phyllite"
+					}
+				]
+			}
+		]
+	}
+}

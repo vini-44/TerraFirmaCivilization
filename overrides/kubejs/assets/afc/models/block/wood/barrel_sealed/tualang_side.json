@@ -1,0 +1,9 @@
+{
+	"parent": "tfc:block/barrel_side_sealed_vex",
+	"textures": {
+		
+		"outside": 		"tfc:block/wood/barrel/outside/tualang",
+		"inside": 		"tfc:block/wood/barrel/inside/tualang",
+		"sheet": 		"tfc:block/wood/sheet/tualang"
+	}
+}

@@ -1,0 +1,8 @@
+{
+    "fluids": [
+      "createdieselgenerators:ethanol",
+      "createdieselgenerators:gasoline",
+      "createdieselgenerators:diesel"
+    ],
+    "fuel_ticks": 50
+  }

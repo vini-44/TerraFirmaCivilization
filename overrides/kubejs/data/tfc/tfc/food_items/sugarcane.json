@@ -1,0 +1,9 @@
+{
+    "ingredient": {
+      "item": "tfc:food/sugarcane"
+    },
+    "hunger": 6,
+    "water": 5,
+    "saturation": 2,
+    "decay_modifier": 0.5
+  }

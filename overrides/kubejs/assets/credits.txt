@@ -1,0 +1,4 @@
+- unfired_andesite_alloy, scrap by thomas_has_things
+- kaolinite by lopyluna
+- kaolinite ore texture reference from Thermal's Sulfur ore.
+- other assets: Built-in resourcepacks (See resourcepacks folder for credits.)

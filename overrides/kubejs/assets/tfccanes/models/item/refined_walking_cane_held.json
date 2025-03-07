@@ -1,0 +1,60 @@
+{
+	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
+	"textures": {
+		"0": "tfccanes:item/refined_walking_cane_model"
+	},
+	"elements": [
+		{
+			"from": [7, -16, 7],
+			"to": [9, 0, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, -16, -1]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 16], "texture": "#0"},
+				"east": {"uv": [2, 0, 4, 16], "texture": "#0"},
+				"south": {"uv": [4, 0, 6, 16], "texture": "#0"},
+				"west": {"uv": [6, 0, 8, 16], "texture": "#0"},
+				"down": {"uv": [12, 14, 14, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 0, 7],
+			"to": [9, 8, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, 0, -1]},
+			"faces": {
+				"north": {"uv": [8, 0, 10, 8], "texture": "#0"},
+				"east": {"uv": [10, 0, 12, 8], "texture": "#0"},
+				"south": {"uv": [12, 0, 14, 8], "texture": "#0"},
+				"west": {"uv": [14, 0, 16, 8], "texture": "#0"},
+				"up": {"uv": [14, 14, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 5, 6],
+			"to": [9, 8, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 5, 6]},
+			"faces": {
+				"north": {"uv": [9, 9, 11, 12], "texture": "#0"},
+				"east": {"uv": [8, 9, 9, 12], "texture": "#0"},
+				"west": {"uv": [11, 9, 12, 12], "texture": "#0"},
+				"up": {"uv": [14, 13, 16, 14], "texture": "#0"},
+				"down": {"uv": [9, 12, 11, 13], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [65, 0, 0],
+			"translation": [0, 5, 8.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [65, 0, 0],
+			"translation": [0, 5, 8.75]
+		},
+		"firstperson_righthand": {
+			"translation": [0.75, 4, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [0.75, 4, 0]
+		}
+	}
+}

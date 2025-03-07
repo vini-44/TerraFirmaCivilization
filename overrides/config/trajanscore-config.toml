@@ -1,0 +1,36 @@
+
+#Config File for Trajan's Core Mod
+[General]
+	"Set to false to disable tanks requiring fuel" = true
+	"Set to true to make tanks affected by fire" = false
+	"Set to true to make tanks affected by arrows" = false
+	"Set to true to make tanks affected by melee" = false
+	"How Much Fuel Coal and Charcoal Gives (seconds)" = 6.0
+	"How Much Fuel Lava Gives (seconds)" = 60.0
+	"Allows you to move your AT slowly when mounted on it" = true
+
+["Standard Shell Stats"]
+	"Standard Shell Damage" = 60.0
+	"Standard Shell Explosion Radius" = 3
+
+["Armor Piercing Shell Stats"]
+	"Armor Piercing Shell Damage (to players)" = 60.0
+	"Armor Piercing Shell Explosion Radius" = 3
+	"Armor Piercing Shell Damage (to armored vehicles)" = 80.0
+
+["High Explosive Shell Stats"]
+	"High Explosive Shell Damage" = 60.0
+	"High Explosive Shell Explosion Radius" = 4
+
+["HEAT Shell Stats"]
+	"HEAT Shell Damage" = 80.0
+	"HEAT Shell Explosion Radius" = 2
+
+["APCR Shell Stats"]
+	"APCR Shell Damage" = 90.0
+	"ACPR Shell Explosion Radius" = 0
+
+["Low Caliber Shell Stats"]
+	"Low Caliber Shell Damage" = 20.0
+	"Low Caliber Shell Explosion Radius" = 0
+

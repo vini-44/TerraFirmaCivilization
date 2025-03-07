@@ -1,0 +1,124 @@
+
+#Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
+[types]
+
+	[types.leaves_type]
+
+		[types.leaves_type.quark]
+			ancient = true
+			blue_blossom = true
+			lavender_blossom = true
+			orange_blossom = true
+			yellow_blossom = true
+			red_blossom = true
+
+		[types.leaves_type.thermal]
+			rubberwood = true
+
+	[types.cake]
+
+		[types.cake.tfc]
+			cake = true
+
+		[types.cake.createaddition]
+			chocolate_cake = true
+			honey_cake = true
+
+	[types.wood_type]
+
+		[types.wood_type.quark]
+			azalea = true
+			ancient = true
+			blossom = true
+
+		[types.wood_type.createdieselgenerators]
+			chip_wood = true
+
+		[types.wood_type.tfc]
+			acacia = true
+			ash = true
+			aspen = true
+			birch = true
+			blackwood = true
+			chestnut = true
+			douglas_fir = true
+			hickory = true
+			kapok = true
+			mangrove = true
+			maple = true
+			oak = true
+			palm = true
+			pine = true
+			rosewood = true
+			sequoia = true
+			spruce = true
+			sycamore = true
+			white_cedar = true
+			willow = true
+
+		[types.wood_type.thermal]
+			rubberwood = true
+
+		[types.wood_type.afc]
+			baobab = true
+			eucalyptus = true
+			mahogany = true
+			hevea = true
+			tualang = true
+			teak = true
+			cypress = true
+			fig = true
+			ironwood = true
+			ipe = true
+
+#Disables specific entries
+[entries]
+
+	[entries.leaves_type]
+
+		[entries.leaves_type.quark]
+			hedge = true
+			leaf_carpet = true
+
+		[entries.leaves_type.refurbished_furniture]
+			hedge = true
+
+	[entries.wood_type]
+
+		[entries.wood_type.quark]
+			vertical_planks = true
+			post = true
+			chest = true
+			stripped_post = true
+			ladder = true
+			trapped_chest = true
+			bookshelf = true
+			hollow_log = true
+			vertical_slab = true
+
+		[entries.wood_type.create]
+			window_pane = true
+			window = true
+
+		[entries.wood_type.refurbished_furniture]
+			cutting_board = true
+			drawer = true
+			storage_cabinet = true
+			table = true
+			mail_box = true
+			dark_ceiling_fan = true
+			kitchen_sink = true
+			toilet = true
+			storage_jar = true
+			lattice_fence = true
+			basin = true
+			kitchen_drawer = true
+			lattice_fence_gate = true
+			kitchen_cabinetry = true
+			bath = true
+			crate = true
+			desk = true
+			chair = true
+			light_ceiling_fan = true
+			kitchen_storage_cabinet = true
+

@@ -1,0 +1,5 @@
+
+[general]
+	#Enable the Server side Blaze Map Engine (integrated and dedicated)
+	enableServerEngine = true
+

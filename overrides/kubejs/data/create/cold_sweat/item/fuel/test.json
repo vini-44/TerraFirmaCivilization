@@ -1,0 +1,9 @@
+{
+    "type": "boiler",
+    "fuel": 100,
+    "data": {
+      "items": [
+        "kubejs:kerosene_bucket"
+      ]
+    }
+  }

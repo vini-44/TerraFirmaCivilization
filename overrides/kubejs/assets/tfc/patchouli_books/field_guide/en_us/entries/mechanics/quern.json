@@ -1,0 +1,21 @@
+{
+	"name": "Millstone",
+	"category": "tfc:mechanics",
+	"icon": "create:millstone",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "TFC's Quern has been replaced with Create's Millstone, however, it retains all functionality from it. It is a device to grind items and can be used to make powders, $(l:mechanics/dye)dyes$(), and some other items.$(br2)Ore powders can be smelted, and, when made with a Millstone, have the same yield as the ore itself, just divided by 5."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Additionally, ore powder can be condensed into blocks for more space efficiency, as these blocks can also be melted. Ore powders also prevent the production of $(thing)Slag$() when melting ores.$(br2)To have an even higher yield, $(thing)Crushing Wheels$() must be used."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "minecraft:kjs/create_millstone",
+			"text": ""
+		}
+	],
+	"read_by_default": true
+}

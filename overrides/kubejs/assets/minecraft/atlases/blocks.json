@@ -1,0 +1,28 @@
+{
+    "sources": [
+        {
+            "type": "single",
+            "resource": "kubejs:block/metal/block/aluminum"
+        },
+        {
+            "type": "single",
+            "resource": "kubejs:block/metal/smooth/aluminum"
+        },
+        {
+            "type": "single",
+            "resource": "kubejs:block/metal/block/mangalloy"
+        },
+        {
+            "type": "single",   
+            "resource": "kubejs:block/metal/smooth/mangalloy"
+        },
+        {
+            "type": "single",
+            "resource": "kubejs:block/metal/block/manganese"
+        },
+        {
+            "type": "single",
+            "resource": "kubejs:block/metal/smooth/manganese"
+        }
+    ]
+}

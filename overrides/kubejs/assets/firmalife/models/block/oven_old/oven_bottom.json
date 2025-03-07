@@ -1,0 +1,66 @@
+{
+	"credit": "Made by Vexxel#9727 with Blockbench || https://github.com/Vexxel || 2022",
+	"parent": "block/block",
+	"textures": {
+		"0": "#bricks",
+		"1": "#front",
+		"2": "#coals",
+		"particle": "#bricks"
+	},
+	"elements": [
+		{
+			"name": "base",
+			"from": [2, 0, 0],
+			"to": [14, 4, 15],
+			"faces": {
+				"north": {"uv": [2, 12, 14, 16], "texture": "#1"},
+				"up": {"uv": [2, 0, 14, 15], "texture": "#2"},
+				"down": {"uv": [2, 1, 14, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "base",
+			"from": [2, 12, 0],
+			"to": [14, 16, 15],
+			"faces": {
+				"north": {"uv": [2, 0, 14, 4], "texture": "#1"},
+				"up": {"uv": [2, 0, 14, 15], "texture": "#0"},
+				"down": {"uv": [2, 1, 14, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [2, 16, 16],
+			"faces": {
+				"north": {"uv": [14, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 2, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [14, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [14, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [14, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [14, 0, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2, 0, 15],
+			"to": [14, 16, 16],
+			"faces": {
+				"north": {"uv": [2, 0, 14, 16], "texture": "#0"},
+				"south": {"uv": [2, 0, 14, 16], "texture": "#0"},
+				"up": {"uv": [2, 15, 14, 16], "texture": "#0"},
+				"down": {"uv": [2, 0, 14, 1], "texture": "#0"}
+			}
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"credit": "Made by Vexxel#9727 with Blockbench || https://github.com/Vexxel || 2022",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"2": "minecraft:block/campfire_fire"
+	},
+	"elements": [
+		{
+			"name": "fire",
+			"from": [0, 3.95, 9],
+			"to": [16, 11.95, 9],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 9]},
+			"faces": {
+				"north": {"uv": [0, 2, 16, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "fire",
+			"from": [0, 3.95, 9],
+			"to": [16, 11.95, 9],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 0, 9]},
+			"faces": {
+				"north": {"uv": [0, 2, 16, 14], "texture": "#2"}
+			}
+		}
+	]
+}

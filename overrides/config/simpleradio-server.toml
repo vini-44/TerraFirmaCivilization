@@ -1,0 +1,105 @@
+
+#These are the configurations for the transceiver item.
+[transceiver]
+	#This is the range after which players can no longer be heard for frequency modulation. Defaults to 1000.
+	maxFMDistance = 1000
+	#This is the range after which audio begins to decay for frequency modulation. Defaults to 900.
+	falloffFM = 900
+	#This is the range after which players can no longer be heard for amplitude modulation. Defaults to 1800.
+	maxAMDistance = 1800
+	#This is the range after which audio begins to decay for amplitude modulation. Defaults to 1700.
+	falloffAM = 1700
+	#This is whether or not using the transceiver slows the player. Defaults to true.
+	transceiverSlow = true
+	#When false, removes the transceiver recipe. Defaults to true.
+	enabled = true
+
+#These are the configurations for the walkie talkie item.
+[walkie_talkie]
+	#This is the range after which players can no longer be heard for frequency modulation. Defaults to 500.
+	maxFMDistance = 500
+	#This is the range after which audio begins to decay for frequency modulation. Defaults to 400.
+	falloffFM = 400
+	#This is the range after which players can no longer be heard for amplitude modulation. Defaults to 900.
+	maxAMDistance = 900
+	#This is the range after which audio begins to decay for amplitude modulation. Defaults to 800.
+	falloffAM = 800
+	#This is whether or not using the walkie talkie slows the player. Defaults to true.
+	walkieTalkieSlow = true
+	#When true, replaces the walkie talkie with the spuddie talkie. Defaults to true.
+	spuddieTalkie = true
+	#When false, removes both the spuddie and walkie recipe. Defaults to true.
+	enabled = true
+
+#These are the configurations for the transmitter block. (IN DEVELOPMENT)
+[transmitter]
+	#This is the range after which players can no longer be heard for frequency modulation. Defaults to 2200.
+	maxFMDistance = 2200
+	#This is the range after which audio begins to decay for frequency modulation. Defaults to 2000.
+	falloffFM = 2000
+	#This is the range after which players can no longer be heard for amplitude modulation. Defaults to 4400.
+	maxAMDistance = 4400
+	#This is the range after which audio begins to decay for amplitude modulation. Defaults to 4000.
+	falloffAM = 4000
+	#When false, removes the transmitter (will not disable speaker) recipe. Defaults to true.
+	enabled = true
+
+#These are the configurations for the radio block.
+[radio]
+	#This is the range for the radio in which the audio transmitted from it can be heard. Defaults to 24.
+	range = 24
+	#When false, removes the radio recipe. Defaults to true.
+	enabled = true
+
+#These are the configurations for the microphone block.
+[microphone]
+	#This is the range for the microphone that it can hear from. Defaults to 8.
+	range = 8
+	#When false, removes the microphone recipe. Defaults to true.
+	enabled = true
+
+#These are the configurations for the speaker block.
+[speaker]
+	#When false, removes the speaker recipe. Defaults to true.
+	enabled = true
+
+#These are the configurations for the antenna block.
+[antenna]
+	#When false, removes the antenna recipe. Defaults to true.
+	enabled = true
+
+#These are the general configurations for frequencies.
+[frequency]
+	#This is how many whole places (digits before the period) can exist in a frequency. Defaults to 3.
+	wholePlaces = 3
+	#This is how many decimal places (digits after the period) can exist in a frequency. Defaults to 2.
+	decimalPlaces = 2
+	#This is the default frequency to be provided to frequency-holding items. When set to auto-generate, will generate a pattern of zeros equal to the wholePlaces and decimalPlaces configurations, i.e. '000.00' by default. Defaults to auto-generate.
+	defaultFrequency = "auto-generate"
+	#Whether or not the radios work across dimensions. Defaults to false.
+	crossDimensional = false
+	#The base amount of interference to give to radio transmission across dimensions. Defaults to 10.
+	dimensionalInterference = 10
+	#The packet buffer for packet transmission. You likely won't need to worry about this. Defaults to 2.
+	packetBuffer = 2
+	#How many listeners should be able to receive a single players audio? Defaults to 2.
+	listenerBuffer = 2
+
+#These are the general configurations for compatibilities.
+[compatibilities]
+
+	#These are the configurations for the optional dependency Voice Chat Interaction.
+	[compatibilities.voice_chat_interaction]
+		#When false, removes compatibility for Voice Chat Interaction. Defaults to false. (NON-FUNCTIONAL)
+		enabled = false
+
+	#These are the configurations for the optional dependency Vibrative Voice.
+	[compatibilities.vibrative_voice]
+		#When false, removes compatibility for Vibrative Voice. Defaults to true.
+		enabled = true
+
+	#These are the configurations for the optional dependency Valkyrien Skies.
+	[compatibilities.valkyrien_skies]
+		#When false, removes compatibility for Valkyrien Skies. Defaults to true.
+		enabled = true
+

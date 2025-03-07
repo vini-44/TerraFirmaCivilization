@@ -1,0 +1,18 @@
+{
+	"name": "Mechanical Power",
+	"category": "tfc:mechanics",
+	"icon": "create:water_wheel",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "TFC's Mechanical Power has been replaced by Create's. Refer to Create's ponders for the mechanics of each part."
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tag:tfc:water_wheels": 6,
+		"tag:tfc:axles": 10,
+		"tag:tfc:gear_boxes": 12,
+		"tag:tfc:clutches": 14
+	}
+}

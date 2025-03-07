@@ -1,0 +1,11 @@
+{
+	"loader":"forge:separate_transforms",
+	"gui_light":"front",
+	"base":{
+	"parent":"tfc:item/metal/mace/black_steel_held"},
+	"perspectives":{"none":{"parent":"tfc:item/metal/mace/black_steel_inv"},
+	"fixed":{"parent":"tfc:item/metal/mace/black_steel_inv"},
+	"ground":{"parent":"tfc:item/metal/mace/black_steel_inv"},
+	"gui":{"parent":"tfc:item/metal/mace/black_steel_inv"}
+	}
+}

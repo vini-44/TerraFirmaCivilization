@@ -1,0 +1,336 @@
+#A list of block IDs and tags that should be affected by this definition.
+#Entries can be supplied in the below formats:
+#	Namespaces:   '<minecraft>'
+#	Tags:         '#forge:stone'
+#	IDs:          'minecraft:stone'
+Blocks = ["tfc:alabaster/bricks/white",
+
+    "tfc:alabaster/polished/white",
+
+    "tfc:alabaster/bricks/white_wall",
+
+    "tfc:alabaster/polished/white_wall",
+
+    "tfc:alabaster/bricks/white_stairs",
+
+    "tfc:alabaster/polished/white_stairs",
+
+    "tfc:alabaster/bricks/white_slab",
+
+    "tfc:alabaster/polished/white_slab",
+
+    "tfc:alabaster/polished",
+
+    "tfc:alabaster/bricks",
+
+    "tfc:alabaster/bricks/brown",
+
+    "tfc:alabaster/polished/brown",
+
+    "tfc:alabaster/bricks/brown_wall",
+
+    "tfc:alabaster/polished/brown_wall",
+
+    "tfc:alabaster/bricks/brown_stairs",
+
+    "tfc:alabaster/polished/brown_stairs",
+
+    "tfc:alabaster/bricks/brown_slab",
+
+    "tfc:alabaster/polished/brown_slab",
+
+    "tfc:alabaster/bricks/green",
+
+    "tfc:alabaster/polished/green",
+
+    "tfc:alabaster/bricks/green_wall",
+
+    "tfc:alabaster/polished/green_wall",
+
+    "tfc:alabaster/bricks/green_stairs",
+
+    "tfc:alabaster/polished/green_stairs",
+
+    "tfc:alabaster/bricks/green_slab",
+
+    "tfc:alabaster/polished/green_slab",
+
+    "tfc:alabaster/bricks/orange",
+
+    "tfc:alabaster/polished/orange",
+
+    "tfc:alabaster/bricks/orange_wall",
+
+    "tfc:alabaster/polished/orange_wall",
+
+    "tfc:alabaster/bricks/orange_stairs",
+
+    "tfc:alabaster/polished/orange_stairs",
+
+    "tfc:alabaster/bricks/orange_slab",
+
+    "tfc:alabaster/polished/orange_slab",
+
+    "tfc:alabaster/bricks/magenta",
+
+    "tfc:alabaster/polished/magenta",
+
+    "tfc:alabaster/bricks/magenta_wall",
+
+    "tfc:alabaster/polished/magenta_wall",
+
+    "tfc:alabaster/bricks/magenta_stairs",
+
+    "tfc:alabaster/polished/magenta_stairs",
+
+    "tfc:alabaster/bricks/magenta_slab",
+
+    "tfc:alabaster/polished/magenta_slab",
+
+    "tfc:alabaster/bricks/red",
+
+    "tfc:alabaster/polished/red",
+
+    "tfc:alabaster/bricks/red_wall",
+
+    "tfc:alabaster/polished/red_wall",
+
+    "tfc:alabaster/bricks/red_stairs",
+
+    "tfc:alabaster/polished/red_stairs",
+
+    "tfc:alabaster/bricks/red_slab",
+
+    "tfc:alabaster/polished/red_slab",
+
+    "tfc:alabaster/bricks/black",
+
+    "tfc:alabaster/polished/black",
+
+    "tfc:alabaster/bricks/black_wall",
+
+    "tfc:alabaster/polished/black_wall",
+
+    "tfc:alabaster/bricks/black_stairs",
+
+    "tfc:alabaster/polished/black_stairs",
+
+    "tfc:alabaster/bricks/black_slab",
+
+    "tfc:alabaster/polished/black_slab",
+
+    "tfc:alabaster/bricks/light_blue",
+
+    "tfc:alabaster/polished/light_blue",
+
+    "tfc:alabaster/bricks/light_blue_wall",
+
+    "tfc:alabaster/polished/light_blue_wall",
+
+    "tfc:alabaster/bricks/light_blue_stairs",
+
+    "tfc:alabaster/polished/light_blue_stairs",
+
+    "tfc:alabaster/bricks/light_blue_slab",
+
+    "tfc:alabaster/polished/light_blue_slab",
+
+    "tfc:alabaster/bricks/yellow",
+
+    "tfc:alabaster/polished/yellow",
+
+    "tfc:alabaster/bricks/yellow_wall",
+
+    "tfc:alabaster/polished/yellow_wall",
+
+    "tfc:alabaster/bricks/yellow_stairs",
+
+    "tfc:alabaster/polished/yellow_stairs",
+
+    "tfc:alabaster/bricks/yellow_slab",
+
+    "tfc:alabaster/polished/yellow_slab",
+
+    "tfc:alabaster/bricks/lime",
+
+    "tfc:alabaster/polished/lime",
+
+    "tfc:alabaster/bricks/lime_wall",
+
+    "tfc:alabaster/polished/lime_wall",
+
+    "tfc:alabaster/bricks/lime_stairs",
+
+    "tfc:alabaster/polished/lime_stairs",
+
+    "tfc:alabaster/bricks/lime_slab",
+
+    "tfc:alabaster/polished/lime_slab",
+
+    "tfc:alabaster/bricks/pink",
+
+    "tfc:alabaster/polished/pink",
+
+    "tfc:alabaster/bricks/pink_wall",
+
+    "tfc:alabaster/polished/pink_wall",
+
+    "tfc:alabaster/bricks/pink_stairs",
+
+    "tfc:alabaster/polished/pink_stairs",
+
+    "tfc:alabaster/bricks/pink_slab",
+
+    "tfc:alabaster/polished/pink_slab",
+
+    "tfc:alabaster/bricks/gray",
+
+    "tfc:alabaster/polished/gray",
+
+    "tfc:alabaster/bricks/gray_wall",
+
+    "tfc:alabaster/polished/gray_wall",
+
+    "tfc:alabaster/bricks/gray_stairs",
+
+    "tfc:alabaster/polished/gray_stairs",
+
+    "tfc:alabaster/bricks/gray_slab",
+
+    "tfc:alabaster/polished/gray_slab",
+
+    "tfc:alabaster/bricks/light_gray",
+
+    "tfc:alabaster/polished/light_gray",
+
+    "tfc:alabaster/bricks/light_gray_wall",
+
+    "tfc:alabaster/polished/light_gray_wall",
+
+    "tfc:alabaster/bricks/light_gray_stairs",
+
+    "tfc:alabaster/polished/light_gray_stairs",
+
+    "tfc:alabaster/bricks/light_gray_slab",
+
+    "tfc:alabaster/polished/light_gray_slab",
+
+    "tfc:alabaster/bricks/cyan",
+
+    "tfc:alabaster/polished/cyan",
+
+    "tfc:alabaster/bricks/cyan_wall",
+
+    "tfc:alabaster/polished/cyan_wall",
+
+    "tfc:alabaster/bricks/cyan_stairs",
+
+    "tfc:alabaster/polished/cyan_stairs",
+
+    "tfc:alabaster/bricks/cyan_slab",
+
+    "tfc:alabaster/polished/cyan_slab",
+
+    "tfc:alabaster/bricks/purple",
+
+    "tfc:alabaster/polished/purple",
+
+    "tfc:alabaster/bricks/purple_wall",
+
+    "tfc:alabaster/polished/purple_wall",
+
+    "tfc:alabaster/bricks/purple_stairs",
+
+    "tfc:alabaster/polished/purple_stairs",
+
+    "tfc:alabaster/bricks/purple_slab",
+
+    "tfc:alabaster/polished/purple_slab",
+
+    "tfc:alabaster/bricks/blue",
+
+    "tfc:alabaster/polished/blue",
+
+    "tfc:alabaster/bricks/blue_wall",
+
+    "tfc:alabaster/polished/blue_wall",
+
+    "tfc:alabaster/bricks/blue_stairs",
+
+    "tfc:alabaster/polished/blue_stairs",
+
+    "tfc:alabaster/bricks/blue_slab",
+
+    "tfc:alabaster/polished/blue_slab", "tfc:alabaster/raw", "tfc:alabaster/bricks", "tfc:alabaster/polished"]
+
+[Physics]
+	#The maximum weight the block(s) can support both horizontally and vertically.
+	#Range: > 0
+	SupportStrength = 60000
+
+	#Additional support strength to apply to the amount of weight the block(s) can support above when acting as a beam.
+	#A value of 1.0 will allow the block(s) to support an infinite amount of weight, whereas a value of 0.0 will not apply any additional strengthening.
+	#Range: 0.0 ~ 1.0
+	BeamStrength = 0.3
+
+	#The mass of the block(s), in kilograms.
+	#Range: 1.0 ~ 50000.0
+	Mass = 800.0
+
+	#Whether the block(s) can hang from other blocks for support.
+	CanHang = false
+
+	#Whether the block(s) can attach to the sides of other blocks for support.
+	CanAttach = true
+
+	#Whether the block(s) can diagonally attach to other blocks for support.
+	CanAttachDiagonally = false
+
+	#The chance the block(s) will slide after falling and landing.
+	#Range: 0.0 ~ 1.0
+	SlideChance = 0.4
+
+	#An additional "dice roll" to apply to the base slide chance of the block(s), when being placed by an entity.
+	#Setting a value of 1.0 means the slide chance will remain unaffected.
+	#Range: 0.0 ~ 1.0
+	PlacementSlideModifier = 0.0
+
+	#A multiplier to apply to the damage caused by the block(s) when falling on entities.
+	#Range: 0.0 ~ 10.0
+	EntityDamageScale = 1.0
+
+	#Whether the block(s) should break instead of falling.
+	BreaksOnFalling = false
+
+	#The maximum force the block(s) can withstand before being broken.
+	#Range: > 0
+	Strength = 800000
+
+	#Whether the block(s) can be supported by liquids that are below.
+	FloatsOnLiquid = false
+
+	#This section allows you to extend the collision bounds for each specific face of the block(s).
+	#Note: Directions are relative to the orientation of the block(s) (excluding vertical axis), not the world itself.
+	[Physics.ExtendedCollisionBounds]
+		#Fully extends the collision bounds of the block(s) in the UP direction.
+		Up = false
+
+		#Fully extends the collision bounds of the block(s) in the DOWN direction.
+		Down = false
+
+		#Fully extends the collision bounds of the block(s) in the NORTH direction.
+		North = false
+
+		#Fully extends the collision bounds of the block(s) in the EAST direction.
+		East = false
+
+		#Fully extends the collision bounds of the block(s) in the SOUTH direction.
+		South = false
+
+		#Fully extends the collision bounds of the block(s) in the WEST direction.
+		West = false
+
+[ChunkAnalysis]
+	#Whether the block(s) should be processed during chunk analysis updates.
+	Enabled = true
+

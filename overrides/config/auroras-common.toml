@@ -1,0 +1,21 @@
+
+[General]
+	#Aurora render distance.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	auroraRenderDistance = 200.0
+	#How high of a resolution should the aurora render in? Lower value = lower resolution and quality but more FPS.
+	#Range: > 0
+	auroraDetail = 175
+	#Global toggle for controlling aurora detail.
+	globalDetailOverride = false
+	#Global toggle for controlling aurora appearance frequency.
+	globalVisibilityOctavesOverride = false
+	#If set to true, then the configs will update every mod update. Set to false if you want to manage config changes yourself.
+	globalShouldAutoUpdate = true
+	#How frequent the aurora should be visible. Under normal circumstances there can be many continuous days without auroras and vice versa. Lower value = more variable. If -1, then it's visible every night.
+	#Range: > -1
+	auroraVisibilityOctaves = 1
+	#How strong should the aurora bloom be? Higher value = stronger bloom.
+	#Range: 0.0 ~ 1.0
+	auroraBloomAmount = 1.0
+

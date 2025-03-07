@@ -1,0 +1,10 @@
+
+[general]
+	#
+	# How many stacks can be added to a coin purse
+	#Range: > 1
+	numberOfStacksInCoinPurse = 4
+	#
+	# Should the coins display the name of the person who minted them
+	CoinsPrintName = false
+

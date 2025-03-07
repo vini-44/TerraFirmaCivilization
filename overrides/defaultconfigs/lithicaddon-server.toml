@@ -1,0 +1,32 @@
+
+[general]
+	#The number of days a silk worm needs to be fed for it to become a cocoon
+	#Range: > 1
+	daysTillCocoon = 22
+	#The minimum light level a block needs to be to be counted by the mothbox
+	#Range: 1 ~ 15
+	minLightLevel = 13
+	#The minimum amount of blocks with light level minLightLevel or grater to have the mothbox start working
+	#Range: > 1
+	minLights = 10
+	#The minimum tempature for the mothbox to start working
+	#Range: -50.0 ~ 50.0
+	mintemp = 19.0
+	#The maximum tempature for the mothbox to start working
+	#Range: -50.0 ~ 50.0
+	maxtemp = 29.0
+	#The minimum rainfall for the mothbox to start working
+	#Range: 0.0 ~ 500.0
+	minrain = 10.0
+	#The maximum rainfall for the mothbox to start working
+	#Range: 0.0 ~ 500.0
+	maxrain = 100.0
+	#The chance out of 100 the fruit leaves will be consumed each day. set to 100 to gaurentee they eat 
+	#Range: 0 ~ 100
+	mothEatChance = 50
+	#The number of days a silk worm needs to be in a cocoon for it to become a moth
+	#Range: > 1
+	daysTillMoth = 11
+	#Whether or not make horse offsprings get a bonus to speed based on the parents familiarity
+	betterHorseBreeding = true
+

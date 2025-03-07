@@ -1,0 +1,36 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "afc:block/wood/twig/black_oak"
+			},
+			{
+				"model": "afc:block/wood/twig/black_oak",
+				"y": 90
+			},
+			{
+				"model": "afc:block/wood/twig/black_oak",
+				"y": 180
+			},
+			{
+				"model": "afc:block/wood/twig/black_oak",
+				"y": 270
+			},
+			{
+				"model": "afc:block/wood/twig/45/black_oak"
+			},
+			{
+				"model": "afc:block/wood/twig/45/black_oak",
+				"y": 90
+			},
+			{
+				"model": "afc:block/wood/twig/45/black_oak",
+				"y": 180
+			},
+			{
+				"model": "afc:block/wood/twig/45/black_oak",
+				"y": 270
+			}
+		]
+	}
+}

@@ -1,0 +1,8 @@
+
+###############################
+# Client GUI properties for Protect It  mod.
+###############################
+[GUI]
+	# Enables protection messages in chat. If enabled, when protection is triggered, a message will display in the chat.
+	"enableProtectionChatMessages:" = false
+

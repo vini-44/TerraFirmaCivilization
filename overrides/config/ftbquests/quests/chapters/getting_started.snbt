@@ -1,0 +1,460 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	id: "5E87F7D71CEAE20E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Sulidae is a TerraFirmaCraft modpack (in case you haven't noticed) that expands TFC with some extra content."
+				"The quest structure of the modpack, unlike most others, is not supposed to be taken as an objective to complete. It is, instead, a changelog of sorts, describing custom modpack features."
+				""
+				"For normal TFC-related features, the &lField Guide&r, accessible from the survival inventory, has all information you need and is updated for any notable changes, in addition with &lJEI&r to view recipes."
+				""
+				"Keep in mind that text changes are only available for US English!"
+			]
+			hide_dependency_lines: false
+			id: "0CD8033D7C86A941"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "TerraFirmaCraft, expanded."
+			tasks: [{
+				id: "66FFCDFFDCE15C62"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "Read This First"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CD8033D7C86A941"]
+			description: ["This chapter will cover custom mechanics, unrelated to things like recipes."]
+			icon: "refurbished_furniture:wrench"
+			id: "75B46FAA46D43E53"
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "A couple neat features"
+			tasks: [{
+				id: "2C16A0CE81F6AB10"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Custom Mechanics"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75B46FAA46D43E53"]
+			description: ["Walking Canes now have durability when being used to walk."]
+			icon: {
+				Count: 1
+				id: "tfccanes:refined_walking_cane"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7CDC4783E3AD9C9A"
+			tasks: [{
+				id: "44939CDC0956A4AA"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Walking Cane Durability"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["75B46FAA46D43E53"]
+			description: [
+				"\"Bonus Chest\" option on world creation has been replaced by \"Starter Items\", which hands players a set of starting items to skip the pre-copper grind."
+				""
+				"{@pagebreak}"
+				""
+				"Loot:"
+				"16-30 Torches/Basic Poultices"
+				"Random Colored Small Vessel"
+				"Copper Axe/Shovel/Propick"
+				"Leather/Raw Pants"
+				"Leather/Raw Shirt"
+				"Leather/Raw Hat"
+				"Leather/Raw Boots"
+				"Ceramic Jug"
+				"Copper Pickaxe"
+				"Copper Saw"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/pickaxe/copper"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "06EA7DBBFA06BDF2"
+			subtitle: "The new bonus chest"
+			tasks: [{
+				id: "3B193D2D5EEC6C5F"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Starter Items"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0CD8033D7C86A941"]
+			description: [
+				"Project TFC alters some TFC-related features, and adds a couple new ones."
+				"This quest branch will cover some specific highlights."
+			]
+			icon: "tfc:rock/mossy_loose/slate"
+			id: "529000CCCC295A5F"
+			size: 1.5d
+			tasks: [{
+				id: "08BF8E1A714AB158"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "TFC Changes"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["529000CCCC295A5F"]
+			description: ["Sulidae replaces TFC's mechanical power, and related features with &lCreate&r. So, instead of making a quern, you should make a grindstone, and power it using base Create mechanical power, for example."]
+			icon: "tfc:wood/water_wheel/acacia"
+			id: "2B0424BD3CE19B70"
+			tasks: [{
+				id: "548F8EEB450444E2"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Mechanical Power"
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["529000CCCC295A5F"]
+			description: [
+				"Raw ores, excluding nuggets, result in slag if not processed first before smelting. "
+				"Ore powders can now be smelted, additionally, powder blocks have been added."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:powder/native_gold"
+			}
+			id: "747D8B0D6766623F"
+			tasks: [{
+				id: "67E046ABA461E492"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Ore Processing"
+			x: -9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["75B46FAA46D43E53"]
+			description: [
+				"Brews are made by cooking any fruit, flower and spice on a pot. Brews provide a randomized, seed-based effect, similar to Suspicious Stews in the base game."
+				"Brews can also be distilled into their pure potion effect, to be used in things such as Liquid Shells or Chemical Sprayer. &lPure potions cannot be drinked.&r"
+			]
+			icon: "minecraft:brewing_stand"
+			id: "3C6BE5EB134946AC"
+			tasks: [{
+				id: "4B81C2C45FD19B17"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Brews"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["75B46FAA46D43E53"]
+			description: [
+				"&lOil Shale"
+				"Oil Shales are a mineral-trapped oil. They're a late-game alternitive source of Crude Oil."
+				"Oil shale deposits can be found between Y=-80 to Y=20 on Shale, Slate, Claystone and Phyllite"
+				""
+				"{@pagebreak}"
+				""
+				"&lKaolinite"
+				"Kaolinite ore is an alternitive source of Kaolinite powder, which, unlike Kaolin Clay, generates in all climates. It generates in Sedimentary rocks around sea level in very small and rare veins."
+				""
+				"Later on, Kaolinite Powder is used to make &lAluminum&r, a key ingredient for &lAircraft&r"
+				""
+				"{@pagebreak}"
+				""
+				"&lManganite"
+				"Manganite is an ore found in all rock types on &olowlands.&r It can be processed into Manganese, which is used to make &lMangalloy&r, used for heavy weapons and powerful cannons."
+				""
+				"&lRhodocrosite"
+				"Another Manganese ore, but can be found on sedimentary and metamorphic rocks up to Y=50. It can also be rarely found among Native Silver."
+			]
+			icon: "kubejs:kaolinite"
+			id: "0B953C1C60CA1413"
+			tasks: [{
+				id: "4005839EEB63180F"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "New Ores"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["75B46FAA46D43E53"]
+			description: ["Foods can be fried in oil on a cooking pot. Frying foods in olive or seed oil decreases how fast they spoil."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: -9223372036854775808L
+						traits: [ ]
+					}
+				}
+				id: "tfc:food/olive"
+			}
+			id: "60494E4E37ABD0B1"
+			tasks: [{
+				id: "668C1E2FC0E393FB"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Frying"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["75B46FAA46D43E53"]
+			description: [
+				"Pure Nutrients can be obtained by super-heated mixing any fertilizer to extract the pure nutrient."
+				"Pure nutrients, as well as being able to be used as fertilizer, are necessary for high-grade explosives and tracers."
+			]
+			icon: "tfc:pure_nitrogen"
+			id: "4AF9984B3261106B"
+			tasks: [{
+				id: "694EB1CC1F7D8B89"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Nutrient Extraction"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["529000CCCC295A5F"]
+			description: [
+				"Ore veins are rarer, but much denser and bigger. Additionally, sample nuggets are more common and appear from a greater depth."
+				""
+				"{@pagebreak}"
+				""
+				"Graphite spawns at a slightly  higher altitues, and rarer, very small graphite veins can spawn above y=50"
+				"Kaolin Clay now can spawn in any biome."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:ore/rich_native_copper"
+			}
+			id: "7A4A52B9388D1D3C"
+			tasks: [{
+				id: "4EDEF40875D48004"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Tweaked Ore Generation"
+			x: -9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0CD8033D7C86A941"]
+			description: [
+				"Several mods have had their recipes adapted to work within TFC's custom enviroment, with &orecipes remade from scratch&r; and some have had their mechanics adjusted to better fit TFC."
+				""
+				"The following entries are noteworthy integration features aside from recipes."
+			]
+			icon: "createaddition:small_light_connector"
+			id: "3FFD60F6DD717CFF"
+			size: 1.5d
+			tasks: [{
+				id: "302F63351BFB7F77"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Mod Integration"
+			x: -4.928571428571438d
+			y: 2.9464285714285694d
+		}
+		{
+			dependencies: ["3FFD60F6DD717CFF"]
+			description: ["Aircraft now have significantly longer take-off time, and use Packaged Fuel as fuel, requiring oil production."]
+			icon: "man_of_many_planes:scarlet_biplane"
+			id: "48B9D8BCB3A83183"
+			tasks: [{
+				id: "72F102147D58FBB4"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Immersive Aircraft"
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3FFD60F6DD717CFF"]
+			description: [
+				"Most guns are no longer available, and ammo types have been reduced. Guns can recieve forging bonuses, increasing their durability and deal Piercing type damage."
+				"Additionally, guns deal increased damage, have higher bullet velocity and gravity."
+				"Adrien Armor now as the equivalent to a bulletproof vest, with very high piercing damage resistance."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "scguns:greaser_smg"
+				tag: {
+					AmmoCount: 18
+					Damage: 0
+				}
+			}
+			id: "20BE1849BD756756"
+			tasks: [{
+				id: "6D2490E24C96FC45"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Scorched Guns"
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3FFD60F6DD717CFF"]
+			description: ["Stonelings spawn, and carry TFC minerals."]
+			icon: "quark:diamond_heart"
+			id: "2A529F96D2471F76"
+			tasks: [{
+				id: "76E0DAB46FD67116"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Quark"
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["529000CCCC295A5F"]
+			description: ["Sprinklers do not use pipes, instead, they draw from any fluid-containing block they are attached to, such as a Fluid Tanks."]
+			icon: "firmalife:sprinkler"
+			id: "148961C8A9C202D1"
+			tasks: [{
+				id: "0FC4650A6F24B879"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Irrigation"
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["75B46FAA46D43E53"]
+			description: [
+				"Paper can now also be made with wood."
+				"By mixing Wood Chips and water in a heated Basin with a Mechanical Mixer, you can obtain Wood Pulp, which can be washed with an Encased Fan and then pressed to obtain Unrefined Paper."
+			]
+			icon: "createdieselgenerators:wood_chip"
+			id: "239C8F9E774A77B1"
+			tasks: [{
+				id: "7F8D3C6547206126"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Wood Paper"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["75B46FAA46D43E53"]
+			description: ["Taking explosive damage deafens you."]
+			icon: "scguns:stun_grenade"
+			id: "3742E4F7CCC527FC"
+			tasks: [{
+				id: "0057AB91FEB9D765"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Stun"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3FFD60F6DD717CFF"]
+			description: [
+				"Most furniture are craftable, and no longer require the Workbench."
+				""
+				"Electricity Generator (Now renamed to Household Transformer) is powered with electricity instead of burning fuels to generate energy for electrical appliances."
+				""
+				"Ceiling Fans cool you down!"
+			]
+			icon: "everycomp:rfm/tfc/sycamore_chair"
+			id: "3EFE81E07A51ACDB"
+			tasks: [{
+				id: "064927159EE3406E"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Refurbished Furniture"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["75B46FAA46D43E53"]
+			description: ["Drinking alcohols now gives the Warmth effect for a short duration."]
+			icon: {
+				Count: 1
+				id: "tfc:silica_glass_bottle"
+				tag: {
+					fluid: {
+						Amount: 500
+						FluidName: "tfc:beer"
+					}
+				}
+			}
+			id: "7C22635252CAFA32"
+			subtitle: "Do not try this at home"
+			tasks: [{
+				id: "5CFAC7371913E497"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Alcohol Warmth"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "About the Modpack"
+}

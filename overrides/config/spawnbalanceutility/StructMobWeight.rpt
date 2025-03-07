@@ -1,0 +1,65 @@
+* This is the StructMobWeight report file that is output every time the server starts.
+* 
+* Spawn Balance Utility (SBU) will use this file ONLY if it is renamed to StructMobWeight.csv.
+* Lines starting with '*' are comments and ignored
+* It allows you to add and remove mobs and adjust their spawnweights for Structures
+* like shipwrecks, nether fortresses, water monuments, etc.
+* 
+1, minecraft:ancient_city, HEADING, header:ignore, 0, 0, 0
+2, scguns:asgharian_citadel, HEADING, header:ignore, 0, 0, 0
+3, scguns:asgharian_tower, HEADING, header:ignore, 0, 0, 0
+4, minecraft:bastion_remnant, HEADING, header:ignore, 0, 0, 0
+5, minecraft:buried_treasure, HEADING, header:ignore, 0, 0, 0
+6, minecraft:desert_pyramid, HEADING, header:ignore, 0, 0, 0
+7, minecraft:end_city, HEADING, header:ignore, 0, 0, 0
+8, minecraft:fortress, HEADING, header:ignore, 0, 0, 0
+9, minecraft:fortress, MONSTER, minecraft:blaze, 10, 2, 3
+10, minecraft:fortress, MONSTER, minecraft:zombified_piglin, 10, 4, 4
+11, minecraft:fortress, MONSTER, minecraft:wither_skeleton, 10, 5, 5
+12, minecraft:fortress, MONSTER, minecraft:skeleton, 10, 5, 5
+13, minecraft:fortress, MONSTER, minecraft:magma_cube, 10, 4, 4
+14, minecraft:igloo, HEADING, header:ignore, 0, 0, 0
+15, minecraft:jungle_pyramid, HEADING, header:ignore, 0, 0, 0
+16, minecraft:mansion, HEADING, header:ignore, 0, 0, 0
+17, minecraft:mineshaft, HEADING, header:ignore, 0, 0, 0
+18, minecraft:mineshaft_mesa, HEADING, header:ignore, 0, 0, 0
+19, minecraft:monument, HEADING, header:ignore, 0, 0, 0
+20, minecraft:monument, MONSTER, minecraft:guardian, 10, 2, 4
+21, minecraft:nether_fossil, HEADING, header:ignore, 0, 0, 0
+22, minecraft:ocean_ruin_cold, HEADING, header:ignore, 0, 0, 0
+23, minecraft:ocean_ruin_warm, HEADING, header:ignore, 0, 0, 0
+24, scguns:osgood_lab, HEADING, header:ignore, 0, 0, 0
+25, scguns:osgood_lab_outpost, HEADING, header:ignore, 0, 0, 0
+26, minecraft:pillager_outpost, HEADING, header:ignore, 0, 0, 0
+27, minecraft:pillager_outpost, MONSTER, minecraft:pillager, 10, 1, 1
+28, minecraft:ruined_portal, HEADING, header:ignore, 0, 0, 0
+29, minecraft:ruined_portal_desert, HEADING, header:ignore, 0, 0, 0
+30, minecraft:ruined_portal_jungle, HEADING, header:ignore, 0, 0, 0
+31, minecraft:ruined_portal_mountain, HEADING, header:ignore, 0, 0, 0
+32, minecraft:ruined_portal_nether, HEADING, header:ignore, 0, 0, 0
+33, minecraft:ruined_portal_ocean, HEADING, header:ignore, 0, 0, 0
+34, minecraft:ruined_portal_swamp, HEADING, header:ignore, 0, 0, 0
+35, minecraft:shipwreck, HEADING, header:ignore, 0, 0, 0
+36, minecraft:shipwreck_beached, HEADING, header:ignore, 0, 0, 0
+37, minecraft:stronghold, HEADING, header:ignore, 0, 0, 0
+38, minecraft:swamp_hut, HEADING, header:ignore, 0, 0, 0
+39, minecraft:swamp_hut, MONSTER, minecraft:witch, 10, 1, 1
+40, minecraft:swamp_hut, CREATURE, minecraft:cat, 10, 1, 1
+41, minecraft:trail_ruins, HEADING, header:ignore, 0, 0, 0
+42, scguns:trench, HEADING, header:ignore, 0, 0, 0
+43, alekiships:unfinished_rowboat_birch, HEADING, header:ignore, 0, 0, 0
+44, alekiships:unfinished_rowboat_cherry, HEADING, header:ignore, 0, 0, 0
+45, alekiships:unfinished_rowboat_dark_oak, HEADING, header:ignore, 0, 0, 0
+46, alekiships:unfinished_rowboat_oak, HEADING, header:ignore, 0, 0, 0
+47, alekiships:unfinished_rowboat_spruce, HEADING, header:ignore, 0, 0, 0
+48, alekiships:unfinished_sloop_birch, HEADING, header:ignore, 0, 0, 0
+49, alekiships:unfinished_sloop_cherry, HEADING, header:ignore, 0, 0, 0
+50, alekiships:unfinished_sloop_dark_oak, HEADING, header:ignore, 0, 0, 0
+51, alekiships:unfinished_sloop_oak, HEADING, header:ignore, 0, 0, 0
+52, alekiships:unfinished_sloop_spruce, HEADING, header:ignore, 0, 0, 0
+53, minecraft:village_desert, HEADING, header:ignore, 0, 0, 0
+54, minecraft:village_plains, HEADING, header:ignore, 0, 0, 0
+55, minecraft:village_savanna, HEADING, header:ignore, 0, 0, 0
+56, minecraft:village_snowy, HEADING, header:ignore, 0, 0, 0
+57, minecraft:village_taiga, HEADING, header:ignore, 0, 0, 0
+58, supplementaries:way_sign, HEADING, header:ignore, 0, 0, 0

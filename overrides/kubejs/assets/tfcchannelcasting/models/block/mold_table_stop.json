@@ -1,0 +1,19 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"0": "tfcchannelcasting:block/crucible_like",
+		"particle": "tfcchannelcasting:block/crucible_like"
+	},
+	"elements": [
+		{
+			"from": [15, 2, 6],
+			"to": [16, 5, 10],
+			"faces": {
+				"east": {"uv": [6, 3, 10, 6], "texture": "#0"},
+				"west": {"uv": [6, 11, 10, 14], "texture": "#0"},
+				"up": {"uv": [7, 3, 11, 4], "rotation": 90, "texture": "#0"}
+			}
+		}
+	]
+}

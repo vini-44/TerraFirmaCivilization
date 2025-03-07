@@ -1,0 +1,216 @@
+# ExtraGore Particle Group Configuration
+# ------------------------------------------------------
+# This file enables the creation of custom blood particle properties for various entities.
+# Begin by uniquely naming each property group to effectively manage different settings.
+
+# Particle Behavior Options:
+# - Bounce: The particle will bounce off surfaces like a solid object.
+# - Stick: The particle will stick to walls and other surfaces.
+# - Magic: Some particles will fall to the ground while the majority will fly up to the sky.
+# - None: The particle won't have any special effects.
+
+# Particle Weight Options:
+# - Heavy: The particle will sink to the bottom when it's underwater.
+# - Light: The particle will float up to the top of the water.
+
+# Particle State Options:
+# - Liquid: The particle will get larger during its lifetime.
+# - Solid: The particle will remain the same size all the time.
+
+# Color Settings:
+# Set an RGB color value to visually distinguish particles for various entities.
+
+# How to Use:
+# 1. Define a group with a name, including behavior, weight, state, color and entity values.
+# 2. Example:
+#    ["Color Group Name"]
+#    behavior = Choose from "Stuck", "Bounce" or "None"
+#    weight = Choose from "Heavy" or "Light"
+#    state = Choose from "Liquid" or "Solid"
+#    color = "R,G,B"
+#    entities = ["entityID1", "entityID2"]
+# 3. You can modify or delete any predefined groups, except for the red group. The red group is non editable and serves only to show you unused entities which are compatible with different color groups.
+# 4. Add your custom color groups under an already predefined group, except for the red one.
+# 5. Ensure each color group has a unique name and is properly structured.
+
+# Note: Incorrectly formatted lines or unrecognized entity IDs will be ignored.
+# ------------------------------------------------------
+
+["Violet Group"]
+behavior = "Magic"
+weight = "Light"
+state = "Liquid"
+color = "128,0,128"
+entities = ["minecraft:enderman", "minecraft:endermite", "minecraft:phantom", "minecraft:shulker", "minecraft:silverfish", "minecraft:warden", "minecraft:ender_dragon"]
+
+["White Group"]
+behavior = "Bounce"
+weight = "Heavy"
+state = "Solid"
+color = "255,255,255"
+entities = ["minecraft:skeleton", "minecraft:ghast", "minecraft:iron_golem", "minecraft:skeleton_horse", "minecraft:snow_golem", "minecraft:stray", "minecraft:vex", "minecraft:wither_skeleton", "minecraft:allay", "minecraft:wither"]
+
+["Green Group"]
+behavior = "Stuck"
+weight = "Light"
+state = "Liquid"
+color = "0,255,0"
+entities = ["minecraft:cave_spider", "minecraft:creeper", "minecraft:slime", "minecraft:spider", "minecraft:witch"]
+
+["Yellow Group"]
+behavior = "Bounce"
+weight = "Heavy"
+state = "Solid"
+color = "255,255,0"
+entities = ["minecraft:blaze", "minecraft:magma_cube", "minecraft:strider"]
+
+["Blue Group"]
+behavior = "None"
+weight = "Light"
+state = "Liquid"
+color = "0,0,255"
+entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian", "minecraft:glow_squid"]
+
+# Auto generated red color group - do not edit. Use this as reference for unused entity IDs.
+"255,0,0" = [
+    "tfc:tropical_fish",
+    "tfc:crocodile",
+    "tfc:manatee",
+    "minecraft:trader_llama",
+    "tfc:cougar",
+    "tfc:donkey",
+    "minecraft:horse",
+    "scguns:hive",
+    "tfc:bluegill",
+    "minecraft:llama",
+    "tfc:grizzly_bear",
+    "minecraft:tadpole",
+    "minecraft:dolphin",
+    "tfc:panda",
+    "tfc:alpaca",
+    "minecraft:bee",
+    "minecraft:illusioner",
+    "tfc:smallmouth_bass",
+    "tfc:yak",
+    "minecraft:mooshroom",
+    "tfc:duck",
+    "minecraft:drowned",
+    "minecraft:axolotl",
+    "tfc:deer",
+    "quark:crab",
+    "minecraft:wandering_trader",
+    "scguns:zombified_hornlin",
+    "scguns:blunderer",
+    "tfc:lobster",
+    "tfc:polar_bear",
+    "tfc:mule",
+    "tfc:peafowl",
+    "tfc:crappie",
+    "minecraft:pufferfish",
+    "minecraft:fox",
+    "tfc:boar",
+    "minecraft:chicken",
+    "minecraft:zombie",
+    "scguns:swarm",
+    "minecraft:hoglin",
+    "tfc:panther",
+    "minecraft:polar_bear",
+    "minecraft:zombified_piglin",
+    "tfc:pheasant",
+    "minecraft:turtle",
+    "minecraft:sheep",
+    "tfc:caribou",
+    "tfc:hyena",
+    "tfc:cow",
+    "quark:wraith",
+    "tfc:orca",
+    "tfc:pig",
+    "quark:foxhound",
+    "tfc:quail",
+    "minecraft:ravager",
+    "tfc:cod",
+    "quark:shiba",
+    "tfc:tiger",
+    "tfc:moose",
+    "tfc:isopod",
+    "supplementaries:red_merchant",
+    "tfc:lake_trout",
+    "tfc:dog",
+    "tfc:sheep",
+    "tfc:gazelle",
+    "minecraft:bat",
+    "firmalife:bee",
+    "tfc:bongo",
+    "railways:conductor",
+    "tfc:turtle",
+    "scguns:dissident",
+    "minecraft:cat",
+    "tfc:wolf",
+    "minecraft:tropical_fish",
+    "tfc:squid",
+    "tfc:fox",
+    "minecraft:panda",
+    "minecraft:zombie_villager",
+    "minecraft:giant",
+    "scguns:cog_knight",
+    "minecraft:husk",
+    "scguns:hornlin",
+    "minecraft:donkey",
+    "tfc:dolphin",
+    "tfc:black_bear",
+    "quark:stoneling",
+    "minecraft:piglin_brute",
+    "quark:toretoise",
+    "tfc:jellyfish",
+    "tfc:grouse",
+    "minecraft:parrot",
+    "scguns:redcoat",
+    "tfc:crayfish",
+    "thermal:blizz",
+    "tfc:horseshoe_crab",
+    "tfc:musk_ox",
+    "minecraft:frog",
+    "tfc:rat",
+    "tfc:direwolf",
+    "minecraft:mule",
+    "tfc:pufferfish",
+    "tfc:goat",
+    "minecraft:vindicator",
+    "minecraft:evoker",
+    "scguns:supply_scamp",
+    "quark:forgotten",
+    "tfc:octopoteuthis",
+    "tfc:cat",
+    "tfc:wildebeest",
+    "thermal:blitz",
+    "minecraft:pig",
+    "minecraft:goat",
+    "cold_sweat:chameleon",
+    "minecraft:cod",
+    "tfc:salmon",
+    "tfc:largemouth_bass",
+    "scguns:cog_minion",
+    "tfc:penguin",
+    "minecraft:cow",
+    "tfc:rabbit",
+    "tfc:frog",
+    "minecraft:salmon",
+    "tfc:turkey",
+    "tfc:rainbow_trout",
+    "minecraft:rabbit",
+    "minecraft:pillager",
+    "minecraft:zoglin",
+    "thermal:basalz",
+    "scguns:sky_carrier",
+    "tfc:sabertooth",
+    "minecraft:piglin",
+    "tfc:chicken",
+    "minecraft:sniffer",
+    "tfc:lion",
+    "minecraft:zombie_horse",
+    "minecraft:camel",
+    "tfc:ocelot",
+    "minecraft:ocelot",
+    "minecraft:wolf",
+    "tfc:horse"
+]

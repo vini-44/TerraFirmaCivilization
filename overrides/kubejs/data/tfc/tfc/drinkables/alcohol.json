@@ -1,0 +1,16 @@
+{
+    "ingredient": {
+      "tag": "tfc:alcohols"
+    },
+    "thirst": 10,
+    "effects": [
+        {
+          "type": "cold_sweat:warmth",
+          "duration": 1200,
+          "chance": 1.0,
+          "amplifier": 1
+        }
+      ],    
+    "intoxication": 4000,
+    "may_drink_when_full": true
+  }

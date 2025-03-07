@@ -1,0 +1,36 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "afc:block/wood/twig/teak"
+			},
+			{
+				"model": "afc:block/wood/twig/teak",
+				"y": 90
+			},
+			{
+				"model": "afc:block/wood/twig/teak",
+				"y": 180
+			},
+			{
+				"model": "afc:block/wood/twig/teak",
+				"y": 270
+			},
+			{
+				"model": "afc:block/wood/twig/45/teak"
+			},
+			{
+				"model": "afc:block/wood/twig/45/teak",
+				"y": 90
+			},
+			{
+				"model": "afc:block/wood/twig/45/teak",
+				"y": 180
+			},
+			{
+				"model": "afc:block/wood/twig/45/teak",
+				"y": 270
+			}
+		]
+	}
+}

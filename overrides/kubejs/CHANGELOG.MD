@@ -1,0 +1,10 @@
+- Firing Units now require Mangalloy to better differentiate flintlocks and semi/fully automatic firearms.
+- Added Rhodocrosite, another manganese ore, more easily found but significantly rarer.
+- Added quest entry on alcohols giving the Warmth effect.
+- Renamed Molten Processed Manganite into Molten Raw Manganese
+- Removed empty machine gun rounds (MG ammo now uses large brass casings instead.)
+- Machine gun round recipe is now shapeless.
+- Added an automated way to make empty casings and fluid pipes, at a worse yield than manually making them.
+- Removed Distant Horizons (Wasn't meant to be in the release, just using it for the panorama, sorry. It's client-side, so feel free to re-add!)
+- Kaolin Clay now spawns on any biome.
+- Added translation strings for prospecting manganite.

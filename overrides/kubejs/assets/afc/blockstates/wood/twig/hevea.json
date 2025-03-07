@@ -1,0 +1,36 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "afc:block/wood/twig/hevea"
+			},
+			{
+				"model": "afc:block/wood/twig/hevea",
+				"y": 90
+			},
+			{
+				"model": "afc:block/wood/twig/hevea",
+				"y": 180
+			},
+			{
+				"model": "afc:block/wood/twig/hevea",
+				"y": 270
+			},
+			{
+				"model": "afc:block/wood/twig/45/hevea"
+			},
+			{
+				"model": "afc:block/wood/twig/45/hevea",
+				"y": 90
+			},
+			{
+				"model": "afc:block/wood/twig/45/hevea",
+				"y": 180
+			},
+			{
+				"model": "afc:block/wood/twig/45/hevea",
+				"y": 270
+			}
+		]
+	}
+}

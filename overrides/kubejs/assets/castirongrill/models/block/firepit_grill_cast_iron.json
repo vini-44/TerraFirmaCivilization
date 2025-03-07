@@ -1,0 +1,7 @@
+{
+	"parent": "tfc:block/firepit_grill",
+	"textures": {
+		"4": "castirongrill:block/cast_iron_grill_top",
+		"5": "castirongrill:block/cast_iron_grill_side"
+	}
+}

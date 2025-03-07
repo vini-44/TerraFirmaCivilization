@@ -1,0 +1,8 @@
+{
+	"parent": "tfc:block/wood/support/inventory_vex",
+	"textures": {
+		"vertical": 	"afc:block/wood/support/vertical/ironwood",
+		"horizontal": 	"afc:block/wood/support/horizontal/ironwood",
+		"top": 			"afc:block/wood/support/top/ironwood"
+	}
+}

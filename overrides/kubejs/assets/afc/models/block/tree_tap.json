@@ -1,0 +1,77 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "afc:block/syrup_tap",
+		"particle": "afc:block/syrup_tap"
+	},
+	"elements": [
+		{
+			"name": "bodyback",
+			"from": [7, 4, 12.5],
+			"to": [9, 6, 16.5],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 5, 16]},
+			"faces": {
+				"north": {"uv": [0, 5, 2, 7], "texture": "#0"},
+				"east": {"uv": [0, 0, 2, 4], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [0, 5, 2, 7], "texture": "#0"},
+				"west": {"uv": [0, 0, 2, 4], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 4], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 0, 2, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "hanger",
+			"from": [6, 3, 15.5],
+			"to": [10, 7, 15.5],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 5, 16]},
+			"faces": {
+				"north": {"uv": [3, 0, 7, 4], "texture": "#0"},
+				"south": {"uv": [3, 0, 7, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "bodyfront",
+			"from": [7, 4, 11.5],
+			"to": [9, 6, 12.5],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 5, 16]},
+			"faces": {
+				"east": {"uv": [0, 4, 2, 5], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [0, 4, 2, 5], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 4, 2, 5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 4, 2, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "bodyfrontinverse",
+			"from": [9, 6, 12.5],
+			"to": [7, 4, 11.5],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 5, 16]},
+			"faces": {
+				"east": {"uv": [0, 4, 2, 5], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [0, 4, 2, 5], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 4, 2, 5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 4, 2, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "spout",
+			"from": [7, 4, 10.5],
+			"to": [9, 4, 11.5],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 5, 16]},
+			"faces": {
+				"up": {"uv": [0, 3, 2, 4], "texture": "#0"},
+				"down": {"uv": [0, 4, 2, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "flange",
+			"from": [8, 6, 11.5],
+			"to": [8, 7, 15.5],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 5, 16]},
+			"faces": {
+				"east": {"uv": [0, 1, 1, 5], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [0, 1, 1, 5], "rotation": 90, "texture": "#0"}
+			}
+		}
+	]
+}

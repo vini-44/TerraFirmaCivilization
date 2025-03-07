@@ -1,0 +1,17 @@
+
+["Outline Settings"]
+	#Set the outline thickness.
+	#Range: 0.5 ~ 10.0
+	Outline_Size = 4.0
+	#Set the outline color in hex (e.g., FF0000 for red).
+	#Works with FLAT_COLOR and COMBINED_COLOR modes.
+	Outline_Color = "00FFFF"
+	#Set the color mode:
+	#FLAT_COLOR = Uses only Outline_Color.
+	#TEXTURE_COLOR = Uses the block's texture color.
+	#COMBINED_COLOR = Combines both texture and Outline_Color.
+	#Allowed Values: FLAT_COLOR, TEXTURE_COLOR, COMBINED_COLOR
+	Color_Mode = "FLAT_COLOR"
+	#Enable or disable vanilla outline rendering.
+	Vanilla_Block_Outline = false
+

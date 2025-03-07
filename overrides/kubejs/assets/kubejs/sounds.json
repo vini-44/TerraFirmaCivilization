@@ -1,0 +1,12 @@
+{
+	"autocannon": {
+		"category": "player",
+		"sounds": [
+			"kubejs:wep_autocannon_1",
+			"kubejs:wep_autocannon_2",
+			"kubejs:wep_autocannon_3",
+			"kubejs:wep_autocannon_4",
+			"kubejs:wep_autocannon_5"
+		]
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"item.scguns.iron_gun_frame": "Steel Gun Frame",
+	"item.scguns.diamond_steel_gun_frame": "Blue Steel Gun Frame",
+	"item.scguns.small_diamond_steel_casing": "Small Steel Casing",
+	"item.scguns.medium_diamond_steel_casing": "Medium Steel Casing",
+	"entity.scguns.krahg_round_projectile": "Anti-Materiel Round",
+	"entity.scguns.advanced_round_projectile": "Rifle Round",
+	"item.scguns.unfinished_compact_advanced_round": "Unfinished Rifle Round",
+	"item.scguns.unfinished_advanced_round": "Unfinished Rifle Round",
+	"item.scguns.compact_advanced_round": "Pistol Round",
+	"item.scguns.advanced_round": "Rifle Round",
+
+	"item.scguns.krahg_round": "Anti-Materiel Round",
+	"item.scguns.beowulf_round": "Magnum Round",
+	"item.scguns.gibbs_round": "Advanced Rifle Round",
+    "item.scguns.adrien_helm": "Bulletproof Helmet",
+    "item.scguns.adrien_chestplate": "Bulletproof Vest",  
+    "item.scguns.anthralite_respirator": "Respirator"
+}

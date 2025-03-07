@@ -1,0 +1,23 @@
+{
+    "block.createbigcannons.built_up_nethersteel_cannon_barrel": "Built-Up Mangalloy Cannon Barrel",
+    "block.createbigcannons.built_up_nethersteel_cannon_chamber": "Built-Up Mangalloy Cannon Chamber",
+    "block.createbigcannons.incomplete_nethersteel_screw_breech": "Incomplete Mangalloy Screw Breech",
+    "block.createbigcannons.large_nethersteel_cannon_layer": "Large Mangalloy Cannon Layer",
+    "block.createbigcannons.medium_nethersteel_cannon_layer": "Medium Mangalloy Cannon Layer",
+    "block.createbigcannons.nethersteel_cannon_barrel": "Mangalloy Cannon Barrel",
+    "block.createbigcannons.nethersteel_cannon_chamber": "Mangalloy Cannon Chamber",
+    "block.createbigcannons.nethersteel_screw_breech": "Mangalloy Screw Breech",
+    "block.createbigcannons.small_nethersteel_cannon_layer": "Small Mangalloy Cannon Layer",
+    "block.createbigcannons.thick_nethersteel_cannon_chamber": "Thick Mangalloy Cannon Chamber",
+    "block.createbigcannons.unbored_large_nethersteel_cannon_layer": "Unbored Large Mangalloy Cannon Layer",
+    "block.createbigcannons.unbored_medium_nethersteel_cannon_layer": "Unbored Medium Mangalloy Cannon Layer",
+    "block.createbigcannons.unbored_nethersteel_screw_breech": "Unbored Mangalloy Screw Breech",
+    "block.createbigcannons.unbored_small_nethersteel_cannon_layer": "Unbored Small Mangalloy Cannon Layer",
+    "block.createbigcannons.unbored_very_large_nethersteel_cannon_layer": "Unbored Very Large Mangalloy Cannon Layer",
+    "block.createbigcannons.unbored_very_small_nethersteel_cannon_layer": "Unbored Very Small Mangalloy Cannon Layer",
+    "block.createbigcannons.very_large_nethersteel_cannon_layer": "Very Large Mangalloy Cannon Layer",
+    "block.createbigcannons.very_small_nethersteel_cannon_layer": "Very Small Mangalloy Cannon Layer",
+    "item.createbigcannons.nethersteel_nugget": "Mangalloy Scrap",
+    "item.createbigcannons.nethersteel_screw_lock": "Mangalloy Screw Lock"
+
+}

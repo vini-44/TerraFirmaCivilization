@@ -1,0 +1,50 @@
+#A list of dimension IDs that should be affected by this definition.
+Dimensions = ["minecraft:the_nether"]
+
+#Whether block physics should be enabled for the dimension(s).
+PhysicsEnabled = true
+
+[ChunkAnalysis]
+	#Whether chunk analysis should be enabled (full physics scans on the blocks of a chunk).
+	#Disabling chunk analysis can help to improve performance.
+	Enabled = true
+
+	#The minimum altitude that chunk analysis updates will occur on blocks.
+	#Range: > -2147483648
+	MinAltitude = 0
+
+	#The maximum altitude that chunk analysis updates will occur on blocks.
+	#Range: > -2147483648
+	MaxAltitude = 128
+
+[Physics]
+	#Specifies which physics engine to use for block physics calculations.
+	#Please take care when changing physics engines on existing worlds.
+	#	 realistic: The most realistic experience.
+	#	 legacy: The old physics engine used in versions prior to 1.12.2-2.0.0.
+	#	 simple: A more casual experience. Blocks will only fall if they are not connected to anything.
+	PhysicsEngine = "realistic"
+
+	#A list of block definition names that should not be enabled for the dimension(s).
+	BlockDefinitionBlacklist = []
+
+	[Physics.CaveStrengthening]
+		#A factor of additional strengthening to apply to caves.
+		#Range: 0 ~ 5
+		StrengthenFactor = 5
+
+		#Whether cave strengthen calculations should accept liquid pockets as stable areas.
+		IgnoreLiquidPockets = true
+
+[Defaults]
+	#Specifies the default block definition to give to blocks that do not have one specified.
+	#Leave this empty if you do not wish to apply physics to blocks that do not have a specified block definition.
+	DefaultBlockDefinition = ""
+
+	#A list of block IDs and tags that should not be given default block definitions.
+	#Entries can be supplied in the below formats:
+	#	Namespaces:   '<minecraft>'
+	#	Tags:         '#forge:stone'
+	#	IDs:          'minecraft:stone'
+	DefaultBlocksBlacklist = ["<minecraft>"]
+
