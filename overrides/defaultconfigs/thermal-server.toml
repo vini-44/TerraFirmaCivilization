@@ -89,11 +89,11 @@
 
 [Mobs]
 	#If TRUE, the Basalz Mob is enabled.
-	Basalz = true
+	Basalz = false
 	#If TRUE, the Blitz Mob is enabled.
-	Blitz = true
+	Blitz = false
 	#If TRUE, the Blizz Mob is enabled.
-	Blizz = true
+	Blizz = false
 	#If TRUE, the Blitz can occasionally call down lightning bolts.
 	"Blitz Lightning" = true
 

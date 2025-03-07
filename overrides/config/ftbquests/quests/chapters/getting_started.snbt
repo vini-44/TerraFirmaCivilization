@@ -190,7 +190,7 @@
 			description: [
 				"&lOil Shale"
 				"Oil Shales are a mineral-trapped oil. They're a late-game alternitive source of Crude Oil."
-				"Oil shale deposits can be found between Y=-80 to Y=20 on Shale, Slate, Claystone and Phyllite"
+				"Oil shale deposits can be found between Y level -80 to 20 on Shale, Slate, Claystone and Phyllite"
 				""
 				"{@pagebreak}"
 				""
@@ -203,9 +203,6 @@
 				""
 				"&lManganite"
 				"Manganite is an ore found in all rock types on &olowlands.&r It can be processed into Manganese, which is used to make &lMangalloy&r, used for heavy weapons and powerful cannons."
-				""
-				"&lRhodocrosite"
-				"Another Manganese ore, but can be found on sedimentary and metamorphic rocks up to Y=50. It can also be rarely found among Native Silver."
 			]
 			icon: "kubejs:kaolinite"
 			id: "0B953C1C60CA1413"
@@ -215,8 +212,8 @@
 				type: "checkmark"
 			}]
 			title: "New Ores"
-			x: 0.0d
-			y: 1.0d
+			x: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["75B46FAA46D43E53"]
@@ -266,7 +263,6 @@
 				"{@pagebreak}"
 				""
 				"Graphite spawns at a slightly  higher altitues, and rarer, very small graphite veins can spawn above y=50"
-				"Kaolin Clay now can spawn in any biome."
 			]
 			icon: {
 				Count: 1
@@ -408,8 +404,8 @@
 				type: "checkmark"
 			}]
 			title: "Stun"
-			x: 0.0d
-			y: -1.0d
+			x: -0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3FFD60F6DD717CFF"]
@@ -430,30 +426,6 @@
 			title: "Refurbished Furniture"
 			x: -4.5d
 			y: 4.5d
-		}
-		{
-			dependencies: ["75B46FAA46D43E53"]
-			description: ["Drinking alcohols now gives the Warmth effect for a short duration."]
-			icon: {
-				Count: 1
-				id: "tfc:silica_glass_bottle"
-				tag: {
-					fluid: {
-						Amount: 500
-						FluidName: "tfc:beer"
-					}
-				}
-			}
-			id: "7C22635252CAFA32"
-			subtitle: "Do not try this at home"
-			tasks: [{
-				id: "5CFAC7371913E497"
-				title: "I Understand"
-				type: "checkmark"
-			}]
-			title: "Alcohol Warmth"
-			x: 0.0d
-			y: 0.0d
 		}
 	]
 	title: "About the Modpack"

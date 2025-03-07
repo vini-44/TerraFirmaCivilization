@@ -2,16 +2,16 @@
 #DO NOT EDIT THE SETTINGS IN THIS SECTION
 [Builtin]
 	#Range: 0 ~ 4
-	Difficulty = 2
+	Difficulty = 4
 	Version = "2.3.12"
 
 [Difficulty]
 	#Defines the minimum habitable temperature
 	#Range: -Infinity ~ Infinity
-	"Minimum Habitable Temperature" = 0.4
+	"Minimum Habitable Temperature" = -0.044444444444444446
 	#Defines the maximum habitable temperature
 	#Range: -Infinity ~ Infinity
-	"Maximum Habitable Temperature" = 1.511111111111111
+	"Maximum Habitable Temperature" = 1.288888888888889
 	#Rate at which the player's body temperature changes (default: 1.0 (100%))
 	#Range: 0.0 ~ Infinity
 	"Rate Multiplier" = 1.0
@@ -27,7 +27,7 @@
 	#Allow ice resistance to block freezing damage
 	"Ice Resistance Immunity" = true
 	#Thermometer item is required to see detailed world temperature
-	"Require Thermometer" = true
+	"Require Thermometer" = false
 
 ["Temperature Effects"]
 

@@ -957,7 +957,7 @@
         "item": "kubejs:gabbro_manganite",
         "title": "Manganite",
         "link_recipes": false,
-        "text": "Manganite is a $(thing)Mineral$() which can be eventually processed into Manganese in a Blast Furnace, which is a ingredient for making $(thing)Mangalloy$(), a key ingredient for heavy armaments. It can be found around sea level in any rock on Lowlands."
+        "text": "Manganite is a $(thing)Mineral$() which can be processed into Manganese in a Blast Furnace, which is a ingredient for making $(thing)Mangalloy$(), a key ingredient for heavy armaments. It can be found around sea level in any rock on Lowlands."
       },
       {
         "type": "patchouli:multiblock",
@@ -976,33 +976,6 @@
         },
         "name": "",
         "text": "Manganite in Gabbro.",
-        "enable_visualize": false
-      },
-      {
-        "type": "patchouli:spotlight",
-        "anchor": "rhodocrosite",
-        "item": "kubejs:slate_rhodocrosite",
-        "title": "Rhodocrosite",
-        "link_recipes": false,
-        "text": "Rhodocrosite is a $(thing)Mineral$() which can be eventually processed into Manganese in a Blast Furnace, which is a ingredient for making $(thing)Mangalloy$(), a key ingredient for heavy armaments. It can be found mixed with $(thing)Native Silver$() or on it's own in $(l:the_world/geology#sedimentary)Sedimentary$() or $(l:the_world/geology#metamorphic)Metamorphic$() rocks, below Y=70."
-      },
-      {
-        "type": "patchouli:multiblock",
-        "multiblock": {
-          "pattern": [
-            [
-              "X"
-            ],
-            [
-              "0"
-            ]
-          ],
-          "mapping": {
-            "X": "kubejs:slate_rhodocrosite"
-          }
-        },
-        "name": "",
-        "text": "Rhodocrosite in Slate.",
         "enable_visualize": false
       },
 

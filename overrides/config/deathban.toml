@@ -1,0 +1,11 @@
+
+["Configurations for DeathBan Mod"]
+	#The week duration of the death ban
+	Weeks = 0
+	#The day duration of the death ban
+	Days = 0
+	#The hour duration of the death ban
+	Hours = 0
+	#The minute duration of the death ban
+	Minutes = 0
+

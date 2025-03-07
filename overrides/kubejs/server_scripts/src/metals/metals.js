@@ -138,18 +138,14 @@ ServerEvents.recipes((e) => {
 	e.recipes.tfc.blast_furnace(
 		Fluid.of(`kubejs:molten_manganese`, 1),
 		`tfc:powder/flux`,
-		Fluid.of(`kubejs:molten_raw_manganese`, 1)
+		Fluid.of(`kubejs:molten_processed_manganite`, 1)
 	);
 	e.recipes.tfc
-		.heating(`#kubejs:processed_manganese_powder`, 1328)
-		.resultFluid(Fluid.of(`kubejs:molten_raw_manganese`, 100));
+		.heating(`kubejs:processed_manganite_powder`, 1328)
+		.resultFluid(Fluid.of(`kubejs:molten_processed_manganite`, 100));
 	e.recipes.tfc
 		.heating(`kubejs:manganite_chunk`, 1528)
 		.resultItem(`kubejs:processed_manganite_powder`);
-
-        e.recipes.tfc
-		.heating(`kubejs:rhodocrosite_fragment`, 1528)
-		.resultItem('kubejs:processed_rhodocrosite_powder');
 
 	//aluminum processing
 	e.recipes.create
@@ -205,8 +201,6 @@ ServerEvents.recipes((e) => {
 
 TFCEvents.data((event) => {
 	event.itemHeat(`kubejs:processed_manganite_powder`, 2.857, 921, 1228);
-    event.itemHeat(`kubejs:processed_rhodocrosite_powder`, 2.857, 921, 1228);
-
 	event.itemHeat(`kubejs:manganite_chunk`, 2.857, 921, 1228);
 	event.itemHeat('kubejs:alumina_powder', 2.857, 921, 1228);
 });

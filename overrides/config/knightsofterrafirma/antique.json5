@@ -1,0 +1,374 @@
+{
+	"AtticHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"BellCuirassConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 350,
+		"chestplateDefense": 4
+	},
+	"BeotianHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"GalleaConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"RidgeHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"IronRidgeConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"CoolusConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"IntercisaConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"IronIntercisaConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"MelosConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"IronMelosConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"MontefortinoHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"MusculeCuirassConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 350,
+		"chestplateDefense": 4
+	},
+	"NiederbieberHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"PhyrigianHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"PilosClosetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"PilosConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"IronPilosConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"SquamataConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 350,
+		"chestplateDefense": 3
+	},
+	"IronSquamataConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 450,
+		"chestplateDefense": 4
+	},
+	"LateHamataConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 400,
+		"chestplateDefense": 4
+	},
+	"RomanParadeHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"ApuloCorinthianHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"ChalcidianHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"CorinthianHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"GreekGreavesConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"leggingsDurability": 250,
+		"leggingsDefense": 1
+	},
+	"HamataConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 350,
+		"chestplateDefense": 4
+	},
+	"HamataOptioConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 350,
+		"chestplateDefense": 4
+	},
+	"HeddernheimHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"IllirianHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"IronNiederbieberHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"MurmilloHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"MusculataConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 350,
+		"chestplateDefense": 4
+	},
+	"OfficerSquamataConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 350,
+		"chestplateDefense": 4
+	},
+	"OpenAtticHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"ProvocatorHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"SecutorHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"SegmentataConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 450,
+		"chestplateDefense": 5
+	},
+	"ThracianHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"CardiophylaxConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 250,
+		"chestplateDefense": 3
+	},
+	"LeftGladiatorShoulderConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 250,
+		"chestplateDefense": 3
+	},
+	"RightGladiatorShoulderConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 250,
+		"chestplateDefense": 3
+	},
+	"LeftManikaConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 300,
+		"chestplateDefense": 3
+	},
+	"RightManikaConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 300,
+		"chestplateDefense": 3
+	},
+	"IronLeftManikaConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 400,
+		"chestplateDefense": 4
+	},
+	"IronRightManikaConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 400,
+		"chestplateDefense": 4
+	},
+	"ScaleThoraxConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 350,
+		"chestplateDefense": 4
+	},
+	"MarsOfTodiThoraxConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 350,
+		"chestplateDefense": 4
+	},
+	"IronThoraxConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 450,
+		"chestplateDefense": 5
+	},
+	"KubanHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"ScythianScaleThoraxConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 350,
+		"chestplateDefense": 4
+	},
+	"ScythianAtticHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"ScythianScaleHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"IronScythianScaleHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"RomanGreavesConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"leggingsDurability": 300,
+		"leggingsDefense": 1
+	},
+	"IronRomanGreavesConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"leggingsDurability": 400,
+		"leggingsDefense": 2
+	},
+	"CelticMontefortinoConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"LaGorgeMelletConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"AgenPortHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"SavaHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 350,
+		"helmetDefense": 2
+	},
+	"WaterlooHelmetConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"helmetDurability": 250,
+		"helmetDefense": 1
+	},
+	"LinothoraxConfig": {
+		"enabled": true,
+		"toughness": 1.25,
+		"chestplateDurability": 100,
+		"chestplateDefense": 2
+	}
+}

@@ -280,7 +280,6 @@ LootJS.modifiers((e) => {
 	});
 
     e.addBlockLootModifier(/.*manganite.*/).removeLoot(/.*/).addLoot('kubejs:manganite_chunk');
-    e.addBlockLootModifier(/.*rhodocrosite.*/).removeLoot(/.*/).addLoot('kubejs:rhodocrosite_fragment');
 
 	//I'M GOING TO GO INSANE AAAAAAAAAAA
 	let clear_glasses = [

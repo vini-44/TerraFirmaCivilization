@@ -25,7 +25,7 @@ _version = 2
 				maxHorizontalResolution = "BLOCK"
 				#
 				# The radius of the mod's render distance. (measured in chunks)
-				lodChunkRenderDistanceRadius = 128
+				lodChunkRenderDistanceRadius = 256
 				#
 				# This indicates how well LODs will represent 
 				# overhangs, caves, floating islands, etc. 
@@ -33,12 +33,12 @@ _version = 2
 				# 
 				# Lowest Quality: HEIGHT_MAP
 				# Highest Quality: EXTREME
-				verticalQuality = "MEDIUM"
+				verticalQuality = "HIGH"
 				#
 				# This indicates how quickly LODs decrease in quality the further away they are. 
 				# Higher settings will render higher quality fake chunks farther away, 
 				# but will increase memory and GPU usage.
-				horizontalQuality = "MEDIUM"
+				horizontalQuality = "HIGH"
 				#
 				# How should LOD transparency be handled. 
 				# 
@@ -514,7 +514,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfWorldGenerationThreads = 3
+			numberOfWorldGenerationThreads = 4
 			#
 			# If this value is less than 1.0, it will be treated as a percentage 
 			# of time each thread can run before going idle. 
@@ -534,7 +534,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfFileHandlerThreads = 3
+			numberOfFileHandlerThreads = 4
 			#
 			# If this value is less than 1.0, it will be treated as a percentage 
 			# of time each thread can run before going idle. 
@@ -553,7 +553,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfLodBuilderThreads = 5
+			numberOfLodBuilderThreads = 7
 			#
 			# If this value is less than 1.0, it will be treated as a percentage 
 			# of time each thread can run before going idle. 
@@ -586,7 +586,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfUpdatePropagatorThreads = 6
+			numberOfUpdatePropagatorThreads = 8
 			#
 			# If this value is less than 1.0, it will be treated as a percentage 
 			# of time each thread can run before going idle. 
