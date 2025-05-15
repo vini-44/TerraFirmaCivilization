@@ -1,0 +1,39 @@
+{
+  "__comment__": "This file was automatically created by tfch",
+  "type": "tfc:extra_products_shapeless_crafting",
+  "extra_products": [
+    {
+      "item": "minecraft:bone", "count": 3
+    },
+    {
+      "item": "waterflasks:bladder"
+    },
+    {
+      "item": "tfc:blubber", "count": 3
+    },
+    {
+      "item": "tfc:medium_raw_hide"
+    }
+  ],
+  "recipe": {
+    "type": "tfc:damage_inputs_shapeless_crafting",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "type": "tfc:not_rotten",
+          "ingredient": {
+            "item": "butchersdelight:deadpig"
+          }
+        },
+        {
+          "tag": "forge:tools/knives"
+        }
+      ],
+      "result": {
+        "item": "tfc:food/pork",
+      "count": 14
+      }
+    }
+  }
+}

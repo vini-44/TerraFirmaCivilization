@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "butchersdelightfoods:ham"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "result": [
+    {
+      "item": "tfc:food/pork",
+        "count": 14
+    },
+    {
+      "item": "minecraft:bone",
+      "count": 4,
+      "chance": 1
+    }
+  ],
+  "sound": "minecraft:block.beehive.drip"
+}

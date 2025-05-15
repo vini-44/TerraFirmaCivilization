@@ -1,0 +1,36 @@
+{
+  "__comment__": "This file was automatically created by tfch",
+  "type": "tfc:extra_products_shapeless_crafting",
+  "extra_products": [
+    {
+      "item": "minecraft:bone", "count": 2
+    },
+    {
+      "item": "minecraft:rabbit_hide", "count": 1
+    },
+    {
+      "item": "minecraft:rabbit_foot", "count": 1
+    }
+  ],
+  "recipe": {
+    "type": "tfc:damage_inputs_shapeless_crafting",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "type": "tfc:not_rotten",
+          "ingredient": {
+            "item": "butchersdelight:deadrabbitbrown"
+          }
+        },
+        {
+          "tag": "forge:tools/knives"
+        }
+      ],
+      "result": {
+        "item": "tfc:food/rabbit",
+        "count": 2
+      }
+    }
+  }
+}
