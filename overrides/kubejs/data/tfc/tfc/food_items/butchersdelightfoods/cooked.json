@@ -1,0 +1,23 @@
+{
+  "ingredient": [
+    {"item": "butchersdelightfoods:cookedbeefribs"},
+    {"item": "butchersdelightfoods:cooked_leg_cow"},
+    {"item": "butchersdelightfoods:coockedbeeftenderloin"},
+    {"item": "butchersdelightfoods:cookedsheepshank"},
+    {"item": "butchersdelightfoods:cookedsheeprack"},
+    {"item": "butchersdelightfoods:cooked_sheeploin"},
+    {"item": "butchersdelightfoods:cooked_ham"},
+    {"item": "butchersdelightfoods:cookedporkloin"},
+    {"item": "butchersdelightfoods:cookedporkribs"},
+    {"item": "butchersdelightfoods:cooked_goat_shank"},
+    {"item": "butchersdelightfoods:cooked_goat_rack"},
+    {"item": "butchersdelightfoods:cooked_goat_loin"},
+    {"item": "butchersdelightfoods:cooked_llama_leg"},
+    {"item": "butchersdelightfoods:cooked_llama_ribs"},
+    {"item": "butchersdelightfoods:cooked_llama_loin"} 
+  ],
+  "hunger": 12,
+  "saturation": 10,
+  "decay_modifier": 2,
+  "protein": 14
+}

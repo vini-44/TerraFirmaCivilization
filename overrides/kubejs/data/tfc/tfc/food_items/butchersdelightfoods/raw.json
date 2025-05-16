@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was created by tfch",
   "ingredient": [
     {"item": "butchersdelightfoods:beefribs"},
     {"item": "butchersdelightfoods:legcow"},
@@ -17,8 +16,8 @@
     {"item": "butchersdelightfoods:llamma_ribs"},
     {"item": "butchersdelightfoods:llama_loin"}
   ],
-  "hunger": 6,
+  "hunger": 8,
   "saturation": 0,
   "decay_modifier": 1.5,
-  "protein": 4
+  "protein": 8
 }
