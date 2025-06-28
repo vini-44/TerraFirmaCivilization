@@ -2,6 +2,66 @@
   "__comment__": "This file was automatically created by mcresources",
   "type": "minecraft:entity",
   "pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+			  {
+				"type": "minecraft:item",
+				"name": "butchersdelightfoods:beefribs",
+				"functions": [
+				  {
+					"function": "minecraft:set_count",
+					"count": {
+					  "min": 1,
+					  "max": 2,
+					  "type": "minecraft:uniform"
+					}
+				  }
+				]
+			  }
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+			  {
+				"type": "minecraft:item",
+				"name": "butchersdelightfoods:legcow",
+				"functions": [
+				  {
+					"function": "minecraft:set_count",
+					"count": {
+					  "min": 1,
+					  "max": 2,
+					  "type": "minecraft:uniform"
+					}
+				  }
+				]
+			  }
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+			  {
+				"type": "minecraft:item",
+				"name": "butchersdelightfoods:beeftenderloin",
+				"functions": [
+				  {
+					"function": "minecraft:set_count",
+					"count": {
+					  "min": 1,
+					  "max": 2,
+					  "type": "minecraft:uniform"
+					}
+				  }
+				]
+			  }
+			]
+		},
     {
       "name": "loot_pool",
       "rolls": 1,
@@ -18,8 +78,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10,
-                "max": 20,
+                "min": 5,
+                "max": 10,
                 "type": "minecraft:uniform"
               }
             }
