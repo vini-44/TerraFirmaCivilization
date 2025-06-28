@@ -1,0 +1,42 @@
+{
+  "__comment__": "This file was automatically created by tfch",
+  "type": "tfc:extra_products_shapeless_crafting",
+  "extra_products": [
+    {
+      "item": "minecraft:bone", "count": 3
+    },
+    {
+      "item": "waterflasks:bladder"
+    },
+    {
+      "item": "firmalife:rennet"
+    },
+    {
+      "item": "tfc:blubber", "count": 3
+    },
+    {
+      "item": "butchersdelight:goat_fur"
+    }
+  ],
+  "recipe": {
+    "type": "tfc:damage_inputs_shapeless_crafting",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "type": "tfc:not_rotten",
+          "ingredient": {
+            "item": "butchersdelight:deadgoat"
+          }
+        },
+        {
+          "tag": "forge:tools/knives"
+        }
+      ],
+      "result": {
+        "item": "tfc:food/mutton",
+      "count": 12
+      }
+    }
+  }
+}

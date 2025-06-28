@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:poisonous_potato",
+    "minecraft:tropical_fish",
+    "tfc:food/tropical_fish",
+    "minecraft:salmon",
+    "#forge:raw_poultry_cuts",
+    "#tfc:foods/raw_meats",
+    "#forge:meat_uncooked"
+  ]
+}

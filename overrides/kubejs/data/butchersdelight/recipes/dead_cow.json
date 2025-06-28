@@ -1,0 +1,42 @@
+{
+  "__comment__": "This file was automatically created by htfc4",
+  "type": "tfc:extra_products_shapeless_crafting",
+  "extra_products": [
+    {
+      "item": "minecraft:bone", "count": 4
+    },
+    {
+      "item": "waterflasks:bladder"
+    },
+    {
+      "item": "firmalife:rennet"
+    },
+    {
+      "item": "tfc:blubber", "count": 5
+    },
+    {
+      "item": "butchersdelight:cow_hide"
+    }
+  ],
+  "recipe": {
+    "type": "tfc:damage_inputs_shapeless_crafting",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "type": "tfc:not_rotten",
+          "ingredient": {
+            "item": "butchersdelight:dead_cow"
+          }
+        },
+        {
+          "tag": "forge:tools/knives"
+        }
+      ],
+      "result": {
+        "item": "tfc:food/beef",
+      "count": 16
+      }
+    }
+  }
+}
