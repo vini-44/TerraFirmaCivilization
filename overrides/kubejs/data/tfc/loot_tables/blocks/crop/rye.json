@@ -23,11 +23,11 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "tfc:crop_yield_uniform",
-                "min": 0,
+                "min": 1,
                 "max": {
                   "type": "minecraft:uniform",
-                  "min": 6,
-                  "max": 10
+                  "min": 2,
+                  "max": 4
                 }
               }
             }
@@ -46,7 +46,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/rye"
+          "name": "tfc:seeds/rye",
+
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "tfc:crop_yield_uniform",
+                "min": 2,
+                "max": {
+                  "type": "minecraft:uniform",
+                  "min": 3,
+                  "max": 6
+                }
+              }
+            }
+          ]
         }
       ],
       "conditions": [

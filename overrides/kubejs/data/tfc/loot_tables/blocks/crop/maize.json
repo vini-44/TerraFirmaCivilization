@@ -24,11 +24,11 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "tfc:crop_yield_uniform",
-                "min": 0,
+                "min": 1,
                 "max": {
                   "type": "minecraft:uniform",
                   "min": 6,
-                  "max": 10
+                  "max": 12
                 }
               }
             }
@@ -48,12 +48,28 @@
         {
           "type": "minecraft:item",
           "name": "tfc:seeds/maize",
+          
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
               "block": "tfc:crop/maize",
               "properties": {
                 "part": "bottom"
+              }
+            }
+          ],
+          
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "tfc:crop_yield_uniform",
+                "min": 2,
+                "max": {
+                  "type": "minecraft:uniform",
+                  "min": 4,
+                  "max": 8
+                }
               }
             }
           ]

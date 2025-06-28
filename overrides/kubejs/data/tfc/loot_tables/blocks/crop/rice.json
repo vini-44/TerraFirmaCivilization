@@ -23,10 +23,10 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "tfc:crop_yield_uniform",
-                "min": 0,
+                "min": 1,
                 "max": {
                   "type": "minecraft:uniform",
-                  "min": 6,
+                  "min": 5,
                   "max": 10
                 }
               }
@@ -46,7 +46,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/rice"
+          "name": "tfc:seeds/rice",
+          
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "tfc:crop_yield_uniform",
+                "min": 2,
+                "max": {
+                  "type": "minecraft:uniform",
+                  "min": 5,
+                  "max": 10
+                }
+              }
+            }
+          ]
         }
       ],
       "conditions": [
