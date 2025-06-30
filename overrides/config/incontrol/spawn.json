@@ -1,5 +1,11 @@
 [
     {
+        "mob": "thermal:blitz",
+        "phase": "early_game",
+        "mincount": 0,
+        "result" : "deny"
+    },
+    {
         "mob": "scguns:cog_minion",
         "mincount": 0,
         "phase": "early_game",
@@ -45,6 +51,12 @@
     
 
     {
+        "mob": "thermal:blitz",
+        "phase": "mid_game",
+        "mincount": 0,
+        "result" : "deny"
+    },
+    {
         "mob": "scguns:cog_minion",
         "mincount": 0,
         "phase": "mid_game",
@@ -76,7 +88,7 @@
     },
     {
         "mob": "scguns:redcoat",
-        "phase": "emid_game",
+        "phase": "mid_game",
         
         "mincount":{
             "amount": 5,
