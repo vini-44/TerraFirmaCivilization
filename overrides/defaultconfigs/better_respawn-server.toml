@@ -6,5 +6,5 @@ max_respawn_distance = 256
 min_respawn_distance = 128
 #If the player is in this range of its bed/respawn anchor it will respawn there
 #Range: > 0
-respawn_block_range = 256
+respawn_block_range = 512
 
