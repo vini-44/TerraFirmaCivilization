@@ -7,32 +7,32 @@
 	[Timers.Spawn]
 		#Minimum time between spawns in seconds
 		#Range: 0 ~ 86400
-		can_spawn_min = 300
+		can_spawn_min = 600
 		#Maximum time between spawns in seconds
 		#Range: 0 ~ 86400
-		can_spawn_max = 600
+		can_spawn_max = 2400
 		#Chance for a spawn cooldown to occur
 		#Range: 0.0 ~ 1.0
 		can_spawn_cooldown_chance = 0.4
 		#Spawn cooldown length in seconds
 		#Range: 0 ~ 86400
-		can_spawn_cooldown = 1200
+		can_spawn_cooldown = 2400
 
 	[Timers.Noise]
 		#Minimum time between noise occurrences in seconds
 		#Range: 0 ~ 86400
-		reset_noise_min = 240
+		reset_noise_min = 120
 		#Maximum time between noise occurrences in seconds
 		#Range: 0 ~ 86400
-		reset_noise_max = 360
+		reset_noise_max = 600
 
 	[Timers.Leave]
 		#Time (in seconds) it takes for the Cave Dweller to leave
 		#Range: 1 ~ 6000
-		time_until_leave = 300
+		time_until_leave = 1200
 		#Time (in seconds) it takes for the Cave Dweller to leave once a chase begins
 		#Range: 1 ~ 600
-		time_until_leave_chase = 30
+		time_until_leave_chase = 15
 
 ["Spawn Conditions"]
 	#The spawn chance per tick (once the spawn timer is finished)
@@ -50,7 +50,7 @@
 	block_light_level = 15
 	#The maximum amount of cave dwellers which can exist at the same time
 	#Range: 0 ~ 100
-	maximum_amount = 3
+	maximum_amount = 5
 	#How close to players the cave dweller is allowed to spawn (in blocks)
 	#Range: 0 ~ 64
 	spawn_distance = 16
@@ -72,7 +72,7 @@
 [Behaviour]
 	#The distance in blocks at which the Cave Dweller can detect whether a player is looking at it or not
 	#Range: 0 ~ 128
-	spotting_range = 60
+	spotting_range = 80
 	#Whether it can disable shields or not
 	can_disable_shields = false
 	#Whether the cave dweller can climb or not
@@ -81,7 +81,7 @@
 	can_break_door = true
 	#Time (in seconds) it takes the Cave Dweller to break down a door
 	#Range: 1 ~ 60
-	break_door_time = 3
+	break_door_time = 5
 	#Allow the Cave Dweller to follow vanilla riding logic (e.g. boats)
 	allow_riding = false
 	#Whether invisible players can be targets or not
@@ -90,16 +90,16 @@
 [Attributes]
 	#Maximum health
 	#Range: 1.0 ~ 100000.0
-	maximum_health = 60.0
+	maximum_health = 30.0
 	#Attack damage
 	#Range: 0.0 ~ 1000.0
-	attack_damage = 6.0
+	attack_damage = 2.0
 	#Attack speed
 	#Range: 0.0 ~ 10.0
-	attack_speed = 0.35
+	attack_speed = 0.4
 	#Movement speed
 	#Range: 0.0 ~ 5.0
-	movement_speed = 0.5
+	movement_speed = 0.75
 	#Depth Strider (movement speed in water) bonus
 	#Range: 0.0 ~ 3.0
 	depth_strider_bonus = 1.5
