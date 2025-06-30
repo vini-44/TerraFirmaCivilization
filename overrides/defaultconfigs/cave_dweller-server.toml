@@ -1,0 +1,110 @@
+
+[Timers]
+	#Modify the timers for the surface (to reduce or increase them), based on the general timer set (e.g. spawn timer of 300 seconds -> 0.3 turns it into 90 seconds and 1.7 turns it into 510 seconds for the surface)
+	#Range: 0.0 ~ 5.0
+	surface_timer_multiplier = 1.0
+
+	[Timers.Spawn]
+		#Minimum time between spawns in seconds
+		#Range: 0 ~ 86400
+		can_spawn_min = 300
+		#Maximum time between spawns in seconds
+		#Range: 0 ~ 86400
+		can_spawn_max = 600
+		#Chance for a spawn cooldown to occur
+		#Range: 0.0 ~ 1.0
+		can_spawn_cooldown_chance = 0.4
+		#Spawn cooldown length in seconds
+		#Range: 0 ~ 86400
+		can_spawn_cooldown = 1200
+
+	[Timers.Noise]
+		#Minimum time between noise occurrences in seconds
+		#Range: 0 ~ 86400
+		reset_noise_min = 240
+		#Maximum time between noise occurrences in seconds
+		#Range: 0 ~ 86400
+		reset_noise_max = 360
+
+	[Timers.Leave]
+		#Time (in seconds) it takes for the Cave Dweller to leave
+		#Range: 1 ~ 6000
+		time_until_leave = 300
+		#Time (in seconds) it takes for the Cave Dweller to leave once a chase begins
+		#Range: 1 ~ 600
+		time_until_leave_chase = 30
+
+["Spawn Conditions"]
+	#The spawn chance per tick (once the spawn timer is finished)
+	#Range: 0.0 ~ 1.0
+	spawn_chance_per_tick = 0.005
+	#Depth at which the Cave Dweller can start to spawn
+	spawn_height = 40
+	#Whether the Cave Dweller can spawn on the surface or not
+	allow_surface_spawn = false
+	#The maximum sky light level the Cave Dweller can spawn at
+	#Range: 0 ~ 15
+	sky_light_level = 8
+	#The maximum block light level the Cave Dweller can spawn at
+	#Range: 0 ~ 15
+	block_light_level = 15
+	#The maximum amount of cave dwellers which can exist at the same time
+	#Range: 0 ~ 100
+	maximum_amount = 3
+	#How close to players the cave dweller is allowed to spawn (in blocks)
+	#Range: 0 ~ 64
+	spawn_distance = 16
+	#If set to true the cave dweller will try to find a spawn position with a possible path to the player
+	check_path_to_spawn = true
+
+	["Spawn Conditions".Dimensions]
+		#The dimensions where the Cave Dweller can spawn in (Whitelist)
+		dimension_whitelist = ["minecraft:overworld"]
+
+	["Spawn Conditions".Biomes]
+		#If you don't want to create a datapack to configure the biomes
+		override_biome_datapack_config = false
+		#Use the surface biome list either as white- or blacklist
+		surface_biomes_is_whitelist = true
+		#Either white- or blacklist of the surface biomes the Cave Dweller can spawn in (Syntax: modid:biome, e.g. `minecraft:plains`)
+		surface_biomes = []
+
+[Behaviour]
+	#The distance in blocks at which the Cave Dweller can detect whether a player is looking at it or not
+	#Range: 0 ~ 128
+	spotting_range = 60
+	#Whether it can disable shields or not
+	can_disable_shields = false
+	#Whether the cave dweller can climb or not
+	can_climb = true
+	#Whether the cave dweller can break down doors or not
+	can_break_door = true
+	#Time (in seconds) it takes the Cave Dweller to break down a door
+	#Range: 1 ~ 60
+	break_door_time = 3
+	#Allow the Cave Dweller to follow vanilla riding logic (e.g. boats)
+	allow_riding = false
+	#Whether invisible players can be targets or not
+	target_invisible = true
+
+[Attributes]
+	#Maximum health
+	#Range: 1.0 ~ 100000.0
+	maximum_health = 60.0
+	#Attack damage
+	#Range: 0.0 ~ 1000.0
+	attack_damage = 6.0
+	#Attack speed
+	#Range: 0.0 ~ 10.0
+	attack_speed = 0.35
+	#Movement speed
+	#Range: 0.0 ~ 5.0
+	movement_speed = 0.5
+	#Depth Strider (movement speed in water) bonus
+	#Range: 0.0 ~ 3.0
+	depth_strider_bonus = 1.5
+
+[Misc]
+	#Only play the ambient noises to the current (spawn) target (Note: The target can change when a spawn attempt is not successful)
+	only_play_noise_to_target = false
+
