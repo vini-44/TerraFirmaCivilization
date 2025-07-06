@@ -6,6 +6,12 @@
         "result" : "deny"
     },
     {
+        "mob": "whisperwoods:zotzpyre",
+        "mincount": 0,
+        "phase": "early_game",
+        "result" : "deny"
+    },
+    {
         "mob": "scguns:cog_minion",
         "mincount": 0,
         "phase": "early_game",
@@ -54,6 +60,12 @@
         "mob": "thermal:blitz",
         "phase": "mid_game",
         "mincount": 0,
+        "result" : "deny"
+    },
+    {
+        "mob": "whisperwoods:zotzpyre",
+        "mincount": 0,
+        "phase": "mid_game",
         "result" : "deny"
     },
     {
