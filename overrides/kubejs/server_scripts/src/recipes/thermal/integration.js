@@ -1,4 +1,4 @@
-//priority: -100
+// priority: 0
 ServerEvents.recipes((e) => {
 	//slag from melting raw ores
 	e.forEachRecipe({ type: 'tfc:heating' }, (recipe) => {
@@ -12,167 +12,12 @@ ServerEvents.recipes((e) => {
 		}
 	});
 
-	//sawmill recipes
-	WOOD_TYPES.forEach((wood) => {
-		e.recipes.thermal.sawmill(
-			`8x tfc:wood/lumber/${wood}`,
-			`tfc:wood/log/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`4x tfc:wood/lumber/${wood}`,
-			`tfc:wood/planks/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`7x tfc:wood/lumber/${wood}`,
-			`tfc:wood/log/${wood}_loom`
-		);
-		e.recipes.thermal.sawmill(
-			`7x tfc:wood/lumber/${wood}`,
-			`tfc:wood/barrel/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`10x tfc:wood/lumber/${wood}`,
-			`tfc:wood/lectern/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`14x tfc:wood/lumber/${wood}`,
-			`tfc:wood/jar_shelf/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`3x tfc:wood/lumber/${wood}`,
-			`tfc:wood/planks/${wood}_door`
-		);
-
-		e.recipes.thermal.sawmill(
-			`2x tfc:wood/lumber/${wood}`,
-			`tfc:wood/planks/${wood}_trapdoor`
-		);
-		e.recipes.thermal.sawmill(
-			`2x tfc:wood/lumber/${wood}`,
-			`tfc:wood/sign/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`4x tfc:wood/lumber/${wood}`,
-			`everycomp:q/tfc/vertical_${wood}_planks`
-		);
-		e.recipes.thermal.sawmill(
-			`3x tfc:wood/lumber/${wood}`,
-			`tfc:wood/planks/${wood}_tool_rack`
-		);
-		e.recipes.thermal.sawmill(
-			`3x tfc:wood/lumber/${wood}`,
-			`tfc:wood/planks/${wood}_stairs`
-		);
-		e.recipes.thermal.sawmill(
-			`2x tfc:wood/lumber/${wood}`,
-			`tfc:wood/planks/${wood}_slab`
-		);
-		e.recipes.thermal.sawmill(
-			`3x tfc:wood/lumber/${wood}`,
-			`tfc:wood/planks/${wood}_pressure_plate`
-		);
-
-		e.recipes.thermal.sawmill(
-			`4x tfc:wood/lumber/${wood}`,
-			`tfc:wood/planks/${wood}_button`
-		);
-		e.recipes.thermal.sawmill(
-			`6x tfc:wood/lumber/${wood}`,
-			`tfc:wood/planks/${wood}_fence_gate`
-		);
-		e.recipes.thermal.sawmill(
-			`2x tfc:wood/lumber/${wood}`,
-			`tfc:wood/planks/${wood}_fence`
-		);
-		e.recipes.thermal.sawmill(
-			`8x tfc:wood/lumber/${wood}`,
-			`tfc:wood/planks/${wood}_chest`
-		);
-	});
-
-	AFC_WOOD_TYPES.forEach((wood) => {
-		e.recipes.thermal.sawmill(
-			`8x afc:wood/lumber/${wood}`,
-			`afc:wood/log/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`4x afc:wood/lumber/${wood}`,
-			`afc:wood/planks/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`7x afc:wood/lumber/${wood}`,
-			`afc:wood/log/${wood}_loom`
-		);
-		e.recipes.thermal.sawmill(
-			`7x afc:wood/lumber/${wood}`,
-			`afc:wood/barrel/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`10x afc:wood/lumber/${wood}`,
-			`afc:wood/lectern/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`14x afc:wood/lumber/${wood}`,
-			`afc:wood/jar_shelf/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`3x afc:wood/lumber/${wood}`,
-			`afc:wood/planks/${wood}_door`
-		);
-
-		e.recipes.thermal.sawmill(
-			`2x afc:wood/lumber/${wood}`,
-			`afc:wood/planks/${wood}_trapdoor`
-		);
-		e.recipes.thermal.sawmill(
-			`2x afc:wood/lumber/${wood}`,
-			`afc:wood/sign/${wood}`
-		);
-		e.recipes.thermal.sawmill(
-			`4x afc:wood/lumber/${wood}`,
-			`everycomp:q/afc/vertical_${wood}_planks`
-		);
-		e.recipes.thermal.sawmill(
-			`3x afc:wood/lumber/${wood}`,
-			`afc:wood/planks/${wood}_tool_rack`
-		);
-		e.recipes.thermal.sawmill(
-			`3x afc:wood/lumber/${wood}`,
-			`afc:wood/planks/${wood}_stairs`
-		);
-		e.recipes.thermal.sawmill(
-			`2x afc:wood/lumber/${wood}`,
-			`afc:wood/planks/${wood}_slab`
-		);
-		e.recipes.thermal.sawmill(
-			`3x afc:wood/lumber/${wood}`,
-			`afc:wood/planks/${wood}_pressure_plate`
-		);
-
-		e.recipes.thermal.sawmill(
-			`4x afc:wood/lumber/${wood}`,
-			`afc:wood/planks/${wood}_button`
-		);
-		e.recipes.thermal.sawmill(
-			`6x afc:wood/lumber/${wood}`,
-			`afc:wood/planks/${wood}_fence_gate`
-		);
-		e.recipes.thermal.sawmill(
-			`2x afc:wood/lumber/${wood}`,
-			`afc:wood/planks/${wood}_fence`
-		);
-		e.recipes.thermal.sawmill(
-			`8x afc:wood/lumber/${wood}`,
-			`afc:wood/planks/${wood}_chest`
-		);
-	});
-
 	e.recipes.thermal
 		.pyrolyzer(
 			['minecraft:charcoal', Fluid.of('thermal:creosote', 50)],
 			'#tfc:log_pile_logs'
 		)
-		.energy(8000);
+		.energy(32000);
 
 	e.recipes.thermal
 		.pyrolyzer(
@@ -185,7 +30,7 @@ ServerEvents.recipes((e) => {
 				],
 			]
 		)
-		.energy(8000);
+		.energy(32000);
 
 	/*e.recipes.thermal.smelter('tfc:metal/ingot/pig_iron', [
         '2x minecraft:charcoal',
@@ -206,4 +51,29 @@ ServerEvents.recipes((e) => {
 		)
 		.energy(5000);
 
+	e.forEachRecipe({ type: 'tfc:heating' }, (recipe) => {
+		let _json = JsonIO.toObject(recipe.json);
+
+		//skip recipes with fluid output, no item output or itemstack provider
+		if (_json.result_fluid || !_json.result_item) return;
+
+		let _result_item =
+			_json.result_item.stack != undefined
+				? _json.result_item.stack
+				: _json.result_item;
+
+		//check if not food
+		if (Item.of(_result_item).hasTag('tfc:foods')) return;
+
+		e.recipes.thermal
+			.furnace(
+				Item.of(_json.result_item).withChance(
+					_json.chance != undefined ? _json.chance : 1
+				),
+				_json.ingredient,
+				0,
+				_json.temperature * 2
+			)
+			.energy(_json.temperature * 3);
+	});
 });

@@ -1,9 +1,4 @@
-// This script ensures that specific game rules are set only once and handles right-click events
-// for custom items: 'kubejs:handheld_mortar' and 'kubejs:autocannon'.
-
-// Ensure that the game rules are set only once when the server is loaded
 ServerEvents.loaded((event) => {
-	// Check if game rules are already set
 	if (event.server.persistentData.gameRules) return;
 
 	event.server.gameRules.set('doPatrolSpawning', true);
@@ -11,7 +6,6 @@ ServerEvents.loaded((event) => {
 	event.server.gameRules.set('doInsomnia', false);
 	event.server.gameRules.set('naturalRegeneration', false);
 
-	// Mark game rules as set in persistent data to prevent re-execution
 	event.server.persistentData.gameRules = true;
 });
 
@@ -61,63 +55,16 @@ PlayerEvents.loggedIn((event) => {
 	}
 });
 
-LootJS.modifiers((event) => {
-	event
-		.addLootTableModifier('minecraft:chests/spawn_bonus_chest')
-		.removeLoot(/.*/)
-		.addWeightedLoot([16, 24], ['tfc:torch', 'scguns:basic_poultice'])
-		.addWeightedLoot(1, [
-			'tfc:metal/axe/copper',
-			'tfc:metal/shovel/copper',
-			'tfc:metal/propick/copper',
-		])
-		.addWeightedLoot(1, [
-			'tfc:ceramic/cyan_glazed_vessel',
-			'tfc:ceramic/purple_glazed_vessel',
-			'tfc:ceramic/blue_glazed_vessel',
-			'tfc:ceramic/brown_glazed_vessel',
-			'tfc:ceramic/green_glazed_vessel',
-			'tfc:ceramic/red_glazed_vessel',
-			'tfc:ceramic/black_glazed_vessel',
-			'tfc:ceramic/light_gray_glazed_vessel',
-			'tfc:ceramic/gray_glazed_vessel',
-			'tfc:ceramic/pink_glazed_vessel',
-			'tfc:ceramic/lime_glazed_vessel',
-			'tfc:ceramic/yellow_glazed_vessel',
-			'tfc:ceramic/light_blue_glazed_vessel',
-			'tfc:ceramic/white_glazed_vessel',
-			'tfc:ceramic/orange_glazed_vessel',
-			'tfc:ceramic/magenta_glazed_vessel',
-		])
-		.addWeightedLoot(1, [
-			'textile:raw_socks',
-			'minecraft:leather_boots',
-		])
-		.addWeightedLoot(1, [
-			'textile:raw_pants',
-			'minecraft:leather_leggings',
-		])
-		.addWeightedLoot(1, [
-			'textile:raw_shirt',
-			'minecraft:leather_chestplate',
-		])
-		.addWeightedLoot(1, [
-			'textile:raw_hat',
-			'minecraft:leather_helmet',
-		])
-		.addLoot([
-			'tfc:metal/saw/copper',
-			'tfc:metal/pickaxe/copper',
-			'tfc:ceramic/jug',
-		]);
-    });
-
 BlockEvents.placed((e) => {
 	let { x, y, z } = e.block.pos;
 	if (e.block.id == 'moreburners:electric_burner') {
 		e.block.set('moreburners:electric_burner', {
 			upgraded: true,
 		});
+
+		e.server.runCommandSilent(
+			`data modify block ${x} ${y} ${z} upgraded set value 1b`
+		);
 	}
 
 	if (
@@ -137,4 +84,11 @@ BlockEvents.rightClicked((event) => {
 	) {
 		event.cancel();
 	}
+});
+
+EntityEvents.spawned('item', (e) => {
+	if (e.entity.item.id != 'createbigcannons:empty_machine_gun_round') return;
+	e.server.scheduleInTicks(0, () => {
+		e.entity.item = Item.of('scguns:large_brass_casing');
+	});
 });

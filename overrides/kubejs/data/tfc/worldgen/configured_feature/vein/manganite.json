@@ -8,7 +8,7 @@
         "size": 30,
         "height": 10,
         "random_name": "manganite",
-        "biomes": "#tfc:lowlands",
+        "biomes": "#tfc:manganite_spawns_in",
         "blocks": [
             {
                 "replace": ["tfc:rock/raw/shale"],

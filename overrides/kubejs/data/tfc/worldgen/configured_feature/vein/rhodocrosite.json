@@ -1,0 +1,144 @@
+{
+    "__comment__": "To keep consistent with changes to rarity and size, this also needed stats tweaked.",
+    "type": "tfc:cluster_vein",
+    "config": {
+        "rarity": 250,
+        "density": 0.48,
+        "min_y": -80,
+        "max_y": 50,
+        "random_name": "rhodocrosite",
+        "size": 30,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/quartzite"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:quartzite_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/slate"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:slate_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/phyllite"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:phyllite_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/schist"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:schist_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gneiss"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:gneiss_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/marble"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:marble_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/shale"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:shale_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/claystone"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:claystone_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/limestone"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:limestone_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/conglomerate"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:conglomerate_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dolomite"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:dolomite_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/chert"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:chert_rhodocrosite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/chalk"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:chalk_rhodocrosite"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,1 +1,6 @@
-chalk, dacite, quartzite, chert, conglomerate, slate, phyllite, dolomite, limestone, schist, gneiss, claystone, shale, marble, gabbro, granite, diorite, rhyolite, basalt, andesite
+- Metal former new recipes
+- 
+- playtest
+  
+# ASSETS
+- Stainless steel jars and some clay molds need Vexxed textures

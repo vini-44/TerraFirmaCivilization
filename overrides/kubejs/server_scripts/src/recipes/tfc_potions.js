@@ -1,3 +1,5 @@
+// priority: 50
+
 let potionDefs = {};
 
 /*for (let itemStack of Ingredient.all.displayStacks) {

@@ -1,3 +1,5 @@
+// priority: 50
+
 ServerEvents.recipes((e) => {
     // Remove old recipes
     e.remove({ mod: 'immersive_aircraft' });
@@ -9,7 +11,7 @@ ServerEvents.recipes((e) => {
             '  BA    ',
             '  AB    ',
             ' CDD  AB',
-            'HEFGCCCA',
+            'HEFGCIIA',
             ' CDD  AB',
             '  AB    ',
             '  BA    ',
@@ -17,12 +19,13 @@ ServerEvents.recipes((e) => {
         {
             A: 'tfc:metal/rod/steel',
             B: 'firmalife:treated_lumber',
-            C: 'kubejs:metal/sheet/aluminum',
+            C: 'kubejs:metal/double_sheet/aluminum',
             D: 'create:fluid_pipe',
             E: '#create:seats',
             F: 'createdieselgenerators:diesel_engine',
             G: 'createdieselgenerators:canister',
             H: 'create:propeller',
+            I: 'kubejs:metal/sheet/aluminum',
         }
     );
 
@@ -39,8 +42,8 @@ ServerEvents.recipes((e) => {
         ],
         {
             A: 'firmalife:metal/rod/stainless_steel',
-            B: 'create:white_sail',
-            C: '#tfc:lumber',
+            B: 'sns:reinforced_fabric',
+            C: 'firmalife:treated_lumber',
             D: 'kubejs:metal/sheet/aluminum',
             F: '#create:seats',
             G: 'createdieselgenerators:diesel_engine',
@@ -49,6 +52,24 @@ ServerEvents.recipes((e) => {
             J: 'create:belt_connector',
         }
     );
+
+    e.recipes.create.mechanical_crafting(
+        'immersive_aircraft:warship'
+    , [
+        ' AAA BC',
+        'ADEDABC',
+        ' AAA BC',
+        'DDFFDD ',
+        ' DGGD  '
+    ], {
+        A: 'sns:reinforced_fabric',
+        B: 'createdieselgenerators:diesel_engine',
+        C: 'create:propeller',
+        D: 'kubejs:metal/double_sheet/aluminum',
+        E: 'tfc:metal/sheet/black_steel',
+        F: '#create:seats',
+        G: 'firmalife:treated_lumber'
+    })
 
     e.shaped(
         'immersive_aircraft:hull_reinforcement',
@@ -80,5 +101,6 @@ ServerEvents.recipes((e) => {
         C: 'tfc:brass_mechanisms',
         D: 'create:andesite_alloy',
     });
+    
 
 });

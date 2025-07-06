@@ -1,3 +1,5 @@
+// priority: 50
+
 ServerEvents.recipes((e) => {
 	e.remove({
 		mod: 'createbigcannons',
@@ -6,7 +8,21 @@ ServerEvents.recipes((e) => {
 			{ input: 'createbigcannons:tracer_tip' },
 			{ id: /.*fuze_removal.*/ },
 			{ id: /.*tracer_removal.*/ },
+			{ id: /.*tracer.*item.*/ },
 			{ id: /.*tracer_deployer.*/ },
+			{
+				type: 'createbigcannons:autocannon_ammo_container_filling_deployer',
+			},
+			{ type: 'createbigcannons:big_cartridge_filling' },
+			{ type: 'createbigcannons:big_cartridge_filling_deployer' },
+			{ type: 'createbigcannons:cartridge_assembly' },
+			{ type: 'createbigcannons:cartridge_assembly_deployer' },
+			{ type: 'createbigcannons:fuze_removal' },
+			{ type: 'createbigcannons:munition_fuzing' },
+			{ type: 'createbigcannons:munition_fuzing_deployer' },
+			{ type: 'createbigcannons:tracer_application' },
+			{ type: 'createbigcannons:tracer_application_deployer' },
+			{ type: 'createbigcannons:tracer_removal' },
 		],
 	});
 
@@ -42,6 +58,9 @@ ServerEvents.recipes((e) => {
 		)
 		.tier(4);
 
+        ADDED_ANVIL_RECIPES.push(['8x createbigcannons:ap_autocannon_round', 'tfc:metal/ingot/steel', 4] );
+
+
 	e.shaped(
 		'8x createbigcannons:flak_autocannon_round',
 		['BSB', 'BGB', 'BSB'],
@@ -51,34 +70,12 @@ ServerEvents.recipes((e) => {
 			G: 'createbigcannons:packed_gunpowder',
 		}
 	);
-	e.recipes.tfc
-		.anvil(
-			'16x createbigcannons:empty_machine_gun_round',
-			'tfc:metal/sheet/brass',
-			['punch_last', 'bend_second_last', 'draw_third_last']
-		)
-		.tier(2);
 
-	e.recipes.create
-		.sequenced_assembly(
-			[Item.of('createbigcannons:machine_gun_round')],
-			'createbigcannons:empty_machine_gun_round',
-			[
-				e.recipes.createDeploying(
-					'createbigcannons:empty_machine_gun_round',
-					['createbigcannons:empty_machine_gun_round', 'gunpowder']
-				),
-				e.recipes.createDeploying(
-					'createbigcannons:empty_machine_gun_round',
-					[
-						'createbigcannons:empty_machine_gun_round',
-						'scguns:standard_bullet',
-					]
-				),
-			]
-		)
-		.transitionalItem('createbigcannons:empty_machine_gun_round')
-		.loops(1);
+	e.shapeless('createbigcannons:machine_gun_round', [
+		'scguns:large_brass_casing',
+		'scguns:nitro_powder_dust',
+		'scguns:hardened_bullet',
+	]);
 
 	e.recipes.tfc
 		.anvil(
@@ -88,6 +85,8 @@ ServerEvents.recipes((e) => {
 		)
 		.tier(2);
 
+        ADDED_ANVIL_RECIPES.push(['8x createbigcannons:empty_autocannon_cartridge', 'tfc:metal/sheet/brass', 2] );
+
 	e.recipes.tfc
 		.anvil(
 			'createbigcannons:big_cartridge',
@@ -95,6 +94,8 @@ ServerEvents.recipes((e) => {
 			['punch_last', 'bend_second_last', 'draw_third_last']
 		)
 		.tier(2);
+
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:big_cartridge', 'tfc:metal/double_sheet/brass', 2] );
 
 	//wrought iron
 
@@ -105,6 +106,8 @@ ServerEvents.recipes((e) => {
 			['draw_last', 'hit_second_last', 'upset_third_last']
 		)
 		.tier(3);
+
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:wrought_iron_cannon_end', 'tfc:metal/sheet/wrought_iron', 3] );
 	e.recipes.tfc
 		.anvil(
 			'createbigcannons:wrought_iron_cannon_chamber',
@@ -112,6 +115,8 @@ ServerEvents.recipes((e) => {
 			['hit_last', 'bend_second_last', 'bend_third_last']
 		)
 		.tier(3);
+
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:wrought_iron_cannon_chamber', 'tfc:metal/double_sheet/wrought_iron', 3] );
 	e.recipes.tfc
 		.welding(
 			'createbigcannons:wrought_iron_drop_mortar_end',
@@ -128,7 +133,9 @@ ServerEvents.recipes((e) => {
 			'tfc:metal/sheet/cast_iron',
 			['hit_last', 'bend_second_last', 'bend_third_last']
 		)
-		.tier(4);
+		.tier(3);
+
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:autocannon_ammo_container', 'tfc:metal/sheet/cast_iron', 4] );
 
 	//recoil spring melting
 	e.recipes.tfc
@@ -233,7 +240,7 @@ ServerEvents.recipes((e) => {
 
 	e.shapeless('createbigcannons:mortar_stone', [
 		'#forge:smooth_stone',
-		'tfc:burlap_cloth',
+		['#tfc:sewing_dark_cloth', '#tfc:sewing_light_cloth'],
 	]);
 	e.recipes.tfc
 		.anvil(
@@ -242,6 +249,8 @@ ServerEvents.recipes((e) => {
 			['hit_last', 'hit_second_last', 'hit_third_last']
 		)
 		.tier(3);
+
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:solid_shot', 'tfc:metal/double_sheet/cast_iron', 3])
 	e.recipes.tfc
 		.welding(
 			'createbigcannons:ap_shot',
@@ -251,7 +260,7 @@ ServerEvents.recipes((e) => {
 		.tier(3);
 
 	e.shapeless('createbigcannons:bag_of_grapeshot', [
-		'tfc:burlap_cloth',
+		['#tfc:sewing_dark_cloth', '#tfc:sewing_light_cloth'],
 		'8x #tfc:rock_knapping',
 	]);
 
@@ -333,7 +342,7 @@ ServerEvents.recipes((e) => {
 		W: '#tfcastikorcarts:cart_wheel',
 	});
 
-	e.shapeless('8x createbigcannons:tracer_tip', ['tfc:pure_phosphorus']);
+	e.shapeless('16x createbigcannons:tracer_tip', ['tfc:pure_phosphorus']);
 
 	e.custom({
 		type: 'create:sequenced_assembly',
@@ -407,7 +416,7 @@ ServerEvents.recipes((e) => {
 			['bend_last', 'draw_second_last', 'draw_third_last']
 		)
 		.tier(4);
-
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:steel_autocannon_breech_extractor', 'tfc:metal/ingot/steel', 4]);
 	e.recipes.tfc
 		.anvil('createbigcannons:steel_screw_lock', 'tfc:metal/ingot/steel', [
 			'bend_last',
@@ -415,6 +424,7 @@ ServerEvents.recipes((e) => {
 			'hit_third_last',
 		])
 		.tier(4);
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:steel_screw_lock', 'tfc:metal/ingot/steel', 4]);
 
 	e.recipes.tfc
 		.anvil(
@@ -423,6 +433,7 @@ ServerEvents.recipes((e) => {
 			['upset_last', 'hit_second_last', 'upset_third_last']
 		)
 		.tier(4);
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:steel_sliding_breechblock', 'tfc:metal/double_ingot/steel', 4]);
 	e.recipes.tfc
 		.anvil(
 			'createbigcannons:bronze_sliding_breechblock',
@@ -430,6 +441,7 @@ ServerEvents.recipes((e) => {
 			['upset_last', 'hit_second_last', 'upset_third_last']
 		)
 		.tier(4);
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:bronze_sliding_breechblock', 'tfc:metal/double_ingot/bronze', 4]);
 	e.recipes.tfc
 		.anvil(
 			'createbigcannons:cast_iron_sliding_breechblock',
@@ -437,6 +449,7 @@ ServerEvents.recipes((e) => {
 			['upset_last', 'hit_second_last', 'upset_third_last']
 		)
 		.tier(4);
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:cast_iron_sliding_breechblock', 'tfc:metal/double_ingot/cast_iron', 4]);
 
 	e.recipes.tfc
 		.anvil(
@@ -445,6 +458,7 @@ ServerEvents.recipes((e) => {
 			['bend_last', 'hit_second_last', 'hit_third_last']
 		)
 		.tier(4);
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:nethersteel_screw_lock', 'kubejs:metal/ingot/mangalloy', 4]);
 
 	e.recipes.tfc
 		.anvil('createbigcannons:recoil_spring', 'tfc:metal/rod/red_steel', [
@@ -453,6 +467,7 @@ ServerEvents.recipes((e) => {
 			'bend_third_last',
 		])
 		.tier(4);
+        ADDED_ANVIL_RECIPES.push(['createbigcannons:recoil_spring', 'tfc:metal/rod/red_steel', 4]);
 
 	e.recipes.tfc
 		.heating('createbigcannons:steel_scrap', 1540)

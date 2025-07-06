@@ -47,13 +47,41 @@ const filled_fuel_cans = [
 	'ethanol_fuel_can',
 ];
 
+const TICKS = 20;
+
 ItemEvents.modification((event) => {
 	event.modify('gunpowder', (item) => {
 		item.setMaxStackSize(32);
 	});
-	event.modify('tfc:ore/bituminous_coal', (item) => {
-		item.burnTime = 16000;
+
+	let fuel_defs = {
+		'tfc:ore/bituminous_coal': 132 * TICKS,
+		'thermal:coal_coke': (3 * 60 + 18) * TICKS,
+		'tfc:ore/lignite': 132 * TICKS,
+		'lithicaddon:charcoal_briquette': (3 * 60 + 24) * TICKS,
+		'tfc:groundcover/pinecone': 13 * TICKS,
+		'minecraft:charcoal': (60 + 48) * TICKS,
+		'minecraft:paper': 9 * TICKS,
+		'minecraft:book': 9 * TICKS,
+		'minecraft:writable_book': 9 * TICKS,
+	};
+
+
+
+	Ingredient.of('#minecraft:logs').itemIds.forEach((id) => {
+        console.info(id)
+		fuel_defs[id] = 60 * TICKS 
 	});
+	Ingredient.of('#tfc:fallen_leaves').itemIds.forEach((id) => {
+                console.info(id)
+		fuel_defs[id] = 36 * TICKS 
+	});
+
+    for (const [id, data] of Object.entries(fuel_defs)) {
+        event.modify(id, (item) => {
+            item.burnTime = data;
+        });
+    }
 
 	filled_fuel_cans.forEach((name) => {
 		event.modify('kubejs:' + name, (item) => {
@@ -81,4 +109,3 @@ ItemEvents.modification((event) => {
 		item.armorProtection = 5;
 	});
 });
-

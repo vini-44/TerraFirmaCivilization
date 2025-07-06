@@ -1,0 +1,18 @@
+{
+    "placement": {
+        "type": "tfc:climate",
+        "salt": 34611847,
+        "separation": 32,
+        "spacing": 68,
+        "climate": {
+            "max_temperature": 30,
+            "min_rainfall": 100
+        }
+    },
+    "structures": [
+        {
+            "structure": "kubejs:shipwreck_marsh",
+            "weight": 1
+        }
+    ]
+}

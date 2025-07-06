@@ -18,6 +18,11 @@
 	decoupled_camera = true
 	#Whether or not to orient the camera rotation when the player is teleported. This includes passenger (dis-)mounting and traveling through portals.
 	orient_camera_on_teleport = true
+	#Whether or not to apply the FOV override when in shoulder surfing perspective.
+	fov_override_enabled = false
+	#The camera FOV when in shoulder surfing perspective. Depends on config option 'fov_override_enabled'.
+	#Range: 30.0 ~ 110.0
+	fov_override = 70.0
 
 	[camera.offset]
 		#Third person camera x-offset.
@@ -174,6 +179,39 @@
 				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				modifier_offset_z = 0.0
 
+		[camera.offset.presets]
+			#A list of x-offset presets that can be toggled via the 'Toggle X-Offset Presets' keybind. WARNING: Duplicate entries can result in undefined behavior!
+			presets_offset_x = []
+			#A list of y-offset presets that can be toggled via the 'Toggle Y-Offset Presets' keybind. WARNING: Duplicate entries can result in undefined behavior!
+			presets_offset_y = []
+			#A list of z-offset presets that can be toggled via the 'Toggle Z-Offset Presets' keybind. WARNING: Duplicate entries can result in undefined behavior!
+			presets_offset_z = []
+
+	[camera.camera_drag]
+		#x-axis multiplier for camera drag.
+		#Range: 0.0 ~ 5.0
+		multiplier_axis_x = 0.0
+		#y-axis multiplier for camera drag.
+		#Range: 0.0 ~ 5.0
+		multiplier_axis_y = 0.0
+		#z-axis multiplier for camera drag.
+		#Range: 0.0 ~ 5.0
+		multiplier_axis_z = 0.0
+
+	[camera.camera_sway]
+		#The maximum x-axis angle in degrees. Set to 0 to disable.
+		#Range: -30.0 ~ 30.0
+		max_angle_axis_x = 0.0
+		#The maximum x-axis angle in degrees. Set to 0 to disable.
+		#Range: -30.0 ~ 30.0
+		max_angle_axis_z = 0.0
+		#The velocity of the player in blocks per second, where the maximum camera x-axis sway is applied.
+		#Range: 0.05 ~ 1000.0
+		max_velocity_axis_x = 5.0
+		#The velocity of the player in blocks per second, where the maximum camera z-axis sway is applied.
+		#Range: 0.05 ~ 1000.0
+		max_velocity_axis_z = 5.0
+
 [perspective]
 	#The default perspective when you load the game.
 	#Allowed Values: FIRST_PERSON, THIRD_PERSON_BACK, THIRD_PERSON_FRONT, SHOULDER_SURFING
@@ -282,4 +320,10 @@
 [audio]
 	#Whether to center sounds made by the player.
 	center_player_sounds = false
+
+[integrations]
+
+	[integrations.epicfight]
+		#Whether to allow target lock-on when camera is decoupled.
+		decoupled_camera_lock_on = false
 

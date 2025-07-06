@@ -46,7 +46,7 @@ removeAdvancement([
     'create:arm_blaze_burner',
     'tfc:full_powderkeg',
     'tfc:world/powderkeg',
-    'create_connected:control_chip',
+    'create_connected:control_chip', 
     'create:copper',
     'create:brass',
     'create:rose_quartz',

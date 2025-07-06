@@ -1,3 +1,5 @@
+// priority: 50
+
 ServerEvents.recipes((event) => {
 	event.remove({ mod: 'zetter', not: [{id: "zetter:copying_painting"}, {id: "zetter:frame_painting"}, {id: "zetter:unframe_painting"}]});
 	event.shapeless('zetter:oak_plated_frame', [
@@ -48,14 +50,15 @@ ServerEvents.recipes((event) => {
 		'#tfc:lumber',
 	]);
 	event.shaped('zetter:canvas', ['AA', 'AA'], {
-		A: 'tfc:burlap_cloth',
+		A: '#tfc:sewing_dark_cloth',
 	});
 	event.shaped('zetter:canvas', ['AA', 'AA'], {
-		A: 'tfc:wool_cloth',
+		A: '#tfc:sewing_light_cloth',
 	});
 	event.shaped('zetter:canvas', ['AA', 'AA'], {
 		A: 'minecraft:paper',
 	});
+
 
 	event.shaped('zetter:artist_table', ['AB', 'CC', 'CC'], {
 		A: 'zetter:paints',

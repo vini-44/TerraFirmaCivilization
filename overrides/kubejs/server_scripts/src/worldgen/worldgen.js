@@ -64,7 +64,20 @@ ServerEvents.tags('worldgen/placed_feature', (event) => {
 	event.add('tfc:in_biome/veins', 'tfc:vein/graphite_small');
 
 	event.add('tfc:in_biome/veins', 'tfc:vein/kaolinite');
+    event.add('tfc:in_biome/veins', 'tfc:vein/kaolinite_large');
 	event.add('tfc:in_biome/veins', 'tfc:vein/manganite');
+	event.add('tfc:in_biome/veins', 'tfc:vein/rhodocrosite');
+	event.add('tfc:in_biome/veins', 'tfc:vein/rhodocrosite_silver');
+
+	event.add('tfc:in_biome/veins', 'tfc:vein/wolframite');
+	event.add('tfc:in_biome/veins', 'tfc:vein/ilmenite');
+
+
+	event.add('tfc:in_biome/veins', 'tfc:vein/kyanite_test');
+
+
+	event.add('tfc:in_biome/veins', 'tfc:vein/sulfur_volcanic');
+
 
 	for (let [plant, def] of Object.entries(plant_defs)) {
 		event.add('tfc:feature/land_plants', 'tfc:plant/' + plant + '_patch');
@@ -73,7 +86,7 @@ ServerEvents.tags('worldgen/placed_feature', (event) => {
 
 ServerEvents.tags('worldgen/biome', (event) => {
 	event.add('createdieselgenerators:oil_biomes', '#tfc:is_ocean');
-    event.add('tfc:lowlands', 'tfc:lowlands')
+    event.add('tfc:manganite_spawns_in', ['tfc:lowlands'])
 });
 
 //global modifier for all ores for them to be rarer and bigger.

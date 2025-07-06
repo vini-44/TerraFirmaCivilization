@@ -1,3 +1,5 @@
+// priority: 50
+
 ServerEvents.recipes((e) => {
 	e.recipes.tfc.advanced_shaped_crafting(
 		TFC.itemStackProvider.of('scguns:musket').copyForgingBonus(),
@@ -5,7 +7,7 @@ ServerEvents.recipes((e) => {
 		{
 			A: 'minecraft:flint_and_steel',
 			B: 'scguns:gun_parts',
-			C: 'scguns:gun_barrel',
+			C: 'scguns:stone_gun_barrel',
 			D: '#tfc:lumber',
 		},
 		1,
@@ -17,7 +19,7 @@ ServerEvents.recipes((e) => {
 		{
 			A: 'minecraft:flint_and_steel',
 			B: 'scguns:gun_parts',
-			C: 'scguns:gun_barrel',
+			C: 'scguns:stone_gun_barrel',
 			D: '#tfc:lumber',
 		},
 		0,
@@ -29,8 +31,8 @@ ServerEvents.recipes((e) => {
 		{
 			A: 'scguns:firing_unit',
 			B: 'scguns:gun_parts',
-			C: 'scguns:heavy_gun_barrel',
-			D: 'scguns:gun_barrel',
+			C: 'scguns:gun_barrel',
+			D: 'scguns:stone_gun_barrel',
 			E: '#tfc:lumber',
 		},
 		0,
@@ -43,7 +45,7 @@ ServerEvents.recipes((e) => {
 			A: 'scguns:firing_unit',
 			B: 'scguns:gun_parts',
 			C: 'scguns:gun_magazine',
-			D: 'scguns:gun_barrel',
+			D: 'scguns:stone_gun_barrel',
 			E: '#tfc:lumber',
 		},
 		1,
@@ -56,7 +58,7 @@ ServerEvents.recipes((e) => {
 		{
 			A: 'scguns:firing_unit',
 			B: 'scguns:gun_parts',
-			C: 'scguns:gun_barrel',
+			C: 'scguns:stone_gun_barrel',
 			D: '#tfc:lumber',
 		},
 		0,
@@ -64,11 +66,12 @@ ServerEvents.recipes((e) => {
 	);
 	e.recipes.tfc.advanced_shaped_crafting(
 		TFC.itemStackProvider.of('scguns:blunderbuss').copyForgingBonus(),
-		['A  ', 'BCC', 'DD '],
+		['A  ', 'BCF', 'DD '],
 		{
 			A: 'minecraft:flint_and_steel',
 			B: 'scguns:gun_parts',
-			C: 'scguns:heavy_gun_barrel',
+			C: 'tfc:metal/double_sheet/steel',
+            F: 'scguns:stone_gun_barrel',
 			D: '#tfc:lumber',
 		},
 		1,
@@ -81,7 +84,7 @@ ServerEvents.recipes((e) => {
 		{
 			A: 'scguns:iron_gun_frame',
 			B: 'scguns:firing_unit',
-			C: 'scguns:heavy_gun_parts',
+			C: 'scguns:gun_parts',
 			D: 'scguns:gun_barrel',
 			E: '#tfc:lumber',
 			F: 'scguns:gun_magazine',
@@ -285,11 +288,10 @@ ServerEvents.recipes((e) => {
 
 	e.recipes.tfc.advanced_shaped_crafting(
 		TFC.itemStackProvider.of('scguns:callwell').copyForgingBonus(),
-		['ABC', 'DBC', 'EE '],
+		['ABB', 'DBB', 'EE '],
 		{
 			A: 'scguns:firing_unit',
-			B: 'scguns:heavy_gun_barrel',
-			C: 'scguns:gun_barrel',
+			B: 'scguns:stone_gun_barrel',
 			D: 'scguns:gun_parts',
 			E: 'tfc:wood/lumber/acacia',
 		},

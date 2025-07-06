@@ -1,0 +1,10 @@
+{
+    "feature": "tfc:vein/kaolinite_large",
+    "placement": [
+      {
+        "type": "tfc:climate",
+        "min_temperature": 18,
+        "min_rainfall": 300
+      }
+    ]
+  }

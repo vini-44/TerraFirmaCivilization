@@ -1,3 +1,5 @@
+// priority: 1000
+
 const BREW_FLOWERS = [
     'strelitzia',
     'canna',

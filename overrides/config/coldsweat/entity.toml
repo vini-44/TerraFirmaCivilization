@@ -10,6 +10,19 @@
 	#range: The range of the effect, in blocks
 	#units: (Optional) The units of the temperature value (MC, F, or C). Defaults to MC
 	"Entity Temperatures" = []
+	#Defines entities that are affected by temperature and the climates they can live in
+	#Format: [["entity_id", min_temp, max_temp, *rate, *units], ["entity_id", min_temp, max_temp, *rate, *units], etc...]
+	#min_temp: The minimum livable temperature, as an offset to the minimum temperature for players
+	#max_temp: The maximum livable temperature, as an offset to the maximum temperature for players
+	#rate: (Optional) A multiplier to the rate at which the entity overheats or freezes, based on players' rate
+	#units: (Optional) The units used for the min/max temperature values (MC, F, or C). Defaults to MC
+	"Entity Climate Settings" = [["minecraft:chicken", 10, 10, 0.6, "F"], ["minecraft:pig", 0, 0, 0.5, "F"], ["minecraft:cow", 0, 20, 0.2, "F"], ["minecraft:mooshroom", 0, 20, 0.2, "F"], ["minecraft:sheep", -20, -10, 0.3, "F"], ["minecraft:goat", -40, -15, 0.4, "F"], ["minecraft:horse", -5, 10, 0.3, "F"], ["minecraft:donkey", -5, 10, 0.3, "F"], ["minecraft:mule", -5, 10, 0.3, "F"], ["minecraft:llama", -10, 0, 0.4, "F"]]
+	#Enables the temperature system for entities
+	#If disabled, entities will not be harmed by temperature
+	"Enable Entity Climates" = false
+	#Enables more precise temperature calculations for entities
+	#This option might cause performance issues for large amounts of entities
+	"Use Advanced Entity Climates" = false
 
 ["Fur Growth & Shedding"]
 	#Defines how often a goat will try to grow its fur, the growth cooldown after shearing, and the chance of it succeeding
