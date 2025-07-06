@@ -14,14 +14,12 @@ TFCEvents.data((event) => {
     event.itemSize('minecraft:gunpowder', 'small', 'very_light');
 
     //damage resistances
-	event.itemDamageResistance('scguns:adrien_helm', 25, 2, 2);
-	event.itemDamageResistance('scguns:adrien_chestplate', 35, 2, 2);
-    event.itemDamageResistance('scguns:adrien_leggings', 30, 2, 2);
-    event.itemDamageResistance('scguns:adrien_boots', 20, 2, 2);
+	event.itemDamageResistance('scguns:adrien_helm', 30, 2, 2);
+	event.itemDamageResistance('scguns:adrien_chestplate', 50, 2, 2);
 
-    event.itemDamageResistance('scguns:diamond_steel_helmet', 35*0.4, 15*0.4, null)
-    event.itemDamageResistance('scguns:diamond_steel_chestplate', 30*0.6, 15*0.6, null)
-    event.itemDamageResistance('scguns:diamond_steel_boots', 30*0.5, 15*0.5, null)
+    event.itemDamageResistance('scguns:diamond_steel_helmet', 35*0.2, 15*0.2, null)
+    event.itemDamageResistance('scguns:diamond_steel_chestplate', 30*0.2, 15*0.2, null)
+    event.itemDamageResistance('scguns:diamond_steel_boots', 30*0.2, 15*0.2, null)
 
     //item heat
 	for (const [metal, heat] of Object.entries(POWDER_HEAT_DEFS)) {
@@ -40,8 +38,6 @@ TFCEvents.data((event) => {
 	event.itemHeat('createbigcannons:bronze_scrap', 0.171, 570, 760);
     event.itemHeat('#kubejs:available_guns', 2.857, 921, 1228) 
     event.itemHeat('scguns:plasgun', 0.5, 921, 1228)
-
-    event.itemHeat('kubejs:grasshopper', 0.5, 900, 1000);
 
     //fuel
     event.fuel('thermal:coal_coke', 1415, 2200, 1)

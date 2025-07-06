@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 			'draw_third_last',
 		])
 		.tier(4)
-		.bonus(false);
+		.bonus(true);
 
         event.recipes.tfc
 		.anvil('kubejs:unfinished_heavy_gun_parts', 'kubejs:metal/double_sheet/mangalloy', [
@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
 			'draw_third_last',
 		])
 		.tier(5)
-		.bonus(false);
+		.bonus(true);
 
 
 	event.recipes.tfc.advanced_shaped_crafting(
@@ -59,13 +59,13 @@ ServerEvents.recipes((event) => {
 		.tier(4);
 
 	event.shaped('scguns:rapid_firing_unit', [' A ', 'BCD', ' A '], {
-		A: 'kubejs:metal/sheet/mangalloy',
+		A: 'tfc:metal/sheet/steel',
 		B: 'create:precision_mechanism',
 		C: 'createbigcannons:recoil_spring',
 		D: 'tfc:metal/rod/black_steel',
 	});
 	event.shaped('scguns:firing_unit', ['AB'], {
-		A: 'kubejs:metal/sheet/mangalloy',
+		A: 'tfc:metal/sheet/steel',
 		B: 'tfc:metal/rod/steel',
 	});
 
@@ -94,23 +94,4 @@ ServerEvents.recipes((event) => {
 		])
 		.bonus(true)
 		.tier(4);
-
-		//No sulidae crafts
-
-		event.shapeless('kubejs:unfinished_heavy_firing_unit', [
-			'kubejs:metal/double_sheet/mangalloy',
-			'scguns:firing_unit',
-			'tfc:metal/rod/steel'
-		]);
-		
-		event.recipes.tfc
-		.anvil('kubejs:heavy_firing_unit', 'kubejs:unfinished_heavy_firing_unit', [
-			'bend_last',
-			'punch_any',
-			'draw_not_last',
-		])
-		.tier(4);
-
-
-
 });
