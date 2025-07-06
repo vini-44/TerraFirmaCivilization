@@ -1,3 +1,5 @@
+// priority: 50
+
 ServerEvents.recipes((event) => {
 	event.shaped('4x scguns:grenade', ['A', 'B', 'C'], {
 		A: 'tfc:metal/sheet/zinc',
@@ -8,7 +10,7 @@ ServerEvents.recipes((event) => {
 	event.shapeless('4x scguns:molotov_cocktail', [
 		'4x #firmalife:empty_wine_bottles',
 		'kubejs:ethanol_fuel_can',
-		['#tfc:high_quality_cloth', 'tfc:burlap_cloth'],
+		['#tfc:sewing_light_cloth', '#tfc:sewing_dark_cloth'],
 	]);
 
 	event.custom({
@@ -33,6 +35,8 @@ ServerEvents.recipes((event) => {
 			'firmalife:metal/sheet/stainless_steel',
 			['bend_last', 'bend_second_last', 'bend_third_last']
 		);
+
+        ADDED_ANVIL_RECIPES.push([ammo_box, 'firmalife:metal/sheet/stainless_steel', 4]);
 	});
 
 	event.recipes.tfc.advanced_shaped_crafting(
@@ -130,7 +134,7 @@ ServerEvents.recipes((event) => {
 		E: '#tfc:high_quality_cloth',
 	});
 	event.shaped('scguns:silencer', [' A ', 'BCB', ' A '], {
-		A: ['tfc:burlap_cloth', '#tfc:high_quality_cloth'],
+		A: ['#tfc:sewing_dark_cloth', '#tfc:sewing_light_cloth'],
 		B: 'afc:rubber_bar',
 		C: 'firmalife:metal/sheet/stainless_steel',
 	});
@@ -214,6 +218,10 @@ ServerEvents.recipes((event) => {
     event.recipes.tfc.anvil('kubejs:unfinished_diamond_steel_chestplate', 'tfc:metal/double_sheet/steel', ['hit_last', 'hit_second_last', 'upset_third_last']).tier(4)
     event.recipes.tfc.anvil('kubejs:unfinished_diamond_steel_boots', 'tfc:metal/double_sheet/steel', ['bend_last', 'bend_second_last', 'shrink_third_last']).tier(4)
     event.recipes.tfc.anvil('kubejs:unfinished_diamond_steel_helmet', 'tfc:metal/double_sheet/steel', ['hit_last', 'bend_second_last', 'bend_third_last']).tier(4)
+
+    ADDED_ANVIL_RECIPES.push(['kubejs:unfinished_diamond_steel_chestplate', 'tfc:metal/double_sheet/steel', 4])
+    ADDED_ANVIL_RECIPES.push(['kubejs:unfinished_diamond_steel_boots', 'tfc:metal/double_sheet/steel', 4])
+    ADDED_ANVIL_RECIPES.push(['kubejs:unfinished_diamond_steel_helmet', 'tfc:metal/double_sheet/steel', 4])
 
     event.shapeless('scguns:diamond_steel_chestplate', [['textile:black_bear_shirt', 'textile:grizzly_bear_shirt'], 'kubejs:unfinished_diamond_steel_chestplate'])
     event.shapeless('scguns:diamond_steel_boots', [['textile:black_bear_boots', 'textile:grizzly_bear_boots'], 'kubejs:unfinished_diamond_steel_boots'])

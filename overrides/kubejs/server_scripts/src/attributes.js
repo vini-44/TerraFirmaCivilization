@@ -56,7 +56,6 @@ function AddItemAttribute(item, attribute, _uuid) {
 	});
 }
 
-let caneUuid = uuid();
 AddItemAttribute('tfccanes:walking_cane', [['forge:step_height_addition', 0.5, 'addition', 'offhand'], ['forge:step_height_addition', 0.15, 'addition', 'mainhand']]);
 AddItemAttribute('tfccanes:refined_walking_cane', [['forge:step_height_addition', 0.5, 'addition', 'offhand']]);
 AddItemAttribute('tfccanes:refined_walking_cane', [['minecraft:generic.movement_speed', 0.1, 'multiply_base', 'offhand'], ['minecraft:generic.movement_speed', 0.1, 'multiply_base', 'mainhand']]);

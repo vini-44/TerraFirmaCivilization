@@ -1,6 +1,7 @@
-{
+
+  {
     "fluid": "#forge:biodiesel",
-    "sound_speed": 1,
+    "sound_speed": 2,
     "normal": {
       "speed": 128.0,
       "strength": 16384.0,
@@ -14,6 +15,7 @@
     "huge": {
       "speed": 128.0,
       "strength": 32768.0,
-      "burn_rate": 2
-    }
+      "burn_rate": 1
+    },
+    "burner_multiplier": 0.5
   }

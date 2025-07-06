@@ -1,4 +1,6 @@
-//priority: 100
+// priority: 100
+
+const ADDED_ANVIL_RECIPES = []
 
 const CIV_REMOVE = [
 	'crafting/sextant',
@@ -449,6 +451,20 @@ const USABLE_ON_TOOL_RACK = [
 	'thermal:flux_capacitor',
 ];
 
+const WRENCH_PICKUP = [
+	'quark:obsidian_pressure_plate',
+	'quark:encased_pipe',
+	'quark:pipe',
+	'quark:redstone_randomizer',
+	'supplementaries:relayer',
+	'supplementaries:bellows',
+	'supplementaries:crystal_display',
+	'supplementaries:faucet',
+	'supplementaries:turn_table',
+	'supplementaries:spring_launcher',
+];
+
+
 const AVAILABLE_GUNS = [
 	'scguns:mas_55',
 	'scguns:krauser',
@@ -473,6 +489,29 @@ const AVAILABLE_GUNS = [
     'scguns:callwell',
     'scguns:iron_spear'
 ];
+
+const ALL_ROCKS = [
+    'chalk',
+	'chert',
+	'conglomerate',
+	'dolomite',
+	'limestone',
+	'claystone',
+	'shale',
+    'granite',
+    'diorite',
+    'rhyolite',
+    'basalt',
+    'andesite',
+    'dacite',
+    'quartzite',
+    'slate',
+    'phyllite',
+    'schist',
+    'gneiss',
+    'marble',
+    'gabbro'
+]
 
 //only to be used for getting temp data, since it has both chromium and stainless steel here too.
 const METAL_HEATING_DEFS = {

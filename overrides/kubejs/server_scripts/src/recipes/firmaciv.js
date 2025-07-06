@@ -1,20 +1,22 @@
+// priority: 50
+
 //Firmaciv
 //removing nagivation tools since we have journeymap. Sorry Aleki.
 
-ServerEvents.recipes((event) => {
-	event.remove({ mod: 'alekiships' });
+ServerEvents.recipes((e) => {
+	e.remove({ mod: 'alekiships' });
 
 	CIV_REMOVE.forEach((recipe) => {
-		event.remove({ id: 'firmaciv:' + recipe });
+		e.remove({ id: 'firmaciv:' + recipe });
 	});
 
-	event.recipes.create
+	e.recipes.create
 		.sequenced_assembly(
 			//less efficiency!
 			['3x firmaciv:copper_bolt'],
 			'tfc:metal/ingot/copper',
 			[
-				event.recipes.create.cutting(
+				e.recipes.create.cutting(
 					'tfc:metal/ingot/copper',
 					'tfc:metal/ingot/copper'
 				),
@@ -23,64 +25,45 @@ ServerEvents.recipes((event) => {
 		.transitionalItem('tfc:metal/ingot/copper')
 		.loops(5);
 
-	event.remove({ output: 'firmaciv:rope_coil' });
+	e.remove({ output: 'firmaciv:rope_coil' });
 
-	event
+	e
 		.shapeless('4x supplementaries:rope', [
 			'#lithicaddon:spindles',
 			'2x tfc:jute_fiber',
 		])
 		.damageIngredient('#lithicaddon:spindles');
-	event
+	e
 		.shapeless('supplementaries:rope', [
 			'#lithicaddon:spindles',
 			'8x tfc:straw',
 		])
 		.damageIngredient('#lithicaddon:spindles', 4);
 
-	event.remove({ id: 'firmaciv:anvil/anchor' });
-	event.remove({ id: 'firmaciv:anvil/cleat' });
-	event.remove({ id: 'firmaciv:anvil/oarlock' });
+	e.remove({ id: 'firmaciv:anvil/anchor' });
+	e.remove({ id: 'firmaciv:anvil/cleat' });
+	e.remove({ id: 'firmaciv:anvil/oarlock' });
+
+	e.remove({ id: 'firmaciv:heating/anchor' });
+	e.remove({ id: 'firmaciv:heating/cleat' });
+	e.remove({ id: 'firmaciv:heating/oarlock' });
 
 	//FOR SOME REASON, OARS RECIPE DOESN'T WORK. WHAT
-	event.shaped('alekiships:oar', ['  A', ' A ', 'B  '], {
+	e.shaped('alekiships:oar', ['  A', ' A ', 'B  '], {
 		A: '#forge:rods/wooden',
 		B: '#tfc:lumber',
 	});
 
-	event.custom({
-		type: 'tfc:anvil',
-		input: {
-			tag: 'forge:ingots/wrought_iron',
-		},
-		result: {
-			item: 'alekiships:oarlock',
-		},
-		tier: 3,
-		rules: ['bend_last', 'hit_second_last', 'hit_third_last'],
-	});
+    e.recipes.tfc.anvil('alekiships:oarlock', 'tfc:metal/ingot/wrought_iron', ['bend_last', 'hit_second_last', 'hit_third_last']).tier(3).rules(['bend_last', 'hit_second_last', 'hit_third_last']);
+    e.recipes.tfc.anvil('alekiships:cleat', 'tfc:metal/double_ingot/wrought_iron', ['bend_last', 'bend_second_last', 'bend_third_last']).tier(3).rules(['bend_last', 'bend_second_last', 'bend_third_last']);
+    e.recipes.tfc.anvil('alekiships:anchor', 'tfc:metal/double_sheet/wrought_iron', ['hit_last', 'punch_second_last', 'bend_third_last']).tier(3).rules(['hit_last', 'punch_second_last', 'bend_third_last']);
 
-	event.custom({
-		type: 'tfc:anvil',
-		input: {
-			tag: 'forge:double_ingots/wrought_iron',
-		},
-		result: {
-			item: 'alekiships:cleat',
-		},
-		tier: 3,
-		rules: ['bend_last', 'bend_second_last', 'bend_third_last'],
-	});
 
-	event.custom({
-		type: 'tfc:anvil',
-		input: {
-			tag: 'forge:double_sheets/wrought_iron',
-		},
-		result: {
-			item: 'alekiships:anchor',
-		},
-		tier: 3,
-		rules: ['hit_last', 'punch_second_last', 'bend_third_last'],
-	});
+    ADDED_ANVIL_RECIPES.push(['alekiships:oarlock', 'tfc:metal/ingot/wrought_iron', 3]);
+    ADDED_ANVIL_RECIPES.push(['alekiships:cleat', 'tfc:metal/double_ingot/wrought_iron', 3]);
+    ADDED_ANVIL_RECIPES.push(['alekiships:anchor', 'tfc:metal/double_sheet/wrought_iron', 3]);
+    
+    e.recipes.tfc.heating('alekiships:anchor', 1540).resultFluid(Fluid.of('tfc:metal/cast_iron', 400));
+    e.recipes.tfc.heating('alekiships:cleat', 1540).resultFluid(Fluid.of('tfc:metal/cast_iron', 200));
+    e.recipes.tfc.heating('alekiships:oarlock', 1535).resultFluid(Fluid.of('tfc:metal/cast_iron', 100));
 });

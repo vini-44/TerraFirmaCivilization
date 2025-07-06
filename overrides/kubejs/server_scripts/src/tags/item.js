@@ -39,7 +39,7 @@ ServerEvents.tags('item', (e) => {
 	//e.removeAllTagsFrom('minecraft:iron_ingot')
 
 	e.add('kubejs:brew_ingredients', BREW_INGREDIENTS);
-	e.add('createbigcannons:nitropowder', 'scguns:nitro_powder');
+    e.add('createbigcannons:nitropowder', 'scguns:nitro_powder');
 	e.remove('createbigcannons:nitropowder', 'createbigcannons:nitropowder');
 
 	e.add('tfc:axes_that_log', 'thermal:flux_saw');
@@ -48,8 +48,8 @@ ServerEvents.tags('item', (e) => {
 		e.add('tfc:usable_on_tool_rack', tool);
 	});
 
-	e.add('map_atlases:sticky_crafting_items', 'tfc:glue');
 
+	e.add('map_atlases:sticky_crafting_items', 'tfc:glue');
 	e.add('createbigcannons:gas_masks', 'scguns:anthralite_respirator');
 
 	e.remove('sns:allowed_in_ore_sack', /.*/);
@@ -63,10 +63,10 @@ ServerEvents.tags('item', (e) => {
 		'firmalife:metal/block/stainless_steel',
 	]);
 
-	e.add('tfc:metal_item/chromium', 'firmalife:metal/item/chromium');
+	e.add('tfc:metal_item/chromium', 'firmalife:metal_item/chromium');
 	e.add(
 		'tfc:metal_item/stainless_steel',
-		'firmalife:metal/item/stainless_steel'
+		'firmalife:metal_item/stainless_steel'
 	);
 
 	e.add('everycomp:chests', /everycomp:.*_chest/);
@@ -112,4 +112,14 @@ ServerEvents.tags('item', (e) => {
     e.add('tfc:starts_fires_with_durability', 'kubejs:flint_and_pyrite')
 
     e.add('tfc:fluxstone', 'thermal:slag')
+    
+    e.add('railways:locometal', /.*locometal.*/)
+    e.remove('railways:locometal', /.*boiler.*/)
+    e.remove('railways:locometal', /.*wrapped.*/)
+
+    e.add('railways:boiler', /.*locometal_boiler.*/)
+
+    e.add('railways:brass_wrapped_locometal', /.*brass_wrapped.*/)
+    e.add('railways:iron_wrapped_locometal', /.*iron_wrapped.*/)
+    e.add('railways:copper_wrapped_locometal', /.*copper_wrapped.*/)
 });

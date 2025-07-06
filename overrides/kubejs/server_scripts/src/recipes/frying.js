@@ -1,3 +1,6 @@
+// priority: 50
+
+
 // Server event handling for custom recipes and fluid tags
 ServerEvents.recipes(event => {
     event.forEachRecipe({ type: 'tfc:heating' }, (recipe) => {

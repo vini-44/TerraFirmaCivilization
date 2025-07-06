@@ -1,97 +1,102 @@
-- Added Manganite ore, Magnanese metal, Mangalloy Metal, Heavy Gun Parts.
-- Gun Parts now use a Brass Mechanism instead of a Precision one.
-- Several guns now require heavy gun parts.
-- Nethersteel cannons (renamed) are now craftable with Mangalloy.
-- Ballistic Armor is now made with Mangalloy.
-- Fixed vanilla chests being craftable.
-- Fixed safe specifically requiring an aspen trapped chest instead of any wooden chest.
-- Fixed copper backtank being hidden in EMI.
-- Fixed being unable to unframe paintings.
-- Fixed jar shelves made out of ArborFirmaCraft woods not being craftable.
-- Fixed insulation values not working. (Technically Cold Sweat's fault)
-- Disabled Quark's Vertical Slabs (See Added Mods section.)
-- Fixed Induction Heater dropping an extra, useless item.
-- Fixed Chestnut blocks from Everycomp not being craftable.
-- Made all advanced shaped(less) recipes manual only.
-- Increased Forge version to 47.3.0
-- Sugar from Sugarcane juice recipe now uses 500mb, instead of 1000mb.
-- Vanilla bucket is now craftable with 5 double sheets of aluminum and both colored steel buckets.
-- Flux Bore now has efficiency 5.
-- Trampolines are now craftable.
-- Fixed dupe with metal blocks.
-- Fixed several custom block temperatures being reverted.
-- Added diesel generator block temperature.
-- Fixed Aluminum sheet block missing texture.
+# Pack Changes
+- Added Kyanite
+- Added Unfired Refractory Brick, Refractory Brick (item) and Refractory Bricks (block)
+- Added Industrial Furnace Multiblock
+- Added Ilmenite and Titanium.
+- Added Wolframite and Tungsten.
+- Added Metal Former, a machine to automate smithing recipes.
+- Added Metalworks Forge, a machine for advanced iron/steelmaking and tungsten refining.
+- Added Liquid Hydrogen and Lubricant
+- Made Safes very large and very heavy.
+- Added the Electric Kiln, a new machine to automate non-food heating recipes with no fluid output.
+- Added a new structure
+- Changed the costs and requirements for steel and blue steel gun frames to better differentiate between the post-musket, but pre-frame weapons
+- Maple and birch sugar has been deprecated. Recipe now outputs normal sugar.
+- Added extra-large kaolinite veins, found where kaolin clay generates.
+- Slightly increased small kaolinite vein size.
+- Reinforced fiber can now use flax fiber instead of jute.
+- Economy plane now uses reinforced fiber instead of sails and treated lumber instead of regular lumber.
+- Warship is now craftable.
+- Rotary Cannon now uses rifle rounds.
+- Aircraft health and collision damage has been increased by 8x (Stronger against normal damage but still the same when crashing.)
+- Fixed not being able to put tracers manually to autocannon rounds.
+- Tracer recipe now yields 16 tracers.
+- Fixed machine gun rounds giving back wrong empty casing.
+- Added missing lang entries for dyeing recipes.
+- Made locometal and industrial iron craftable.
+- Fixed induction heaters not properly being upgraded.
+- Rifle Rounds cost 2 pinches of gunpowder.
+- Rebalanced a bit a couple gun recipes. Added steel gun barrel, used for lower tier guns.
+- Fixed custom metals not being heatable and having wrong tags.
+- Fixed Lignite not being able to fuel burners.
+- Fixed Fuel Cans not being craftable.
+- Reworked all simple radio recipes.
+- Added aluminum, mangalloy and manganese rods.
+- Removed Thermal's Sawmill.
+- Cerametal Funnels/Tunnels use leather instead of rubber. (Brass ones still use rubber!)
+- Adjusted Chute recipe to better match Hopper's.
+- Replaced Create's Gas Burner with Create Diesel Generator's Burner.
+- Fixed Sugar Cubes not being uncraftable back into sugar.
 - And more! I think.
 
 # Added mods:
-- Sounds
-- Additional Placements
-- Attribute Setter
-- TFC Scraping Knives
-- Flerovium
-  
-# Removed mods:
-- Redirector
-- Vertical Slab Compat
+- Chunk Scheduler
+- Grapling Hook
 
 # Updated mods:
-- ModernFix
-- Better Mob Combat
-- TFC
-- Mob Player Animator
-- Jade
-- Fzzy Config
-- Fusion
-- EMI
-- Sodium/Embeddium Options API
-- Polymorph
-- Rhino
-- Create Big Cannons
-- TFC GenViewer
-- Shoulder Surfing
-- Every Compat
 - Simple Voice Chat
-- Moonlight Lib
-- FTB Library
-- FTB Quests
-- FTB Teams
-- Cold Sweat
-- Packet Fixer
-- Vertical Slabs compat
-- Not Enough Animations
-- TFC Cold Sweat
-- More Create Burners
-- Connectivity
-- Immersive UI
-- Sodium/Embeddium Dynamic Lights
-- Subtle Effects
-- EMI
-- Amendmends
-- Auroras
-- Sodium/Embeddium Options API
-- Aleki's Nifty Ships
-- KubeJS TFC
+- Horseman
+- Polymorph
+- Lithic TFC Addon
 - Fusion
-- TFC Canes
-- TFC Textile
-- JEI
-- JEED
-- Fzzy Config
-- Create Connected
-- Firmalife
-- Create: Big Cannons
-- Cold Sweat
-- Radiant Gear
-- Curios API
-- Geckolib
-- Chat Heads
-- Moonlight Lib
-- Create Crafts and Additions
 - Connectivity
-- Immersive Aircraft
-- Scorched Guns (Downgraded to before Animation Update.)
-- Corpse
+- Sacks n Such
+- Scholar
+- KubeJS Additions
+- EMI
+- Raw's Visual Keybinder
+- Sound Physics Remastered
+- KubeJS TFC
+- Packet Fixer
+- Moonlight Lib
+- Flerovium
 - Supplementaries
-- Patchouli
+- Not Enough Animations
+- Curios API
+- Immersive Aircraft
+- Target Dummy
+- Voice Chat
+- Entity Culling
+- GeckoLib
+- Amendments
+- Jade
+- Cold Sweat
+- TFC Cold Sweat
+- TFC Textile
+- FTB Quests
+- Amendments
+- Firmalife
+- Shoulder Surfing Reloaded
+- Every Compat
+- Chloride (Embeddium++)
+- TFC Water Flasks
+- Create*
+- Create Crafts & Additions*
+- Create Diesel Generators*
+- KubeJS Create*
+- Create Low-heated*
+- More Create Burners*
+- OctoLib
+- Fzzy Config
+- Subtle Effects
 - Furniture Mod
+- Jade Addons
+- Quark
+- Zeta
+- Aaaaand I lost track
+
+# Removed mods:
+- Liquid Burner
+- TerraBlender
+
+* create 6.0 update

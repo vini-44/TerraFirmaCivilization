@@ -1,3 +1,5 @@
+// priority: 50
+
 //Create mod related recipes.
 
 ServerEvents.recipes((e) => {

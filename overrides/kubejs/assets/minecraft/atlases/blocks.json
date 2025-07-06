@@ -23,6 +23,22 @@
         {
             "type": "single",
             "resource": "kubejs:block/metal/smooth/manganese"
+        },
+          {
+            "type": "single",
+            "resource": "kubejs:block/metal/block/titanium"
+        },
+        {
+            "type": "single",
+            "resource": "kubejs:block/metal/smooth/titanium"
+        },
+          {
+            "type": "single",
+            "resource": "kubejs:block/metal/block/tungsten"
+        },
+        {
+            "type": "single",
+            "resource": "kubejs:block/metal/smooth/tungsten"
         }
     ]
 }

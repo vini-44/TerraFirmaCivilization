@@ -18,6 +18,7 @@
     "block.createbigcannons.very_large_nethersteel_cannon_layer": "Very Large Mangalloy Cannon Layer",
     "block.createbigcannons.very_small_nethersteel_cannon_layer": "Very Small Mangalloy Cannon Layer",
     "item.createbigcannons.nethersteel_nugget": "Mangalloy Scrap",
-    "item.createbigcannons.nethersteel_screw_lock": "Mangalloy Screw Lock"
+    "item.createbigcannons.nethersteel_screw_lock": "Mangalloy Screw Lock",
+    "item.createbigcannons.cannon_welder": "Welder"
 
 }
