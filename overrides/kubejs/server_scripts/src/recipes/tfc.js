@@ -723,12 +723,6 @@ ServerEvents.recipes((e) => {
 		'textile:flax_fiber',
 	]);
 
-	e.remove({ id: 'chunkschedudeler:schedudeler' });
-	e.shaped('chunkschedudeler:schedudeler', ['ABA', 'ACA'], {
-		A: 'tfc:metal/rod/blue_steel',
-		B: 'kubejs:automaton_head',
-		C: 'createaddition:capacitor',
-	});
 
 	e.recipes.create
 		.sequenced_assembly(

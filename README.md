@@ -16,6 +16,9 @@
   <li>MaFgLib</li>
   <li>DistantHorizons</li>
   <li>Sounds physics</li>
+  <li>Sholder Surfings</li>
+  <li>I Heart TFC</li>
+  <li>Pano creator</li>
 </ul>
 
 
