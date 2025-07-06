@@ -39,7 +39,7 @@
 	#Range: 0.0 ~ 1.0
 	spawn_chance_per_tick = 0.005
 	#Depth at which the Cave Dweller can start to spawn
-	spawn_height = 40
+	spawn_height = 10
 	#Whether the Cave Dweller can spawn on the surface or not
 	allow_surface_spawn = false
 	#The maximum sky light level the Cave Dweller can spawn at
