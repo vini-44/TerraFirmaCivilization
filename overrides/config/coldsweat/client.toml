@@ -1,4 +1,19 @@
 
+["Visual Preferences"]
+	#Sets all temperatures to be displayed in Celsius
+	Celsius = false
+	#Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
+	#Range: > -2147483647
+	"Temperature Offset" = 0
+	#The amount of smoothing applied to gauges in the UI
+	#A value of 1 has no smoothing
+	#Range: 1.0 ~ 2.147483647E9
+	"Temperature Smoothing" = 10.0
+	#Displays a dripping water effect on-screen and/or with particles when the player is wet
+	#0: Off, 1: Particles, 2: On-Screen, 3: Both
+	#Range: 0 ~ 3
+	"Show Water Effect" = 3
+
 ["UI Options"]
 	"Custom hotbar layout" = true
 	#Controls whether UI elements will shake when in critical conditions
@@ -17,39 +32,18 @@
 	"World Temperature UI Offset" = [0, 0]
 	#Enables the world temperature gauge next to the hotbar
 	"Show World Temperature Gauge" = true
-	#Show the config menu button in the Options menu
-	"Enable In-Game Config" = true
-	#The position (offset) of the config button on the screen
-	"Config Button Position" = [0, 0]
 
 [Accessibility]
 	#Enables visual distortion effects when the player is too hot or cold
 	"Distortion Effects" = true
 	#Enables high contrast mode for UI elements
 	"High Contrast" = false
-	#Shows a frozen texture over the player's health bar when they are freezing
-	"Show Frozen Health" = true
-	#The opacity of the icy overlay when the player is freezing
-	#Does not affect Vanilla's powder snow overlay
-	#Range: 0.0 ~ 1.0
-	"Freezing Overlay Opacity" = 1.0
-	#The intensity of the shivering effect when the player is too cold
-	#Range: 0.0 ~ 2.0
-	"Shiver Intensity" = 1.0
-	#The opacity of the pulsing red border around the screen when the player is too hot
-	#Range: 0.0 ~ 1.0
-	"Heatstroke Border Opacity" = 1.0
-	#The amount of blur applied to the screen when the player is too hot
-	#Range: 0.0 ~ 1.0
-	"Heatstroke Blur Strength" = 1.0
-	#The amount of camera sway applied when the player is too hot
-	#Range: 0.0 ~ 2.0
-	"Heatstroke Sway Amount" = 1.0
-	#The speed of the camera sway applied when the player is too hot
-	#Range: 0.0 ~ 2.0
-	"Heatstroke Sway Speed" = 1.0
 
 [Misc]
+	#Show the config menu button in the Options menu
+	"Enable In-Game Config" = true
+	#The position (offset) of the config button on the screen
+	"Config Button Position" = [0, -68]
 	#Warns the player about a bug that clears armor insulation when in creative mode
 	"Enable Creative Mode Warning" = true
 	#Displays areas that the Hearth is affecting when the F3 debug menu is open
@@ -58,30 +52,4 @@
 	"Hide Tooltips" = false
 	#Automatically expands all collapsible tooltips
 	"Expand Tooltips" = false
-	#Enables the animated soul spring lamp model
-	#Disable this if there are visual errors like missing textures
-	"Animated Soul Spring Lamp" = true
-
-[Preferences]
-	#Sets all temperatures to be displayed in Celsius
-	Celsius = true
-	#Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
-	#Range: > -2147483647
-	"Temperature Offset" = 0
-	#The amount of smoothing applied to gauges in the UI
-	#A value of 1 has no smoothing
-	#Range: 1.0 ~ 2.147483647E9
-	"Temperature Smoothing" = 10.0
-	#Displays a dripping water effect on-screen and/or with particles when the player is wet
-	#0: Off, 1: Particles, 2: On-Screen, 3: Both
-	#Range: 0 ~ 3
-	"Show Water Effect" = 3
-	#The scale of the water droplets on-screen, in scaled "pixels"
-	"Water Droplet Scale" = [40, 48]
-	#Defines the primary (right-click) action for the waterskin
-	#Can be one of "drink", "pour", or "none"
-	"Waterskin Primary Action" = "pour"
-	#Defines the secondary (sneak-right-click) action for the waterskin
-	#Can be one of "drink", "pour", or "none"
-	"Waterskin Secondary Action" = "drink"
 

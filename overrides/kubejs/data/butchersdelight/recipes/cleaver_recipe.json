@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was created by tfch",
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:ingots/wrought_iron"
+  },
+  "result": {
+    "item": "butchersdelight:cleaver"
+  },
+  "tier": 2,
+  "rules": [
+    "hit_last",
+    "bend_second_last",
+    "bend_third_last"
+  ]
+}

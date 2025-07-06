@@ -1,0 +1,45 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+            "name": "loot_pool",
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "minecraft:item",
+                "name": "butchersdelight:dead_cow"
+              }
+            ]
+        },
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfc:goat_horn"
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cold_sweat:goat_fur",
+                    "functions": [
+                        {
+                          "function": "minecraft:set_count",
+                          "count": {
+                            "min": 1,
+                            "max": 4,
+                            "type": "minecraft:uniform"
+                          }
+                        }
+                    ]
+				}
+			]
+		}
+	]
+}

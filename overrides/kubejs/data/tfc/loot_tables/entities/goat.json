@@ -1,0 +1,30 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+            "name": "loot_pool",
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "minecraft:item",
+                "name": "butchersdelight:deadgoat"
+              }
+            ]
+        },
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfc:goat_horn",
+					"conditions": [
+						{
+							"condition": "tfc:is_male"
+						}
+					]
+				}
+			]
+		}
+	]
+}
