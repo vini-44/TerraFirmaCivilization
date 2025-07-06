@@ -1,3 +1,5 @@
+// priority: 50
+
 //Create mod related recipes.
 
 ServerEvents.recipes((e) => {
@@ -14,6 +16,8 @@ ServerEvents.recipes((e) => {
 				'hit_third_last',
 			])
 			.tier(1);
+
+		ADDED_ANVIL_RECIPES.push(['16x ' + block, 'tfc:metal/sheet/zinc', 1]);
 	});
 
 	e.shapeless('2x kubejs:unfired_andesite_alloy', [
@@ -33,6 +37,12 @@ ServerEvents.recipes((e) => {
 		])
 		.tier(2);
 
+	ADDED_ANVIL_RECIPES.push([
+		'create:brass_hand',
+		'tfc:metal/double_ingot/brass',
+		2,
+	]);
+
 	e.recipes.tfc
 		.anvil('create:propeller', 'tfc:metal/double_sheet/wrought_iron', [
 			'draw_last',
@@ -41,6 +51,12 @@ ServerEvents.recipes((e) => {
 		])
 		.tier(3);
 
+	ADDED_ANVIL_RECIPES.push([
+		'create:propeller',
+		'tfc:metal/double_sheet/wrought_iron',
+		3,
+	]);
+
 	e.recipes.tfc
 		.anvil('create:whisk', 'tfc:metal/double_sheet/wrought_iron', [
 			'bend_last',
@@ -48,6 +64,12 @@ ServerEvents.recipes((e) => {
 			'bend_not_last',
 		])
 		.tier(3);
+
+	ADDED_ANVIL_RECIPES.push([
+		'create:whisk',
+		'tfc:metal/double_sheet/wrought_iron',
+		3,
+	]);
 
 	e.shapeless('create:electron_tube', [
 		'tfc:lamp_glass',
@@ -60,16 +82,6 @@ ServerEvents.recipes((e) => {
 			[Item.of('create:precision_mechanism')],
 			'tfc:metal/sheet/gold',
 			[
-				// 'create:golden_sheet' is the input
-				// the transitional item set by `transitionalItem('create:incomplete_large_cogwheel')` is the item used during the intermediate stages of the assembly
-				e.recipes.createDeploying(
-					'create:incomplete_precision_mechanism',
-					[
-						'create:incomplete_precision_mechanism',
-						'tfc:brass_mechanisms',
-					]
-				),
-				// like a normal recipe function, is used as a sequence step in this array. Input and output have the transitional item
 				e.recipes.createDeploying(
 					'create:incomplete_precision_mechanism',
 					[
@@ -87,7 +99,7 @@ ServerEvents.recipes((e) => {
 			]
 		)
 		.transitionalItem('create:incomplete_precision_mechanism')
-		.loops(2); // set the transitional item and the number of loops
+		.loops(1); // set the transitional item and the number of loops
 
 	//kinetics
 
@@ -169,18 +181,18 @@ ServerEvents.recipes((e) => {
 
 	e.shaped('2x create:andesite_tunnel', [' A ', 'ALA'], {
 		A: 'create:andesite_alloy',
-		L: 'afc:rubber_bar',
+		L: 'leather',
 	});
 
 	e.shaped('2x create:andesite_funnel', ['A', 'L'], {
 		A: 'create:andesite_alloy',
-		L: 'afc:rubber_bar',
+		L: 'leather',
 	});
 
-	e.shaped('3x create:item_vault', [' S ', 'CCC', ' S '], {
-		S: 'tfc:metal/sheet/steel',
-		C: '#forge:chests/wooden',
-	});
+	e.shapeless('4x create:item_vault', [
+		'tfc:metal/sheet/steel',
+		'4x #forge:chests/wooden',
+	]);
 
 	e.shaped('create:portable_storage_interface', ['CSL'], {
 		C: 'create:andesite_casing',
@@ -203,8 +215,8 @@ ServerEvents.recipes((e) => {
 	]);
 
 	e.shaped('8x create:chute', ['A', 'S', 'A'], {
-		A: 'create:andesite_alloy',
-		S: 'tfc:metal/sheet/cast_iron',
+		A: 'tfc:metal/sheet/cast_iron',
+		S: 'tfc:metal/sheet/wrought_iron',
 	});
 
 	e.shapeless('create:smart_chute', [
@@ -221,11 +233,11 @@ ServerEvents.recipes((e) => {
 		S: 'tfc:metal/sheet/cast_iron',
 	});
 
-	e.shaped('create:mechanical_bearing', ['LTL', 'SMS',], {
+	e.shaped('create:mechanical_bearing', ['LTL', 'SMS'], {
 		T: 'create:turntable',
 		L: '#tfc:lumber',
 		S: 'create:andesite_alloy',
-        M: 'create:shaft'
+		M: 'create:shaft',
 	});
 
 	e.shaped('create:clockwork_bearing', ['T', 'M', 'S'], {
@@ -259,7 +271,7 @@ ServerEvents.recipes((e) => {
 	e.shaped('4x create:white_sail', ['LSL', 'SCS', 'LSL'], {
 		L: '#tfc:lumber',
 		S: '#forge:rods/wooden',
-		C: ['#tfc:high_quality_cloth', 'tfc:burlap_cloth'],
+		C: ['#tfc:sewing_light_cloth', '#tfc:sewing_dark_cloth'],
 	});
 
 	e.shapeless('create:sail_frame', ['create:white_sail']);
@@ -459,7 +471,13 @@ ServerEvents.recipes((e) => {
 			'draw_second_last',
 			'punch_third_last',
 		])
-		.tier(3);
+		.tier(2);
+
+	ADDED_ANVIL_RECIPES.push([
+		'16x create:metal_bracket',
+		'tfc:metal/double_ingot/cast_iron',
+		3,
+	]);
 
 	e.recipes.tfc
 		.anvil('8x create:metal_bracket', 'tfc:metal/ingot/cast_iron', [
@@ -467,7 +485,13 @@ ServerEvents.recipes((e) => {
 			'draw_second_last',
 			'punch_third_last',
 		])
-		.tier(3);
+		.tier(2);
+
+	ADDED_ANVIL_RECIPES.push([
+		'8x create:metal_bracket',
+		'tfc:metal/ingot/cast_iron',
+		3,
+	]);
 
 	e.shapeless('create:wooden_bracket', [
 		'create:metal_bracket',
@@ -480,18 +504,18 @@ ServerEvents.recipes((e) => {
 	e.shaped('3x create:mechanical_crafter', [' E ', 'PCP', ' T '], {
 		E: 'create:electron_tube',
 		P: 'create:precision_mechanism',
-		C: 'create:brass_casing',
+		C: 'tfc:brass_mechanisms',
 		T: '#tfc:workbenches',
 	});
 
 	e.shaped('create:display_link', [' G ', 'SCT'], {
 		G: 'tfc:metal/sheet/gold',
-		S: 'createaddition:copper_spool',
+		S: 'simpleradio:transmitting_module',
 		C: 'create:brass_casing',
 		T: 'create:electron_tube',
 	});
 
-	e.shaped('create:display_board', [' C ', 'ATA'], {
+	e.shaped('4x create:display_board', [' C ', 'ATA'], {
 		C: 'create:cogwheel',
 		A: 'create:andesite_alloy',
 		T: 'create:nixie_tube',
@@ -535,6 +559,12 @@ ServerEvents.recipes((e) => {
 		])
 		.tier(3);
 
+	ADDED_ANVIL_RECIPES.push([
+		'2x create:minecart_coupling',
+		'tfc:metal/rod/wrought_iron',
+		3,
+	]);
+
 	e.shaped('create:super_glue', ['GG', 'RR'], {
 		G: 'tfc:glue',
 		R: 'tfc:metal/rod/wrought_iron',
@@ -547,6 +577,11 @@ ServerEvents.recipes((e) => {
 			'hit_any',
 		])
 		.tier(2);
+	ADDED_ANVIL_RECIPES.push([
+		'8x create:crafter_slot_cover',
+		'tfc:metal/ingot/brass',
+		2,
+	]);
 
 	//fluids
 
@@ -565,6 +600,12 @@ ServerEvents.recipes((e) => {
 		])
 		.tier(1);
 
+	ADDED_ANVIL_RECIPES.push([
+		'8x create:fluid_pipe',
+		'tfc:metal/sheet/copper',
+		1,
+	]);
+
 	e.shapeless('create:mechanical_pump', [
 		'create:fluid_pipe',
 		'create:cogwheel',
@@ -582,9 +623,15 @@ ServerEvents.recipes((e) => {
 		])
 		.tier(1);
 
-	e.shapeless('create:fluid_tank', [
-		'2x tfc:metal/sheet/copper',
-		'#tfc:barrels',
+	ADDED_ANVIL_RECIPES.push([
+		'create:copper_valve_handle',
+		'tfc:metal/ingot/copper',
+		1,
+	]);
+
+	e.shapeless('4x create:fluid_tank', [
+		'tfc:metal/sheet/copper',
+		'4x #tfc:barrels',
 	]);
 
 	e.shapeless('create:fluid_valve', [
@@ -633,7 +680,6 @@ ServerEvents.recipes((e) => {
 		M: 'tfc:brass_mechanisms',
 	});
 
-
 	e.shaped('create:track_observer', ['P', 'C'], {
 		P: 'minecraft:heavy_weighted_pressure_plate',
 		C: 'create:railway_casing',
@@ -675,12 +721,6 @@ ServerEvents.recipes((e) => {
 		S: '#forge:smooth_stone',
 		R: 'redstone',
 	});
-
-	e.shapeless('create:redstone_link', [
-		'create:brass_casing',
-		'createaddition:copper_spool',
-		'redstone',
-	]);
 
 	e.shaped('create:linked_controller', ['BBB', 'SCR', 'BBB'], {
 		B: '#minecraft:buttons',
@@ -768,6 +808,12 @@ ServerEvents.recipes((e) => {
 		])
 		.tier(2);
 
+	ADDED_ANVIL_RECIPES.push([
+		'8x create:brass_bars',
+		'tfc:metal/sheet/brass',
+		2,
+	]);
+
 	e.recipes.tfc
 		.anvil('16x create:brass_bars', 'tfc:metal/double_sheet/brass', [
 			'upset_last',
@@ -775,6 +821,12 @@ ServerEvents.recipes((e) => {
 			'punch_third_last',
 		])
 		.tier(2);
+
+	ADDED_ANVIL_RECIPES.push([
+		'16x create:brass_bars',
+		'tfc:metal/double_sheet/brass',
+		2,
+	]);
 
 	e.shaped('create:placard', [' B ', 'IPI', ' B '], {
 		B: 'tfc:metal/rod/brass',
@@ -790,6 +842,14 @@ ServerEvents.recipes((e) => {
 		'#tfc:high_quality_cloth',
 		'tfc:metal/rod/gold',
 	]);
+	e.shapeless('create:package_filter', [
+		'#tfc:high_quality_cloth',
+		'tfc:metal/rod/zinc',
+	]);
+	e.shapeless('createdieselgenerators:entity_filter', [
+		'#tfc:high_quality_cloth',
+		'tfc:metal/rod/rose_gold',
+	]);
 
 	e.shapeless('create:crafting_blueprint', [
 		'2x paper',
@@ -803,7 +863,13 @@ ServerEvents.recipes((e) => {
 			'punch_second_last',
 			'draw_third_last',
 		])
-		.tier(3);
+		.tier(2);
+
+	ADDED_ANVIL_RECIPES.push([
+		'16x create:metal_girder',
+		'tfc:metal/double_ingot/cast_iron',
+		2,
+	]);
 
 	e.recipes.tfc
 		.anvil('8x create:metal_girder', 'tfc:metal/ingot/cast_iron', [
@@ -811,7 +877,41 @@ ServerEvents.recipes((e) => {
 			'punch_second_last',
 			'draw_third_last',
 		])
+		.tier(2);
+
+	ADDED_ANVIL_RECIPES.push([
+		'8x create:metal_girder',
+		'tfc:metal/ingot/cast_iron',
+		2,
+	]);
+
+	e.recipes.tfc
+		.anvil(
+			'32x createdieselgenerators:andesite_girder',
+			'tfc:metal/double_ingot/steel',
+			['upset_last', 'punch_second_last', 'draw_third_last']
+		)
 		.tier(3);
+
+	ADDED_ANVIL_RECIPES.push([
+		'32x createdieselgenerators:andesite_girder',
+		'tfc:metal/double_ingot/steel',
+		3,
+	]);
+
+	e.recipes.tfc
+		.anvil(
+			'16x createdieselgenerators:andesite_girder',
+			'tfc:metal/ingot/steel',
+			['upset_last', 'punch_second_last', 'draw_third_last']
+		)
+		.tier(3);
+
+	ADDED_ANVIL_RECIPES.push([
+		'16x createdieselgenerators:andesite_girder',
+		'tfc:metal/ingot/steel',
+		3,
+	]);
 
 	e.shaped('8x create:framed_glass', ['GGG', 'GSG', 'GGG'], {
 		G: '#forge:glass/colorless',
@@ -885,6 +985,15 @@ ServerEvents.recipes((e) => {
 		G: 'create:ornate_iron_window',
 	});
 
+	e.shaped('4x create:industrial_iron_window', [' R ', 'GGG', 'GGG'], {
+		R: 'tfc:metal/sheet/cast_iron',
+		G: '#forge:glass/colorless',
+	});
+
+	e.shaped('16x create:industrial_iron_window_pane', ['GGG', 'GGG'], {
+		G: 'create:industrial_iron_window',
+	});
+
 	e.shaped('create:white_seat', ['C', 'L'], {
 		C: '#tfc:high_quality_cloth',
 		L: '#tfc:lumber',
@@ -912,32 +1021,108 @@ ServerEvents.recipes((e) => {
 		D: 'tfc:metal/double_sheet/brass',
 	});
 
-	e.remove({ type: 'liquidburner:liquidburning' });
+	e.shapeless('create:industrial_iron_block', [
+		'tfc:metal/block/cast_iron',
+		'#tfc:chisels',
+	]).damageIngredient('#tfc:chisels');
 
-	e.custom({
-		type: 'liquidburner:liquidburning',
-		fluid: 'createdieselgenerators:gasoline',
-		burntime: '10000',
-		superheattime: '0',
+	e.shaped('create:white_postbox', ['A', 'B', 'C'], {
+		A: 'tfc:brass_mechanisms',
+		B: '#forge:chests',
+		C: 'create:andesite_alloy',
+	}); //TODO: DYEING
+	e.shapeless('create:pulse_timer', ['create:pulse_repeater', '#forge:gems']);
+	e.shapeless('create:item_hatch', [
+		'tfc:metal/sheet/steel',
+		'create:andesite_alloy',
+	]);
+	e.shaped('create:stock_link', ['A', 'B'], {
+		A: 'simpleradio:receiving_module',
+		B: 'create:andesite_casing',
 	});
-    e.custom({
-		type: 'liquidburner:liquidburning',
-		fluid: 'createdieselgenerators:ethanol',
-		burntime: '10000',
-		superheattime: '0',
+	e.shaped('create:redstone_requester', ['A', 'B'], {
+		A: 'simpleradio:transmitting_module',
+		B: 'create:item_vault',
 	});
-	e.custom({
-		type: 'liquidburner:liquidburning',
-		fluid: 'kubejs:kerosene',
-		burntime: '0',
-		superheattime: '10000',
+	e.shaped('create:stock_ticker', ['AAA', 'BCD', ' E '], {
+		A: 'minecraft:glass',
+		B: 'simpleradio:transmitting_module',
+		C: 'create:precision_mechanism',
+		D: 'simpleradio:receiving_module',
+		E: 'create:andesite_casing',
 	});
 
-	e.shaped('create:blaze_burner', ['A A', 'B B', 'CDC'], {
-		A: 'tfc:metal/sheet/black_steel',
-		B: 'tfc:metal/double_sheet/black_steel',
-		C: 'afc:rubber_bar',
-		D: 'create:fluid_pipe',
+	e.shaped('create:packager', ['ABA', 'CDC', 'EFE'], {
+		A: 'tfc:brass_mechanisms',
+		B: 'create:precision_mechanism',
+		C: 'kubejs:metal/sheet/aluminum',
+		D: 'create:cardboard_block',
+		E: 'minecraft:redstone',
+		F: 'create:andesite_alloy',
+	});
+	e.shapeless('create:repackager', ['create:packager']);
+	e.shaped('create:white_table_cloth', ['AA', 'AA'], {
+		A: '#tfc:high_quality_cloth',
+	});
+	e.shapeless('create:packager', ['create:repackager']);
+	e.shaped('6x create:chain_conveyor', ['A', 'B', 'A'], {
+		A: 'create:andesite_casing',
+		B: 'create:shaft',
+	});
+
+	e.shaped('create:factory_gauge', ['A', 'B'], {
+		A: 'simpleradio:transmitting_module',
+		B: 'create:precision_mechanism',
+	});
+	e.shaped('2x create:redstone_link', ['ABC'], {
+		A: 'simpleradio:receiving_module',
+		B: 'create:andesite_casing',
+		C: 'simpleradio:transmitting_module',
+	});
+	e.shaped('create:desk_bell', ['A', 'B'], {
+		A: '#minecraft:buttons',
+		B: 'tfc:metal/sheet/gold',
+	});
+	e.shaped('create:package_frogport', ['A', 'B', 'C'], {
+		A: 'tfc:glue',
+		B: 'create:item_vault',
+		C: 'tfc:brass_mechanisms',
+	});
+
+	e.recipes.create
+		.sequenced_assembly(['create:cardboard'], 'tfc:unrefined_paper', [
+			e.recipes.create.filling('tfc:unrefined_paper', [
+				'tfc:unrefined_paper',
+				Fluid.of('water'),
+			]),
+			e.recipes.create.deploying('tfc:unrefined_paper', [
+				'tfc:unrefined_paper',
+				'tfc:unrefined_paper',
+			]),
+			e.recipes.create.pressing('tfc:unrefined_paper', [
+				'tfc:unrefined_paper',
+			]),
+		])
+		.transitionalItem('create:cardboard')
+		.loops(3);
+
+	e.shaped('create:cardboard_block', ['AAA', 'AAA', 'AAA'], {
+		A: 'create:cardboard',
+	});
+	e.shaped('create:cardboard_leggings', ['AAA', 'A A', 'A A'], {
+		A: 'create:cardboard',
+	});
+	e.shaped('create:cardboard_helmet', ['AAA', 'A A'], {
+		A: 'create:cardboard',
+	});
+	e.shaped('create:cardboard_chestplate', ['A A', 'AAA', 'AAA'], {
+		A: 'create:cardboard',
+	});
+
+	e.shaped('create:cardboard_boots', ['A A', 'A A'], {
+		A: 'create:cardboard',
+	});
+	e.shaped('create:cardboard_sword', ['A', 'A', 'A'], {
+		A: 'create:cardboard',
 	});
 });
-

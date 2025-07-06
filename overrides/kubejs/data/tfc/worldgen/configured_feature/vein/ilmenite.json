@@ -1,0 +1,144 @@
+{
+    "__comment__": "To keep consistent with changes to rarity and size, this also needed stats tweaked.",
+    "type": "tfc:cluster_vein",
+    "config": {
+        "rarity": 250,
+        "density": 0.48,
+        "min_y": -80,
+        "max_y": -16,
+        "random_name": "ilmenite",
+        "size": 75,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/marble"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:marble_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gneiss"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:gneiss_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/schist"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:schist_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/phyllite"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:phyllite_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/slate"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:slate_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/quartzite"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:quartzite_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dacite"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:dacite_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/andesite"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:andesite_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/basalt"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:basalt_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/rhyolite"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:rhyolite_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:gabbro_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/diorite"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:diorite_ilmenite"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/granite"
+                ],
+                "with": [
+                    {
+                        "block": "kubejs:granite_ilmenite"
+                    }
+                ]
+            }
+        ]
+    }
+}

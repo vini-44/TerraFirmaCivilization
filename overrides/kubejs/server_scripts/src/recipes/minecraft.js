@@ -1,3 +1,5 @@
+// priority: 50
+
 ServerEvents.recipes((event) => {
 	event.remove({ input: /.*chainmail.*/, not: { type: 'smithing_trim' } });
 	event.remove({ output: /.*chainmail.*/, not: { type: 'smithing_trim' } });

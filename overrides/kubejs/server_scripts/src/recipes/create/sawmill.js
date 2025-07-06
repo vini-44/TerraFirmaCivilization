@@ -1,3 +1,5 @@
+// priority: 50
+
 ServerEvents.recipes((event) => {
 	WOOD_TYPES.forEach((type) => {
 		event.recipes.create.cutting(

@@ -19,16 +19,22 @@
   "repairSpeed": 0.0125,
   "repairExhaustion": 0.5,
   "collisionDamage": true,
-  "collisionDamageMultiplier": 240.0,
+  "collisionDamageMultiplier": 2000.0,
   "burnFuelInCreative": true,
   "acceptVanillaFuel": false,
   "useCustomKeybindSystem": true,
   "showHotbarEngineGauge": true,
   "weaponsAreDestructive": true,
+  "dropAircraft": true,
   "dropInventory": true,
   "dropUpgrades": false,
   "regenerateHealthEveryNTicks": 0,
   "requireShiftForRepair": false,
+  "bombBayEntity": {
+    "minecraft:egg": "minecraft:chicken"
+  },
+  "rotaryCannonDamage": 5.0,
+  "heavyCrossBowVelocity": 3.0,
   "fuelList": {
     "createdieselgenerators:ethanol_bucket": 2200,
     "createdieselgenerators:biodiesel_bucket": 2400,
@@ -45,7 +51,7 @@
     "minecraft:overworld": true
   },
   "gunpowderAmmunition": {
-    "createbigcannons:machine_gun_round": 100
+    "scguns:advanced_round": 100
   },
   "arrowAmmunition": {
     "minecraft:spectral_arrow": 100,

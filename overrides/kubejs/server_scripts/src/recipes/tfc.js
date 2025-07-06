@@ -1,17 +1,6 @@
-ServerEvents.recipes((e) => {
-	e.forEachRecipe(
-		[
-			{ type: 'tfc:advanced_shapeless_crafting' },
-			{ type: 'tfc:advanced_shaped_crafting' },
-		],
-		(recipe) => {
-			let json = recipe.json;
-			let _id = recipe.getId();
+// priority: 50
 
-			e.remove({ id: _id });
-			e.custom(json).id(_id + '_manual_only');
-		}
-	);
+ServerEvents.recipes((e) => {
 
 	e.remove({ output: 'minecraft:chest' });
 	e.remove({ output: 'minecraft:trapped_chest' });
@@ -554,7 +543,19 @@ ServerEvents.recipes((e) => {
 	e.remove({ output: /everycomp:q\/afc\/.*_chest/ });
 	e.remove({ output: /everycomp.*storage_jar.*/ });
 
-	e.remove({ output: 'sns:straw_basket' });
+	let remove_sns = [
+		'sns:quiver',
+		'sns:straw_basket',
+		'sns:hiking_boots',
+		'sns:steel_toe_hiking_boots',
+		'sns:black_steel_toe_hiking_boots',
+		'sns:blue_steel_toe_hiking_boots',
+		'sns:red_steel_toe_hiking_boots',
+		'sns:buckle',
+	].forEach((item) => {
+		e.remove({ output: item });
+	});
+
 	e.shaped('sns:straw_basket', ['AA', 'BB'], {
 		A: 'tfc:straw',
 		B: 'tfc:thatch',
@@ -702,7 +703,6 @@ ServerEvents.recipes((e) => {
 		);
 	});
 
-    
 	e.shaped('minecraft:bucket', ['ABA', 'ACA', ' A '], {
 		A: 'kubejs:metal/double_sheet/aluminum',
 		B: 'tfc:metal/bucket/blue_steel',
@@ -714,5 +714,69 @@ ServerEvents.recipes((e) => {
 		B: 'tfc:metal/bucket/red_steel',
 		C: 'tfc:metal/bucket/blue_steel',
 	});
-});
 
+	e.replaceOutput({}, 'afc:maple_sugar', 'sugar');
+	e.replaceOutput({}, 'afc:birch_sugar', 'sugar');
+
+	e.replaceInput({ output: 'sns:reinforced_fiber' }, 'tfc:jute_fiber', [
+		'tfc:jute_fiber',
+		'textile:flax_fiber',
+	]);
+
+	e.remove({ id: 'chunkschedudeler:schedudeler' });
+	e.shaped('chunkschedudeler:schedudeler', ['ABA', 'ACA'], {
+		A: 'tfc:metal/rod/blue_steel',
+		B: 'kubejs:automaton_head',
+		C: 'createaddition:capacitor',
+	});
+
+	e.recipes.create
+		.sequenced_assembly(
+			[
+				'tfc:brass_mechanisms',
+				Item.of('tfc:brass_mechanisms').withChance(0.5),
+			],
+			'tfc:metal/ingot/brass',
+			[
+				e.recipes.create.cutting(
+					'tfc:metal/ingot/brass',
+					'tfc:metal/ingot/brass'
+				),
+			]
+		)
+		.transitionalItem('tfc:metal/ingot/brass')
+		.loops(5);
+
+	let anvil_metals = {
+		red_steel: 1540,
+		blue_steel: 1540,
+		black_steel: 1485,
+		steel: 1540,
+		wrought_iron: 1535,
+		copper: 1080,
+		bronze: 950,
+		black_bronze: 1070,
+		bismuth_bronze: 985,
+	};
+
+	for (let [metal, temp] of Object.entries(anvil_metals)) {
+		e.remove({ output: `tfc:metal/anvil/${metal}` });
+		e.remove({ id: `tfc:heating/metal/${metal}_anvil` });
+
+		e.shaped(`tfc:metal/anvil/${metal}`, ['AAA', ` B `, `AAA`], {
+			A: `tfc:metal/ingot/${metal}`,
+			B: `tfc:metal/double_ingot/${metal}`,
+		});
+
+		e.recipes.tfc
+			.heating(`tfc:metal/anvil/${metal}`, temp)
+			.resultFluid(Fluid.of(`tfc:metal/${metal}`, 800));
+	}
+
+    e.remove({output: 'tfc:bloomery'})
+
+    e.shaped('tfc:bloomery', ['ABA', 'A A', 'ABA'], {
+        A: '#forge:sheets/any_bronze',
+        B: '#forge:double_sheets/any_bronze',
+    })
+});

@@ -1,3 +1,5 @@
+// priority: 50
+
 ServerEvents.recipes((e) => {
     e.remove({ mod: 'createaddition' });
 

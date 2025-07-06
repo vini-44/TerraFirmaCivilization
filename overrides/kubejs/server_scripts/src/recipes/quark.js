@@ -1,3 +1,5 @@
+// priority: 50
+
 ServerEvents.recipes((e) => {
     e.remove({ mod: 'quark' });
 
@@ -6,12 +8,16 @@ ServerEvents.recipes((e) => {
         'punch_second_last',
         'punch_third_last',
     ]);
+    
+    ADDED_ANVIL_RECIPES.push(['8x quark:gold_bars', 'tfc:metal/sheet/gold', 1]);
 
     e.recipes.tfc.anvil('16x quark:gold_bars', 'tfc:metal/double_sheet/gold', [
         'upset_last',
         'punch_second_last',
         'punch_third_last',
     ]);
+
+    ADDED_ANVIL_RECIPES.push(['16x quark:gold_bars', 'tfc:metal/double_sheet/gold', 1]);
 
     e.recipes.tfc
         .anvil('8x quark:grate', 'tfc:metal/sheet/wrought_iron', [
@@ -21,6 +27,8 @@ ServerEvents.recipes((e) => {
         ])
         .tier(3);
 
+    ADDED_ANVIL_RECIPES.push(['8x quark:grate', 'tfc:metal/sheet/wrought_iron', 3]);
+
     e.recipes.tfc
         .anvil('16x quark:grate', 'tfc:metal/double_sheet/wrought_iron', [
             'upset_last',
@@ -28,6 +36,8 @@ ServerEvents.recipes((e) => {
             'punch_third_last',
         ])
         .tier(3);
+
+    ADDED_ANVIL_RECIPES.push(['16x quark:grate', 'tfc:metal/double_sheet/wrought_iron', 3]);
 
     e.shaped('quark:pickarang', ['SLC', '  L', '  S'], {
         L: '#tfc:lumber',

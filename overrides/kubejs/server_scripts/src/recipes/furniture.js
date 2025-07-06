@@ -1,3 +1,5 @@
+// priority: 50
+
 //FUCKING REFURBUSHED RELEASED
 ServerEvents.recipes((e) => {
 	e.remove({ mod: 'refurbished_furniture' });
@@ -400,26 +402,4 @@ limit.forEach((item) => {
 ServerEvents.tags('block', (event) => {
 	event.add('kubejs:ceiling_fans', /.*ceiling_fan.*/);
     event.add('kubejs:electricity_generators', /.*electricity_generator.*/)
-});
-
-ServerEvents.highPriorityData((event) => {
-	event.addJson('kubejs:cold_sweat/block/block_temp/ceiling_fans', {
-		blocks: ['#kubejs:ceiling_fans'],
-		temperature: -0.5,
-		// The maximum temperature change that this BlockTemp can cause
-		// Used for capping the effect when multiple of this block are nearby
-		max_effect: 2.0,
-        min_temp: 0.75,
-		// Flag that causes the effect of the block to fade with range. Defaults to true
-		fade: true,
-		// The radius of the block's area-of-effect
-		range: 7,
-		conditions: [
-			{
-				state: {
-					powered: true,
-				},
-			},
-		],
-	});
 });

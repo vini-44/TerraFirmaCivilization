@@ -1,3 +1,5 @@
+// priority: 50
+
 //this file exists to cleanup some unused recipes.
 
 let remove = [

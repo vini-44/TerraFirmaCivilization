@@ -1,0 +1,37 @@
+{
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "kubejs:shipwreck/shipwreck",
+          "processors": "kubejs:shipwreck",
+          "projection": "rigid",
+          "rotation": "none"
+
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "kubejs:shipwreck/shipwreck_half1",
+          "processors": "kubejs:shipwreck",
+          "projection": "rigid",
+          "rotation": "none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "kubejs:shipwreck/shipwreck_half2",
+          "processors": "kubejs:shipwreck",
+          "projection": "rigid",
+          "rotation": "none"
+        },
+        "weight": 1
+      }
+    ],
+    "fallback": "minecraft:empty"
+  }
+  

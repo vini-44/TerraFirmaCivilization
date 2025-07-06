@@ -1,3 +1,5 @@
+// priority: 50
+
 ServerEvents.recipes((e) => {
 	// Remove old recipes
 	e.remove({ mod: 'thermal' });
@@ -17,14 +19,6 @@ ServerEvents.recipes((e) => {
 		R: 'tfc:metal/rod/cast_iron',
 		S: 'createaddition:copper_spool',
 		C: 'thermal:machine_frame',
-		P: 'firmalife:metal/sheet/stainless_steel',
-	});
-
-	//sawmill
-	e.shaped('thermal:machine_sawmill', [' B ', 'SFS', ' P '], {
-		B: 'thermal:saw_blade',
-		S: 'createaddition:copper_spool',
-		F: 'thermal:machine_frame',
 		P: 'firmalife:metal/sheet/stainless_steel',
 	});
 
@@ -58,9 +52,24 @@ ServerEvents.recipes((e) => {
 		A: 'thermal:slag',
 	});
 
-    e.shaped('4x thermal:polished_slag', ['AA', 'AA'], {
-        A: 'thermal:slag_block',
-    })
+	e.shapeless('4x thermal:slag', ['thermal:slag_block']);
+
+	e.shapeless('thermal:polished_slag', [
+		'thermal:slag_block',
+		'#tfc:chisels',
+	]).damageIngredient('#tfc:chisels');
+	e.shapeless('thermal:chiseled_slag', [
+		'thermal:polished_slag',
+		'#tfc:chisels',
+	]).damageIngredient('#tfc:chisels');
+	e.shaped('4x thermal:slag_bricks', ['ABA', 'BAB', 'ABA'], {
+		A: 'thermal:slag',
+		B: 'tfc:mortar',
+	});
+	e.shapeless('thermal:cracked_slag_bricks', [
+		'thermal:slag_bricks',
+		'#tfc:hammers',
+	]).damageIngredient('#tfc:hammers');
 
 	//TODO: smithing recipes instead?
 	//drill head
@@ -82,6 +91,9 @@ ServerEvents.recipes((e) => {
 		])
 		.bonus(true)
 		.tier(4);
+
+        ADDED_ANVIL_RECIPES.push(['thermal:drill_head', 'tfc:metal/double_sheet/steel', 4]);
+        ADDED_ANVIL_RECIPES.push(['thermal:saw_blade', 'tfc:metal/sheet/steel', 4]);
 
 	//slot seal
 	e.shaped('thermal:slot_seal', ['R R', ' R ', 'R R'], {
@@ -189,27 +201,46 @@ ServerEvents.recipes((e) => {
 		C: 'tfc:metal/sheet/zinc',
 	});
 
-	e.shaped('thermal:upgrade_augment_2', ['ABC', 'BDB', 'CBA'], {
-		A: 'minecraft:redstone',
-		B: 'tfc:metal/sheet/black_steel',
-		C: '#tfc:gem_powders',
-		D: 'thermal:upgrade_augment_1',
-	});
-	e.shaped('thermal:upgrade_augment_1', ['ABA', 'BCB', 'ABA'], {
-		A: 'minecraft:redstone',
-		B: 'tfc:metal/sheet/steel',
-		C: 'tfc:lens',
-	});
-	e.shaped('thermal:upgrade_augment_3', ['ABA', 'BCB', 'ABA'], {
-		A: '#tfc:gem_powders',
-		B: 'tfc:metal/sheet/blue_steel',
-		C: 'thermal:upgrade_augment_2',
-	});
-	e.shaped('thermal:rs_control_augment', [' A ', 'BCB', ' A '], {
-		A: 'tfc:metal/sheet/zinc',
-		B: 'minecraft:observer',
-		C: 'create:precision_mechanism',
-	});
+	e.recipes.create
+		.sequenced_assembly(
+			'thermal:upgrade_augment_3',
+			'tfc:metal/double_sheet/blue_steel',
+			[
+				e.recipes.create.deploying(
+					'kubejs:unfinished_upgrade_augment_3',
+					[
+						'kubejs:unfinished_upgrade_augment_3',
+						'createaddition:gold_wire',
+					]
+				),
+				e.recipes.create.deploying(
+					'kubejs:unfinished_upgrade_augment_3',
+					['kubejs:unfinished_upgrade_augment_3', 'kubejs:tungsten_carbide_parts']
+				),
+				e.recipes.create.deploying(
+					'kubejs:unfinished_upgrade_augment_3',
+					[
+						'kubejs:unfinished_upgrade_augment_3',
+						'createaddition:capacitor',
+					]
+				),
+				e.recipes.create.deploying(
+					'kubejs:unfinished_upgrade_augment_3',
+					[
+						'kubejs:unfinished_upgrade_augment_3',
+						'tfc:metal/double_sheet/blue_steel',
+					]
+				),
+				e.recipes.create
+					.deploying('kubejs:unfinished_upgrade_augment_3', [
+						'kubejs:unfinished_upgrade_augment_3',
+						'createbigcannons:cannon_welder',
+					])
+					.damageIngredient('createbigcannons:cannon_welder'),
+			],
+			'kubejs:unfinished_upgrade_augment_3'
+		)
+		.loops(0);
 
 	e.recipes.create.milling('4x tfc:powder/coke', ['thermal:coal_coke']);
 	e.recipes.create.crushing(
@@ -225,5 +256,32 @@ ServerEvents.recipes((e) => {
 		E: 'thermal:machine_frame',
 	});
 
-    e.recipes.thermal.refinery(Fluid.of('tfc:lye', 500), Fluid.of('tfc:salt_water')).energy(20000);
+	e.recipes.thermal
+		.refinery(Fluid.of('tfc:lye', 500), Fluid.of('tfc:salt_water'))
+		.energy(20000);
+
+	e.recipes.thermal
+		.refinery(
+			Fluid.of('kubejs:liquid_hydrogen', 300),
+			Fluid.of('water', 1000)
+		)
+		.energy(20000);
+
+	e.shaped('thermal:machine_furnace', ['AAA', 'BCB', 'DED'], {
+		A: 'createaddition:copper_spool',
+		B: 'tfc:fire_bricks',
+		C: 'thermal:machine_frame',
+		D: 'tfc:metal/rod/black_steel',
+		E: 'tfc:metal/double_sheet/black_steel',
+	});
+
+	e.shaped('thermal:machine_crystallizer', ['ABA', 'CDE', 'FBF'], {
+		A: 'firmalife:metal/rod/chromium',
+		B: 'create:fluid_tank',
+		C: 'tfc:metal/tuyere/black_steel',
+		D: 'thermal:machine_frame',
+		E: 'tfc:ceramic/ingot_mold',
+		F: 'kubejs:metal/sheet/titanium',
+	});
+
 });

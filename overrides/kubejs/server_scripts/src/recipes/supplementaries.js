@@ -1,3 +1,5 @@
+// priority: 50
+
 //also ammendments.
 
 ServerEvents.recipes((e) => {
@@ -14,6 +16,8 @@ ServerEvents.recipes((e) => {
 		])
 		.tier(1);
 
+        ADDED_ANVIL_RECIPES.push(['supplementaries:wrench', 'tfc:metal/ingot/copper', 1]);
+
 	e.shaped('supplementaries:flint_block', ['AAA', 'AAA', 'AAA'], {
 		A: 'minecraft:flint',
 	});
@@ -23,6 +27,9 @@ ServerEvents.recipes((e) => {
 	e.shaped('supplementaries:sugar_cube', ['AAA', 'AAA', 'AAA'], {
 		A: 'minecraft:sugar',
 	});
+
+    e.shapeless('9x sugar', ['supplementaries:sugar_cube']);
+
 	e.shaped('supplementaries:notice_board', ['AAA', 'BBB', 'AAA'], {
 		A: '#tfc:lumber',
 		B: 'minecraft:paper',
@@ -52,12 +59,12 @@ ServerEvents.recipes((e) => {
 		C: '#minecraft:planks',
 		D: 'tfc:metal/rod/gold',
 	});
-
 	e.shaped('4x supplementaries:bomb', [' AB', 'ACA', ' A '], {
 		A: 'tfc:metal/sheet/cast_iron',
 		B: 'supplementaries:rope',
 		C: 'createbigcannons:packed_gunpowder',
 	});
+    
 	e.shaped('supplementaries:blackboard', ['ABA', 'BBB', 'ABA'], {
 		A: '#tfc:lumber',
 		B: 'create:andesite_alloy',
@@ -138,13 +145,22 @@ ServerEvents.recipes((e) => {
 		'supplementaries:wind_vane',
 		'tfc:metal/rod/wrought_iron',
 		['bend_last', 'punch_second_last', 'bend_third_last']
-	);
+	).tier(3);
+
+    ADDED_ANVIL_RECIPES.push([
+        'supplementaries:wind_vane',
+        'tfc:metal/rod/wrought_iron',3])
 
 	e.recipes.tfc.anvil(
 		'supplementaries:faucet',
 		'tfc:metal/sheet/wrought_iron',
 		['bend_last', 'draw_second_last', 'hit_third_last']
-	);
+	).tier(3);
+
+    ADDED_ANVIL_RECIPES.push([
+        'supplementaries:faucet',
+        'tfc:metal/sheet/wrought_iron',3])
+
 	e.shaped('supplementaries:lock_block', ['ABA', 'BCB', 'ABA'], {
 		A: 'tfc:metal/rod/wrought_iron',
 		B: '#tfc:lumber',
@@ -241,7 +257,7 @@ ServerEvents.recipes((e) => {
 		'#forge:string',
 	]);
 	e.shaped('8x supplementaries:awning', ['AAA', 'B B'], {
-		A: 'tfc:burlap_cloth',
+		A: '#tfc:sewing_dark_cloth',
 		B: '#tfc:lumber',
 	});
 });

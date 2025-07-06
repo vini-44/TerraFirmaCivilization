@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tfc:rolling_hills",
+    "tfc:plains",
+    "tfc:plateau",
+    "tfc:lowlands",
+    "tfc:low_canyons",
+    "tfc:shore"
+  ]
+}

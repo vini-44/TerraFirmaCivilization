@@ -1,4 +1,9 @@
-const usableInAllBuckets = ['createdieselgenerators:plant_oil', 'thermal:creosote', 'kubejs:kaolinite_sludge', 'kubejs:alumina_slurry'];
+const usableInAllBuckets = [
+	'createdieselgenerators:plant_oil',
+	'thermal:creosote',
+	'kubejs:kaolinite_sludge',
+	'kubejs:alumina_slurry',
+];
 const usableInMetalBuckets = [
 	'createdieselgenerators:crude_oil',
 	'createdieselgenerators:ethanol',
@@ -7,40 +12,47 @@ const usableInMetalBuckets = [
 	'createdieselgenerators:diesel',
 	'kubejs:kerosene',
 ];
-const usableInBarrels = ['createdieselgenerators:plant_oil', 'kubejs:kaolinite_sludge', 'kubejs:alumina_slurry'];
-const usableInPot = ['createdieselgenerators:plant_oil', 'kubejs:kaolinite_sludge', 'kubejs:alumina_slurry'];
-const usableInJug = ['createdieselgenerators:plant_oil', 'kubejs:kaolinite_sludge', 'kubejs:alumina_slurry'];
+const usableInBarrels = [
+	'createdieselgenerators:plant_oil',
+	'kubejs:kaolinite_sludge',
+	'kubejs:alumina_slurry',
+];
+const usableInPot = [
+	'createdieselgenerators:plant_oil',
+	'kubejs:kaolinite_sludge',
+	'kubejs:alumina_slurry',
+];
+const usableInJug = [
+	'createdieselgenerators:plant_oil',
+	'kubejs:kaolinite_sludge',
+	'kubejs:alumina_slurry',
+];
+
+const moltenMetals = [
+	'kubejs:molten_aluminum',
+	'kubejs:molten_manganese',
+	'kubejs:molten_mangalloy',
+	'kubejs:molten_titanium',
+	'kubejs:molten_tungsten',
+];
 
 ServerEvents.tags('fluid', (event) => {
-	usableInAllBuckets.forEach((fluid) => {
-		event.add('tfc:usable_in_wooden_bucket', fluid);
-		event.add('tfc:usable_in_red_steel_bucket', fluid);
-		event.add('tfc:usable_in_blue_steel_bucket', fluid);
-		event.add('tfc:usable_in_barrel', fluid);
-	});
+	event.add('tfc:usable_in_wooden_bucket', usableInAllBuckets);
+	event.add('tfc:usable_in_red_steel_bucket', usableInAllBuckets);
+	event.add('tfc:usable_in_blue_steel_bucket', usableInAllBuckets);
+	event.add('tfc:usable_in_barrel', usableInAllBuckets);
 
-	usableInMetalBuckets.forEach((fluid) => {
-		event.add('tfc:usable_in_red_steel_bucket', fluid);
-		event.add('tfc:usable_in_blue_steel_bucket', fluid);
-	});
+	event.add('tfc:usable_in_red_steel_bucket', usableInMetalBuckets);
+	event.add('tfc:usable_in_blue_steel_bucket', usableInMetalBuckets);
 
-	usableInBarrels.forEach((fluid) => {
-		event.add('tfc:usable_in_barrel', fluid);
-	});
+	event.add('tfc:usable_in_barrel', usableInBarrels);
 
-	usableInPot.forEach((fluid) => {
-		event.add('tfc:usable_in_pot', fluid);
-	});
+	event.add('tfc:usable_in_pot', usableInPot);
 
-    usableInJug.forEach((fluid) => {
-        event.add('tfc:usable_in_jug', fluid);
-    });
+	event.add('tfc:usable_in_jug', usableInJug);
 
-    event.add('ptfc_utils:can_evaporate', 'kubejs:kerosene');
-    event.add('ptfc_utils:can_evaporate', 'createdieselgenerators:gasoline');
+	event.add('tfc:molten_metals', moltenMetals);
+	event.add('tfc:usable_in_ingot_mold', moltenMetals);
 
-    event.add('tfc:molten_metals', 'kubejs:molten_aluminum')
-    event.add('tfc:usable_in_ingot_mold', 'kubejs:molten_aluminum')
-
-    event.add('c:hidden_from_recipe_viewers', REMOVED_FLUIDS)
+	event.add('c:hidden_from_recipe_viewers', REMOVED_FLUIDS);
 });

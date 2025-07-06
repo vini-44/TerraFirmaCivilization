@@ -1,56 +1,64 @@
 {
-    "enableDropsForNonPlayer": false,
-    "enableCrashExplosion": true,
-    "enableCrashBlockDestruction": true,
-    "enableCrashFire": true,
-    "crashExplosionRadius": 20.0,
-    "crashDamage": 20.0,
-    "preventKillThroughCrash": false,
-    "healthBarRow": 0,
-    "damagePerHealthPoint": 10,
-    "separateCamera": true,
-    "useThirdPersonByDefault": true,
-    "enableTrails": true,
-    "renderDistance": 521.0,
-    "fuelConsumption": 1.0,
-    "windClearWeather": 1.0,
-    "windRainWeather": 2.0,
-    "windThunderWeather": 3.0,
-    "repairSpeed": 0.0125,
-    "collisionDamageMultiplier": 240.0,
-    "collisionDamage": true,
-    "burnFuelInCreative": true,
-    "acceptVanillaFuel": false,
-    "useCustomKeybindSystem": true,
-    "showHotbarEngineGauge": true,
-    "weaponsAreDestructive": true,
-    "fuelList": {
-      "createdieselgenerators:ethanol_bucket": 2200,
-      "createdieselgenerators:biodiesel_bucket": 2400,
-      "createdieselgenerators:diesel_bucket": 2400,
-      "createdieselgenerators:gasoline_bucket": 2400,
-  
-      "kubejs:ethanol_fuel_can": 2200,
-      "kubejs:biodiesel_fuel_can": 2400,
-      "kubejs:diesel_fuel_can": 2400,
-      "kubejs:gasoline_fuel_can": 2400
-  
-    },
-    "validDimensions": {
-      "minecraft:the_nether": true,
-      "minecraft:the_end": true,
-      "minecraft:overworld": true
-    },
-    "gunpowderAmmunition": {
-      "createbigcannons:machine_gun_round": 100
-    },
-    "arrowAmmunition": {
-      "minecraft:spectral_arrow": 100,
-      "minecraft:arrow": 100,
-      "minecraft:tipped_arrow": 100
-    },
-    "bombBayAmmunition": {
-      "minecraft:tnt": 100
-    },
-    "version": 1
-  }
+  "enableDropsForNonPlayer": true,
+  "enableCrashExplosion": true,
+  "enableCrashBlockDestruction": true,
+  "enableCrashFire": true,
+  "crashExplosionRadius": 20.0,
+  "crashDamage": 20.0,
+  "preventKillThroughCrash": true,
+  "healthBarRow": 0,
+  "damagePerHealthPoint": 30,
+  "separateCamera": true,
+  "useThirdPersonByDefault": true,
+  "enableTrails": true,
+  "renderDistance": 512.0,
+  "fuelConsumption": 1.0,
+  "windClearWeather": 1.0,
+  "windRainWeather": 3.0,
+  "windThunderWeather": 3.0,
+  "repairSpeed": 0.025,
+  "repairExhaustion": 0.5,
+  "collisionDamage": true,
+  "collisionDamageMultiplier": 2000.0,
+  "burnFuelInCreative": true,
+  "acceptVanillaFuel": false,
+  "useCustomKeybindSystem": true,
+  "showHotbarEngineGauge": true,
+  "weaponsAreDestructive": true,
+  "dropAircraft": false,
+  "dropInventory": false,
+  "dropUpgrades": false,
+  "regenerateHealthEveryNTicks": 0,
+  "requireShiftForRepair": false,
+  "bombBayEntity": {
+    "createbigcannons:mortar_stone": "createbigcannons:mortar_stone",
+    "createbigcannons:solid_shot": "createbigcannons:solid_shot",
+    "createbigcannons:ap_shot": "createbigcannons:ap_shot"
+  },
+  "rotaryCannonDamage": 15.0,
+  "heavyCrossBowVelocity": 3.0,
+  "fuelList": {
+    "kubejs:ethanol_fuel_can": 2200,
+    "kubejs:biodiesel_fuel_can": 2400,
+    "kubejs:diesel_fuel_can": 2400,
+    "kubejs:gasoline_fuel_can": 2400
+  },
+  "validDimensions": {
+    "minecraft:the_end": true,
+    "minecraft:overworld": true,
+    "minecraft:the_nether": true
+  },
+  "gunpowderAmmunition": {
+    "scguns:advanced_round": 100
+  },
+  "arrowAmmunition": {
+    "minecraft:spectral_arrow": 100,
+    "minecraft:arrow": 100,
+    "minecraft:tipped_arrow": 100
+  },
+  "bombBayAmmunition": {
+    "minecraft:tnt": 100
+  },
+  "version": 1,
+  "name": "immersive_aircraft"
+}
