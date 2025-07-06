@@ -1,0 +1,16 @@
+[
+    {
+        "name": "early_game",
+        "conditions": {
+            "mindaycount": 0,
+            "maxdaycount": 10
+        }
+    },
+    {
+        "name": "mid_game",
+        "conditions": {
+            "mindaycount": 10,
+            "maxdaycount": 30
+        }
+    }
+]

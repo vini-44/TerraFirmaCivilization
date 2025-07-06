@@ -1,0 +1,31 @@
+{
+  "__comment__": "This file was automatically created by tfch",
+  "type": "tfc:extra_products_shapeless_crafting",
+  "extra_products": [
+    {
+      "item": "minecraft:bone",
+      "count": 2
+    }
+  ],
+  "recipe": {
+    "type": "tfc:damage_inputs_shapeless_crafting",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "type": "tfc:not_rotten",
+          "ingredient": {
+            "item": "butchersdelightfoods:llamma_ribs"
+          }
+        },
+        {
+          "tag": "forge:tools/knives"
+        }
+      ],
+      "result": {
+        "item": "tfc:food/mutton",
+        "count": 6
+      }
+    }
+  }
+}

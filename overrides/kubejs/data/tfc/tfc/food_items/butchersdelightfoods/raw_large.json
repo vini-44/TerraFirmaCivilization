@@ -1,0 +1,14 @@
+{
+  "ingredient": [
+    {"item": "butchersdelightfoods:beefribs"},
+    {"item": "butchersdelightfoods:legcow"},
+    {"item": "butchersdelightfoods:beeftenderloin"},
+    {"item": "butchersdelightfoods:ham"},
+    {"item": "butchersdelightfoods:porkloin"},
+    {"item": "butchersdelightfoods:porkribs"}
+  ],
+  "hunger": 6,
+  "saturation": 0,
+  "decay_modifier": 1.5,
+  "protein": 6
+}

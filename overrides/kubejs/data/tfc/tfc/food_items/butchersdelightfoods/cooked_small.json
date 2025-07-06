@@ -1,0 +1,17 @@
+{
+  "ingredient": [
+    {"item": "butchersdelightfoods:cookedsheepshank"},
+    {"item": "butchersdelightfoods:cookedsheeprack"},
+    {"item": "butchersdelightfoods:cooked_sheeploin"},
+    {"item": "butchersdelightfoods:cooked_goat_shank"},
+    {"item": "butchersdelightfoods:cooked_goat_rack"},
+    {"item": "butchersdelightfoods:cooked_goat_loin"},
+    {"item": "butchersdelightfoods:cooked_llama_leg"},
+    {"item": "butchersdelightfoods:cooked_llama_ribs"},
+    {"item": "butchersdelightfoods:cooked_llama_loin"} 
+  ],
+  "hunger": 8,
+  "saturation": 12,
+  "decay_modifier": 2,
+  "protein": 12
+}

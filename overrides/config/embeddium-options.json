@@ -12,11 +12,11 @@
     "cpu_render_ahead_limit": 3
   },
   "performance": {
-    "chunk_builder_threads": 12,
+    "chunk_builder_threads": 6,
     "always_defer_chunk_updates_v2": true,
     "animate_only_visible_textures": true,
-    "use_entity_culling": false,
-    "use_fog_occlusion": false,
+    "use_entity_culling": true,
+    "use_fog_occlusion": true,
     "use_block_face_culling": true,
     "use_compact_vertex_format": true,
     "use_translucent_face_sorting_v2": true,

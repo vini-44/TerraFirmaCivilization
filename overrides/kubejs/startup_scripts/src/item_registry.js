@@ -9,6 +9,11 @@ const $ItemProperties = Java.loadClass(
 const registryDef = {
 	//pistol_barrel: {name: "Pistol Barrel"},
 	//musket_barrel: {name: "Musket Barrel"},
+
+	heavy_firing_unit: { name: 'Heavy Firing Unit' },
+
+	unfinished_heavy_firing_unit: { name: 'Unfinished Heavy Firing Unit' },
+
 	musket_ball: { name: 'Musket Balls' },
 
 	chromite_powder: { name: 'Chromite Powder' },
@@ -47,7 +52,9 @@ const registryDef = {
 	kaolinite_sludge: { name: 'Kaolinite Sludge' },
 	hardened_kaolinite_sludge: { name: 'Dried Kaolinite Sludge' },
 	alumina_powder: { name: 'Alumina Powder' },
-    processed_manganite_powder: { name: 'Processed Manganite Powder' },
+    processed_manganite_powder: { name: 'Processed Manganite Powder', tags: ['kubejs:processed_manganese_powder']},
+    processed_rhodocrosite_powder: { name: 'Processed Rhodocrosite Powder', tags: ['kubejs:processed_manganese_powder']},
+
 	unfinished_gun_parts: { name: 'Unfinished Gun Parts' },
 	unfinished_heavy_gun_parts: { name: 'Unfinished Heavy Gun Parts' },
 
@@ -94,6 +101,8 @@ const registryDef = {
  * @param {boolean} def.unstackable - Whether the item is unstackable.
  * @param {number} def.maxDamage - The maximum damage the item can take.
  * @param {string} def.name - Actual naem of the item.
+ * @param {string[]} def.tags - Tags of the item.
+ * @param {string} def.texture - The texture of the item.
  * @return {Internal.BuilderBase<Internal.Item>} The created item.
  */
 function registerItem(event, name, def) {
@@ -104,6 +113,11 @@ function registerItem(event, name, def) {
 			item.tag(tag);
 		});
 	}
+
+    if (def.texture) {
+        item.texture(def.texture);
+    }
+
 	if (def.unstackable) {
 		item.unstackable();
 	}
@@ -141,6 +155,7 @@ StartupEvents.registry('item', (event) => {
     event.create('autocannon').displayName("Handheld Autocannon").unstackable().maxDamage(100);*/
 
     event.create('manganite_chunk').texture('thermal:item/rich_slag').displayName('Manganite Chunk');
+    event.create('rhodocrosite_fragment').texture('thermal:item/raw_nickel').displayName('Rhodocrosite Fragment');
 
 	let aluminum_items = {
 		ingot: 'Ingot',

@@ -4,6 +4,7 @@
   "alekiships:furnace": null,
   "alekiships:jukebox": null,
   "alekiships:note_block": null,
+  "balm:jade": null,
   "corpse:corpse": null,
   "create:backtank_capacity": null,
   "create:blaze_burner": null,
@@ -14,6 +15,8 @@
   "create:goggles": null,
   "create:hide_boiler_tanks": null,
   "create:placard": null,
+  "exposure:lightroom": null,
+  "exposure:photograph_frame": null,
   "firmaciv:barrel": null,
   "firmaciv:tfc_chest": null,
   "firmalife:barrel_press": null,
@@ -129,6 +132,7 @@
   "tfc:torch": null,
   "tfc:wall_torch": null,
   "tfc:water_wheel": null,
+  "tfc:wet_concrete": null,
   "tfc:wild_animal": null,
   "tfc:windmill": null
 }

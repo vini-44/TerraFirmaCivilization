@@ -6,5 +6,5 @@
 	numberOfStacksInCoinPurse = 4
 	#
 	# Should the coins display the name of the person who minted them
-	CoinsPrintName = false
+	CoinsPrintName = true
 

@@ -11,8 +11,8 @@ familiarityDecayLimit = 0.3
 	# Forces a number of game rules to specific values.
 	#   naturalRegeneration = false (Health regen is much slower and not tied to extra saturation)
 	#   doInsomnia = false (No phantoms)
-	#   doTraderSpawning = false (No wandering traders)
-	#   doPatrolSpawning = false (No pillager patrols)
+	    doTraderSpawning = true
+	    doPatrolSpawning = true
 	enableForcedTFCGameRules = false
 	#
 	# If true, TFC will stop time when no players are online on a running server.

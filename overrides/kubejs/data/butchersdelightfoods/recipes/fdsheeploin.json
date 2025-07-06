@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "butchersdelightfoods:sheeploin"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "result": [
+    {
+      "item": "tfc:food/mutton",
+        "count": 10
+    },
+    {
+      "item": "minecraft:bone",
+      "count": 2,
+      "chance": 1
+    }
+  ],
+  "sound": "minecraft:block.beehive.drip"
+}

@@ -1,0 +1,15 @@
+{
+  "__comment__": "This file was created by tfch",
+  "ingredient": [
+    {"item": "butchersdelight:dead_cow"},
+    {"item": "butchersdelight:deadpig"},
+    {"item": "butchersdelight:deadsheep"},
+    {"item": "butchersdelight:deadgoat"},
+    {"item": "butchersdelight:deadhoglin"},
+    {"item": "butchersdelight:deadchiken"},
+    {"item": "butchersdelight:deadrabbitbrown"},
+    {"item": "butchersdelight:deadllama"},
+    {"item": "butchersdelight:deadstrider"}
+  ],
+  "decay_modifier": 1
+}

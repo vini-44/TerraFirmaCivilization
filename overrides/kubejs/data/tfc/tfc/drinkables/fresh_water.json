@@ -1,0 +1,40 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": [
+    "minecraft:water",
+    "tfc:river_water"
+  ],
+  "thirst": 20,
+  "effects": [
+    {
+      "type": "tfc:exhausted",
+      "duration": 2000,
+      "chance": 0.30
+    },
+    {
+      "type": "minecraft:hunger",
+      "duration": 2000,
+      "chance": 0.15
+    },
+    {
+      "type": "minecraft:nausea",
+      "duration": 800,
+      "chance": 0.15
+    },
+    {
+      "type": "minecraft:slowness",
+      "duration": 2000,
+      "chance": 0.15
+    },
+    {
+      "type": "tfc:overburdened",
+      "duration": 200,
+      "chance": 0.10
+    },
+    {
+      "type": "minecraft:poison",
+      "duration": 80,
+      "chance": 0.05
+    }
+  ]
+}

@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
 		},
 		'scguns:advanced_round': {
 			casing: 'scguns:medium_brass_casing',
-			propellant: 'createbigcannons:gunpowder_pinch',
+			propellant: '2x createbigcannons:gunpowder_pinch',
 			bullet: 'scguns:standard_bullet',
 		},
 		'scguns:krahg_round': {
@@ -86,4 +86,18 @@ ServerEvents.recipes((event) => {
     event.shapeless('kubejs:rocket_fuel', ['4x minecraft:sugar', '4x tfc:powder/saltpeter'])
 
     event.shapeless('scguns:rocket', ['kubejs:rocket_fuel', 'tfc:metal/sheet/zinc', 'scguns:nitro_powder'])
+
+    //reductive crafting! Reduced yield.
+    //Also fluid pipe here because why not.
+    let casing_def = {
+        'tfc:metal/sheet/brass': ['40x scguns:small_brass_casing', '24x scguns:medium_brass_casing', '16x scguns:large_brass_casing', '4x createbigcannons:empty_autocannon_cartridge'],
+        'tfc:metal/sheet/steel': ['40x scguns:small_diamond_steel_casing', '42x scguns:medium_diamond_steel_casing'],
+        'tfc:metal/sheet/copper': ['6x create:fluid_pipe']
+    }    
+
+    for (let [material, casings] of Object.entries(casing_def)) {
+        casings.forEach((casing) => {
+            event.recipes.create.cutting(casing, material).processingTime(500);
+        })
+    }
 });
