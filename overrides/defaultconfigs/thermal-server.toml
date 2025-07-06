@@ -89,13 +89,13 @@
 
 [Mobs]
 	#If TRUE, the Basalz Mob is enabled.
-	Basalz = false
+	Basalz = true
 	#If TRUE, the Blitz Mob is enabled.
-	Blitz = false
+	Blitz = true
 	#If TRUE, the Blizz Mob is enabled.
-	Blizz = false
+	Blizz = true
 	#If TRUE, the Blitz can occasionally call down lightning bolts.
-	"Blitz Lightning" = false
+	"Blitz Lightning" = true
 
 [Augments]
 	#If TRUE, Side Reconfiguration is enabled by default on most augmentable blocks which support it.
