@@ -1,9 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "ingredient": [
-    "kubejs:purified_water",
-    "purified_water:purified_water"
-  ],
+  "ingredient": "purified_water:purified_water",
   "thirst": 30,
   "effects": [
     {
@@ -13,6 +10,11 @@
     },
     {
       "type": "minecraft:strength",
+      "duration": 1200,
+      "chance": 0.07
+    },
+    {
+      "type": "minecraft:haste",
       "duration": 1200,
       "chance": 0.07
     }
