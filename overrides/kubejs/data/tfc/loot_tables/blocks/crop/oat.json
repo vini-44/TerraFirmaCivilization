@@ -26,7 +26,7 @@
                 "min": 1,
                 "max": {
                   "type": "minecraft:uniform",
-                  "min": 2,
+                  "min": 1,
                   "max": 4
                 }
               }

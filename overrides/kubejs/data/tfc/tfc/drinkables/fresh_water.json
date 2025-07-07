@@ -24,16 +24,16 @@
     {
       "type": "minecraft:slowness",
       "duration": 2000,
-      "chance": 0.15
+      "chance": 0.30
     },
     {
       "type": "tfc:overburdened",
-      "duration": 200,
-      "chance": 0.10
+      "duration": 80,
+      "chance": 0.05
     },
     {
       "type": "minecraft:poison",
-      "duration": 80,
+      "duration": 40,
       "chance": 0.05
     }
   ]

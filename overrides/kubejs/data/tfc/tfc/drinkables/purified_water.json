@@ -1,9 +1,10 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "ingredient": [
-    "kubejs:purified_water"
+    "kubejs:purified_water",
+    "purified_water:purified_water"
   ],
-  "thirst": 25,
+  "thirst": 30,
   "effects": [
     {
       "type": "minecraft:speed",
