@@ -1,0 +1,16 @@
+{
+  "name": "Faster Log Break Speed",
+  "description": "Increases the speed at which logs are broken when using an effective tool.",
+  "type": "apoli:modify_break_speed",
+  "modifier": {
+    "value": 0.75,
+    "operation": "multiply_base"
+  },
+  "block_condition": {
+    "type": "origins:in_tag",
+    "tag": "minecraft:logs"
+  },
+  "condition": {
+    "type": "origins:using_effective_tool"
+  }
+}

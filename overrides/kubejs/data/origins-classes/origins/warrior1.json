@@ -1,0 +1,11 @@
+{
+  "name": "Warrior",
+  "description": "A master of combat, the Warrior excels in melee fighting.",
+  "powers": [
+    "origins-classes:more_attack_damage",
+    "origins-classes:less_shield_slowdown"
+  ],
+  "icon": "minecraft:iron_sword",
+  "order": 5,
+  "impact": 0
+}
