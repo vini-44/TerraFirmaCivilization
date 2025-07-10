@@ -27,8 +27,8 @@
                 "min": 1,
                 "max": {
                   "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
+                  "min": 2,
+                  "max": 8
                 }
               }
             }
@@ -64,11 +64,11 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "tfc:crop_yield_uniform",
-                "min": 2,
+                "min": 1,
                 "max": {
                   "type": "minecraft:uniform",
-                  "min": 4,
-                  "max": 8
+                  "min": 1,
+                  "max": 3
                 }
               }
             }
