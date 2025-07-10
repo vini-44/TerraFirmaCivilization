@@ -1,0 +1,10 @@
+{
+  "name": "Farmer",
+  "description": "A master of agriculture, the Farmer excels in crop cultivation.",
+  "powers": [
+    "origins-classes:more_crop_drops"
+  ],
+  "icon": "minecraft:wheat",
+  "order": 1,
+  "impact": 0
+}

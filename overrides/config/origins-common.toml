@@ -4,8 +4,11 @@
 	[origins."origins-classes:nitwit"]
 		enabled = true
 
-	[origins."origins:enderian"]
+	[origins."origins:human"]
 		enabled = true
+
+	[origins."origins:enderian"]
+		enabled = false
 		"origins:throw_ender_pearl" = true
 		"origins:water_vulnerability" = true
 		"origins:pumpkin_hate" = true
@@ -13,16 +16,13 @@
 		"origins:ender_particles" = true
 		"origins:damage_from_potions" = true
 
-	[origins."origins:human"]
-		enabled = true
-
 	[origins."origins-classes:lumberjack"]
-		enabled = true
+		enabled = false
 		"origins-classes:tree_felling" = true
 		"origins-classes:more_planks_from_logs" = true
 
 	[origins."origins:feline"]
-		enabled = true
+		enabled = false
 		"origins:fall_immunity" = true
 		"origins:sprint_jump" = true
 		"origins:velvet_paws" = true
@@ -32,12 +32,12 @@
 		"origins:cat_vision" = true
 
 	[origins."origins-classes:warrior"]
-		enabled = true
+		enabled = false
 		"origins-classes:more_attack_damage" = true
 		"origins-classes:less_shield_slowdown" = true
 
 	[origins."origins:elytrian"]
-		enabled = true
+		enabled = false
 		"origins:elytra" = true
 		"origins:launch_into_air" = true
 		"origins:aerial_combatant" = true
@@ -46,7 +46,7 @@
 		"origins:more_kinetic_damage" = true
 
 	[origins."origins:shulk"]
-		enabled = true
+		enabled = false
 		"origins:shulker_inventory" = true
 		"origins:natural_armor" = true
 		"origins:strong_arms" = true
@@ -55,17 +55,17 @@
 		"origins:more_exhaustion" = true
 
 	[origins."origins-classes:cleric"]
-		enabled = true
+		enabled = false
 		"origins-classes:potion_bonus" = true
 		"origins-classes:better_enchanting" = true
 
 	[origins."origins-classes:explorer"]
-		enabled = true
+		enabled = false
 		"origins-classes:explorer_kit" = true
 		"origins-classes:no_sprint_exhaustion" = true
 
 	[origins."origins:merling"]
-		enabled = true
+		enabled = false
 		"origins:water_breathing" = true
 		"origins:water_vision" = true
 		"origins:aqua_affinity" = true
@@ -76,7 +76,7 @@
 		"origins:air_from_potions" = true
 
 	[origins."origins:phantom"]
-		enabled = true
+		enabled = false
 		"origins:phantomize" = true
 		"origins:translucent" = true
 		"origins:phasing" = true
@@ -87,17 +87,17 @@
 		"origins:phantomize_overlay" = true
 
 	[origins."origins-classes:beastmaster"]
-		enabled = true
+		enabled = false
 		"origins-classes:tamed_animal_boost" = true
 		"origins-classes:tamed_potion_diffusal" = true
 
 	[origins."origins-classes:merchant"]
-		enabled = true
+		enabled = false
 		"origins-classes:trade_availability" = true
 		"origins-classes:rare_wandering_loot" = true
 
 	[origins."origins:arachnid"]
-		enabled = true
+		enabled = false
 		"origins:climbing" = true
 		"origins:master_of_webs" = true
 		"origins:carnivore" = true
@@ -105,12 +105,12 @@
 		"origins:arthropod" = true
 
 	[origins."origins-classes:rancher"]
-		enabled = true
+		enabled = false
 		"origins-classes:twin_breeding" = true
 		"origins-classes:more_animal_loot" = true
 
 	[origins."origins:blazeborn"]
-		enabled = true
+		enabled = false
 		"origins:fire_immunity" = true
 		"origins:nether_spawn" = true
 		"origins:burning_wrath" = true
@@ -121,7 +121,7 @@
 		"origins:damage_from_potions" = true
 
 	[origins."origins:avian"]
-		enabled = true
+		enabled = false
 		"origins:slow_falling" = true
 		"origins:fresh_air" = true
 		"origins:like_air" = true
@@ -130,32 +130,32 @@
 		"origins:vegetarian" = true
 
 	[origins."origins-classes:archer"]
-		enabled = true
+		enabled = false
 		"origins-classes:no_projectile_divergence" = true
 		"origins-classes:less_bow_slowdown" = true
 
 	[origins."origins-classes:farmer"]
-		enabled = true
+		enabled = false
 		"origins-classes:more_crop_drops" = true
 		"origins-classes:better_bone_meal" = true
 
 	[origins."origins-classes:miner"]
-		enabled = true
+		enabled = false
 		"origins-classes:more_stone_break_speed" = true
 		"origins-classes:no_mining_exhaustion" = true
 
 	[origins."origins-classes:blacksmith"]
-		enabled = true
+		enabled = false
 		"origins-classes:quality_equipment" = true
 		"origins-classes:efficient_repairs" = true
 
 	[origins."origins-classes:cook"]
-		enabled = true
+		enabled = false
 		"origins-classes:better_crafted_food" = true
 		"origins-classes:more_smoker_xp" = true
 
 	[origins."origins-classes:rogue"]
-		enabled = true
+		enabled = false
 		"origins-classes:sneaky" = true
 		"origins-classes:stealth" = true
 		"origins-classes:stealth_core" = true

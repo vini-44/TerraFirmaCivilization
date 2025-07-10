@@ -1,0 +1,15 @@
+{
+  "replace": true,
+  "order": 0,
+  "enabled": true,
+  "origins": [
+    "origins:human",
+    "origins:mountains",
+    "origins:dunes",
+    "origins:plains",
+    "origins:coast"
+  ],
+  "allow_random": false,
+  "allow_random_unchoosable": false,
+  "hidden": false
+}

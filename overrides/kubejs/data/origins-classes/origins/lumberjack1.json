@@ -1,0 +1,10 @@
+{
+  "name": "Lumberjack",
+  "description": "A master of the forest, the Lumberjack excels in tree felling.",
+  "powers": [
+    "origins-classes:more_log_break_speed"
+  ],
+  "icon": "minecraft:iron_axe",
+  "order": 2,
+  "impact": 0
+}

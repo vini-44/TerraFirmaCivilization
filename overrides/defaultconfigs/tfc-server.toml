@@ -25,7 +25,7 @@ familiarityDecayLimit = 0.3
 	#
 	# Base probability for a firestarter to start a fire. May change based on circumstances
 	#Range: 0.0 ~ 1.0
-	fireStarterChance = 0.5
+	fireStarterChance = 0.25
 	#
 	# Enable rat infestations for improperly stored food.
 	enableInfestations = true
@@ -505,11 +505,11 @@ familiarityDecayLimit = 0.3
 		#
 		# Modifier applied to the growth time of every crop. The modifier multiplies the ticks it takes to grow, so larger values cause longer growth times. For example, a value of 2 doubles the growth time.
 		#Range: 0.001 ~ 1000.0
-		cropGrowthModifier = 1.0
+		cropGrowthModifier = 4.5
 		#
 		# Modifier applied to the expiry time of every crop. The modifier multiplies the ticks it takes to grow, so larger values cause longer growth times. For example, a value of 2 doubles the growth time.
 		#Range: 0.001 ~ 1000.0
-		cropExpiryModifier = 1.0
+		cropExpiryModifier = 4.5
 
 	[blocks.dispenser]
 		#
