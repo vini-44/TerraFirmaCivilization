@@ -10,14 +10,14 @@
 <p>This is used to track what should not be present on the server</p>
 <ul>
   <li>YungsMenuTweaks</li>
+  <li>Fancy menu</li>
   <li>Sounds</li>
+  <li>Sounds physics</li>
+  <li>Sholder Surfings</li>
   <li>Make Bubbles Pop</li>
   <li>MaFgLib</li>
   <li>DistantHorizons</li>
-  <li>Sounds physics</li>
-  <li>Sholder Surfings</li>
-  <li>I Heart TFC</li>
-  <li>Pano creator</li>
+  <li>True Darkness</li>
 </ul>
 
 
