@@ -11,7 +11,6 @@
 <ul>
   <li>YungsMenuTweaks</li>
   <li>Sounds</li>
-  <li>True Darkness</li>
   <li>Make Bubbles Pop</li>
   <li>MaFgLib</li>
   <li>DistantHorizons</li>
