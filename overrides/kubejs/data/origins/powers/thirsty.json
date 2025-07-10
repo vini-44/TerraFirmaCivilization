@@ -1,0 +1,7 @@
+{
+  "type": "tfcorigins:dehydrate",
+  "name": "Thirsty",
+  "description": "You get thirsty faster.",
+  "interval": 400,
+  "dehydration": 4.0
+}

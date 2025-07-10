@@ -1,0 +1,9 @@
+{
+  "name": "Bad swimmer",
+  "description": "You've never been taught to swim.",
+  "type": "origins:modify_swim_speed",
+  "modifier": {
+    "operation": "addition",
+    "value": -0.020
+  }
+}
