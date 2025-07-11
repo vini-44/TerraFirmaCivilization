@@ -86,7 +86,7 @@ ServerEvents.recipes((e) => {
 	e.remove({ id: 'tfc:barrel/dye/bleach_windmill_blades' });
 	e.remove({ input: 'tfc:ore/cryolite' });
 
-	e.forEachRecipe({ type: 'tfc:quern' }, (recipe) => {
+	e.forEachRecipe({ type: 'tfc:quern', not: { input: '#forge:ores/chunks' }}, (recipe) => {
 		let ingredient = recipe.json.get('ingredient');
 
 		e.recipes.create.milling(recipe.originalRecipeResult, ingredient);

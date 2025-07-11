@@ -15,7 +15,7 @@
       "item": "tfc:blubber", "count": 5
     },
     {
-      "item": "butchersdelight:cow_hide"
+      "item": "tfc:large_raw_hide"
     }
   ],
   "recipe": {
@@ -35,7 +35,7 @@
       ],
       "result": {
         "item": "tfc:food/beef",
-      "count": 16
+      "count": 12
       }
     }
   }
