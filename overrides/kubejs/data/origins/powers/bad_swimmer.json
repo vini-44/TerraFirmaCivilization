@@ -3,7 +3,7 @@
   "description": "You've never been taught to swim.",
   "type": "origins:modify_swim_speed",
   "modifier": {
-    "operation": "addition",
-    "value": -0.020
+    "operation": "multiply_base",
+    "value": -0.4
   }
 }
