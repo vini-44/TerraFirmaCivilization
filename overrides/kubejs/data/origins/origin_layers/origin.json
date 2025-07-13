@@ -3,7 +3,7 @@
   "order": 0,
   "enabled": true,
   "origins": [
-    "origins:human",
+    "origins:human1",
     "origins:mountains",
     "origins:dunes",
     "origins:plains",

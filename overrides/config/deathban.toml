@@ -7,5 +7,5 @@
 	#The hour duration of the death ban
 	Hours = 0
 	#The minute duration of the death ban
-	Minutes = 5
+	Minutes = 0
 

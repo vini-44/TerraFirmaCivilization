@@ -15,7 +15,7 @@
       "item": "tfc:blubber", "count": 3
     },
     {
-      "item": "butchersdelight:sheephide"
+      "item": "tfc:small_sheepskin_hide"
     }
   ],
   "recipe": {
@@ -35,7 +35,7 @@
       ],
       "result": {
         "item": "tfc:food/mutton",
-      "count": 12
+      "count": 8
       }
     }
   }

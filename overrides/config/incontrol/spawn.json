@@ -1,6 +1,58 @@
 [
     {
         "mob": "thermal:blitz",
+        "phase": "pre_game",
+        "mincount": 0,
+        "result" : "deny"
+    },
+    {
+        "mob": "whisperwoods:zotzpyre",
+        "mincount": 0,
+        "phase": "pre_game",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:cog_minion",
+        "mincount": 0,
+        "phase": "pre_game",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:cog_knight",
+        "mincount": 0,
+        "phase": "pre_game",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:sky_carrier",
+        "mincount": 0,
+        "phase": "pre_game",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:hive",
+        "mincount": 0,
+        "phase": "pre_game",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:dissident",
+        "mincount": 0,
+        "phase": "pre_game",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:redcoat",
+        "mincount": 0,
+        "phase": "pre_game",
+        "result" : "deny"
+    },
+
+
+
+
+    {
+        "mob": "thermal:blitz",
         "phase": "early_game",
         "mincount": 0,
         "result" : "deny"

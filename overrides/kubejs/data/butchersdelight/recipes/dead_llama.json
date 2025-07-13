@@ -9,7 +9,7 @@
       "item": "tfc:blubber", "count": 3
     },
     {
-      "item": "butchersdelight:goat_fur"
+      "item": "tfc:medium_sheepskin_hide"
     }
   ],
   "recipe": {
@@ -30,7 +30,7 @@
       "result": {
         "stack": {
           "item": "tfc:food/mutton",
-          "count": 12
+          "count": 8
         },
         "modifiers": [
           "tfc:copy_food"
