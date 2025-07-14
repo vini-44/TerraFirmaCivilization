@@ -3,21 +3,21 @@
         "name": "pre_game",
         "conditions": {
             "mindaycount": 0,
-            "maxdaycount": 400
+            "maxdaycount": 9999999
         }
     },
     {
         "name": "early_game",
         "conditions": {
-            "mindaycount": 400,
-            "maxdaycount": 1200
+            "mindaycount": 99999999,
+            "maxdaycount": 999999999
         }
     },
     {
         "name": "mid_game",
         "conditions": {
-            "mindaycount": 1200,
-            "maxdaycount": 9999999
+            "mindaycount": 9999999999,
+            "maxdaycount": 99999999999
         }
     }
 ]
