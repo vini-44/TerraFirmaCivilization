@@ -116,7 +116,7 @@ ServerEvents.highPriorityData((event) => {
 	for (let [datapath, _json] of Object.entries(oreJsonFolder)) {
 		_json = JsonIO.toObject(_json);
 
-		_json.config.rarity = _json.config.rarity * 16;
+		_json.config.rarity = _json.config.rarity * 32;
 		_json.config.density = _json.config.density * 0.8;
 
 		if (_json.config.density > 1) {
@@ -124,7 +124,7 @@ ServerEvents.highPriorityData((event) => {
 		}
 
 		if (_json.config.size) {
-			_json.config.size = _json.config.size * 3;
+			_json.config.size = _json.config.size * 4;
 		}
 
 		if (_json.config.radius) {
@@ -133,7 +133,7 @@ ServerEvents.highPriorityData((event) => {
 
 		if (_json.config.indicator) {
 			_json.config.indicator.rarity =
-				_json.config.indicator.rarity * 0.75;
+				_json.config.indicator.rarity * 0.3;
 			_json.config.indicator.depth = _json.config.indicator.depth * 2;
 		}
 
