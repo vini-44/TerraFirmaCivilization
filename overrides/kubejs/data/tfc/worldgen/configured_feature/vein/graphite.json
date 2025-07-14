@@ -7,6 +7,14 @@
     "max_y": 80,
     "size": 20,
     "random_name": "graphite",
+    "indicator": {
+      "rarity": 12,
+      "blocks": [
+        {
+          "block": "hardrock_samples:graphite"
+        }
+      ]
+    },
     "blocks": [
       {
         "replace": [
