@@ -608,7 +608,7 @@ ServerEvents.recipes((e) => {
 
 	e.shapeless('create:mechanical_pump', [
 		'create:fluid_pipe',
-		'create:cogwheel',
+		'tfc:metal/sheet/steel',
 	]);
 	e.shapeless('create:smart_fluid_pipe', [
 		'create:fluid_pipe',

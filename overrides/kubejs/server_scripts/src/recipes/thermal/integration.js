@@ -25,12 +25,20 @@ ServerEvents.recipes((e) => {
 			[
 				[
 					'minecraft:charcoal',
-					'tfc:ore/bituminous_coal',
-					'tfc:ore/lignite',
 				],
 			]
 		)
-		.energy(32000);
+		.energy(16000);
+
+        e.recipes.thermal.pyrolyzer(
+            ['tfc:powder/coke', Fluid.of('createdieselgenerators:crude_oil', 15), Item.of('tfc:powder/sulfur').withChance(0.75)],
+            [
+                [
+					'tfc:ore/bituminous_coal',
+					'tfc:ore/lignite',
+                ],
+            ]
+        ).energy(32000);
 
 	/*e.recipes.thermal.smelter('tfc:metal/ingot/pig_iron', [
         '2x minecraft:charcoal',
@@ -45,7 +53,7 @@ ServerEvents.recipes((e) => {
 			[
 				'thermal:slag',
 				Fluid.of('thermal:crude_oil', 1500),
-				'thermal:coal_coke',
+				Item.of('tfc:powder/sulfur').withChance(0.75),
 			],
 			['#forge:ores/oil_shale']
 		)
