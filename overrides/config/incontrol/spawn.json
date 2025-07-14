@@ -12,6 +12,12 @@
         "result" : "deny"
     },
     {
+        "mob": "whisperwoods:hirschgeist",
+        "mincount": 0,
+        "phase": "pre_game",
+        "result" : "deny"
+    },
+    {
         "mob": "scguns:cog_minion",
         "mincount": 0,
         "phase": "pre_game",

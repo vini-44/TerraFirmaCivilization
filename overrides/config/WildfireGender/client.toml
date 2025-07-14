@@ -1,0 +1,8 @@
+
+#Client Config. This config only exists on the client
+[client]
+	#Global override to disable all rendering related to the mod (including in gender menus)
+	disableRendering = false
+	#Global override to disable replacing sounds of players with female variants
+	disableSoundReplacement = false
+

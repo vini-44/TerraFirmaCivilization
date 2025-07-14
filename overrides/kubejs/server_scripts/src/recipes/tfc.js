@@ -5,6 +5,10 @@ ServerEvents.recipes((e) => {
 	e.remove({ output: 'minecraft:chest' });
 	e.remove({ output: 'minecraft:trapped_chest' });
 
+	e.remove({ input: '#minecraft:trapdoors', type: 'farmersdelight:cutting' });
+	e.remove({ input: '#minecraft:doors', type: 'farmersdelight:cutting' });
+	e.remove({ input: '#minecraft:signs', type: 'farmersdelight:cutting' });
+	
 	e.custom({
 		type: 'tfc:pot',
 		ingredients: [],

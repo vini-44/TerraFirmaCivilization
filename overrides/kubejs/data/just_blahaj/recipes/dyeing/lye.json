@@ -1,0 +1,22 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "type": "forge:difference",
+      "base": {
+        "tag": "just_blahaj:haj"
+      },
+      "subtracted": {
+        "item": "just_blahaj:white_blahaj"
+      }
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:lye",
+    "amount": 25
+  },
+  "output_item": {
+    "item": "just_blahaj:white_blahaj"
+  },
+  "duration": 2000
+}
