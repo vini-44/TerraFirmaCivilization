@@ -1,0 +1,36 @@
+{
+  "type": "sewingkit:sewing",
+  "materials": [
+    {
+      "ingredient": {
+        "tag": "tfc:high_quality_cloth"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "item": "tfc:wool"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:pink_dye"
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "tag": "forge:string"
+      },
+      "count": 4
+    }
+  ],
+  "tool": {
+    "type": "sewingkit:tool_ingredient",
+    "tool_type": "sewingkit_sew"
+  },
+  "result": {
+    "item": "just_blahaj:white_blahaj"
+  }
+}

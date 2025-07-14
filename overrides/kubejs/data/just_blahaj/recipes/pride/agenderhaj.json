@@ -1,0 +1,26 @@
+{
+    "type": "tfc:damage_inputs_shapeless_crafting",
+    "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+            {
+                "item": "just_blahaj:white_dyed_blahaj"
+            },
+            {
+                "item": "minecraft:lime_dye"
+            },
+            {
+                "item": "minecraft:white_dye"
+            },
+            {
+                "item": "minecraft:black_dye"
+            },
+            {
+                "item": "minecraft:gray_dye"
+            }
+        ],
+        "result": {
+            "item": "just_blahaj:agenderhaj"
+        }
+    }
+}
