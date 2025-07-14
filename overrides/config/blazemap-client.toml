@@ -2,9 +2,6 @@
 [general]
 	#Enable debug mode?
 	enableDebug = false
-	#Max memory allocation for atlas export, in Megabytes
-	#Range: 256 ~ 16384
-	atlasMaxSize = 1024
 
 #Enable or disable (un)desired features
 [clientFeatures]
@@ -23,12 +20,12 @@
 
 [worldmap]
 	#List of disabled Layers, comma separated
-	activeMap = "cartography:temperature"
+	activeMap = "blazemap:topography"
 	#List of disabled Layers, comma separated
-	disabledLayers = ["cartography:rainfall_iso"]
+	disabledLayers = []
 	#Zoom level. Must be a power of 2
 	#Range: 0.125 ~ 8.0
-	zoom = 0.25
+	zoom = 1.0
 
 [minimap]
 	#List of disabled Layers, comma separated

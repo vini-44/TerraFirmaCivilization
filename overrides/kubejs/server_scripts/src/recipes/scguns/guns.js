@@ -98,7 +98,7 @@ ServerEvents.recipes((e) => {
 		[' A ', 'BCD', 'EF '],
 		{
 			A: 'scguns:iron_gun_frame',
-			B: 'kubejs:heavy_firing_unit',
+			B: 'scguns:firing_unit',
 			C: 'scguns:heavy_gun_parts',
 			D: 'scguns:heavy_gun_barrel',
 			E: '#tfc:lumber',
@@ -210,7 +210,7 @@ ServerEvents.recipes((e) => {
 			B: 'scguns:heavy_gun_barrel',
 			C: 'scguns:heavy_gun_parts',
 			D: 'scguns:gun_magazine',
-			E: 'kubejs:heavy_firing_unit',
+			E: 'scguns:firing_unit',
 			F: '#tfc:lumber',
 		},
 		1,

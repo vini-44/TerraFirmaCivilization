@@ -21,9 +21,15 @@ ServerEvents.recipes((e) => {
 	e.shaped('supplementaries:flint_block', ['AAA', 'AAA', 'AAA'], {
 		A: 'minecraft:flint',
 	});
+
+    e.shapeless('9x flint', ['supplementaries:flint_block']);
+
 	e.shaped('supplementaries:feather_block', ['AAA', 'AAA', 'AAA'], {
 		A: 'minecraft:feather',
 	});
+
+    e.shapeless('9x feather', ['supplementaries:feather_block']);
+
 	e.shaped('supplementaries:sugar_cube', ['AAA', 'AAA', 'AAA'], {
 		A: 'minecraft:sugar',
 	});
@@ -153,13 +159,13 @@ ServerEvents.recipes((e) => {
 
 	e.recipes.tfc.anvil(
 		'supplementaries:faucet',
-		'tfc:metal/sheet/wrought_iron',
+		'tfc:metal/sheet/steel',
 		['bend_last', 'draw_second_last', 'hit_third_last']
 	).tier(3);
 
     ADDED_ANVIL_RECIPES.push([
         'supplementaries:faucet',
-        'tfc:metal/sheet/wrought_iron',3])
+        'tfc:metal/sheet/steel',3])
 
 	e.shaped('supplementaries:lock_block', ['ABA', 'BCB', 'ABA'], {
 		A: 'tfc:metal/rod/wrought_iron',
@@ -260,5 +266,13 @@ ServerEvents.recipes((e) => {
 		A: '#tfc:sewing_dark_cloth',
 		B: '#tfc:lumber',
 	});
+
+    WOOD_TYPES.forEach((type) => {
+        e.shapeless(`2x supplementaries:tfc/sign_post_${type}`, [`tfc:wood/sign/${type}`]);
+    })
+
+    AFC_WOOD_TYPES.forEach((type) => {
+        e.shapeless(`2x supplementaries:afc/sign_post_${type}`, [`afc:wood/sign/${type}`]);
+    })
 });
 
