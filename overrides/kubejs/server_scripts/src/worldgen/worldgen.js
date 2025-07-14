@@ -135,7 +135,7 @@ ServerEvents.highPriorityData((event) => {
 		if (_json.config.indicator) {
 			_json.config.indicator.rarity =
 				_json.config.indicator.rarity * 0.3;
-			_json.config.indicator.depth = _json.config.indicator.depth * 2.5;
+			_json.config.indicator.depth = _json.config.indicator.depth * 2;
 		}
 
 		event.addJson(datapath, _json);
@@ -168,7 +168,7 @@ ServerEvents.highPriorityData((event) => {
 
 		if (_json.config.indicator) {
 			_json.config.indicator.rarity =
-				_json.config.indicator.rarity * 2;
+				_json.config.indicator.rarity * 0.75;
 			_json.config.indicator.depth = _json.config.indicator.depth * 2;
 		}
 
