@@ -121,7 +121,6 @@
     "candle": true,
     "jack_o_lantern": true,
     "firepit": true,
-    "wet_concrete": true,
     "ingot_pile": true
   },
   "firmaciv": {
@@ -131,14 +130,7 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
-  "exposure": {
-    "lightroom": true,
-    "photograph_frame": true
-  },
-  "supplementaries": {
-    "hat_stand": true
-  },
-  "create": {
+  "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
     "goggles.requires_goggles": true,
@@ -171,7 +163,5 @@
   },
   "afc": {
     "tap": true
-  "balm": {
-    "jade": true
   }
 }
