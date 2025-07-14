@@ -74,7 +74,7 @@ ServerEvents.recipes((e) => {
 	//TODO: smithing recipes instead?
 	//drill head
 	e.recipes.tfc
-		.anvil('thermal:drill_head', 'tfc:metal/double_sheet/steel', [
+		.anvil('thermal:drill_head', 'kubejs:metal/ingot/titanium', [
 			'punch_last',
 			'bend_any',
 			'draw_not_last',
@@ -92,7 +92,7 @@ ServerEvents.recipes((e) => {
 		.bonus(true)
 		.tier(4);
 
-        ADDED_ANVIL_RECIPES.push(['thermal:drill_head', 'tfc:metal/double_sheet/steel', 4]);
+        ADDED_ANVIL_RECIPES.push(['thermal:drill_head', 'kubejs:metal/ingot/titanium', 4]);
         ADDED_ANVIL_RECIPES.push(['thermal:saw_blade', 'tfc:metal/sheet/steel', 4]);
 
 	//slot seal

@@ -576,7 +576,8 @@
 			description: [
 				"&lTungsten&r is a lategame metal, and must be processed from &lWolframite&r by several steps to be acquired."
 				""
-				"Tungsten is currently only used to make &oTungsten Carbide&r for the &lMetal Former&r, a machine that can automatically make most forging recipes, but further uses will certainly come."
+				"Tungsten is currently only used to make the &lMetal Former&r, a machine that can automatically make most forging recipes, but further uses will certainly come."
+				""
 				""
 				"&lWolframite&r is found deep underground in Quartzite and Granite alongside Sphalerite."
 			]

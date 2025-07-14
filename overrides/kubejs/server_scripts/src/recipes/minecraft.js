@@ -24,6 +24,8 @@ ServerEvents.recipes((event) => {
 		N: 'scguns:nitro_powder',
 	});
 
+	event.replaceInput({ id: 'minecraft:brush' }, 'copper_ingot', 'leather');
+
 	event.remove({ id: 'tfc:crafting/vanilla/ladder' });
 
 	event.remove({ output: 'minecraft:copper_block' });
@@ -43,7 +45,7 @@ ServerEvents.recipes((event) => {
 			item: 'chalk:white_chalk',
 		},
 	});
-    event.custom({
+	event.custom({
 		type: 'tfc:knapping',
 		knapping_type: 'tfc:rock',
 		outside_slot_required: false,
@@ -56,17 +58,17 @@ ServerEvents.recipes((event) => {
 		},
 	});
 
-    event.shaped('chalk:chalk_box', ['A A', 'ABA', 'AAA'], {
-        A: 'paper',
-        B: ['tfc:glue', '#forge:slimeballs']
-    })
+	event.shaped('chalk:chalk_box', ['A A', 'ABA', 'AAA'], {
+		A: 'paper',
+		B: ['tfc:glue', '#forge:slimeballs'],
+	});
 
-    event.remove({output:'minecraft:scaffolding'})
-    event.shaped('8x scaffolding', ['ABA', 'C C', 'C C'], {
-        A: '#tfc:lumber',
-        B: 'tfc:jute_fiber',
-        C: '#forge:rods/wooden'
-    })
+	event.remove({ output: 'minecraft:scaffolding' });
+	event.shaped('8x scaffolding', ['ABA', 'C C', 'C C'], {
+		A: '#tfc:lumber',
+		B: 'tfc:jute_fiber',
+		C: '#forge:rods/wooden',
+	});
 
-    event.remove({id: 'minecraft:stick_from_bamboo_item'})
+	event.remove({ id: 'minecraft:stick_from_bamboo_item' });
 });

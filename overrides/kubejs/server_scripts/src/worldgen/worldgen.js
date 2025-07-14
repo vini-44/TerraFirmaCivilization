@@ -87,6 +87,7 @@ ServerEvents.tags('worldgen/placed_feature', (event) => {
 ServerEvents.tags('worldgen/biome', (event) => {
 	event.add('createdieselgenerators:oil_biomes', '#tfc:is_ocean');
     event.add('tfc:manganite_spawns_in', ['tfc:lowlands'])
+    event.add('tfc:kaolin_clay_spawns_in', /.*tfc.*/)
 });
 
 //global modifier for all ores for them to be rarer and bigger.

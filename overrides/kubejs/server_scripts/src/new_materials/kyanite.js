@@ -5,7 +5,7 @@ ServerEvents.recipes((e) => {
 	e.recipes.create.crushing('kubejs:kyanite_dust', 'amethyst_shard');
 	e.shapeless('kubejs:unfired_refractory_brick', [
 		'4x kubejs:kyanite_dust',
-		'tfc:ceramic/unfired_fire_brick',
+		'tfc:ceramic/unfired_brick',
 	]);
 
     e.shaped('kubejs:kyanite_dust_block', ['AAA', 'AAA', 'AAA'], {
