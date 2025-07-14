@@ -1,0 +1,12 @@
+{
+    "name": "Unoriginal Person",
+    "description": "You have no particular notion of where you came from.",
+	"powers": [
+		"origins:boring"
+	],
+	"icon": {
+		"item": "minecraft:player_head"
+	},
+	"order": 0,
+	"impact": 0
+}

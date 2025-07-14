@@ -3,18 +3,12 @@
 ServerEvents.recipes((e) => {
 	e.remove({ mod: 'createdieselgenerators' });
 
-	e.recipes.tfc
-		.anvil(
-			'createdieselgenerators:canister',
-			'tfc:metal/double_sheet/wrought_iron',
-			['bend_last', 'draw_second_last', 'upset_third_last']
-		)
-		.tier(3);
-	ADDED_ANVIL_RECIPES.push([
+	e.recipes.tfc.anvil(
 		'createdieselgenerators:canister',
 		'tfc:metal/double_sheet/wrought_iron',
-		3,
-	]);
+		['bend_last', 'draw_second_last', 'upset_third_last']
+	).tier(3);
+    ADDED_ANVIL_RECIPES.push(['createdieselgenerators:canister', 'tfc:metal/double_sheet/wrought_iron', 3]);
 
 	e.shapeless('4x createdieselgenerators:oil_barrel', [
 		'tfc:metal/sheet/wrought_iron',
@@ -48,33 +42,21 @@ ServerEvents.recipes((e) => {
 		C: 'createdieselgenerators:chip_wood_block',
 	});
 
-	e.recipes.tfc
-		.anvil(
-			'kubejs:unfinished_oil_scanner',
-			'firmalife:metal/ingot/stainless_steel',
-			['hit_last', 'bend_second_last', 'draw_third_last']
-		)
-		.tier(4);
-
-	ADDED_ANVIL_RECIPES.push([
+	e.recipes.tfc.anvil(
 		'kubejs:unfinished_oil_scanner',
 		'firmalife:metal/ingot/stainless_steel',
-		4,
-	]);
+		['hit_last', 'bend_second_last', 'draw_third_last']
+	).tier(4);
 
-	e.recipes.tfc
-		.anvil(
-			'4x kubejs:unfinished_distillation_controller',
-			'firmalife:metal/double_sheet/stainless_steel',
-			['hit_last', 'bend_second_last', 'draw_third_last']
-		)
-		.tier(4);
+    ADDED_ANVIL_RECIPES.push(['kubejs:unfinished_oil_scanner', 'firmalife:metal/ingot/stainless_steel', 4]);
 
-	ADDED_ANVIL_RECIPES.push([
+	e.recipes.tfc.anvil(
 		'4x kubejs:unfinished_distillation_controller',
 		'firmalife:metal/double_sheet/stainless_steel',
-		4,
-	]);
+		['hit_last', 'bend_second_last', 'draw_third_last']
+	).tier(4);
+
+    ADDED_ANVIL_RECIPES.push(['4x kubejs:unfinished_distillation_controller', 'firmalife:metal/double_sheet/stainless_steel', 4]);
 
 	e.recipes.tfc.welding(
 		'createdieselgenerators:oil_scanner',
@@ -87,43 +69,25 @@ ServerEvents.recipes((e) => {
 		'tfc:brass_mechanisms',
 	]);
 
-	e.recipes.tfc
-		.anvil(
-			'createdieselgenerators:engine_turbocharger',
-			'kubejs:metal/sheet/aluminum',
-			['bend_last', 'hit_second_last', 'draw_third_last']
-		)
-		.tier(4);
-	e.recipes.tfc
-		.anvil(
-			'createdieselgenerators:engine_silencer',
-			'firmalife:metal/double_sheet/stainless_steel',
-			['draw_last', 'hit_second_last', 'upset_third_last']
-		)
-		.tier(4);
-	e.recipes.tfc
-		.anvil(
-			'createdieselgenerators:engine_piston',
-			'tfc:metal/double_ingot/steel',
-			['hit_last', 'draw_second_last', 'upset_third_last']
-		)
-		.tier(4);
-
-	ADDED_ANVIL_RECIPES.push([
+	e.recipes.tfc.anvil(
 		'createdieselgenerators:engine_turbocharger',
 		'kubejs:metal/sheet/aluminum',
-		4,
-	]);
-	ADDED_ANVIL_RECIPES.push([
+		['bend_last', 'hit_second_last', 'draw_third_last']
+	).tier(4);
+	e.recipes.tfc.anvil(
 		'createdieselgenerators:engine_silencer',
 		'firmalife:metal/double_sheet/stainless_steel',
-		4,
-	]);
-	ADDED_ANVIL_RECIPES.push([
+		['draw_last', 'hit_second_last', 'upset_third_last']
+	).tier(4);
+	e.recipes.tfc.anvil(
 		'createdieselgenerators:engine_piston',
 		'tfc:metal/double_ingot/steel',
-		4,
-	]);
+		['hit_last', 'draw_second_last', 'upset_third_last']
+	).tier(4);
+
+    ADDED_ANVIL_RECIPES.push(['createdieselgenerators:engine_turbocharger', 'kubejs:metal/sheet/aluminum', 4]);
+    ADDED_ANVIL_RECIPES.push(['createdieselgenerators:engine_silencer', 'firmalife:metal/double_sheet/stainless_steel', 4]);
+    ADDED_ANVIL_RECIPES.push(['createdieselgenerators:engine_piston', 'tfc:metal/double_ingot/steel', 4]);
 
 	e.shaped('createdieselgenerators:pumpjack_bearing', ['T', 'M', 'S'], {
 		T: 'create:turntable',
@@ -160,24 +124,24 @@ ServerEvents.recipes((e) => {
 			},
 		],
 		heatRequirement: 'heated',
-		processingTime: 100,
+		processingTime: 200,
 		results: [
 			{
-				fluid: 'kubejs:lubricant',
-				amount: 30,
-			},
-			{
 				fluid: 'createdieselgenerators:diesel',
-				amount: 30,
+				amount: 25,
 			},
 			{
 				fluid: 'createdieselgenerators:gasoline',
-				amount: 20,
+				amount: 25,
 			},
 			{
 				fluid: 'kubejs:kerosene',
-				amount: 20,
+				amount: 25,
 			},
+            {
+                fluid: 'kubejs:lubricant',
+                amount: 10
+            }
 		],
 	});
 
@@ -190,7 +154,7 @@ ServerEvents.recipes((e) => {
 			},
 		],
 		heatRequirement: 'heated',
-		processingTime: 20,
+		processingTime: 50,
 		results: [
 			{
 				fluid: 'minecraft:water',
@@ -208,14 +172,15 @@ ServerEvents.recipes((e) => {
 			},
 		],
 		heatRequirement: 'heated',
-		processingTime: 100,
+		processingTime: 400,
 		results: [
 			{
 				fluid: 'createdieselgenerators:ethanol',
-				amount: 30,
+				amount: 25,
 			},
 		],
 	});
+
 
 	//aslphalt
 
@@ -265,31 +230,19 @@ ServerEvents.recipes((e) => {
 
 	//technically not aircraft but its closely related
 
-	e.recipes.tfc
-		.anvil('8x kubejs:empty_fuel_can', 'tfc:metal/double_sheet/steel', [
-			'bend_last',
-			'bend_not_last',
-			'shrink_third_last',
-		])
-		.tier(4);
-	e.recipes.tfc
-		.anvil('4x kubejs:empty_fuel_can', 'tfc:metal/sheet/steel', [
-			'bend_last',
-			'bend_not_last',
-			'shrink_third_last',
-		])
-		.tier(4);
-
-	ADDED_ANVIL_RECIPES.push([
+	e.recipes.tfc.anvil(
 		'8x kubejs:empty_fuel_can',
 		'tfc:metal/double_sheet/steel',
-		4,
-	]);
-	ADDED_ANVIL_RECIPES.push([
-		'4x kubejs:empty_fuel_can',
-		'tfc:metal/sheet/steel',
-		4,
-	]);
+		['bend_last', 'bend_not_last', 'shrink_third_last']
+	).tier(4);
+	e.recipes.tfc.anvil('4x kubejs:empty_fuel_can', 'tfc:metal/sheet/steel', [
+		'bend_last',
+		'bend_not_last',
+		'shrink_third_last',
+	]).tier(4);
+
+    ADDED_ANVIL_RECIPES.push(['8x kubejs:empty_fuel_can', 'tfc:metal/double_sheet/steel', 4]);
+    ADDED_ANVIL_RECIPES.push(['4x kubejs:empty_fuel_can', 'tfc:metal/sheet/steel', 4]);
 
 	const fuel_types = ['diesel', 'gasoline', 'biodiesel', 'ethanol'].forEach(
 		(type) => {
@@ -320,11 +273,15 @@ ServerEvents.recipes((e) => {
 		E: 'afc:rubber_bar',
 		F: 'tfc:metal/double_sheet/cast_iron',
 	});
-	e.shaped('createdieselgenerators:chemical_turret', [' A ', 'BCB', 'DED'], {
-		A: 'createdieselgenerators:chemical_sprayer_lighter',
-		B: 'create:shaft',
-		C: 'create:precision_mechanism',
-		D: 'create:copper_casing',
-		E: 'create:fluid_tank',
-	});
+	e.shaped(
+		'createdieselgenerators:chemical_turret',
+		[' A ', 'BCB', 'DED'],
+		{
+			A: 'createdieselgenerators:chemical_sprayer_lighter',
+			B: 'create:shaft',
+			C: 'create:precision_mechanism',
+			D: 'create:copper_casing',
+			E: 'create:fluid_tank',
+		}
+	);
 });

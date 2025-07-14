@@ -1,0 +1,11 @@
+{
+  "name": "Miner",
+  "description": "A master of the underground, the Miner excels in resource extraction.",
+  "powers": [
+    "origins-classes:more_stone_break_speed1",
+    "origins-classes:no_mining_exhaustion"
+  ],
+  "icon": "minecraft:iron_pickaxe",
+  "order": 3,
+  "impact": 0
+}

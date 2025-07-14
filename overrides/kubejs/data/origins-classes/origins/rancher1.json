@@ -1,0 +1,11 @@
+{
+  "name": "Rancher",
+  "description": "A master of animal domestication, the Rancher excels in raising and breeding livestock.",
+  "powers": [
+    "origins-classes:twin_breeding",
+    "origins-classes:more_animal_loot"
+  ],
+  "icon": "minecraft:lead",
+  "order": 4,
+  "impact": 0
+}

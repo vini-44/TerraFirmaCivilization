@@ -1,0 +1,11 @@
+{
+  "name": "Ravenous",
+  "description": "You get hungry faster.",
+
+  "type": "origins:modify_exhaustion",
+  "modifier": {
+    "name": "Increased exhaustion",
+    "operation": "multiply_total_multiplicative",
+    "value": 2
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Faster Stone Break Speed",
+  "description": "Increases the speed at which stone blocks are broken when using an effective tool.",
+  "type": "apoli:modify_break_speed",
+  "modifier": {
+    "value": 0.75,
+    "operation": "multiply_base"
+  },
+  "block_condition": {
+    "type": "origins:in_tag",
+    "tag": "tfc:rock/raw"
+  },
+  "condition": {
+    "type": "origins:using_effective_tool"
+  }
+}

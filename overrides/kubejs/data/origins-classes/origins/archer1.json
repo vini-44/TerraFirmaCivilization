@@ -1,0 +1,11 @@
+{
+  "name": "Archer",
+  "description": "A master of ranged combat, the Archer excels in bowmanship.",
+  "powers": [
+    "origins-classes:no_projectile_divergence",
+    "origins-classes:less_bow_slowdown"
+  ],
+  "icon": "minecraft:bow",
+  "order": 4,
+  "impact": 0
+}

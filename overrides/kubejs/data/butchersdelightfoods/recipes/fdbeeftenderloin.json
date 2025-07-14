@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "butchersdelightfoods:beeftenderloin"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "result": [
+    {
+      "item": "tfc:food/beef",
+      "count": 16
+    },
+    {
+      "item": "minecraft:bone",
+      "count": 3,
+      "chance": 1
+    }
+  ],
+  "sound": "minecraft:block.beehive.drip"
+}

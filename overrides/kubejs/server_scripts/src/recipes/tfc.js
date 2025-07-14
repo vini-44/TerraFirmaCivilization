@@ -36,10 +36,8 @@ ServerEvents.recipes((e) => {
 	e.remove({ id: /.*powderkeg.*/ });
 
 	e.recipes.create
-		.mixing(Item.of('tfc:powder/salt', 1), Fluid.of('tfc:salt_water', 125))
+		.mixing(Item.of('tfc:powder/salt'), Fluid.of('tfc:salt_water', 1000))
 		.heated();
-
-        e.recipes.create.mixing(Fluid.of('tfc:salt_water', 125), ['tfc:powder/salt', Fluid.of('water', 125)])
 	for (const [fertilizer, nutrients] of Object.entries(FERTILIZER_DEFS)) {
 		let N = nutrients[0];
 		let P = nutrients[1];
@@ -88,7 +86,7 @@ ServerEvents.recipes((e) => {
 	e.remove({ id: 'tfc:barrel/dye/bleach_windmill_blades' });
 	e.remove({ input: 'tfc:ore/cryolite' });
 
-	e.forEachRecipe({ type: 'tfc:quern' }, (recipe) => {
+	e.forEachRecipe({ type: 'tfc:quern', not: { input: '#forge:ores/chunks' }}, (recipe) => {
 		let ingredient = recipe.json.get('ingredient');
 
 		e.recipes.create.milling(recipe.originalRecipeResult, ingredient);
@@ -705,6 +703,17 @@ ServerEvents.recipes((e) => {
 		);
 	});
 
+	e.shaped('minecraft:bucket', ['ABA', 'ACA', ' A '], {
+		A: 'kubejs:metal/double_sheet/aluminum',
+		B: 'tfc:metal/bucket/blue_steel',
+		C: 'tfc:metal/bucket/red_steel',
+	});
+
+	e.shaped('minecraft:bucket', ['ABA', 'ACA', ' A '], {
+		A: 'kubejs:metal/double_sheet/aluminum',
+		B: 'tfc:metal/bucket/red_steel',
+		C: 'tfc:metal/bucket/blue_steel',
+	});
 
 	e.replaceOutput({}, 'afc:maple_sugar', 'sugar');
 	e.replaceOutput({}, 'afc:birch_sugar', 'sugar');
@@ -714,12 +723,6 @@ ServerEvents.recipes((e) => {
 		'textile:flax_fiber',
 	]);
 
-	e.remove({ id: 'chunkschedudeler:schedudeler' });
-	e.shaped('4x chunkschedudeler:schedudeler', ['ABA', 'ACA'], {
-		A: 'tfc:metal/rod/blue_steel',
-		B: 'kubejs:automaton_head',
-		C: 'createaddition:capacitor',
-	});
 
 	e.recipes.create
 		.sequenced_assembly(

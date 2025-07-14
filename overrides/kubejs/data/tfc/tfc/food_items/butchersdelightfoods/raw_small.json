@@ -1,0 +1,17 @@
+{
+  "ingredient": [
+    {"item": "butchersdelightfoods:sheepshank"},
+    {"item": "butchersdelightfoods:sheeprack"},
+    {"item": "butchersdelightfoods:sheeploin"},
+    {"item": "butchersdelightfoods:goat_shank"},
+    {"item": "butchersdelightfoods:goatrack"},
+    {"item": "butchersdelightfoods:goat_loin"},
+    {"item": "butchersdelightfoods:llama_leg"},
+    {"item": "butchersdelightfoods:llamma_ribs"},
+    {"item": "butchersdelightfoods:llama_loin"}
+  ],
+  "hunger": 4,
+  "saturation": 0,
+  "decay_modifier": 1.5,
+  "protein": 4
+}

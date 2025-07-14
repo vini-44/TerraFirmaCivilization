@@ -1,0 +1,22 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "purified_water:purified_water",
+  "thirst": 30,
+  "effects": [
+    {
+      "type": "minecraft:speed",
+      "duration": 900,
+      "chance": 0.07
+    },
+    {
+      "type": "minecraft:strength",
+      "duration": 1200,
+      "chance": 0.07
+    },
+    {
+      "type": "minecraft:haste",
+      "duration": 1200,
+      "chance": 0.07
+    }
+  ]
+}

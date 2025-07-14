@@ -149,10 +149,7 @@ ClientEvents.lang('en_us', (event) => {
     event.add('block.kubejs.industrial_furnace_energy_acceptor', "Insulated Energy Acceptor")
     event.add('kubejs.industrial_furnace', "Industrial Blasting")
 
-    event.add('block.kubejs.metal_former', "Metal Former Controller")
-    event.add('block.kubejs.metal_former_su_input', "Metal Former Lathe")
-    event.add('block.kubejs.metal_former_fluid_input', "Metal Former Internal Fluid Tank")
-
+    event.add('block.kubejs.machine_metal_former', "Metal Former")
     event.add('kubejs.metal_former', "Metal Forming")
 
 });

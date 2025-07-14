@@ -1,0 +1,14 @@
+{
+	"name": "Mountaineer",
+	"description": "You hail from the frigid mountains.",
+	"powers": [
+		"origins:cold_resist",
+		"origins:heat_weak",
+		"origins:thirsty"
+	],
+	"icon": {
+		"item": "minecraft:snow_block"
+	},
+	"order": 2,
+	"impact": 1
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Ashen Dunes",
+    "description": "You were raised in the harsh enviroment of the Ashen Dunes",
+	"powers": [
+		"origins:heat_resist",
+		"origins:cold_weak",
+		"origins:hungry"
+	],
+	"icon": {
+		"item": "tfc:sand/yellow"
+	},
+	"order": 1,
+	"impact": 1
+}

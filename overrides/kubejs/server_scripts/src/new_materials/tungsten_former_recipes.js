@@ -12,12 +12,10 @@ ServerEvents.recipes((e) => {
 			})
 			.outputItems(Item.of(result))
 			.perTick((builder) => {
-				builder.inputFluids(Fluid.of('kubejs:lubricant', 1 /* *tier*/));
-                				builder.inputFE(512 * (tier / 2));
+				builder.inputFluids(Fluid.of('kubejs:lubricant', 5 * tier));
 
-			})
-			.inputStress(1024)
-			.inputRPM(256);
+				builder.inputFE(512 * (tier / 2));
+			});
 	}
 
 	e.forEachRecipe({ type: 'tfc:anvil' }, (recipe) => {
@@ -25,18 +23,26 @@ ServerEvents.recipes((e) => {
 		let { input, result, tier } = _json;
 
 		if (
-			(Item.of(input).hasTag('forge:ingots') ||
-				Item.of(input).hasTag('forge:sheets') ||
-				Item.of(input).hasTag('forge:double_sheets') ||
-				Item.of(input).hasTag('forge:double_ingots') ||
-				Item.of(input).hasTag('forge:rods')) &&
-			(!Item.of(result).hasTag('forge:ingots') ||
-				!Item.of(result).hasTag('forge:sheets') ||
-				!Item.of(result).hasTag('forge:double_sheets') ||
-				!Item.of(result).hasTag('forge:double_ingots') ||
-				!Item.of(result).hasTag('forge:rods'))
+			Item.of(input).hasTag('forge:ingots') ||
+			Item.of(input).hasTag('forge:sheets') ||
+			Item.of(input).hasTag('forge:double_sheets') ||
+			Item.of(input).hasTag('forge:double_ingots') ||
+			Item.of(input).hasTag('forge:rods')
 		) {
-			AddFormerRecipe(result, input, tier, recipe.getId() + '_former');
+			e.recipes.kubejs
+				.metal_former()
+				.id(recipe.getId() + '_former')
+				.duration(200 * tier)
+				.inputItems(input)
+				.chance(0, (builder) => {
+					builder.inputItems(Item.of(result, 1));
+				})
+				.outputItems(Item.of(result))
+				.perTick((builder) => {
+					builder.inputFluids(Fluid.of('kubejs:lubricant', 5 * tier));
+
+					builder.inputFE(512 * (tier / 2));
+				});
 		}
 	});
 
@@ -48,16 +54,11 @@ ServerEvents.recipes((e) => {
 		if (_json.type == 'tfc:anvil') {
 			let { input, result, tier } = _json;
 			if (
-				(Item.of(input).hasTag('forge:ingots') ||
-					Item.of(input).hasTag('forge:sheets') ||
-					Item.of(input).hasTag('forge:double_sheets') ||
-					Item.of(input).hasTag('forge:double_ingots') ||
-					Item.of(input).hasTag('forge:rods')) &&
-				(!Item.of(result).hasTag('forge:ingots') ||
-					!Item.of(result).hasTag('forge:sheets') ||
-					!Item.of(result).hasTag('forge:double_sheets') ||
-					!Item.of(result).hasTag('forge:double_ingots') ||
-					!Item.of(result).hasTag('forge:rods'))
+				Item.of(input).hasTag('forge:ingots') ||
+				Item.of(input).hasTag('forge:sheets') ||
+				Item.of(input).hasTag('forge:double_sheets') ||
+				Item.of(input).hasTag('forge:double_ingots') ||
+				Item.of(input).hasTag('forge:rods')
 			) {
 				AddFormerRecipe(
 					result,
