@@ -103,4 +103,22 @@ ServerEvents.recipes((e) => {
     });
     
 
+    e.recipes.create.mechanical_crafting('immersive_aircraft:bamboo_hopper', [
+        '  ABA  ',
+        'CCDEDCC',
+        ' FGAGF ',
+        ' H D H ',
+        'HCIGICH'
+    ], {
+        A: 'kubejs:metal/double_sheet/aluminum',
+        B: '#create:seats',
+        C: 'minecraft:bamboo_block',
+        D: 'createdieselgenerators:diesel_engine',
+        E: 'createdieselgenerators:canister',
+        F: 'kubejs:metal/sheet/titanium',
+        G: 'create:propeller',
+        H: 'minecraft:bamboo',
+        I: 'kubejs:metal/rod/titanium'
+    })
+
 });
