@@ -17,7 +17,6 @@
   <li>Make Bubbles Pop</li>
   <li>MaFgLib</li>
   <li>DistantHorizons</li>
-  <li>True Darkness</li>
 </ul>
 
 
