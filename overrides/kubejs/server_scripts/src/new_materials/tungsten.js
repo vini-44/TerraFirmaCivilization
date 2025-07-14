@@ -69,12 +69,23 @@ ServerEvents.recipes((e) => {
 		],
 	});
 
-	e.shaped('kubejs:machine_metal_former', ['GBG', 'CDF', 'ABA'], {
+    e.shaped('kubejs:metal_former_su_input', [' D ','ABC', ' D '], {
+        A:'create:shaft',
+        B: 'thermal:machine_frame',
+        C: 'kubejs:tungsten_carbide_parts',
+        D: 'kubejs:metal/sheet/tungsten',
+    })
+
+
+    e.shaped('kubejs:metal_former_fluid_input', [' A ', 'BCB', ' A '], {
+        A: 'create:fluid_tank', C: 'thermal:machine_frame', B: 'kubejs:metal/rod/tungsten'
+    })
+
+	e.shaped('kubejs:metal_former', ['GBG', 'CDC', 'ABA'], {
 		A: 'kubejs:metal/double_sheet/titanium',
 		B: 'create:fluid_tank',
 		C: 'kubejs:tungsten_carbide_parts',
 		D: 'thermal:machine_frame',
-		F: 'createaddition:electric_motor',
         G: 'kubejs:metal/sheet/tungsten',
 	});
 
