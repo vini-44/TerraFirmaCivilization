@@ -8,13 +8,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:food/oat",
+          "name": "tfc:food/potato",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "tfc:crop/oat",
+              "block": "tfc:crop/potato",
               "properties": {
-                "age": "7"
+                "age": "6"
               }
             }
           ],
@@ -23,11 +23,11 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "tfc:crop_yield_uniform",
-                "min": 1,
+                "min": 0,
                 "max": {
                   "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
+                  "min": 3,
+                  "max": 6
                 }
               }
             }
@@ -46,8 +46,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/oat",
-          
+          "name": "tfc:seeds/potato",
+
           "functions": [
             {
               "function": "minecraft:set_count",

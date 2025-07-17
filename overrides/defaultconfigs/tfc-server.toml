@@ -505,11 +505,11 @@ familiarityDecayLimit = 0.3
 		#
 		# Modifier applied to the growth time of every crop. The modifier multiplies the ticks it takes to grow, so larger values cause longer growth times. For example, a value of 2 doubles the growth time.
 		#Range: 0.001 ~ 1000.0
-		cropGrowthModifier = 4.5
+		cropGrowthModifier = 5
 		#
 		# Modifier applied to the expiry time of every crop. The modifier multiplies the ticks it takes to grow, so larger values cause longer growth times. For example, a value of 2 doubles the growth time.
 		#Range: 0.001 ~ 1000.0
-		cropExpiryModifier = 4.5
+		cropExpiryModifier = 2
 
 	[blocks.dispenser]
 		#
@@ -736,7 +736,7 @@ familiarityDecayLimit = 0.3
 		# How much total hunger consumed is required to completely refresh the player's nutrition.
 		# Player nutrition in TFC is calculated based on nutrition of the last few foods eaten - this is how many foods are used to calculate nutrition. By default, all TFC foods restore 4 hunger.
 		#Range: > 1
-		nutritionRotationHungerWindow = 80
+		nutritionRotationHungerWindow = 100
 		#
 		# If player's nutrition should be kept even after death. Hunger and thirst are not affected and will be reset.
 		keepNutritionAfterDeath = true
@@ -750,7 +750,7 @@ familiarityDecayLimit = 0.3
 		# Setting this to zero will cause decay not to apply.
 		# Note that if you set this to zero **food items will lose their creation dates!!**. This is not reversible!
 		#Range: 0.0 ~ 1000.0
-		foodDecayModifier = 1.0
+		foodDecayModifier = 0.75
 		#
 		# Enables negative effects from carrying too many very heavy items, including potion effects.
 		enableOverburdening = true
@@ -759,7 +759,7 @@ familiarityDecayLimit = 0.3
 		#Range: 0.001 ~ 1000.0
 		nutritionMinimumHealthModifier = 0.2
 		#
-		# A multiplier for the default health that the player will have (this is at a average nutrition of 40%, aka the starting nutrition.
+		# A multiplier for the default health that the player will have this is at a average nutrition of 40%, aka the starting nutrition.
 		# Nutrition above this value will linearly scale to the maximum multiplier.
 		# Nutrition below this value will linearly scale to the minimum multiplier.
 		#Range: 0.001 ~ 1000.0
@@ -773,23 +773,23 @@ familiarityDecayLimit = 0.3
 		#
 		# The modifier for the 'Salted' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		traitSaltedModifier = 0.5
+		traitSaltedModifier = 0.4
 		#
 		# The modifier for the 'Brined' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		traitBrinedModifier = 1.0
+		traitBrinedModifier = 0.75
 		#
 		# The modifier for the 'Pickled' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		traitPickledModifier = 0.5
+		traitPickledModifier = 0.4
 		#
 		# The modifier for the 'Preserved' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		traitPreservedModifier = 0.5
+		traitPreservedModifier = 0.4
 		#
 		# The modifier for the 'Vinegar' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		traitVinegarModifier = 0.1
+		traitVinegarModifier = 0.075
 		#
 		# The modifier for the 'Charcoal Grilled' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 		#Range: 0.0 ~ 1.7976931348623157E308
@@ -805,7 +805,7 @@ familiarityDecayLimit = 0.3
 		#
 		# The modifier for the 'Wild' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		traitWildModifier = 0.5
+		traitWildModifier = 0.3
 
 	[mechanics.fluids]
 		#
