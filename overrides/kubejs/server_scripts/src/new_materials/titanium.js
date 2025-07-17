@@ -13,4 +13,5 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.crystallizer('tfc:metal/ingot/steel', [Fluid.of("tfc:metal/cast_iron", 100), '2x tfc:powder/graphite', 'tfc:powder/flux']).energy(20000)
     e.recipes.thermal.crystallizer('tfc:metal/ingot/wrought_iron', [Fluid.of("tfc:metal/cast_iron", 100), '2x tfc:powder/coke', 'tfc:powder/sulfur']).energy(20000)
 
+    e.recipes.thermal.crystallizer('3x kubejs:metal/ingot/aluminum', [Fluid.of('tfc:salt_water', 2000), '2x tfc:ore/cryolite', '3x kubejs:alumina_powder'])
 });
