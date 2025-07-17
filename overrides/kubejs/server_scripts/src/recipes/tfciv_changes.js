@@ -18,6 +18,19 @@ ServerEvents.recipes((e) => {
 	e.remove({ output: 'farmersdelight:rope' });
 	
 	e.shapeless(
+	  Item.of('tfc_loot:obsidian_scrap', 1),
+	  [
+		'1x bsa:obsidian'
+	  ]
+	)
+	e.shapeless(
+	  Item.of('bsa:obsidian', 1),
+	  [
+		'1x tfc_loot:obsidian_scrap'
+	  ]
+	)
+	
+	e.shapeless(
 	  Item.of('tfcbetterbf:insulation', 1),
 	  [
 		'2x tfc:metal/sheet/steel',

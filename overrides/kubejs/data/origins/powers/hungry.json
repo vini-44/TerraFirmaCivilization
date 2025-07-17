@@ -1,6 +1,6 @@
 {
-  "name": "Ravenous",
-  "description": "You get hungry faster.",
+  "name": "High Calorie Diet",
+  "description": "You get hungry faster.(2x exhaustion)",
 
   "type": "origins:modify_exhaustion",
   "modifier": {
