@@ -8,13 +8,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:food/wheat",
+          "name": "tfc:food/green_bell_pepper",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "tfc:crop/wheat",
+              "block": "tfc:crop/yellow_bell_pepper",
               "properties": {
-                "age": "7"
+                "age": "5"
               }
             }
           ],
@@ -46,8 +46,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/wheat",
-          
+          "name": "tfc:food/yellow_bell_pepper",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "tfc:crop/yellow_bell_pepper",
+              "properties": {
+                "age": "6"
+              }
+            }
+          ],
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -56,8 +64,37 @@
                 "min": 1,
                 "max": {
                   "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
+                  "min": 2,
+                  "max": 5
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tfc:seeds/yellow_bell_pepper"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "tfc:crop_yield_uniform",
+                "min": 1,
+                "max": {
+                  "type": "minecraft:uniform",
+                  "min": 2,
+                  "max": 2
                 }
               }
             }

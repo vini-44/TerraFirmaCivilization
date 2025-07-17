@@ -8,13 +8,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:food/wheat",
+          "name": "tfc:food/soybean",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "tfc:crop/wheat",
+              "block": "tfc:crop/soybean",
               "properties": {
-                "age": "7"
+                "age": "6"
               }
             }
           ],
@@ -23,11 +23,11 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "tfc:crop_yield_uniform",
-                "min": 1,
+                "min": 0,
                 "max": {
                   "type": "minecraft:uniform",
                   "min": 1,
-                  "max": 4
+                  "max": 3
                 }
               }
             }
@@ -46,8 +46,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/wheat",
-          
+          "name": "tfc:seeds/soybean"
+		  
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -57,7 +57,7 @@
                 "max": {
                   "type": "minecraft:uniform",
                   "min": 1,
-                  "max": 4
+                  "max": 2
                 }
               }
             }

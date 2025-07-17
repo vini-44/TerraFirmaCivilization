@@ -8,13 +8,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:food/wheat",
+          "name": "tfc:food/sugarcane",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "tfc:crop/wheat",
+              "block": "tfc:crop/sugarcane",
               "properties": {
-                "age": "7"
+                "age": "7",
+                "part": "bottom"
               }
             }
           ],
@@ -23,11 +24,11 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "tfc:crop_yield_uniform",
-                "min": 1,
+                "min": 0,
                 "max": {
                   "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
+                  "min": 6,
+                  "max": 10
                 }
               }
             }
@@ -46,19 +47,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/wheat",
-          
-          "functions": [
+          "name": "tfc:seeds/sugarcane",
+          "conditions": [
             {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "tfc:crop_yield_uniform",
-                "min": 1,
-                "max": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+              "condition": "minecraft:block_state_property",
+              "block": "tfc:crop/sugarcane",
+              "properties": {
+                "part": "bottom"
               }
             }
           ]

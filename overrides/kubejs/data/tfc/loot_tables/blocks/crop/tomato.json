@@ -8,13 +8,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:food/wheat",
+          "name": "tfc:food/tomato",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "tfc:crop/wheat",
+              "block": "tfc:crop/tomato",
               "properties": {
-                "age": "7"
+                "age": "7",
+                "part": "bottom"
               }
             }
           ],
@@ -27,7 +28,7 @@
                 "max": {
                   "type": "minecraft:uniform",
                   "min": 1,
-                  "max": 4
+                  "max": 3
                 }
               }
             }
@@ -46,8 +47,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/wheat",
-          
+          "name": "tfc:seeds/tomato",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "tfc:crop/tomato",
+              "properties": {
+                "part": "bottom"
+              }
+            }
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -57,8 +65,34 @@
                 "max": {
                   "type": "minecraft:uniform",
                   "min": 1,
-                  "max": 4
+                  "max": 3
                 }
+              }
+            }
+          ]
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "tfc:crop/tomato",
+              "properties": {
+                "part": "bottom",
+                "stick": "true"
               }
             }
           ]

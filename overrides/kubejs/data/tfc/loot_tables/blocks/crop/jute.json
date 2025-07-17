@@ -8,13 +8,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:food/wheat",
+          "name": "tfc:jute",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "tfc:crop/wheat",
+              "block": "tfc:crop/jute",
               "properties": {
-                "age": "7"
+                "age": "5",
+                "part": "bottom"
               }
             }
           ],
@@ -23,11 +24,11 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "tfc:crop_yield_uniform",
-                "min": 1,
+                "min": 0,
                 "max": {
                   "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
+                  "min": 2,
+                  "max": 5
                 }
               }
             }
@@ -46,8 +47,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/wheat",
-          
+          "name": "tfc:seeds/jute",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "tfc:crop/jute",
+              "properties": {
+                "part": "bottom"
+              }
+            }
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -61,6 +69,7 @@
                 }
               }
             }
+          ]
           ]
         }
       ],
