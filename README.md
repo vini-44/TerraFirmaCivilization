@@ -18,6 +18,13 @@
   <li>MaFgLib</li>
   <li>DistantHorizons</li>
   <li>True Darkness</li>
+  <li>Immersive UI</li>
+  <li>Client-side crafting</li>
+  <li>Item Highlighter</li>
+  <li>Inventory Spam</li>
+  <li>Fresh Particles</li>
+  <li>Soft weather</li>
+  <li>World Playtime</li>
 </ul>
 
 
