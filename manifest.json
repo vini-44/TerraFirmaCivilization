@@ -11,8 +11,8 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "TerraFirmaCivilization",
-  "version": "0.8.2",
-  "author": "",
+  "version": "1.0",
+  "author": "Vini_4444, and contributers",
   "files": [
     {
       "projectID": 999031,
@@ -415,13 +415,13 @@
       "required": true
     },
     {
-      "projectID": 657757,
-      "fileID": 4733659,
+      "projectID": 351264,
+      "fileID": 5402061,
       "required": true
     },
     {
-      "projectID": 351264,
-      "fileID": 5402061,
+      "projectID": 657757,
+      "fileID": 4733659,
       "required": true
     },
     {
@@ -500,13 +500,13 @@
       "required": true
     },
     {
-      "projectID": 1199489,
-      "fileID": 6194594,
+      "projectID": 1010046,
+      "fileID": 5869457,
       "required": true
     },
     {
-      "projectID": 1010046,
-      "fileID": 5869457,
+      "projectID": 1199489,
+      "fileID": 6194594,
       "required": true
     },
     {
@@ -590,6 +590,11 @@
       "required": true
     },
     {
+      "projectID": 1059361,
+      "fileID": 6730792,
+      "required": true
+    },
+    {
       "projectID": 738663,
       "fileID": 5760231,
       "required": true
@@ -670,13 +675,13 @@
       "required": true
     },
     {
-      "projectID": 951750,
-      "fileID": 5956017,
+      "projectID": 272450,
+      "fileID": 5852444,
       "required": true
     },
     {
-      "projectID": 272450,
-      "fileID": 5852444,
+      "projectID": 951750,
+      "fileID": 5956017,
       "required": true
     },
     {
@@ -937,6 +942,11 @@
     {
       "projectID": 421850,
       "fileID": 5769971,
+      "required": true
+    },
+    {
+      "projectID": 1172538,
+      "fileID": 6080687,
       "required": true
     },
     {
