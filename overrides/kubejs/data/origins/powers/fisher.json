@@ -1,7 +1,7 @@
 {
   "type": "tfcorigins:modify_tfc_food",
   "name": "Fish based diet",
-  "description": "Your diet has been fish based, you gain more nutrients from protien/fish, and less from other foods.",
+  "description": "Your diet has been fish based, you gain more nutrients from protein(30%), and less from other foods.(10%)",
   "food_modifier": {
     "operation": "multiply_total_multiplicative",
     "value": 0
@@ -16,15 +16,15 @@
   },
   "grain_modifier": {
     "operation": "multiply_total_multiplicative",
-    "value": -0.2
+    "value": -0.1
   },
   "fruit_modifier": {
     "operation": "multiply_total_multiplicative",
-    "value": -0.2
+    "value": -0.1
   },
   "vegetable_modifier": {
     "operation": "multiply_total_multiplicative",
-    "value": -0.2
+    "value": -0.1
   },
   "protien_modifier": {
     "operation": "multiply_total_multiplicative",
@@ -32,6 +32,6 @@
   },
   "dairy_modifier": {
     "operation": "multiply_total_multiplicative",
-    "value": -0.2
+    "value": -0.1
   }
 }

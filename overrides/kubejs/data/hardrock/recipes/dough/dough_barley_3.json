@@ -1,0 +1,32 @@
+{
+  "__comment__": "This file created by tfch",
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/barley_flour"
+        }
+    },
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/barley_flour"
+        }
+    },
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/barley_flour"
+        }
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "firmalife:yeast_starter",
+    "amount": 1000
+  },
+  "output_item": {
+    "item": "firmalife:food/barley_dough",
+    "count": 3
+  }
+}

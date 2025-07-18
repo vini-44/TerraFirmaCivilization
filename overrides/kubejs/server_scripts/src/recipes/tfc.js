@@ -741,37 +741,4 @@ ServerEvents.recipes((e) => {
 		)
 		.transitionalItem('tfc:metal/ingot/brass')
 		.loops(5);
-
-	let anvil_metals = {
-		red_steel: 1540,
-		blue_steel: 1540,
-		black_steel: 1485,
-		steel: 1540,
-		wrought_iron: 1535,
-		copper: 1080,
-		bronze: 950,
-		black_bronze: 1070,
-		bismuth_bronze: 985,
-	};
-
-	for (let [metal, temp] of Object.entries(anvil_metals)) {
-		e.remove({ output: `tfc:metal/anvil/${metal}` });
-		e.remove({ id: `tfc:heating/metal/${metal}_anvil` });
-
-		e.shaped(`tfc:metal/anvil/${metal}`, ['AAA', ` B `, `AAA`], {
-			A: `tfc:metal/ingot/${metal}`,
-			B: `tfc:metal/double_ingot/${metal}`,
-		});
-
-		e.recipes.tfc
-			.heating(`tfc:metal/anvil/${metal}`, temp)
-			.resultFluid(Fluid.of(`tfc:metal/${metal}`, 800));
-	}
-
-    e.remove({output: 'tfc:bloomery'})
-
-    e.shaped('tfc:bloomery', ['ABA', 'A A', 'ABA'], {
-        A: '#forge:sheets/any_bronze',
-        B: '#forge:double_sheets/any_bronze',
-    })
 });

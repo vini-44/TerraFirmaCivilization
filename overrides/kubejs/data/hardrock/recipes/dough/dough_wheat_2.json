@@ -1,0 +1,26 @@
+{
+  "__comment__": "This file created by tfch",
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/wheat_flour"
+        }
+    },
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/wheat_flour"
+        }
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "firmalife:yeast_starter",
+    "amount": 1000
+  },
+  "output_item": {
+    "item": "firmalife:food/wheat_dough",
+    "count": 2
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "__comment__": "This file created by tfch",
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/maize_flour"
+        }
+    },
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/maize_flour"
+        }
+    },
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/maize_flour"
+        }
+    },
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/maize_flour"
+        }
+    },
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/maize_flour"
+        }
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 1000
+  },
+  "output_item": {
+    "item": "tfc:food/maize_dough",
+    "count": 5
+  }
+}

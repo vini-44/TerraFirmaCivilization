@@ -1,0 +1,20 @@
+{
+  "__comment__": "This file created by tfch",
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/rye_flour"
+        }
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 1000
+  },
+  "output_item": {
+    "item": "tfc:food/rye_dough",
+    "count": 1
+  }
+}

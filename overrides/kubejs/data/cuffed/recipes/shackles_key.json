@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "  N",
+      " NN",
+      "N  "
+    ],
+    "key": {
+      "N": {
+        "item": "minecraft:iron_nugget"
+      }
+    },
+    "result": {
+      "item": "cuffed:shackles_key",
+      "count": 1
+    }
+  }

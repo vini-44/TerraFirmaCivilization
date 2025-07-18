@@ -1,0 +1,44 @@
+{
+  "__comment__": "This file created by tfch",
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/oat_flour"
+        }
+    },
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/oat_flour"
+        }
+    },
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/oat_flour"
+        }
+    },
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/oat_flour"
+        }
+    },
+    {
+      "type": "tfc:not_rotten",
+        "ingredient": {
+            "item": "tfc:food/oat_flour"
+        }
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "firmalife:yeast_starter",
+    "amount": 1000
+  },
+  "output_item": {
+    "item": "firmalife:food/oat_dough",
+    "count": 5
+  }
+}

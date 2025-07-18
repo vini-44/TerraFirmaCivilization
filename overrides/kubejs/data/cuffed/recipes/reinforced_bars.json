@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NIN",
+    "NIN"
+  ],
+  "key": {
+    "N": {
+      "item": "tfc:metal/ingot/wrought_iron"
+    },
+    "I": {
+      "item": "tfc:metal/bars/wrought_iron"
+    }
+  },
+  "result": {
+    "item": "cuffed:reinforced_bars",
+    "count": 2
+  }
+}

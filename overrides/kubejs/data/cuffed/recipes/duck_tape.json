@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "tfc:sewing_dark_cloth"
+        },
+        {
+            "tag": "tfc:sewing_dark_cloth"
+        },
+        {
+            "tag": "tfc:sewing_dark_cloth"
+        },
+        {
+            "item": "tfc:glue"
+        }
+    ],
+    "result": {
+        "item": "cuffed:duck_tape",
+        "count": 2
+    }
+}

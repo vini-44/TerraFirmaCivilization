@@ -1,0 +1,20 @@
+{
+    "replace": false,
+    "values": [
+        "cuffed:pillory",
+        "cuffed:safe",
+        "#forge:fence_gates",
+        "#forge:chests",
+        "#forge:barrels",
+        "#minecraft:trapdoors",
+        "#minecraft:doors",
+        "#minecraft:anvil",
+        "#minecraft:impermeable",
+        "#forge:storage_blocks",
+        "minecraft:furnace",
+        "minecraft:crafting_table",
+        "minecraft:enchanting_table",
+        "minecraft:blast_furnace",
+        "minecraft:smoker"
+    ]
+}

@@ -1,161 +1,49 @@
 [
     {
-        "mob": "thermal:blitz",
-        "phase": "pre_game",
-        "mincount": 0,
+        "mob": ["minecraft:zombie", "minecraft:spider", "minecraft:creeper"],
+        "minheight": 50,
         "result" : "deny"
     },
     {
-        "mob": "whisperwoods:zotzpyre",
-        "mincount": 0,
-        "phase": "pre_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "whisperwoods:hirschgeist",
-        "mincount": 0,
-        "phase": "pre_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:cog_minion",
-        "mincount": 0,
-        "phase": "pre_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:cog_knight",
-        "mincount": 0,
-        "phase": "pre_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:sky_carrier",
-        "mincount": 0,
-        "phase": "pre_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:hive",
-        "mincount": 0,
-        "phase": "pre_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:dissident",
-        "mincount": 0,
-        "phase": "pre_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:redcoat",
-        "mincount": 0,
-        "phase": "pre_game",
-        "result" : "deny"
-    },
-
-
-
-
-    {
-        "mob": "thermal:blitz",
-        "phase": "early_game",
-        "mincount": 0,
-        "result" : "deny"
-    },
-    {
-        "mob": "whisperwoods:zotzpyre",
-        "mincount": 0,
-        "phase": "early_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:cog_minion",
-        "mincount": 0,
-        "phase": "early_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:cog_knight",
-        "mincount": 0,
-        "phase": "early_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:sky_carrier",
-        "mincount": 0,
-        "phase": "early_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:hive",
-        "mincount": 0,
-        "phase": "early_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:dissident",
-        "mincount": 0,
-        "phase": "early_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:redcoat",
-        "phase": "early_game",
-        
+        "mob": ["minecraft:zombie", "minecraft:spider", "minecraft:creeper"],
         "mincount":{
-            "amount": 2,
+            "amount": 10,
             "perplayer": true
         },
+        "result" : "deny"
+    },
+    {
+        "mob": ["minecraft:zombie", "minecraft:spider", "minecraft:creeper"],
+        "mincount":{
+            "amount": 150
+        },
+        "result" : "deny"
+    },
+    {
+        "mob": "whisperwoods:hidebehind",
+        "mincount":{
+            "amount": 1
+            "perplayer": true
+        },
+        "result" : "deny"
+    },
+    {
+        "mob": "whisperwoods:hidebehind",
+        "mincount":{
+            "amount": 10
+        },
+        "result" : "deny"
+    },
 
+
+    {
+        "mob": "whisperwoods:zotzpyre",  
+        "minheight": 30,
         "result" : "deny"
     },
 
+  
 
-    
-
-    {
-        "mob": "thermal:blitz",
-        "phase": "mid_game",
-        "mincount": 0,
-        "result" : "deny"
-    },
-    {
-        "mob": "whisperwoods:zotzpyre",
-        "mincount": 0,
-        "phase": "mid_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:cog_minion",
-        "mincount": 0,
-        "phase": "mid_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:cog_knight",
-        "mincount": 0,
-        "phase": "mid_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:sky_carrier",
-        "mincount": 0,
-        "phase": "mid_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:hive",
-        "mincount": 0,
-        "phase": "mid_game",
-        "result" : "deny"
-    },
-    {
-        "mob": "scguns:dissident",
-        "mincount": 0,
-        "phase": "mid_game",
-        "result" : "deny"
-    },
     {
         "mob": "scguns:redcoat",
         "phase": "mid_game",
@@ -165,6 +53,40 @@
             "perplayer": true
         },
 
+        "result" : "deny"
+    },
+
+    
+    {
+        "mob": "thermal:blitz",
+        "result" : "deny"
+    },
+    {
+        "mob": "whisperwoods:hirschgeist",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:cog_minion",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:cog_knight",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:sky_carrier",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:hive",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:dissident",
+        "result" : "deny"
+    },
+    {
+        "mob": "scguns:redcoat",
         "result" : "deny"
     }
 ]
