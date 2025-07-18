@@ -27,7 +27,7 @@
                 "max": {
                   "type": "minecraft:uniform",
                   "min": 2,
-                  "max": 6
+                  "max": 7
                 }
               }
             }
