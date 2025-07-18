@@ -2,9 +2,13 @@
 
 ServerEvents.recipes((e) => {
 
+	e.remove({ mod: 'epic_knights_ores_and_alloys' });
+		
 	e.remove({ input: '#minecraft:trapdoors', type: 'farmersdelight:cutting' });
 	e.remove({ input: '#minecraft:doors', type: 'farmersdelight:cutting' });
 	e.remove({ input: '#minecraft:signs', type: 'farmersdelight:cutting' });
+	
+	e.remove({ input: 'minecraft:leather_horse_armor', type: 'farmersdelight:cutting' });
 	
 	e.remove({ output: '#tfc:shields' });
 	e.remove({ output: 'minecraft:shield' });
@@ -16,6 +20,14 @@ ServerEvents.recipes((e) => {
 	e.remove({ output: 'butchersdelight:roaster' });
 	
 	e.remove({ output: 'farmersdelight:rope' });
+	
+	
+	e.shapeless(
+	  Item.of('minecraft:chain', 1),
+	  [
+		'1x #kubejs:chains'
+	  ]
+	)
 	
 	e.shapeless(
 	  Item.of('tfc_loot:obsidian_scrap', 1),

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "N N",
+      " I "
+    ],
+    "key": {
+      "I": {
+        "item": "tfc:metal/sheet/wrought_iron"
+      },
+      "N": {
+        "item": "tfc:metal/ingot/wrought_iron"
+      }
+    },
+    "result": {
+      "item": "cuffed:tray",
+      "count": 4
+    }
+  }

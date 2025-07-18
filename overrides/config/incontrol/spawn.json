@@ -19,6 +19,21 @@
         },
         "result" : "deny"
     },
+    {
+        "mob": "whisperwoods:hidebehind",
+        "mincount":{
+            "amount": 1
+            "perplayer": true
+        },
+        "result" : "deny"
+    },
+    {
+        "mob": "whisperwoods:hidebehind",
+        "mincount":{
+            "amount": 10
+        },
+        "result" : "deny"
+    },
 
 
     {

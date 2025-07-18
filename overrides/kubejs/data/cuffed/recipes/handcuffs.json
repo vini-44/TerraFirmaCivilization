@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NIN"
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:metal/chain"
+    },
+    "N": {
+      "item": "tfc:metal/ingot/wrought_iron"
+    }
+  },
+  "result": {
+    "item": "cuffed:handcuffs",
+    "count": 1
+  }
+}

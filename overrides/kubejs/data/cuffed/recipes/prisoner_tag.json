@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "S",
+      "P"
+    ],
+    "key": {
+      "S": {
+        "tag": "forge:string"
+      },
+      "P": {
+        "item": "minecraft:paper"
+      }
+    },
+    "result": {
+      "item": "cuffed:prisoner_tag",
+      "count": 1
+    }
+  }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NIN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "tag": "tfc:high_quality_cloth"
+    },
+    "I": {
+      "item": "cuffed:handcuffs"
+    }
+  },
+  "result": {
+    "item": "cuffed:fuzzy_handcuffs",
+    "count": 1
+  }
+}

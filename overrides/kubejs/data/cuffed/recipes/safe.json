@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BPB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "tfc:metal/double_sheet/wrought_iron"
+    },
+    "P": {
+      "item": "cuffed:padlock"
+    }
+  },
+  "result": {
+    "item": "cuffed:safe",
+    "count": 1
+  }
+}

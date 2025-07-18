@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "WBW",
+      "WIW",
+      "W W"
+    ],
+    "key": {
+      "W": {
+        "tag": "minecraft:planks"
+      },
+      "I": {
+        "item": "tfc:metal/ingot/wrought_iron"
+      },
+      "B": {
+        "item": "tfc:metal/double_ingot/wrought_iron"
+      }
+    },
+    "result": {
+      "item": "cuffed:guillotine",
+      "count": 1
+    }
+  }

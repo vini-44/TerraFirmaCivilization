@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "C C",
+      "IBI"
+    ],
+    "key": {
+      "C": {
+        "tag": "forge:metal/chain"
+      },
+      "I": {
+        "item": "tfc:metal/ingot/wrought_iron"
+      },
+      "B": {
+        "tag": "minecraft:beds"
+      }
+    },
+    "result": {
+      "item": "cuffed:bunk",
+      "count": 1
+    }
+  }

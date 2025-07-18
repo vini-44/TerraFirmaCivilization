@@ -1,0 +1,10 @@
+{
+    "type": "tfc:heating",
+    "ingredient": {
+      "item": "cuffed:key_mold"
+    },
+    "result_item": {
+      "item": "cuffed:baked_key_mold"
+    },
+    "temperature": 150
+  }
