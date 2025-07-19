@@ -49,37 +49,6 @@ ServerEvents.recipes((e) => {
 		'1x tfc:powder/flux'
 	  ]
 	)
-	e.shaped(
-	  Item.of('tfc:bloomery', 1), // arg 1: output
-	  ['AAA','A A','AAA'],
-	  {
-		A: 'tfc:metal/sheet/wrought_iron'
-	  }
-	)
-	let anvil_metals = {
-		red_steel: 1540,
-		blue_steel: 1540,
-		black_steel: 1485,
-		steel: 1540,
-		wrought_iron: 1535,
-		copper: 1080,
-		bronze: 950,
-		black_bronze: 1070,
-		bismuth_bronze: 985,
-	};
-	for (let [metal, temp] of Object.entries(anvil_metals)) {
-		e.remove({ output: `tfc:metal/anvil/${metal}` });
-		e.remove({ id: `tfc:heating/metal/${metal}_anvil` });
-
-		e.shaped(`tfc:metal/anvil/${metal}`, ['ABA', ` B `, `BBB`], {
-			A: `tfc:metal/ingot/${metal}`,
-			B: `tfc:metal/double_ingot/${metal}`,
-		});
-
-		e.recipes.tfc
-			.heating(`tfc:metal/anvil/${metal}`, temp)
-			.resultFluid(Fluid.of(`tfc:metal/${metal}`, 1200));
-	}
 	
 	
 	e.remove([
