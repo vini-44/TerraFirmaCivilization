@@ -718,12 +718,6 @@ ServerEvents.recipes((e) => {
 		'textile:flax_fiber',
 	]);
 
-	e.remove({ id: 'chunkschedudeler:schedudeler' });
-	e.shaped('4x chunkschedudeler:schedudeler', ['ABA', 'ACA'], {
-		A: 'tfc:metal/rod/blue_steel',
-		B: 'kubejs:automaton_head',
-		C: 'createaddition:capacitor',
-	});
 
 	e.recipes.create
 		.sequenced_assembly(
@@ -741,4 +735,45 @@ ServerEvents.recipes((e) => {
 		)
 		.transitionalItem('tfc:metal/ingot/brass')
 		.loops(5);
+
+	let anvil_metals = {
+		red_steel: 1540,
+		blue_steel: 1540,
+		black_steel: 1485,
+		steel: 1540,
+		wrought_iron: 1535,
+		copper: 1080,
+		bronze: 950,
+		black_bronze: 1070,
+		bismuth_bronze: 985,
+	};
+	
+	for (let [metal, temp] of Object.entries(anvil_metals)) {
+		e.remove({ output: `tfc:metal/anvil/${metal}` });
+		e.remove({ id: `tfc:heating/metal/${metal}_anvil` });
+
+		e.shaped(`tfc:metal/anvil/${metal}`, ['ABA', ` B `, `BBB`], {
+			A: `tfc:metal/ingot/${metal}`,
+			B: `tfc:metal/double_ingot/${metal}`,
+		});
+
+		e.recipes.tfc
+			.heating(`tfc:metal/anvil/${metal}`, temp)
+			.resultFluid(Fluid.of(`tfc:metal/${metal}`, 1200));
+	}
+
+    e.remove({output: 'tfc:bloomery'})
+
+    e.shaped('tfc:bloomery', ['ABA', 'B B', 'ABA'], {
+        A: '#forge:sheets/any_bronze',
+        B: '#forge:double_sheets/any_bronze',
+    })
+	e.shaped('tfc:bloomery', ['AAA','A A','AAA'], {
+		A: 'tfc:metal/sheet/wrought_iron',
+	  
+	})
+	e.shaped('tfc:bloomery', ['ABA', 'B B', 'ABA'], {
+        A: 'tfc:metal/sheet/steel',
+        B: 'tfc:metal/ingot/steel'
+    })
 });

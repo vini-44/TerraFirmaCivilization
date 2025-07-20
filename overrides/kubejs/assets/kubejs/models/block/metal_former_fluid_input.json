@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:block/cube",
+  "render_type": "cutout",
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "down": {"texture": "#down", "cullface": "down"},
+        "up": {"texture": "#up", "cullface": "up"},
+        "north": {"texture": "#north", "cullface": "north"},
+        "south": {"texture": "#south", "cullface": "south"},
+        "west": {"texture": "#west", "cullface": "west"},
+        "east": {"texture": "#east", "cullface": "east"}
+      }
+    }
+  ],
+  "textures": {
+    "particle": "thermal:block/machines/machine_top",
+    "down": "thermal:block/machines/machine_bottom",
+    "up": "thermal:block/machines/machine_top",
+    "east": "kubejs:block/metal_former_fluid_input",
+    "west": "kubejs:block/metal_former_fluid_input",
+    "south": "kubejs:block/metal_former_fluid_input",
+    "north": "kubejs:block/metal_former_fluid_input"
+  }
+}

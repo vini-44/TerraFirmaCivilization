@@ -109,31 +109,6 @@ ServerEvents.recipes((event) => {
 		D: 'minecraft:leather',
 	});
 
-		//No sulidae crafts start
-
-		event.shaped('scguns:adrien_leggings', ['DBD', 'C C', 'A A'], {
-			A: 'firmaciv:copper_bolt',
-			B: 'kubejs:metal/double_sheet/mangalloy',
-			C: 'kubejs:metal/sheet/mangalloy',
-			D: 'minecraft:leather',
-		});
-		
-		event.shaped('scguns:adrien_boots', ['D D', 'C C'], {
-		
-			
-			C: 'kubejs:metal/sheet/mangalloy',
-			D: 'minecraft:leather',
-		});
-		
-
-
-
-		////No sulidae crafts end 
-
-
-	
-
-
 	event.recipes.create.milling('quark:moss_paste', ['tfc:plant/moss']);
 
 	event.shapeless('4x scguns:basic_poultice', [

@@ -1,11 +1,13 @@
 [
     {
         "mob": ["minecraft:zombie", "minecraft:spider", "minecraft:creeper"],
+        "phase": "pre_game",
         "minheight": 50,
         "result" : "deny"
     },
     {
         "mob": ["minecraft:zombie", "minecraft:spider", "minecraft:creeper"],
+        "phase": "pre_game",
         "mincount":{
             "amount": 10,
             "perplayer": true
@@ -14,6 +16,7 @@
     },
     {
         "mob": ["minecraft:zombie", "minecraft:spider", "minecraft:creeper"],
+        "phase": "pre_game",
         "mincount":{
             "amount": 150
         },
@@ -21,14 +24,16 @@
     },
     {
         "mob": "whisperwoods:hidebehind",
+        "phase": "pre_game",
         "mincount":{
-            "amount": 1
+            "amount": 1,
             "perplayer": true
         },
         "result" : "deny"
     },
     {
         "mob": "whisperwoods:hidebehind",
+        "phase": "pre_game",
         "mincount":{
             "amount": 10
         },
@@ -38,6 +43,7 @@
 
     {
         "mob": "whisperwoods:zotzpyre",  
+        "phase": "pre_game",
         "minheight": 30,
         "result" : "deny"
     },
@@ -59,34 +65,42 @@
     
     {
         "mob": "thermal:blitz",
+        "phase": "pre_game",
         "result" : "deny"
     },
     {
         "mob": "whisperwoods:hirschgeist",
+        "phase": "pre_game",
         "result" : "deny"
     },
     {
         "mob": "scguns:cog_minion",
+        "phase": "pre_game",
         "result" : "deny"
     },
     {
         "mob": "scguns:cog_knight",
+        "phase": "pre_game",
         "result" : "deny"
     },
     {
         "mob": "scguns:sky_carrier",
+        "phase": "pre_game",
         "result" : "deny"
     },
     {
         "mob": "scguns:hive",
+        "phase": "pre_game",
         "result" : "deny"
     },
     {
         "mob": "scguns:dissident",
+        "phase": "pre_game",
         "result" : "deny"
     },
     {
         "mob": "scguns:redcoat",
+        "phase": "pre_game",
         "result" : "deny"
     }
 ]
