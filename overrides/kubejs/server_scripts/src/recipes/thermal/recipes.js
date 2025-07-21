@@ -74,7 +74,7 @@ ServerEvents.recipes((e) => {
 	//TODO: smithing recipes instead?
 	//drill head
 	e.recipes.tfc
-		.anvil('thermal:drill_head', 'kubejs:metal/ingot/titanium', [
+		.anvil('thermal:drill_head', 'tfc:metal/double_sheet/black_steel', [
 			'punch_last',
 			'bend_any',
 			'draw_not_last',
@@ -84,7 +84,7 @@ ServerEvents.recipes((e) => {
 
 	//saw blade
 	e.recipes.tfc
-		.anvil('thermal:saw_blade', 'tfc:metal/sheet/steel', [
+		.anvil('thermal:saw_blade', 'tfc:metal/double_sheet/black_steel', [
 			'punch_last',
 			'bend_any',
 			'draw_not_last',

@@ -718,12 +718,6 @@ ServerEvents.recipes((e) => {
 		'textile:flax_fiber',
 	]);
 
-	e.remove({ id: 'chunkschedudeler:schedudeler' });
-	e.shaped('4x chunkschedudeler:schedudeler', ['ABA', 'ACA'], {
-		A: 'tfc:metal/rod/blue_steel',
-		B: 'kubejs:automaton_head',
-		C: 'createaddition:capacitor',
-	});
 
 	e.recipes.create
 		.sequenced_assembly(
@@ -776,6 +770,10 @@ ServerEvents.recipes((e) => {
     })
 	e.shaped('tfc:bloomery', ['AAA','A A','AAA'], {
 		A: 'tfc:metal/sheet/wrought_iron',
-	  }
-	)
+	  
+	})
+	e.shaped('tfc:bloomery', ['ABA', 'B B', 'ABA'], {
+        A: 'tfc:metal/sheet/steel',
+        B: 'tfc:metal/ingot/steel'
+    })
 });
