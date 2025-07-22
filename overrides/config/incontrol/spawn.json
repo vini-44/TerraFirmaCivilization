@@ -1,25 +1,7 @@
 [
     {
-        "mob": ["minecraft:zombie", "minecraft:spider", "minecraft:creeper"],
+        "mob": ["minecraft:zombie", "minecraft:spider", "minecraft:creeper", "minecraft:skeleton"],
         "phase": "pre_game",
-        "minheight": 50,
-        "result" : "deny"
-    },
-    {
-        "mob": ["minecraft:zombie", "minecraft:spider", "minecraft:creeper"],
-        "phase": "pre_game",
-        "mincount":{
-            "amount": 10,
-            "perplayer": true
-        },
-        "result" : "deny"
-    },
-    {
-        "mob": ["minecraft:zombie", "minecraft:spider", "minecraft:creeper"],
-        "phase": "pre_game",
-        "mincount":{
-            "amount": 150
-        },
         "result" : "deny"
     },
     {
@@ -39,30 +21,28 @@
         },
         "result" : "deny"
     },
-
-
+    {
+        "mob": "quark:stoneling",
+        "phase": "pre_game",
+        "mincount":{
+            "amount": 20
+        },
+        "result" : "deny"
+    },
     {
         "mob": "whisperwoods:zotzpyre",  
         "phase": "pre_game",
-        "minheight": 30,
+        "minheight": 20,
         "result" : "deny"
-    },
-
-  
-
+    },    
     {
-        "mob": "scguns:redcoat",
-        "phase": "mid_game",
-        
+        "mob": "whisperwoods:zotzpyre",  
+        "phase": "pre_game",
         "mincount":{
-            "amount": 5,
-            "perplayer": true
+            "amount": 20
         },
-
         "result" : "deny"
-    },
-
-    
+    },    
     {
         "mob": "thermal:blitz",
         "phase": "pre_game",
