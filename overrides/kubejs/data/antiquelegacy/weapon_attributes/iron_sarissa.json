@@ -1,0 +1,14 @@
+{
+    "parent": "bettercombat:spear",
+    "attributes" : {
+    "pose": "antiquelegacy:sarissa_stand",
+	"attack_range": 5,
+    "two_handed": true,
+	"category": "spear",
+	"attacks": [
+      {
+        "animation": "antiquelegacy:sarissa_stab_right"
+      }
+    ]
+  }
+}
