@@ -138,8 +138,8 @@ ServerEvents.recipes((e) => {
 		.resultFluid(Fluid.of(`tfc:metal/unknown`, 50));
 
 	e.recipes.tfc
-		.heating('tfc:powder/salt', 200)
-		.resultFluid(Fluid.of('kubejs:molten_salt', 50))
+		.heating('tfc:powder/salt', 800)
+		.resultFluid(Fluid.of('kubejs:molten_salt', 100))
 
 	for (const def of ORE_DEFS) {
 		e.recipes.tfc

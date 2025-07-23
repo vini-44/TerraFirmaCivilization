@@ -117,3 +117,19 @@ TFCEvents.data((event) => {
 		event.itemSize(Ingredient.of(item), def[0], def[1]);
 	}
 });
+
+onEvent('item.modification', event => {
+    // Get all items with a specific tag
+    const itemsToResize = event.getItemTags('functionalstorage:drawer').getObjectIds()
+    
+    // Or use an existing TFC tag like:
+    // const tools = event.getItemTags('tfc:tools').getObjectIds()
+    
+    itemsToResize.forEach(itemId => {
+        event.modify(itemId, item => {
+            item.size = 'huge' 
+            item.weight = 'very_heavy' 
+            item.maxStackSize = 4
+        })
+    })
+})
