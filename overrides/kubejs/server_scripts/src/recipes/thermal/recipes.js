@@ -260,12 +260,23 @@ ServerEvents.recipes((e) => {
 		.refinery(Fluid.of('tfc:lye', 500), Fluid.of('tfc:salt_water'))
 		.energy(20000);
 
-	e.recipes.thermal
-		.refinery(
-			Fluid.of('kubejs:liquid_hydrogen', 300),
-			Fluid.of('water', 1000)
-		)
-		.energy(20000);
+	
+	e.recipes.thermal.refinery(
+		[
+		Fluid.of('kubejs:liquid_hydrogen', 300),  // Primary output
+		Fluid.of('kubejs:liquid_oxygen', 150)     // Secondary output
+		],
+		Fluid.of('water', 1000)                     // Input fluid
+	)
+	.energy(20000);                
+	
+	e.recipes.thermal.refinery(
+		[
+		Fluid.of('kubejs:liquid_chlorine', 150)     
+		],
+		Fluid.of('kubejs:molten_salt', 1000)                     
+	)
+	.energy(20000);        
 
 	e.shaped('thermal:machine_furnace', ['AAA', 'BCB', 'DED'], {
 		A: 'createaddition:copper_spool',

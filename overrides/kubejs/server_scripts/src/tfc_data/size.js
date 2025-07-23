@@ -117,3 +117,11 @@ TFCEvents.data((event) => {
 		event.itemSize(Ingredient.of(item), def[0], def[1]);
 	}
 });
+
+TFCEvents.data(event => {
+    event.itemSize(
+        Ingredient.of('#functionalstorage:drawer'),
+        'huge',
+        'very_heavy'
+    );
+});
