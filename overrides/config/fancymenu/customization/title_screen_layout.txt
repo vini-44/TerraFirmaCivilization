@@ -75,13 +75,13 @@ element {
 
 element {
   button_element_executable_block_identifier = c16b9d15-dd57-4f3d-bec9-5ed6af6bb91e-1751874938723
-  [executable_action_instance:362019c0-1592-4adf-b4c1-d427921c0ca0-1751875186770][action_type:joinserver] = terrafirmaciv.serveminecraft.net:25565
+  [executable_action_instance:362019c0-1592-4adf-b4c1-d427921c0ca0-1751875186770][action_type:joinserver] =  TerrafirmaCivilizations.folium.lol
   [executable_block:c16b9d15-dd57-4f3d-bec9-5ed6af6bb91e-1751874938723][type:generic] = [executables:362019c0-1592-4adf-b4c1-d427921c0ca0-1751875186770;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = &aJoin TerraFirmaCivilizations! {"placeholder":"serverstatus","values":{"ip":"terrafirmaciv.serveminecraft.net:25565"}}
+  label = &aJoin TerraFirmaCivilizations! {"placeholder":"serverstatus","values":{"ip":" TerrafirmaCivilizations.folium.lol"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 898d1925-2f45-4097-ac9b-71decb00cc47-1751874938723
   [loading_requirement_container_meta:898d1925-2f45-4097-ac9b-71decb00cc47-1751874938723] = [groups:][instances:]
@@ -135,13 +135,13 @@ element {
 
 element {
   button_element_executable_block_identifier = c16b9d15-dd57-4f3d-bec9-5ed6af6bb91e-1751874938723
-  [executable_action_instance:362019c0-1592-4adf-b4c1-d427921c0ca0-1751875186770][action_type:joinserver] = terrafirmaciv.serveminecraft.net:25565
+  [executable_action_instance:362019c0-1592-4adf-b4c1-d427921c0ca0-1751875186770][action_type:joinserver] =  TerrafirmaCivilizations.folium.lol
   [executable_block:c16b9d15-dd57-4f3d-bec9-5ed6af6bb91e-1751874938723][type:generic] = [executables:362019c0-1592-4adf-b4c1-d427921c0ca0-1751875186770;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Ping: {"placeholder":"serverping","values":{"ip":"terrafirmaciv.serveminecraft.net:25565"}} &aPlayers:&7 {"placeholder":"serverplayercount","values":{"ip":"terrafirmaciv.serveminecraft.net:25565"}}
+  label = Ping: {"placeholder":"serverping","values":{"ip":" TerrafirmaCivilizations.folium.lol"}} &aPlayers:&7 {"placeholder":"serverplayercount","values":{"ip":" TerrafirmaCivilizations.folium.lol"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 898d1925-2f45-4097-ac9b-71decb00cc47-1751874938723
   [loading_requirement_container_meta:898d1925-2f45-4097-ac9b-71decb00cc47-1751874938723] = [groups:][instances:]
