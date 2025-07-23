@@ -137,6 +137,10 @@ ServerEvents.recipes((e) => {
 		.heating(`kubejs:scrap`, 400)
 		.resultFluid(Fluid.of(`tfc:metal/unknown`, 50));
 
+	e.recipes.tfc
+		.heating('tfc:powder/salt', 800)
+		.resultFluid(Fluid.of('kubejs:molten_salt', 100))
+
 	for (const def of ORE_DEFS) {
 		e.recipes.tfc
 			.heating(`tfc:powder/${def.ore}`, def.meltingTemp)

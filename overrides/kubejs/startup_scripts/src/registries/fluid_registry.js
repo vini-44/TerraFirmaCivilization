@@ -37,8 +37,14 @@ StartupEvents.registry('fluid', (event) => {
     event.create('molten_mangalloy').displayName("Molten Mangalloy").bucketColor(Color.BROWN_DYE).thickTexture(Color.BROWN_DYE)//TODO?
 
     event.create('liquid_hydrogen').noBucket().noBlock().displayName("Liquid Hydrogen").thinTexture(Color.LIGHT_BLUE_DYE)//TODO? This looks fine.
+    event.create('liquid_oxygen').noBucket().noBlock().displayName("Liquid Oxygen").thinTexture('#FFCCCB')
+    event.create('liquid_chlorine').noBucket().noBlock().displayName("Liquid Chlorine").thinTexture('#00FFEF')
     event.create('lubricant').displayName("Lubricant").thinTexture(Color.ORANGE_DYE)//TODO
 
     event.create('molten_titanium').displayName("Molten Titanium").bucketColor(Color.CYAN_DYE).flowingTexture('kubejs:fluid/molten_titanium_flow').stillTexture('kubejs:fluid/molten_titanium_still')
     event.create('molten_tungsten').displayName("Molten Tungsten").bucketColor(Color.CYAN_DYE).flowingTexture('kubejs:fluid/molten_tungsten_flow').stillTexture('kubejs:fluid/molten_tungsten_still')
+
+    event.create('molten_salt').noBucket().noBlock().displayName("Molten Salt").thinTexture(Color.WHITE_DYE)
+
+    
 });
