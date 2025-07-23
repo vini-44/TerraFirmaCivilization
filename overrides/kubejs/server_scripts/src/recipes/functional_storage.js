@@ -21,4 +21,21 @@ ServerEvents.recipes((e) => {
         B: 'create:fluid_tank'
 	});
 
+    e.replaceInput(
+        { mod: "functionalstorage", input: "minecraft:copper_ingot" },
+        "minecraft:copper_ingot",
+        "tfc:metal/ingot/copper"
+    )
+
+    e.replaceInput(
+        { mod: "functionalstorage", input: "minecraft:copper_block" },
+        "minecraft:copper_block",
+        "tfc:metal/block/copper"
+    )
+
+    e.replaceInput(
+        { mod: "functionalstorage", input: "minecraft:gold_block" },
+        "minecraft:gold_block",
+        "tfc:metal/block/gold"
+    )
 });
