@@ -46,7 +46,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/onion"
+          "name": "tfc:seeds/onion",
           "functions": [
             {
               "function": "minecraft:set_count",

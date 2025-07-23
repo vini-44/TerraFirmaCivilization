@@ -46,7 +46,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/beet"
+          "name": "tfc:seeds/beet",
           "functions": [
             {
               "function": "minecraft:set_count",

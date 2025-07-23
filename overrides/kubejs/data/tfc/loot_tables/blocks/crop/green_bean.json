@@ -42,20 +42,21 @@
       ]
     },
     {
-      "name": "loot_pool",
-      "rolls": 1,
-      "entries": [
-        {
+        "name": "loot_pool",
+        "rolls": 1,
+        "entries": [
+          {
           "type": "minecraft:item",
           "name": "tfc:seeds/green_bean",
           "conditions": [
             {
-              "condition": "minecraft:block_state_property",
-              "block": "tfc:crop/green_bean",
-              "properties": {
-                "part": "bottom"
-              }
+                "condition": "minecraft:block_state_property",
+                "block": "tfc:crop/green_bean",
+                "properties": {
+                  "part": "bottom"
+                }
             }
+        ],
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -69,7 +70,6 @@
                 }
               }
             }
-          ]
           ]
         }
       ],
