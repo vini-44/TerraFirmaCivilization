@@ -2,6 +2,8 @@
 
 ServerEvents.recipes((e) => {
 
+
+
 	e.remove({ mod: 'epic_knights_ores_and_alloys' });
 		
 	e.remove({ input: '#minecraft:trapdoors', type: 'farmersdelight:cutting' });
@@ -12,6 +14,8 @@ ServerEvents.recipes((e) => {
 	
 	e.remove({ output: '#tfc:shields' });
 	e.remove({ output: 'minecraft:shield' });
+
+	e.remove({ output: 'minecraft:baked_potato' });
 	
 	e.remove({ output: 'lithicaddon:food/fish_fillet' });
 	e.remove({ output: 'lithicaddon:food/cooked_fish_fillet' });
