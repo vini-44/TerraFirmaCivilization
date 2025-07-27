@@ -160,9 +160,13 @@ rhodocrosite_fragment: {
     tungsten_carbide_parts: {
         name: 'Tungsten Carbide Parts',
         texture: 'thermal:item/lead_gear'
-    }
+    },
 
-
+	//track
+	railway_sleeper: {
+		name: 'Railway Sleepers',
+		texture: 'create:item/incomplete_track'
+	}
 };
 
 /**
