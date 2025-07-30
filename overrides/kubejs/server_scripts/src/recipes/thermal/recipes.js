@@ -27,8 +27,8 @@ ServerEvents.recipes((e) => {
 		S: 'createaddition:copper_spool',
 		C: 'tfc:crucible',
 		F: 'thermal:machine_frame',
-		P: 'tfc:metal/sheet/black_steel',
-		D: 'tfc:metal/double_sheet/black_steel',
+		P: 'firmalife:metal/sheet/stainless_steel',
+		D: 'firmalife:metal/double_sheet/stainless_steel',
 	});
 
 	//tinker's workbench
