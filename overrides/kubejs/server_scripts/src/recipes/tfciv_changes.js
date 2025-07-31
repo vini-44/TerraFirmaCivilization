@@ -3,6 +3,19 @@
 ServerEvents.recipes((e) => {
 
 	e.remove({ mod: 'epic_knights_ores_and_alloys' });
+
+	// remove nugget to ingot recipes
+	// you shouldn't be getting these ingots anyways
+	e.remove({ output: 'magistuarmory:steel_ingot' });
+	e.remove({ output: 'iron_ingot' });
+	// change the tier of the iron nugget
+	e.remove({ output: 'iron_nugget', type: 'tfc:anvil' });
+	e.recipes.tfc.anvil('iron_nugget', 'tfc:metal/ingot/wrought_iron', [
+		'hit_third_last',
+		'hit_second_last',
+		'hit_last'
+	])
+	.tier(3);
 		
 	e.remove({ input: '#minecraft:trapdoors', type: 'farmersdelight:cutting' });
 	e.remove({ input: '#minecraft:doors', type: 'farmersdelight:cutting' });
@@ -49,7 +62,7 @@ ServerEvents.recipes((e) => {
 		'1x tfc:powder/flux'
 	  ]
 	)
-	
+
 	
 	e.remove([
 		{id: 'tfc:crafting/dough/barley_dough_8'},
