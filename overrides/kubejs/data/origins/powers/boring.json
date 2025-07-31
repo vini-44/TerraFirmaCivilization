@@ -1,9 +1,0 @@
-{
-  "name": "Boring",
-  "description": "You real boring.(You gain 40% less XP.)",
-  "type": "origins:modify_xp_gain",
-  "modifier": {
-    "operation": "multiply_base",
-    "value": -0.4
-  }
-}

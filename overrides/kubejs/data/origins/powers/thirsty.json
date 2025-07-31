@@ -1,7 +1,0 @@
-{
-  "type": "tfcorigins:dehydrate",
-  "name": "Thirsty",
-  "description": "You get thirsty slightly faster.(2 dehydate every 300s)",
-  "interval": 300,
-  "dehydration": 2.0
-}

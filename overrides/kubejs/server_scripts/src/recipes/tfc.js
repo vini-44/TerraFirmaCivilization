@@ -5,10 +5,6 @@ ServerEvents.recipes((e) => {
 	e.remove({ output: 'minecraft:chest' });
 	e.remove({ output: 'minecraft:trapped_chest' });
 
-	e.remove({ input: '#minecraft:trapdoors', type: 'farmersdelight:cutting' });
-	e.remove({ input: '#minecraft:doors', type: 'farmersdelight:cutting' });
-	e.remove({ input: '#minecraft:signs', type: 'farmersdelight:cutting' });
-	
 	e.custom({
 		type: 'tfc:pot',
 		ingredients: [],
@@ -92,7 +88,7 @@ ServerEvents.recipes((e) => {
 	e.remove({ id: 'tfc:barrel/dye/bleach_windmill_blades' });
 	e.remove({ input: 'tfc:ore/cryolite' });
 
-	e.forEachRecipe({ type: 'tfc:quern', not: { input: '#forge:ores/chunks' }}, (recipe) => {
+	e.forEachRecipe({ type: 'tfc:quern' }, (recipe) => {
 		let ingredient = recipe.json.get('ingredient');
 
 		e.recipes.create.milling(recipe.originalRecipeResult, ingredient);
@@ -718,6 +714,12 @@ ServerEvents.recipes((e) => {
 		'textile:flax_fiber',
 	]);
 
+	e.remove({ id: 'chunkschedudeler:schedudeler' });
+	e.shaped('4x chunkschedudeler:schedudeler', ['ABA', 'ACA'], {
+		A: 'tfc:metal/rod/blue_steel',
+		B: 'kubejs:automaton_head',
+		C: 'createaddition:capacitor',
+	});
 
 	e.recipes.create
 		.sequenced_assembly(
@@ -747,33 +749,25 @@ ServerEvents.recipes((e) => {
 		black_bronze: 1070,
 		bismuth_bronze: 985,
 	};
-	
+
 	for (let [metal, temp] of Object.entries(anvil_metals)) {
 		e.remove({ output: `tfc:metal/anvil/${metal}` });
 		e.remove({ id: `tfc:heating/metal/${metal}_anvil` });
 
-		e.shaped(`tfc:metal/anvil/${metal}`, ['ABA', ` B `, `BBB`], {
+		e.shaped(`tfc:metal/anvil/${metal}`, ['AAA', ` B `, `AAA`], {
 			A: `tfc:metal/ingot/${metal}`,
 			B: `tfc:metal/double_ingot/${metal}`,
 		});
 
 		e.recipes.tfc
 			.heating(`tfc:metal/anvil/${metal}`, temp)
-			.resultFluid(Fluid.of(`tfc:metal/${metal}`, 1200));
+			.resultFluid(Fluid.of(`tfc:metal/${metal}`, 800));
 	}
 
     e.remove({output: 'tfc:bloomery'})
 
-    e.shaped('tfc:bloomery', ['ABA', 'B B', 'ABA'], {
+    e.shaped('tfc:bloomery', ['ABA', 'A A', 'ABA'], {
         A: '#forge:sheets/any_bronze',
         B: '#forge:double_sheets/any_bronze',
-    })
-	e.shaped('tfc:bloomery', ['AAA','A A','AAA'], {
-		A: 'tfc:metal/sheet/wrought_iron',
-	  
-	})
-	e.shaped('tfc:bloomery', ['ABA', 'B B', 'ABA'], {
-        A: 'tfc:metal/sheet/steel',
-        B: 'tfc:metal/ingot/steel'
     })
 });

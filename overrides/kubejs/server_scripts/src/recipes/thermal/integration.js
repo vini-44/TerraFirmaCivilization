@@ -1,5 +1,16 @@
 // priority: 0
 ServerEvents.recipes((e) => {
+	//slag from melting raw ores
+	e.forEachRecipe({ type: 'tfc:heating' }, (recipe) => {
+		let json = recipe.json;
+		if (
+			json.get('ingredient').get('item') != null &&
+			Item.of(json.get('ingredient').get('item')).hasTag('tfc:ore_pieces')
+		) {
+			json.add('result_item', { item: 'thermal:slag' });
+			e.custom(json).id(recipe.getId());
+		}
+	});
 
 	e.recipes.thermal
 		.pyrolyzer(
