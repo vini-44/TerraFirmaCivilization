@@ -126,6 +126,8 @@ ClientEvents.lang('en_us', (event) => {
 	event.renameBlock('amethyst_cluster', 'Kyanite Cluster');
 	event.renameItem('amethyst_shard', 'Kyanite Shard');
 
+	event.renameItem('iron_nugget', 'Wrought Iron Nugget');
+
 	event.add('block.minecraft.amethyst_block.prospected', 'Kyanite');
 	event.add('block.minecraft.amethyst_cluster.prospected', 'Kyanite');
 
