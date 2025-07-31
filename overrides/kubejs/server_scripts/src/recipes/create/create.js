@@ -74,7 +74,7 @@ ServerEvents.recipes((e) => {
 	e.shapeless('create:electron_tube', [
 		'tfc:lamp_glass',
 		'kubejs:chromium_wire',
-		'tfc:metal/ingot/zinc',
+		'#lithiccoins:coins/zinc',
 	]);
 
 	e.recipes.create
@@ -608,7 +608,8 @@ ServerEvents.recipes((e) => {
 
 	e.shapeless('create:mechanical_pump', [
 		'create:fluid_pipe',
-		'tfc:metal/sheet/steel',
+		'create:cogwheel',
+		'create:andesite_alloy',
 	]);
 	e.shapeless('create:smart_fluid_pipe', [
 		'create:fluid_pipe',
@@ -631,7 +632,7 @@ ServerEvents.recipes((e) => {
 
 	e.shapeless('4x create:fluid_tank', [
 		'tfc:metal/sheet/copper',
-		'4x #tfc:barrels',
+		'4x firmaciv:copper_bolt',
 	]);
 
 	e.shapeless('create:fluid_valve', [
@@ -933,6 +934,26 @@ ServerEvents.recipes((e) => {
 		S: 'tfc:gem_saw',
 	}).damageIngredient('tfc:gem_saw', 3);
 
+	e.shaped('8x create:framed_glass_pane', ['GGG', 'GSG', 'GGG'], {
+		G: '#forge:glass_panes/colorless',
+		S: 'tfc:gem_saw',
+	}).damageIngredient('tfc:gem_saw', 8);
+
+	e.shaped('4x create:tiled_glass_pane', ['GGS', 'GG '], {
+		G: '#forge:glass_panes/colorless',
+		S: 'tfc:gem_saw',
+	}).damageIngredient('tfc:gem_saw', 4);
+
+	e.shaped('3x create:vertical_framed_glass_pane', [' G ', ' GS', ' G '], {
+		G: '#forge:glass_panes/colorless',
+		S: 'tfc:gem_saw',
+	}).damageIngredient('tfc:gem_saw', 3);
+
+	e.shaped('3x create:horizontal_framed_glass_pane', [' S ', 'GGG'], {
+		G: '#forge:glass_panes/colorless',
+		S: 'tfc:gem_saw',
+	}).damageIngredient('tfc:gem_saw', 3);
+
 	e.shaped('3x create:framed_glass_trapdoor', ['GGG', 'GGG'], {
 		G: '#forge:glass/colorless',
 	});
@@ -1125,4 +1146,58 @@ ServerEvents.recipes((e) => {
 	e.shaped('create:cardboard_sword', ['A', 'A', 'A'], {
 		A: 'create:cardboard',
 	});
+
+	e.shapeless('create:empty_schematic', ['paper', 'light_blue_dye']);
+
+	e.shapeless('create:schematic_and_quill', [
+		'create:empty_schematic',
+		'black_dye',
+		'feather',
+	]);
+
+	e.shaped('create:schematic_table', ['AAA', ' B ', ' B '], {
+		A: '#tfc:lumber',
+		B: '#forge:smooth_stone',
+	});
+
+	e.forEachRecipe({ type: 'tfc:barrel_instant' }, (recipe) => {
+		let json = JsonIO.toObject(recipe.json);
+		let results = [];
+
+		let id = recipe.getId();
+
+		if (id.match(/.*clean.*|.*cooling.*/)) {
+			//skip cleaning and cooling recipes because they don't work.
+			return;
+		}
+
+		if (json.output_item) {
+			results.push(json.output_item);
+		}
+		if (json.output_fluid) {
+			results.push(json.output_fluid);
+		}
+
+		e.recipes.create
+			.mixing(results, [
+				json.input_item.ingredient,
+				Fluid.of(json.input_fluid.ingredient, json.input_fluid.amount),
+			])
+			.id(recipe.getId() + '_mixer');
+	});
+
+	e.recipes.create.splashing('tfc:jute_net', 'tfc:dirty_jute_net');
+
+	e.shaped('16x create:andesite_ladder', ['A A', 'AAA', 'A A'], {
+		A: 'create:andesite_alloy',
+	});
+
+	e.shaped('8x create:andesite_scaffolding', ['AAA', 'A A', 'A A'], {
+		A: 'create:andesite_alloy',
+	});
+
+    e.shaped('create:andesite_alloy_block', ['AA', 'AA'], {
+        A: 'create:andesite_alloy',
+    })
+    e.shapeless('4x create:andesite_alloy', ['create:andesite_alloy_block']);
 });

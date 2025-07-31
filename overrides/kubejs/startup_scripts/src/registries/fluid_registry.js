@@ -34,11 +34,13 @@ StartupEvents.registry('fluid', (event) => {
 
     event.create('molten_manganese').displayName("Molten Manganese").bucketColor(Color.CYAN_DYE).thickTexture(Color.CYAN_DYE)//TODO?
     event.create('molten_raw_manganese').displayName("Molten Crude Manganese").bucketColor(Color.BROWN_DYE).thickTexture(Color.BROWN_DYE)//TODO?
-    event.create('molten_mangalloy').displayName("Molten Mangalloy").bucketColor(Color.BROWN_DYE).thickTexture(Color.BROWN_DYE)//TODO?
+    event.create('molten_mangalloy').displayName("Molten Mangalloy").flowingTexture('createbigcannons:fluid/molten_nethersteel_flow').stillTexture('createbigcannons:fluid/molten_nethersteel_still').bucketColor(Color.BROWN_DYE)
 
     event.create('liquid_hydrogen').noBucket().noBlock().displayName("Liquid Hydrogen").thinTexture(Color.LIGHT_BLUE_DYE)//TODO? This looks fine.
-    event.create('liquid_oxygen').noBucket().noBlock().displayName("Liquid Oxygen").thinTexture('#FFCCCB')
+    event.create('liquid_oxygen').noBucket().noBlock().displayName("Liquid Oxygen").thinTexture(Color.LIGHT_GRAY_DYE)//TODO? This looks fine.
+    event.create('liquid_nitrogen').noBucket().noBlock().displayName("Liquid Nitrogen").thinTexture(Color.GRAY_DYE)//TODO? This looks fine.
     event.create('liquid_chlorine').noBucket().noBlock().displayName("Liquid Chlorine").thinTexture('#00FFEF')
+
     event.create('lubricant').displayName("Lubricant").thinTexture(Color.ORANGE_DYE)//TODO
 
     event.create('molten_titanium').displayName("Molten Titanium").bucketColor(Color.CYAN_DYE).flowingTexture('kubejs:fluid/molten_titanium_flow').stillTexture('kubejs:fluid/molten_titanium_still')
@@ -47,4 +49,9 @@ StartupEvents.registry('fluid', (event) => {
     event.create('molten_salt').noBucket().noBlock().displayName("Molten Salt").thinTexture(Color.WHITE_DYE)
 
     
+    event.create('molten_carotine_steel').displayName("Molten Carotine Steel").bucketColor(Color.ORANGE_DYE).flowingTexture('createbigcannons:fluid/molten_bronze_flow').stillTexture('createbigcannons:fluid/molten_bronze_still')
+
+    //event.create('liquid_petroleum_gas').displayName("Liquid Petroleum Gas").bucketColor(Color.YELLOW_DYE).flowingTexture('thermal:fluids/refined_fuel_flow').stillTexture('thermal:fluids/refined_fuel_still')
+
+    //event.create('molten_plastic').displayName("Molten Plastic").bucketColor(Color.LIGHT_GRAY_DYE).flowingTexture('thermal:fluids/latex_flow').stillTexture('thermal:fluids/latex_still')
 });

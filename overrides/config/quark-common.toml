@@ -622,7 +622,7 @@
 		"Display Baked Enchantments In Tooltip" = true
 		"Italic Tooltip" = true
 		#Enchantments other than Gold's Fortune/Looting to bake into items. Format is "item+enchant@level", such as "minecraft:stick+sharpness@10".
-		"Baked Enchantments" = ["scguns:mas_55+scguns:collateral", "scguns:iron_javelin+scguns:collateral", "scguns:plasgun+scguns:hot_barrel", "thermal:flux_drill+minecraft:efficiency@5"]
+		"Baked Enchantments" = ["scguns:mas_55+scguns:collateral", "scguns:iron_javelin+scguns:collateral", "scguns:plasgun+scguns:hot_barrel", "thermal:flux_drill+minecraft:efficiency@5", "scguns:cr4k_mining_laser+scguns:hot_barrel", "thermal:flux_sawl+minecraft:efficiency@5", "scguns:plasgun+scguns:shell_catcher@3", "scguns:gauss_rifle+scguns:shell_catcher@3"]
 
 	[tweaks.grab_chickens]
 		"Needs No Helmet" = true

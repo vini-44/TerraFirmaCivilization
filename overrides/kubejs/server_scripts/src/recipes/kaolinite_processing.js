@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 			.id('kubejs:kaolinite_sludge')
 			.itemOutput(i + `x kubejs:kaolinite_sludge`).id('kubejs:kaolinite_sludge_' + i);
 	}
-    event.recipes.create.mixing('kubejs:kaolinite_sludge', [Fluid.of('water'), 'kubejs:kaolinite']).heated()
+    event.recipes.create.mixing('kubejs:kaolinite_sludge', [Fluid.of('water', 200), 'kubejs:kaolinite']).heated()
 
     //dried sluge
     event.recipes.firmalife.drying('kubejs:hardened_kaolinite_sludge', 'kubejs:kaolinite_sludge')

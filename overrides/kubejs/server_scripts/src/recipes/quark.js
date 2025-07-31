@@ -41,17 +41,10 @@ ServerEvents.recipes((e) => {
 
     e.shaped('quark:pickarang', ['SLC', '  L', '  S'], {
         L: '#tfc:lumber',
-        S: 'tfc:metal/sheet/wrought_iron',
+        S: 'tfc:metal/sheet/blue_steel',
         C: 'quark:diamond_heart',
     });
 
-    e.recipes.tfc
-        .welding(
-            'quark:flamerang',
-            'quark:pickarang',
-            'tfc:metal/double_sheet/black_steel'
-        )
-        .tier(5);
 
     e.shaped('8x quark:rope', ['A', 'A',], { A: 'supplementaries:rope' });
 
