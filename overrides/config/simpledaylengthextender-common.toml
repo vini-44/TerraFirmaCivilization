@@ -1,0 +1,28 @@
+
+[general]
+	# If true (default), the daylight cycle will not start until the first player joins the world. Handy for multiplayer and/or heavy modpacks.
+	delayTimeCycleUntilFirstJoin = true
+	# If true (NOT default), doDaylightCycle will be forced to false when the server/world is empty. Might be useful for multiplayer.
+	disableTimeCycleWhenServerEmpty = true
+	# Start time in ticks to use the day multiplier. 0 represents a standard Minecraft day start of 06:00. Must be less than nightStartInTicks.
+	#Range: 0 ~ 2147482646
+	dayStartInTicks = 0
+	# Multiply the day length by this number. Fractions are supported, but must be above 1.0 (cannot shorten).
+	#Range: 1.0 ~ 100.0
+	dayLengthMultiplier = 2.4
+	# Start time in ticks to use the night multiplier. 13000 represents a standard Minecraft night start of 19:00.
+	#Range: 1 ~ 2147482647
+	nightStartInTicks = 13000
+	# Multiply the night length by this number. Fractions supported, but must be above 1.0 (cannot shorten).
+	#Range: 1.0 ~ 100.0
+	nightLengthMultiplier = 2.4
+	# If true (default), some mod-added calendars/seasons will dynamically adjust day/night ratio.
+	# Note that day/night length will effectively be 1.5x more than the multipliers dictate for math reasons. For example if the multipliers are set to 2.0x then 
+	# the day length could be about x2.91 and night length about x1.59 depending on time of year. Keeping showDetailsToLog enabled will let you check final multipliers.
+	# Also note that if the night start time is configured with the default 13000 it will be corrected to 12000 so that the day and night length difference makes sense.
+	# Currently supported mods: TerraFirmaCraft, nothing else yet (please share your requests back to me - I will very likely add Serene Seasons support)
+	autoCalendarAdjustments = true
+	# If true (default), details of day/night length will be logged to console. Setting to false might be useful to reduce log spam, especially
+	# if autoCalendarAdjustments are in effect since it would make semi-regular log entries whenever calendar adjustments occur throughout the year/seasons.
+	showDetailsToLog = true
+
