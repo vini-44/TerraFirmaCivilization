@@ -46,7 +46,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/squash"
+          "name": "tfc:seeds/squash",
           "functions": [
             {
               "function": "minecraft:set_count",

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ece"
+  ],
+  "key": {
+    "a": {
+      "item": "tfc:lens"
+    },
+    "b": {
+      "tag": "tfc:buckets"
+    },
+    "c": {
+      "tag": "minecraft:planks"
+    },
+    "d": {
+      "item": "tfc:metal/sheet/wrought_iron"
+    },
+    "e": {
+      "item": "tfc:metal/rod/wrought_iron"
+    }
+  },
+  "result": {
+    "item": "exposure:lightroom",
+    "count": 1
+  }
+}

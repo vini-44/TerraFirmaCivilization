@@ -27,7 +27,9 @@ const ALL_ROCKS = [
 ClientEvents.lang('en_us', (event) => {
 	event.renameBlock('minecraft:gravel', 'Debris');
 	event.renameBlock('minecraft:suspicious_gravel', 'Suspicious Debris');
-	event.renameBlock('createlowheated:basic_burner', 'Burner'); //TODO rename other references
+	event.renameBlock('createlowheated:basic_burner', 'Solid Burner'); //TODO rename other references
+
+    event.renameBlock('createdieselgenerators:burner', "Gas Burner")
 
 	event.renameItem(
 		'immersive_aircraft:hull_reinforcement',
@@ -126,6 +128,8 @@ ClientEvents.lang('en_us', (event) => {
 	event.renameBlock('amethyst_cluster', 'Kyanite Cluster');
 	event.renameItem('amethyst_shard', 'Kyanite Shard');
 
+	event.renameItem('iron_nugget', 'Wrought Iron Nugget');
+
 	event.add('block.minecraft.amethyst_block.prospected', 'Kyanite');
 	event.add('block.minecraft.amethyst_cluster.prospected', 'Kyanite');
 
@@ -136,6 +140,7 @@ ClientEvents.lang('en_us', (event) => {
 
 	event.add('metal.kubejs.titanium', 'Titanium');
 	event.add('metal.kubejs.tungsten', 'Tungsten');
+	event.add('metal.kubejs.carotine_steel', 'Carotine Steel');
 
 	event.add('mold.createdieselgenerators.bar', 'Mold');
 
@@ -153,6 +158,13 @@ ClientEvents.lang('en_us', (event) => {
     event.add('block.kubejs.metal_former_su_input', "Metal Former Lathe")
     event.add('block.kubejs.metal_former_fluid_input', "Metal Former Internal Fluid Tank")
 
+    event.add('block.kubejs.atmospheric_condenser', "Atmospheric Condenser")
+
+
     event.add('kubejs.metal_former', "Metal Forming")
+
+    event.renameItem('scguns:treated_brass_gun_frame', 'Carotine Gun Frame')
+
+    event.renameBlock('refurbished_furniture:door_mat', "Painted Doormat")
 
 });

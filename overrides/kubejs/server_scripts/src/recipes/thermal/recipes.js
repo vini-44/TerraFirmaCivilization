@@ -27,8 +27,8 @@ ServerEvents.recipes((e) => {
 		S: 'createaddition:copper_spool',
 		C: 'tfc:crucible',
 		F: 'thermal:machine_frame',
-		P: 'tfc:metal/sheet/black_steel',
-		D: 'tfc:metal/double_sheet/black_steel',
+		P: 'firmalife:metal/sheet/stainless_steel',
+		D: 'firmalife:metal/double_sheet/stainless_steel',
 	});
 
 	//tinker's workbench
@@ -92,8 +92,12 @@ ServerEvents.recipes((e) => {
 		.bonus(true)
 		.tier(4);
 
-        ADDED_ANVIL_RECIPES.push(['thermal:drill_head', 'kubejs:metal/ingot/titanium', 4]);
-        ADDED_ANVIL_RECIPES.push(['thermal:saw_blade', 'tfc:metal/sheet/steel', 4]);
+	ADDED_ANVIL_RECIPES.push([
+		'thermal:drill_head',
+		'kubejs:metal/ingot/titanium',
+		4,
+	]);
+	ADDED_ANVIL_RECIPES.push(['thermal:saw_blade', 'tfc:metal/sheet/steel', 4]);
 
 	//slot seal
 	e.shaped('thermal:slot_seal', ['R R', ' R ', 'R R'], {
@@ -215,7 +219,10 @@ ServerEvents.recipes((e) => {
 				),
 				e.recipes.create.deploying(
 					'kubejs:unfinished_upgrade_augment_3',
-					['kubejs:unfinished_upgrade_augment_3', 'kubejs:tungsten_carbide_parts']
+					[
+						'kubejs:unfinished_upgrade_augment_3',
+						'kubejs:tungsten_carbide_parts',
+					]
 				),
 				e.recipes.create.deploying(
 					'kubejs:unfinished_upgrade_augment_3',
@@ -260,12 +267,23 @@ ServerEvents.recipes((e) => {
 		.refinery(Fluid.of('tfc:lye', 500), Fluid.of('tfc:salt_water'))
 		.energy(20000);
 
-	e.recipes.thermal
-		.refinery(
-			Fluid.of('kubejs:liquid_hydrogen', 300),
+	
+	e.recipes.thermal.refinery(
+			[
+				Fluid.of('kubejs:liquid_hydrogen', 600),
+				Fluid.of('kubejs:liquid_oxygen', 300),
+			],
 			Fluid.of('water', 1000)
 		)
-		.energy(20000);
+		.energy(20000);             
+	
+	e.recipes.thermal.refinery(
+		[
+		Fluid.of('kubejs:liquid_chlorine', 150)     
+		],
+		Fluid.of('kubejs:molten_salt', 1000)                     
+	)
+	.energy(20000);        
 
 	e.shaped('thermal:machine_furnace', ['AAA', 'BCB', 'DED'], {
 		A: 'createaddition:copper_spool',
@@ -283,5 +301,4 @@ ServerEvents.recipes((e) => {
 		E: 'tfc:ceramic/ingot_mold',
 		F: 'kubejs:metal/sheet/titanium',
 	});
-
 });

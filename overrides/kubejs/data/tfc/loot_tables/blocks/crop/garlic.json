@@ -46,7 +46,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/garlic"
+          "name": "tfc:seeds/garlic",
           "functions": [
             {
               "function": "minecraft:set_count",

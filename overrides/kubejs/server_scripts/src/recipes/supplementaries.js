@@ -16,25 +16,29 @@ ServerEvents.recipes((e) => {
 		])
 		.tier(1);
 
-        ADDED_ANVIL_RECIPES.push(['supplementaries:wrench', 'tfc:metal/ingot/copper', 1]);
+	ADDED_ANVIL_RECIPES.push([
+		'supplementaries:wrench',
+		'tfc:metal/ingot/copper',
+		1,
+	]);
 
 	e.shaped('supplementaries:flint_block', ['AAA', 'AAA', 'AAA'], {
 		A: 'minecraft:flint',
 	});
 
-    e.shapeless('9x flint', ['supplementaries:flint_block']);
+	e.shapeless('9x flint', ['supplementaries:flint_block']);
 
 	e.shaped('supplementaries:feather_block', ['AAA', 'AAA', 'AAA'], {
 		A: 'minecraft:feather',
 	});
 
-    e.shapeless('9x feather', ['supplementaries:feather_block']);
+	e.shapeless('9x feather', ['supplementaries:feather_block']);
 
 	e.shaped('supplementaries:sugar_cube', ['AAA', 'AAA', 'AAA'], {
 		A: 'minecraft:sugar',
 	});
 
-    e.shapeless('9x sugar', ['supplementaries:sugar_cube']);
+	e.shapeless('9x sugar', ['supplementaries:sugar_cube']);
 
 	e.shaped('supplementaries:notice_board', ['AAA', 'BBB', 'AAA'], {
 		A: '#tfc:lumber',
@@ -65,12 +69,13 @@ ServerEvents.recipes((e) => {
 		C: '#minecraft:planks',
 		D: 'tfc:metal/rod/gold',
 	});
-	e.shaped('4x supplementaries:bomb', [' AB', 'ACA', ' A '], {
-		A: 'tfc:metal/sheet/cast_iron',
-		B: 'supplementaries:rope',
-		C: 'createbigcannons:packed_gunpowder',
-	});
-    
+
+	e.shapeless('2x supplementaries:bomb', [
+		'tfc:metal/sheet/cast_iron',
+		'supplementaries:rope',
+		'createbigcannons:packed_gunpowder',
+	]);
+
 	e.shaped('supplementaries:blackboard', ['ABA', 'BBB', 'ABA'], {
 		A: '#tfc:lumber',
 		B: 'create:andesite_alloy',
@@ -97,6 +102,12 @@ ServerEvents.recipes((e) => {
 	e.shaped('supplementaries:doormat', ['AAA', 'AAA'], {
 		A: 'tfc:straw',
 	});
+
+	e.shapeless('refurbished_furniture:door_mat', [
+		'supplementaries:doormat',
+		'zetter:paints',
+	]);
+
 	e.shaped('8x supplementaries:cog_block', ['ABA', 'BCB', 'ABA'], {
 		A: 'tfc:metal/rod/copper',
 		B: 'tfc:brass_mechanisms',
@@ -147,25 +158,33 @@ ServerEvents.recipes((e) => {
 		B: '#forge:smooth_stone_slab',
 	});
 
-	e.recipes.tfc.anvil(
+	e.recipes.tfc
+		.anvil('supplementaries:wind_vane', 'tfc:metal/rod/wrought_iron', [
+			'bend_last',
+			'punch_second_last',
+			'bend_third_last',
+		])
+		.tier(3);
+
+	ADDED_ANVIL_RECIPES.push([
 		'supplementaries:wind_vane',
 		'tfc:metal/rod/wrought_iron',
-		['bend_last', 'punch_second_last', 'bend_third_last']
-	).tier(3);
+		3,
+	]);
 
-    ADDED_ANVIL_RECIPES.push([
-        'supplementaries:wind_vane',
-        'tfc:metal/rod/wrought_iron',3])
+	e.recipes.tfc
+		.anvil('supplementaries:faucet', 'tfc:metal/sheet/wrought_iron', [
+			'bend_last',
+			'draw_second_last',
+			'hit_third_last',
+		])
+		.tier(2);
 
-	e.recipes.tfc.anvil(
+	ADDED_ANVIL_RECIPES.push([
 		'supplementaries:faucet',
-		'tfc:metal/sheet/steel',
-		['bend_last', 'draw_second_last', 'hit_third_last']
-	).tier(3);
-
-    ADDED_ANVIL_RECIPES.push([
-        'supplementaries:faucet',
-        'tfc:metal/sheet/steel',3])
+		'tfc:metal/sheet/wrought_iron',
+		2,
+	]);
 
 	e.shaped('supplementaries:lock_block', ['ABA', 'BCB', 'ABA'], {
 		A: 'tfc:metal/rod/wrought_iron',
@@ -267,12 +286,15 @@ ServerEvents.recipes((e) => {
 		B: '#tfc:lumber',
 	});
 
-    WOOD_TYPES.forEach((type) => {
-        e.shapeless(`2x supplementaries:tfc/sign_post_${type}`, [`tfc:wood/sign/${type}`]);
-    })
+	TFC_WOOD_TYPES.forEach((type) => {
+		e.shapeless(`2x supplementaries:tfc/sign_post_${type}`, [
+			`tfc:wood/sign/${type}`,
+		]);
+	});
 
-    AFC_WOOD_TYPES.forEach((type) => {
-        e.shapeless(`2x supplementaries:afc/sign_post_${type}`, [`afc:wood/sign/${type}`]);
-    })
+	AFC_WOOD_TYPES.forEach((type) => {
+		e.shapeless(`2x supplementaries:afc/sign_post_${type}`, [
+			`afc:wood/sign/${type}`,
+		]);
+	});
 });
-

@@ -1,6 +1,20 @@
 //cba to do propper lootjs version
 
 ServerEvents.highPriorityData((event) => {
+	event.addJson(
+		'kubejs:loot_tables/chests/underground_shelter/cabinet_loot',
+		{
+			type: 'minecraft:chest',
+			pools: [
+				{
+					rolls: 1.0,
+					bonus_rolls: 0.0,
+					entries: [],
+				},
+			],
+		}
+	);
+
 	event.addJson('supplementaries:loot_tables/blocks/ash', {
 		type: 'minecraft:block',
 		pools: [
@@ -276,8 +290,6 @@ LootJS.modifiers((e) => {
 			.addLoot('kubejs:kaolinite');
 	});
 
-
-
 	e.addBlockLootModifier(/.*manganite.*/)
 		.removeLoot(/.*/)
 		.addLoot('kubejs:manganite_chunk');
@@ -285,15 +297,15 @@ LootJS.modifiers((e) => {
 		.removeLoot(/.*/)
 		.addLoot('kubejs:rhodocrosite_fragment');
 
-    ALL_ROCKS.forEach(rock => {
-        e.addBlockLootModifier(`kubejs:${rock}_ilmenite`)
-            .removeLoot(/.*/)
-            .addLoot('kubejs:ilmenite_chunk');
+	ALL_ROCKS.forEach((rock) => {
+		e.addBlockLootModifier(`kubejs:${rock}_ilmenite`)
+			.removeLoot(/.*/)
+			.addLoot('kubejs:ilmenite_chunk');
 
-        e.addBlockLootModifier(`kubejs:${rock}_wolframite`)
-            .removeLoot(/.*/)
-            .addLoot('kubejs:wolframite_chunk');
-    })
+		e.addBlockLootModifier(`kubejs:${rock}_wolframite`)
+			.removeLoot(/.*/)
+			.addLoot('kubejs:wolframite_chunk');
+	});
 
 	//I'M GOING TO GO INSANE AAAAAAAAAAA
 	let clear_glasses = [
@@ -330,10 +342,10 @@ LootJS.modifiers((e) => {
 			);
 	});
 
-	WOOD_TYPES.forEach((type) => {
+	TFC_WOOD_TYPES.forEach((type) => {
 		e.addBlockLootModifier(
 			`everycomp:c/tfc/${type}_window`
-		).addAlternativesLoot(
+		).removeLoot(/.*/).addAlternativesLoot(
 			LootEntry.of(`everycomp:c/tfc/${type}_window`).when((e) =>
 				e.matchMainHand('tfc:gem_saw')
 			)
@@ -341,17 +353,17 @@ LootJS.modifiers((e) => {
 
 		e.addBlockLootModifier(
 			`everycomp:c/tfc/${type}_window_pane`
-		).addAlternativesLoot(
+		).removeLoot(/.*/).addAlternativesLoot(
 			LootEntry.of(`everycomp:c/tfc/${type}_window_pane`).when((e) =>
 				e.matchMainHand('tfc:gem_saw')
 			)
 		);
 	});
 
-    	AFC_WOOD_TYPES.forEach((type) => {
+	AFC_WOOD_TYPES.forEach((type) => {
 		e.addBlockLootModifier(
 			`everycomp:c/tfc/${type}_window`
-		).addAlternativesLoot(
+		).removeLoot(/.*/).addAlternativesLoot(
 			LootEntry.of(`everycomp:c/afc/${type}_window`).when((e) =>
 				e.matchMainHand('tfc:gem_saw')
 			)
@@ -359,13 +371,12 @@ LootJS.modifiers((e) => {
 
 		e.addBlockLootModifier(
 			`everycomp:c/tfc/${type}_window_pane`
-		).addAlternativesLoot(
+		).removeLoot(/.*/).addAlternativesLoot(
 			LootEntry.of(`everycomp:c/afc/${type}_window_pane`).when((e) =>
 				e.matchMainHand('tfc:gem_saw')
 			)
 		);
 	});
-
 
 	e.addLootTableModifier(/.*/).removeLoot('scguns:pebbles');
 
@@ -383,9 +394,18 @@ LootJS.modifiers((e) => {
 				'scguns:advanced_round',
 				'createbigcannons:steel_scrap',
 				'kubejs:scrap',
+				Item.of('scguns:depleted_energy_core').withChance(0.25),
+				Item.of('scguns:empty_cell', 4).withChance(0.25),
 			]
-		);
-
+		)
+		.randomChance(0.1)
+		.addLoot('thermal:laser_diode')
+		.modifyLoot('thermal:laser_diode', (item) => {
+			item.setNbt(
+				`{"tfc:forging_bonus":${Math.ceil(Math.random(1) * 4)}}`
+			);
+			return item;
+		});
 	e.addBlockLootModifier('quark:rusty_iron_plate')
 		.removeLoot(/.*/)
 		.addWeightedLoot(
@@ -438,4 +458,50 @@ LootJS.modifiers((e) => {
 	e.addBlockLootModifier('minecraft:gilded_blackstone')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addLoot('minecraft:gilded_blackstone');
+
+	let cabinet_loot = e.addLootTableModifier(
+		'kubejs:chests/underground_shelter/cabinet_loot'
+	);
+	cabinet_loot.addWeightedLoot(
+		[8, 12],
+		['createbigcannons:steel_scrap', 'kubejs:scrap']
+	);
+	cabinet_loot.addAlternativesLoot(
+		LootEntry.of('scguns:defender_pistol', {
+			AmmoCount: 5,
+			Damage: 530,
+		}).when((c) => c.randomChance(0.1)),
+		LootEntry.of('scguns:diamond_steel_leggings', {
+			Damage: Math.floor(Math.random() * 300),
+		}).when((c) => c.randomChance(0.25)),
+		LootEntry.of('supplementaries:wrench', {
+			Damage: Math.floor(Math.random() * 150),
+		}).when((c) => c.randomChance(0.25))
+	);
+	cabinet_loot.apply((context) => {
+		context.loot.forEach((loot) => {
+			if (loot.id == 'scguns:defender_pistol') {
+				context.addLoot(
+					LootEntry.of(`scguns:compact_advanced_round`,
+					Math.ceil(Math.random() * 5))
+				);
+				context.addLoot(
+					LootEntry.of(`scguns:small_brass_casing`,
+					Math.ceil(Math.random() * 3))
+				);
+			}
+			if (loot.id == 'scguns:diamond_steel_leggings') {
+				context.addLoot(
+					LootEntry.of(`textile:cotton_cloth`,
+					Math.ceil(Math.random() * 3))
+				);
+			}
+		});
+	});
+
+	e.addBlockLootModifier('scguns:enemy_turret')
+		.addWeightedLoot([1, 2], true, ['createaddition:copper_wire'])
+		.addWeightedLoot([6, 9], true, ['createbigcannons:steel_scrap'])
+		.addLoot('tfc:brass_mechanisms')
+		.addWeightedLoot([3, 5], true, ['scguns:small_brass_casing']);
 });

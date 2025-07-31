@@ -9,7 +9,7 @@ const simple_powered_block = {
 	'#kubejs:ceiling_fans': {
 		temp: -0.27,
 		unit: 'mc',
-		maxEffect: -0.88,
+		maxEffect: 0.88,
 		minTemp: -1.5,
 		range: 8,
 	},
@@ -119,3 +119,4 @@ ColdSweatEvents.registries((event) => {
 		});
 	}
 });
+

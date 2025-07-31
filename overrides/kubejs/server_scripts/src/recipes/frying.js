@@ -53,6 +53,19 @@ ServerEvents.recipes(event => {
                         item_output: itemOutputs
                     });
 
+                                        event.custom({
+                        type: 'tfc:pot',
+                        ingredients: ingredients,
+                        fluid_ingredient: {
+                            ingredient: 'firmalife:soybean_oil',
+                            amount: fluidAmount,
+                        },
+                        duration: 500,
+                        temperature: 600,
+                        item_output: itemOutputs
+                    });
+
+
                 }
             }
         }
@@ -61,7 +74,7 @@ ServerEvents.recipes(event => {
 
 ServerEvents.tags('fluid', event => {
     // Adding fluids to custom and existing tags
-    event.get('kubejs:frying_oils').add('tfc:olive_oil', 'createdieselgenerators:plant_oil');
+    event.get('kubejs:frying_oils').add('tfc:olive_oil', 'createdieselgenerators:plant_oil', 'firmalife:soybean_oil');
     event.get('tfc:usable_in_barrel').add('createdieselgenerators:plant_oil');
     event.get('tfc:usable_in_pot').add('createdieselgenerators:plant_oil');
 });

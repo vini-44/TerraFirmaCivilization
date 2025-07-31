@@ -6,6 +6,7 @@ ServerEvents.recipes((e) => {
 		'aluminum',
 		'titanium',
 		'tungsten',
+        'carotine_steel'
 	].forEach((metal) => {
 		e.recipes.tfc
 			.heating(`kubejs:metal/ingot/${metal}`, 1485.0)
