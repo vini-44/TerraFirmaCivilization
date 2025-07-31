@@ -6,15 +6,14 @@ ServerEvents.recipes((e) => {
 			.metal_former()
 			.id(id)
 			.duration(200 * tier)
-			.inputItems(input)
 			.chance(0, (builder) => {
 				builder.inputItems(Item.of(result, 1));
 			})
+			.inputItems(input)
 			.outputItems(Item.of(result))
 			.perTick((builder) => {
 				builder.inputFluids(Fluid.of('kubejs:lubricant', 1 /* *tier*/));
-                				builder.inputFE(512 * (tier / 2));
-
+				builder.inputFE(512 * (tier / 2));
 			})
 			.inputStress(1024)
 			.inputRPM(256);

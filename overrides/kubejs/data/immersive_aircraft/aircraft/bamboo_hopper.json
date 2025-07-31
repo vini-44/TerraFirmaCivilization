@@ -3,7 +3,7 @@
         "fuel": 1.0,
         "yawSpeed": 1.5,
         "pitchSpeed": 1.5,
-              "durability": 50,
+              "durability": 15,
         "engineSpeed": 0.03,
         "pushSpeed": 0.02,
         "glideFactor": 0.1,

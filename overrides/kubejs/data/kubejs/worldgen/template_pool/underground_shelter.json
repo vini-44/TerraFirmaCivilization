@@ -1,0 +1,17 @@
+{
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "kubejs:underground_shelter/underground_shelter",
+          "processors": "kubejs:underground_shelter",
+          "projection": "rigid",
+          "rotation": "none"
+
+        },
+        "weight": 1
+      }
+    ],
+    "fallback": "minecraft:empty"
+  }
+  

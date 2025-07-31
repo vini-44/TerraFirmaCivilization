@@ -1,7 +1,6 @@
 // priority: 50
 
 ServerEvents.recipes((e) => {
-
 	e.remove({ output: 'minecraft:chest' });
 	e.remove({ output: 'minecraft:trapped_chest' });
 
@@ -39,7 +38,10 @@ ServerEvents.recipes((e) => {
 		.mixing(Item.of('tfc:powder/salt', 1), Fluid.of('tfc:salt_water', 125))
 		.heated();
 
-        e.recipes.create.mixing(Fluid.of('tfc:salt_water', 125), ['tfc:powder/salt', Fluid.of('water', 125)])
+	e.recipes.create.mixing(Fluid.of('tfc:salt_water', 125), [
+		'tfc:powder/salt',
+		Fluid.of('water', 125),
+	]);
 	for (const [fertilizer, nutrients] of Object.entries(FERTILIZER_DEFS)) {
 		let N = nutrients[0];
 		let P = nutrients[1];
@@ -94,13 +96,18 @@ ServerEvents.recipes((e) => {
 		e.recipes.create.milling(recipe.originalRecipeResult, ingredient);
 
 		let crushingResult = [recipe.originalRecipeResult];
-		crushingResult.push(
-			Item.of(
-				recipe.originalRecipeResult,
-				Math.ceil(recipe.originalRecipeResult.count * 0.25)
-			).withChance(0.25)
-		);
-		e.recipes.create.crushing(crushingResult, ingredient);
+		if (
+			!Item.of(recipe.originalRecipeResult).hasTag('tfc:foods') ||
+			Item.of(recipe.ingredient).hasTag('tfc:foods')
+		) {
+			crushingResult.push(
+				Item.of(
+					recipe.originalRecipeResult,
+					Math.ceil(recipe.originalRecipeResult.count * 0.25)
+				).withChance(0.25)
+			);
+			e.recipes.create.crushing(crushingResult, ingredient);
+		}
 	});
 
 	e.remove({ type: 'tfc:quern' });
@@ -451,6 +458,45 @@ ServerEvents.recipes((e) => {
 			])
 			.transitionalItem(ingredient)
 			.loops(16);
+
+		e.recipes.create
+			.sequenced_assembly([recipe.originalRecipeResult], ingredient, [
+				e.recipes.create
+					.deploying(ingredient, [
+						ingredient,
+						[
+							'#tfcscraping:line_scraping',
+							'#tfcscraping:quarter_scraping',
+						],
+					])
+					.keepHeldItem(),
+			])
+			.transitionalItem(ingredient)
+			.loops(4);
+
+		e.recipes.create
+			.sequenced_assembly([recipe.originalRecipeResult], ingredient, [
+				e.recipes.create
+					.deploying(ingredient, [
+						ingredient,
+						['#tfcscraping:half_scraping'],
+					])
+					.keepHeldItem(),
+			])
+			.transitionalItem(ingredient)
+			.loops(2);
+
+		e.recipes.create
+			.sequenced_assembly([recipe.originalRecipeResult], ingredient, [
+				e.recipes.create
+					.deploying(ingredient, [
+						ingredient,
+						['#tfcscraping:full_scraping'],
+					])
+					.keepHeldItem(),
+			])
+			.transitionalItem(ingredient)
+			.loops(1);
 	});
 
 	e.recipes.create.splashing(
@@ -526,35 +572,29 @@ ServerEvents.recipes((e) => {
 		'tfc:powder/charcoal',
 	]).id('tfc:crafting/gunpowder');
 
-	WOOD_TYPES.forEach((wood) => {
-		e.replaceInput(
-			{ output: `everycomp:q/tfc/${wood}_ladder` },
-			`tfc:wood/planks/${wood}`,
-			`tfc:wood/lumber/${wood}`
-		);
+	TFC_WOOD_TYPES.forEach((wood) => {
+		e.remove({ id: `everycomp:q/tfc/${wood}_ladder` });
+
+		e.shaped(`4x everycomp:q/tfc/${wood}_ladder`, ['A A', 'ABA', 'A A'], {
+			A: '#forge:rods/wooden',
+			B: `tfc:wood/lumber/${wood}`,
+		});
 	});
+
 	AFC_WOOD_TYPES.forEach((wood) => {
-		e.replaceInput(
-			{ output: `everycomp:q/afc/${wood}_ladder` },
-			`afc:wood/planks/${wood}`,
-			`afc:wood/lumber/${wood}`
-		);
+		e.remove({ id: `everycomp:q/afc/${wood}_ladder` });
+
+		e.shaped(`4x everycomp:q/afc/${wood}_ladder`, ['A A', 'ABA', 'A A'], {
+			A: '#forge:rods/wooden',
+			B: `afc:wood/lumber/${wood}`,
+		});
 	});
 
 	e.remove({ output: /everycomp:q\/tfc\/.*_chest/ });
 	e.remove({ output: /everycomp:q\/afc\/.*_chest/ });
 	e.remove({ output: /everycomp.*storage_jar.*/ });
 
-	let remove_sns = [
-		'sns:quiver',
-		'sns:straw_basket',
-		'sns:hiking_boots',
-		'sns:steel_toe_hiking_boots',
-		'sns:black_steel_toe_hiking_boots',
-		'sns:blue_steel_toe_hiking_boots',
-		'sns:red_steel_toe_hiking_boots',
-		'sns:buckle',
-	].forEach((item) => {
+	REMOVE_SNS.forEach((item) => {
 		e.remove({ output: item });
 	});
 
@@ -631,7 +671,7 @@ ServerEvents.recipes((e) => {
 			Item.of('minecraft:sugar', 5),
 			Fluid.of('kubejs:sugarcane_juice', 500)
 		)
-		.lowheated();
+		.heated();
 
 	e.remove({ id: 'sns:crafting/straw_basket' });
 	e.remove({ id: 'sns:crafting/seed_pouch' });
@@ -705,7 +745,6 @@ ServerEvents.recipes((e) => {
 		);
 	});
 
-
 	e.replaceOutput({}, 'afc:maple_sugar', 'sugar');
 	e.replaceOutput({}, 'afc:birch_sugar', 'sugar');
 
@@ -715,8 +754,7 @@ ServerEvents.recipes((e) => {
 	]);
 
 	e.remove({ id: 'chunkschedudeler:schedudeler' });
-	e.shaped('4x chunkschedudeler:schedudeler', ['ABA', 'ACA'], {
-		A: 'tfc:metal/rod/blue_steel',
+	e.shaped('4x chunkschedudeler:schedudeler', ['B', 'C'], {
 		B: 'kubejs:automaton_head',
 		C: 'createaddition:capacitor',
 	});
@@ -764,10 +802,12 @@ ServerEvents.recipes((e) => {
 			.resultFluid(Fluid.of(`tfc:metal/${metal}`, 800));
 	}
 
-    e.remove({output: 'tfc:bloomery'})
+	e.remove({ output: 'tfc:bloomery' });
 
-    e.shaped('tfc:bloomery', ['ABA', 'A A', 'ABA'], {
-        A: '#forge:sheets/any_bronze',
-        B: '#forge:double_sheets/any_bronze',
-    })
+	e.shaped('tfc:bloomery', ['ABA', 'A A', 'ABA'], {
+		A: '#forge:sheets/any_bronze',
+		B: '#forge:double_sheets/any_bronze',
+	});
+
+    //e.recipes.tfc.heating('kubejs:platic', 600).resultFluid(Fluid.of('kubejs:molten_plastic', 100))
 });

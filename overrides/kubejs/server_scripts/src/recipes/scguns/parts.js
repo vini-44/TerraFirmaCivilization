@@ -19,8 +19,16 @@ ServerEvents.recipes((event) => {
 		.tier(5)
 		.bonus(true);
 
-        ADDED_ANVIL_RECIPES.push(['kubejs:unfinished_gun_parts', 'tfc:metal/sheet/steel', 4]);
-        ADDED_ANVIL_RECIPES.push(['kubejs:unfinished_heavy_gun_parts', 'kubejs:metal/double_sheet/mangalloy', 5]);
+	ADDED_ANVIL_RECIPES.push([
+		'kubejs:unfinished_gun_parts',
+		'tfc:metal/sheet/steel',
+		4,
+	]);
+	ADDED_ANVIL_RECIPES.push([
+		'kubejs:unfinished_heavy_gun_parts',
+		'kubejs:metal/double_sheet/mangalloy',
+		5,
+	]);
 
 	event.recipes.tfc.advanced_shaped_crafting(
 		TFC.itemStackProvider.of('scguns:gun_parts').copyForgingBonus(),
@@ -61,8 +69,16 @@ ServerEvents.recipes((event) => {
 		)
 		.tier(4);
 
-        ADDED_ANVIL_RECIPES.push(['kubejs:unfinished_iron_gun_frame', 'tfc:metal/double_sheet/steel', 4]);
-        ADDED_ANVIL_RECIPES.push(['kubejs:unfinished_diamond_steel_gun_frame', 'tfc:metal/double_sheet/blue_steel', 4]);
+	ADDED_ANVIL_RECIPES.push([
+		'kubejs:unfinished_iron_gun_frame',
+		'tfc:metal/double_sheet/steel',
+		4,
+	]);
+	ADDED_ANVIL_RECIPES.push([
+		'kubejs:unfinished_diamond_steel_gun_frame',
+		'tfc:metal/double_sheet/blue_steel',
+		4,
+	]);
 
 	event.shaped('scguns:iron_gun_frame', ['ABA', 'ACA'], {
 		A: 'firmaciv:copper_bolt',
@@ -85,8 +101,8 @@ ServerEvents.recipes((event) => {
 	});
 
 	event.shaped('scguns:firing_unit', ['AB'], {
-		A: 'kubejs:metal/sheet/mangalloy',
-		B: 'tfc:metal/rod/steel',
+		A: 'tfc:metal/sheet/steel',
+		B: 'kubejs:metal/rod/mangalloy',
 	});
 
 	event.recipes.tfc
@@ -124,8 +140,47 @@ ServerEvents.recipes((event) => {
 		.bonus(true)
 		.tier(4);
 
-        ADDED_ANVIL_RECIPES.push(['scguns:heavy_gun_barrel', 'kubejs:metal/double_sheet/mangalloy', 4]);
-        ADDED_ANVIL_RECIPES.push(['scguns:gun_barrel', 'kubejs:metal/sheet/mangalloy', 4]);
-        ADDED_ANVIL_RECIPES.push(['scguns:stone_gun_barrel', 'tfc:metal/sheet/steel', 4]);
-        ADDED_ANVIL_RECIPES.push(['scguns:gun_magazine', 'tfc:metal/sheet/steel', 4]);
+	ADDED_ANVIL_RECIPES.push([
+		'scguns:heavy_gun_barrel',
+		'kubejs:metal/double_sheet/mangalloy',
+		4,
+	]);
+	ADDED_ANVIL_RECIPES.push([
+		'scguns:gun_barrel',
+		'kubejs:metal/sheet/mangalloy',
+		4,
+	]);
+	ADDED_ANVIL_RECIPES.push([
+		'scguns:stone_gun_barrel',
+		'tfc:metal/sheet/steel',
+		4,
+	]);
+	ADDED_ANVIL_RECIPES.push([
+		'scguns:gun_magazine',
+		'tfc:metal/sheet/steel',
+		4,
+	]);
+
+	event
+		.shapeless('scguns:treated_brass_gun_frame', [
+			'kubejs:unfinished_diamond_steel_gun_frame',
+			'kubejs:metal/double_sheet/carotine_steel',
+			'kubejs:metal/rod/titanium',
+			'createbigcannons:cannon_welder',
+		])
+		.damageIngredient('createbigcannons:cannon_welder');
+
+
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('kubejs:plasma_gun_parts').copyForgingBonus(),
+		['AB', 'CD'],
+		{
+			A: 'kubejs:unfinished_heavy_gun_parts',
+			B: 'kubejs:metal/sheet/carotine_steel',
+			C: 'createaddition:gold_spool',
+			D: 'createaddition:capacitor',
+		},
+		0,
+		0
+	);
 });

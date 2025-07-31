@@ -16,10 +16,10 @@ ServerEvents.recipes((e) => {
 	});
 
 	//huh, AFC doesn't have rails...
-	WOOD_TYPES.forEach((wood) => {
+	TFC_WOOD_TYPES.forEach((wood) => {
 		e.recipes.create
 			.sequenced_assembly(
-				[Item.of(`railways:track_tfc_${wood}`, 8)],
+				[Item.of(`railways:track_tfc_${wood}`, 32)],
 				'tfc:wood/planks/' + wood + '_slab',
 				[
 					e.recipes.createDeploying(
@@ -39,11 +39,11 @@ ServerEvents.recipes((e) => {
 				]
 			)
 			.transitionalItem(`railways:track_incomplete_tfc_${wood}`)
-			.loops(2);
+			.loops(3);
 
 		e.recipes.create
 			.sequenced_assembly(
-				[Item.of(`railways:track_tfc_${wood}_wide`, 8)],
+				[Item.of(`railways:track_tfc_${wood}_wide`, 32)],
 				'tfc:wood/planks/' + wood,
 				[
 					e.recipes.createDeploying(
@@ -63,11 +63,11 @@ ServerEvents.recipes((e) => {
 				]
 			)
 			.transitionalItem(`railways:track_incomplete_tfc_${wood}_wide`)
-			.loops(2);
+			.loops(3);
 
 		e.recipes.create
 			.sequenced_assembly(
-				[Item.of(`railways:track_tfc_${wood}_narrow`, 8)],
+				[Item.of(`railways:track_tfc_${wood}_narrow`, 32)],
 				'tfc:wood/lumber/' + wood,
 				[
 					e.recipes.createDeploying(
@@ -87,11 +87,11 @@ ServerEvents.recipes((e) => {
 				]
 			)
 			.transitionalItem(`railways:track_incomplete_tfc_${wood}_narrow`)
-			.loops(2);
+			.loops(3);
 	});
 
 	e.shapeless('4x railways:fuel_tank', [
-		'4x #tfc:barrels',
+		'4x firmaciv:copper_bolt',
 		'tfc:metal/sheet/black_steel',
 	]);
 

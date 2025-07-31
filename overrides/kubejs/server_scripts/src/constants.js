@@ -1,6 +1,6 @@
 // priority: 100
 
-const ADDED_ANVIL_RECIPES = []
+const ADDED_ANVIL_RECIPES = [];
 
 const CIV_REMOVE = [
 	'crafting/sextant',
@@ -234,7 +234,7 @@ const GEM_TYPES = [
 	'amethyst',
 ];
 
-const WOOD_TYPES = [
+const TFC_WOOD_TYPES = [
 	'pine',
 	'sycamore',
 	'white_cedar',
@@ -308,7 +308,7 @@ const ALL_COLORS = [
 	'white',
 ];
 
-const WELDER_FUELS = ['biodiesel', 'diesel', 'gasoline', 'ethanol'];
+const WELDER_FUELS = ['createdieselgenerators:biodiesel', 'createdieselgenerators:diesel', 'createdieselgenerators:gasoline', 'createdieselgenerators:ethanol', 'kubejs:kerosene', 'kubejs:liquid_hydrogen'];
 
 const POWDERS = [
 	'flux',
@@ -437,6 +437,8 @@ const BREW_INGREDIENTS = [
 	'minecraft:glow_ink_sac',
 ];
 
+const BREW_FRUIT_INGREDIENTS = ['#tfc:foods/fruits', '#tfc:sweetener'];
+
 const USABLE_ON_TOOL_RACK = [
 	'createbigcannons:cannon_welder',
 	'musketmod:pistol',
@@ -464,7 +466,6 @@ const WRENCH_PICKUP = [
 	'supplementaries:spring_launcher',
 ];
 
-
 const AVAILABLE_GUNS = [
 	'scguns:mas_55',
 	'scguns:krauser',
@@ -485,33 +486,62 @@ const AVAILABLE_GUNS = [
 	'scguns:m3_carabine',
 	'scguns:iron_javelin',
 	'scguns:greaser_smg',
-	'scguns:rocket_rifle',
-    'scguns:callwell',
-    'scguns:iron_spear'
+	'scguns:callwell',
+	'scguns:iron_spear',
+    'scguns:cogloader',
+    'scguns:m22_waltz'
 ];
 
 const ALL_ROCKS = [
-    'chalk',
+	'chalk',
 	'chert',
 	'conglomerate',
 	'dolomite',
 	'limestone',
 	'claystone',
 	'shale',
-    'granite',
-    'diorite',
-    'rhyolite',
-    'basalt',
-    'andesite',
-    'dacite',
-    'quartzite',
-    'slate',
-    'phyllite',
-    'schist',
-    'gneiss',
-    'marble',
-    'gabbro'
-]
+	'granite',
+	'diorite',
+	'rhyolite',
+	'basalt',
+	'andesite',
+	'dacite',
+	'quartzite',
+	'slate',
+	'phyllite',
+	'schist',
+	'gneiss',
+	'marble',
+	'gabbro',
+];
+
+const REMOVE_SNS = [
+	'sns:quiver',
+	'sns:straw_basket',
+	'sns:hiking_boots',
+	'sns:steel_toe_hiking_boots',
+	'sns:black_steel_toe_hiking_boots',
+	'sns:blue_steel_toe_hiking_boots',
+	'sns:red_steel_toe_hiking_boots',
+	'sns:buckle',
+];
+
+const REMOVE_FIRMALIFE = [
+	'firmalife:exposed_copper_greenhouse_port',
+	'firmalife:exposed_copper_greenhouse_port',
+	'firmalife:weathered_copper_greenhouse_port',
+	'firmalife:oxidized_copper_greenhouse_port',
+	'firmalife:iron_greenhouse_port',
+	'firmalife:rusted_iron_greenhouse_port',
+	'firmalife:pumping_station',
+	'firmalife:irrigation_tank',
+	'firmalife:oxidized_copper_pipe',
+	'firmalife:copper_pipe',
+	'firmalife:stainless_steel_greenhouse_port',
+	'firmalife:treated_wood_greenhouse_port',
+	'firmalife:weathered_treated_wood_greenhouse_port',
+	'firmalife:copper_greenhouse_port',
+];
 
 //only to be used for getting temp data, since it has both chromium and stainless steel here too.
 const METAL_HEATING_DEFS = {

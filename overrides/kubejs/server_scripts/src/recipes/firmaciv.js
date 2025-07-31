@@ -54,16 +54,18 @@ ServerEvents.recipes((e) => {
 		B: '#tfc:lumber',
 	});
 
-    e.recipes.tfc.anvil('alekiships:oarlock', 'tfc:metal/ingot/wrought_iron', ['bend_last', 'hit_second_last', 'hit_third_last']).tier(3).rules(['bend_last', 'hit_second_last', 'hit_third_last']);
+    e.recipes.tfc.anvil('alekiships:oarlock', '#tfc:metal/double_ingot/any_bronze', ['bend_last', 'hit_second_last', 'hit_third_last']).tier(2).rules(['bend_last', 'hit_second_last', 'hit_third_last']);
     e.recipes.tfc.anvil('alekiships:cleat', 'tfc:metal/double_ingot/wrought_iron', ['bend_last', 'bend_second_last', 'bend_third_last']).tier(3).rules(['bend_last', 'bend_second_last', 'bend_third_last']);
     e.recipes.tfc.anvil('alekiships:anchor', 'tfc:metal/double_sheet/wrought_iron', ['hit_last', 'punch_second_last', 'bend_third_last']).tier(3).rules(['hit_last', 'punch_second_last', 'bend_third_last']);
 
 
-    ADDED_ANVIL_RECIPES.push(['alekiships:oarlock', 'tfc:metal/ingot/wrought_iron', 3]);
+    ADDED_ANVIL_RECIPES.push(['alekiships:oarlock', '#tfc:metal/double_ingot/any_bronze', 2]);
     ADDED_ANVIL_RECIPES.push(['alekiships:cleat', 'tfc:metal/double_ingot/wrought_iron', 3]);
     ADDED_ANVIL_RECIPES.push(['alekiships:anchor', 'tfc:metal/double_sheet/wrought_iron', 3]);
     
     e.recipes.tfc.heating('alekiships:anchor', 1540).resultFluid(Fluid.of('tfc:metal/cast_iron', 400));
     e.recipes.tfc.heating('alekiships:cleat', 1540).resultFluid(Fluid.of('tfc:metal/cast_iron', 200));
-    e.recipes.tfc.heating('alekiships:oarlock', 1535).resultFluid(Fluid.of('tfc:metal/cast_iron', 100));
+    e.recipes.tfc.heating('alekiships:oarlock', 1535).resultFluid(Fluid.of('tfc:metal/bronze', 200));
+
+    e.remove({id: /afc:crafting\/wood\/.*_boat/})
 });

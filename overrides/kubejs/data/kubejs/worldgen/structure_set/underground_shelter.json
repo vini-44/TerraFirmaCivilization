@@ -1,0 +1,19 @@
+{
+    "placement": {
+        "type": "tfc:climate",
+        "salt": 834620437,
+        "separation": 8,
+        "spacing": 34,
+        "climate": {
+            "min_temperature": 15,
+            "max_temperature": 25,
+            "max_rainfall": 250
+        }
+    },
+    "structures": [
+        {
+            "structure": "kubejs:underground_shelter",
+            "weight": 1
+        }
+    ]
+}

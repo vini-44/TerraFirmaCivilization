@@ -71,7 +71,7 @@ ServerEvents.recipes((e) => {
 			A: 'minecraft:flint_and_steel',
 			B: 'scguns:gun_parts',
 			C: 'tfc:metal/double_sheet/steel',
-            F: 'scguns:stone_gun_barrel',
+			F: 'scguns:stone_gun_barrel',
 			D: '#tfc:lumber',
 		},
 		1,
@@ -280,7 +280,7 @@ ServerEvents.recipes((e) => {
 			B: 'scguns:iron_gun_frame',
 			C: 'scguns:firing_unit',
 			D: 'scguns:heavy_gun_barrel',
-			E: 'tfc:wood/lumber/acacia',
+			E: '#tfc:lumber',
 		},
 		0,
 		0
@@ -293,7 +293,7 @@ ServerEvents.recipes((e) => {
 			A: 'scguns:firing_unit',
 			B: 'scguns:stone_gun_barrel',
 			D: 'scguns:gun_parts',
-			E: 'tfc:wood/lumber/acacia',
+			E: '#tfc:lumber',
 		},
 		1,
 		0
@@ -310,4 +310,131 @@ ServerEvents.recipes((e) => {
 			'scguns:callwell'
 		).damageIngredient('#tfc:saws')
 	);*/
+
+	e.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('scguns:plasgun').copyForgingBonus(),
+		[' A ', 'BCC', 'DE '],
+		{
+			A: 'scguns:diamond_steel_gun_frame',
+			B: 'kubejs:plasma_gun_parts',
+			C: 'scguns:heavy_gun_barrel',
+			D: '#tfc:lumber',
+			E: 'createaddition:capacitor',
+		},
+		1,
+		0
+	);
+	e.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('scguns:laser_musket').copyForgingBonus(),
+		[' A ', 'BCD', 'EF '],
+		{
+			A: 'scguns:iron_gun_frame',
+			B: 'thermal:laser_diode',
+			C: 'scguns:heavy_gun_barrel',
+			D: 'tfc:lens',
+			E: '#tfc:lumber',
+			F: 'createaddition:capacitor',
+		},
+		1,
+		0
+	);
+
+	e.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('scguns:gauss_rifle').copyForgingBonus(),
+		[' AB', 'CBD', 'ED '],
+		{
+			A: 'scguns:treated_brass_gun_frame',
+			B: 'scguns:heavy_gun_barrel',
+			C: 'kubejs:plasma_gun_parts',
+			D: 'createaddition:capacitor',
+			E: '#tfc:lumber',
+		},
+		1,
+		0
+	);
+
+	e.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('scguns:m22_waltz').copyForgingBonus(),
+		[' A ', 'BCD', 'E  '],
+		{
+			A: 'scguns:treated_brass_gun_frame',
+			B: 'scguns:firing_unit',
+			C: 'scguns:heavy_gun_parts',
+			D: 'scguns:heavy_gun_barrel',
+			E: 'scguns:gun_magazine',
+		},
+		1,
+		1
+	);
+
+	e.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('scguns:gale').copyForgingBonus(),
+		['A  ', 'BCC', 'DED'],
+		{
+			A: 'scguns:treated_brass_gun_frame',
+			B: 'scguns:heavy_gun_parts',
+			C: 'scguns:gun_barrel',
+			D: '#tfc:lumber',
+			E: 'scguns:gun_magazine',
+		},
+		1,
+		0
+	);
+
+	e.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('scguns:cogloader').copyForgingBonus(),
+		['ABC', 'DEF', 'G  '],
+		{
+			A: 'scguns:rapid_firing_unit',
+			B: 'scguns:gun_magazine',
+			C: 'scguns:treated_brass_gun_frame',
+			D: 'scguns:heavy_gun_parts',
+			E: 'scguns:heavy_gun_barrel',
+			F: 'scguns:gun_barrel',
+			G: '#tfc:lumber',
+		},
+		1,
+		0
+	);
+
+	e.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('scguns:waltz_conversion').copyForgingBonus(),
+		[
+			'scguns:m22_waltz',
+			'thermal:laser_diode',
+			'tfc:lens',
+			'createaddition:capacitor',
+			'createaddition:gold_wire',
+		],
+		'thermal:laser_diode'
+	);
+
+	e.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('scguns:cr4k_mining_laser').copyForgingBonus(),
+		['AB ', 'CCB', 'DEF'],
+		{
+			A: '#tfc:lumber',
+			B: 'scguns:treated_brass_gun_frame',
+			C: 'createaddition:capacitor',
+			D: 'thermal:laser_diode',
+			E: 'scguns:heavy_gun_barrel',
+			F: 'tfc:lens',
+		},
+		2,
+		0
+	);
+
+	e.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('scguns:dozier_rl').copyForgingBonus(),
+		['AAB', 'AAC', 'DEB'],
+		{
+			A: 'scguns:heavy_gun_barrel',
+			B: 'scguns:treated_brass_gun_frame',
+			C: 'scguns:gun_barrel',
+			D: '#tfc:lumber',
+			E: 'scguns:heavy_gun_parts',
+		},
+		2,
+		1
+	);
 });

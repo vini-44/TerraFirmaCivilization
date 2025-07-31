@@ -1,7 +1,7 @@
 {
     "properties": {
       "fuel": 1.0,
-      "durability": 50,
+      "durability": 20,
       "yawSpeed": 1.0,
       "pitchSpeed": 1.0,
       "engineSpeed": 0.05,
