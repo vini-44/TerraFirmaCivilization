@@ -132,6 +132,37 @@ ServerEvents.recipes((e) => {
     e.remove({id: 'sns:crafting/ore_sack'})
 
     e.shapeless('minecraft:lime_dye', ['quark:moss_paste'])
+
+    e.recipes.tfc
+        .anvil('quark:iron_rod', 'tfc:metal/double_ingot/wrought_iron', [
+            'bend_last',
+            'draw_second_last',
+            'draw_third_last',
+        ])
+        .tier(3);
+
+    ADDED_ANVIL_RECIPES.push(['quark:iron_rod', 'tfc:metal/double_ingot/wrought_iron', 3]);
+
+    e.recipes.tfc
+        .anvil('quark:iron_rod', 'tfc:metal/double_ingot/steel', [
+            'bend_last',
+            'draw_second_last',
+            'draw_third_last',
+        ])
+        .tier(4);
+
+    ADDED_ANVIL_RECIPES.push(['quark:iron_rod', 'tfc:metal/double_ingot/steel', 4]);
+
+    e.shaped('quark:chute', ['LCL', 'L L', ' L '], {
+        L: '#tfc:lumber',
+        C: 'create:cogwheel'
+    });
+
+    e.shaped('quark:ender_watcher', [' E ', 'SPS', ' E '], {
+        E: 'create:electron_tube',
+        S: 'tfc:metal/sheet/steel',
+        P: 'create:precision_mechanism'
+    });
 });
 
 LootJS.modifiers((e) => {
