@@ -12,7 +12,7 @@ ServerEvents.recipes((e) => {
 	e.remove({ output: 'iron_ingot' });
 	// change the tier of the iron nugget
 	e.remove({ output: 'iron_nugget', type: 'tfc:anvil' });
-	e.recipes.tfc.anvil('iron_nugget', 'tfc:metal/ingot/wrought_iron', [
+	e.recipes.tfc.anvil('20x iron_nugget', 'tfc:metal/ingot/wrought_iron', [
 		'hit_third_last',
 		'hit_second_last',
 		'hit_last'
