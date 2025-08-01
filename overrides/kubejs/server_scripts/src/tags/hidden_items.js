@@ -210,7 +210,6 @@ const REMOVED_ITEMS = [
 	'create:dripstone_pillar',
 	'create:elevator_contact',
 	'create:empty_blaze_burner',
-	'create:blaze_burner',
 	'create:empty_schematic',
 	'create:experience_block',
 	'create:experience_nugget',
