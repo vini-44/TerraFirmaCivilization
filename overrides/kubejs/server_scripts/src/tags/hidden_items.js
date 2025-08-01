@@ -1596,7 +1596,6 @@ const REMOVED_ITEMS = [
 	'minecraft:red_tulip',
 	'minecraft:redstone_lamp',
 	'minecraft:redstone_ore',
-	'minecraft:redstone_torch',
 	'minecraft:reinforced_deepslate',
 	'minecraft:repeating_command_block',
 	'minecraft:respawn_anchor',
@@ -1994,7 +1993,6 @@ const REMOVED_ITEMS = [
 	'quark:chorus_fruit_block',
 	'quark:chorus_twist',
 	'quark:chorus_weeds',
-	'quark:chute',
 	'quark:cloud',
 
 	'quark:cobblestone_bricks',
@@ -2067,8 +2065,6 @@ const REMOVED_ITEMS = [
 	'quark:egg_parrot_red_blue',
 	'quark:egg_parrot_yellow_blue',
 
-	'quark:ender_watcher',
-
 	'quark:feeding_trough',
 	'quark:flowering_azalea_hedge',
 	'quark:flowering_azalea_leaf_carpet',
@@ -2130,7 +2126,6 @@ const REMOVED_ITEMS = [
 	'quark:iron_plate_slab',
 	'quark:iron_plate_stairs',
 
-	'quark:iron_rod',
 	'quark:jasper',
 	'quark:jasper_bricks',
 	'quark:jasper_bricks_slab',

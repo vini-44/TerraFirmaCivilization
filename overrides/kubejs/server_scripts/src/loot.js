@@ -504,4 +504,16 @@ LootJS.modifiers((e) => {
 		.addWeightedLoot([6, 9], true, ['createbigcannons:steel_scrap'])
 		.addLoot('tfc:brass_mechanisms')
 		.addWeightedLoot([3, 5], true, ['scguns:small_brass_casing']);
+	
+
+	e.addBlockLootModifier('cobblestone')
+		.removeLoot(/.*/)
+	
+	e.addBlockLootModifier('redstone_block')
+		.removeLoot(/.*/)
+		.addLoot('redstone_block');
+	
+	e.addBlockLootModifier('redstone_torch')
+		.removeLoot(/.*/)
+		.addLoot('redstone_torch');
 });
