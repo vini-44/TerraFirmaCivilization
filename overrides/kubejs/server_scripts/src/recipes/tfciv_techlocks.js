@@ -9,6 +9,7 @@ ServerEvents.recipes((e) => {
 	e.remove({ type: 'tfc:blast_furnace'});
 	
 	//Black Steel
+	e.remove({ type: 'tfc:alloying', output: 'tfc:metal/weak_steel' });
 	e.remove({ type: "create:sequenced_assembly", output: 'tfc:metal/ingot/black_steel' });
 	e.remove({ type: "tfc:anvil", output: 'tfc:metal/ingot/black_steel' });
 	e.remove({ output: 'tfc:metal/ingot/black_steel' });
@@ -18,6 +19,8 @@ ServerEvents.recipes((e) => {
 	e.remove({ output: 'kubejs:molten_aluminum' });
 	
 	//Color Steel
+	e.remove({ type: 'tfc:alloying', output: 'tfc:metal/weak_blue_steel' });
+	e.remove({ type: 'tfc:alloying', output: 'tfc:metal/weak_red_steel' });
 	e.remove({ type: "create:sequenced_assembly", output: 'tfc:metal/ingot/red_steel' });
 	e.remove({ type: "tfc:anvil", output: 'tfc:metal/ingot/red_steel' });
 	e.remove({ output: 'tfc:metal/ingot/red_steel' });
