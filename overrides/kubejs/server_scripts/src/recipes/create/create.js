@@ -172,6 +172,14 @@ ServerEvents.recipes((e) => {
 		C: 'create:water_wheel',
 	});
 
+	e.shaped('create:blaze_burner', ['AEA', 'ADA', 'BCB'], {
+		A: 'tfc:metal/bars/steel',
+		B: 'tfc:metal/sheet/steel',
+		C: 'tfc:fire_bricks',
+		D: 'tfc:crucible',
+		E: 'createbigcannons:steel_cannon_chamber',
+	});
+
 	e.shaped('create:hand_crank', ['  A', 'LLL'], {
 		A: 'create:andesite_alloy',
 		L: '#tfc:lumber',
