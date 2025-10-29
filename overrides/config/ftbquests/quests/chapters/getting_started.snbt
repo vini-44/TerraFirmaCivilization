@@ -27,8 +27,8 @@
 				type: "checkmark"
 			}]
 			title: "Read This First"
-			x: -4.464285714285722d
-			y: 0.0535714285714306d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0CD8033D7C86A941"]
@@ -44,7 +44,7 @@
 				type: "checkmark"
 			}]
 			title: "Custom Mechanics"
-			x: -0.5d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
@@ -64,13 +64,13 @@
 				type: "checkmark"
 			}]
 			title: "Walking Cane Durability"
-			x: -1.0d
+			x: -2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["75B46FAA46D43E53"]
 			description: [
-				"\"Bonus Chest\" option on world creation has been replaced by \"Starter Items\", which hands players a set of starting items to skip the pre-copper grind."
+				"\"Bonus Chest\" option on world creation has been replaced by \"Starter Items\", which hands players a set of starting items to skip the pre-copper grind and aid in early-game exploration."
 				""
 				"{@pagebreak}"
 				""
@@ -107,13 +107,13 @@
 				type: "checkmark"
 			}]
 			title: "Starter Items"
-			x: -2.0d
+			x: -3.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["0CD8033D7C86A941"]
 			description: [
-				"Project TFC alters some TFC-related features, and adds a couple new ones."
+				"Sulidae alters some TFC-related features, and adds a couple new ones."
 				"This quest branch will cover some specific highlights."
 			]
 			icon: "tfc:rock/mossy_loose/slate"
@@ -125,7 +125,7 @@
 				type: "checkmark"
 			}]
 			title: "TFC Changes"
-			x: -8.0d
+			x: -9.5d
 			y: 0.0d
 		}
 		{
@@ -139,7 +139,7 @@
 				type: "checkmark"
 			}]
 			title: "Mechanical Power"
-			x: -9.0d
+			x: -10.5d
 			y: 1.5d
 		}
 		{
@@ -165,14 +165,14 @@
 				type: "checkmark"
 			}]
 			title: "Ore Processing"
-			x: -9.5d
+			x: -11.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["75B46FAA46D43E53"]
 			description: [
-				"Brews are made by cooking any fruit, flower and spice on a pot. Brews provide a randomized, seed-based effect, similar to Suspicious Stews in the base game."
-				"Brews can also be distilled into their pure potion effect, to be used in things such as Liquid Shells or Chemical Sprayer. &lPure potions cannot be drinked.&r"
+				"Brews are made by cooking any fruit or sweetner, flower and any brew ingredient on a pot. Brews provide a randomized, seed-based effect, similarly to Suspicious Stews in the base game."
+				"Brews can also be distilled into their pure potion effect, to be used in things such as Liquid Shells or Chemical Sprayers. &lPure potions cannot be drinked.&r"
 			]
 			icon: "minecraft:brewing_stand"
 			id: "3C6BE5EB134946AC"
@@ -182,7 +182,7 @@
 				type: "checkmark"
 			}]
 			title: "Brews"
-			x: 0.0d
+			x: -1.0d
 			y: -1.5d
 		}
 		{
@@ -207,12 +207,12 @@
 				type: "checkmark"
 			}]
 			title: "New Materials"
-			x: 4.5d
+			x: 3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["75B46FAA46D43E53"]
-			description: ["Foods can be fried in oil on a cooking pot. Frying foods in olive or seed oil decreases how fast they spoil."]
+			description: ["Foods can be fried in oil on a cooking pot. Frying foods in olive, seed oil or soy oil decreases how fast they spoil."]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -230,7 +230,7 @@
 				type: "checkmark"
 			}]
 			title: "Frying"
-			x: 0.0d
+			x: -2.5d
 			y: 1.5d
 		}
 		{
@@ -247,7 +247,7 @@
 				type: "checkmark"
 			}]
 			title: "Nutrient Extraction"
-			x: -1.0d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
@@ -280,7 +280,7 @@
 				type: "checkmark"
 			}]
 			title: "Tweaked Ore Generation"
-			x: -9.5d
+			x: -11.0d
 			y: 0.5d
 		}
 		{
@@ -299,7 +299,7 @@
 				type: "checkmark"
 			}]
 			title: "Mod Integration"
-			x: -4.5d
+			x: -6.0d
 			y: 3.0d
 		}
 		{
@@ -313,13 +313,14 @@
 				type: "checkmark"
 			}]
 			title: "Immersive Aircraft"
-			x: -5.5d
-			y: 2.0d
+			x: -5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3FFD60F6DD717CFF"]
 			description: [
-				"Most guns are no longer available, and ammo types have been reduced. Guns can recieve forging bonuses, increasing their durability and deal Piercing type damage."
+				"Most guns are no longer available, and ammo types have been reduced. Guns can recieve forging bonuses, increasing their durability and deal Piercing type damage. Guns also heat up when firing and jam when they get too hot."
+				""
 				"Additionally, guns deal increased damage, have higher bullet velocity and gravity."
 				"Adrien Armor now as the equivalent to a bulletproof vest, with very high piercing damage resistance."
 			]
@@ -344,8 +345,8 @@
 				type: "checkmark"
 			}]
 			title: "Scorched Guns"
-			x: -4.5d
-			y: 4.5d
+			x: -7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3FFD60F6DD717CFF"]
@@ -358,8 +359,8 @@
 				type: "checkmark"
 			}]
 			title: "Quark"
-			x: -6.0d
-			y: 3.0d
+			x: -7.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["529000CCCC295A5F"]
@@ -372,7 +373,7 @@
 				type: "checkmark"
 			}]
 			title: "Irrigation"
-			x: -9.0d
+			x: -10.5d
 			y: -1.5d
 		}
 		{
@@ -389,8 +390,8 @@
 				type: "checkmark"
 			}]
 			title: "Wood Paper"
-			x: -2.0d
-			y: 1.0d
+			x: -3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["75B46FAA46D43E53"]
@@ -403,7 +404,7 @@
 				type: "checkmark"
 			}]
 			title: "Stun"
-			x: 1.0d
+			x: 0.0d
 			y: -1.0d
 		}
 		{
@@ -423,8 +424,8 @@
 				type: "checkmark"
 			}]
 			title: "Refurbished Furniture"
-			x: -5.5d
-			y: 4.0d
+			x: -7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["75B46FAA46D43E53"]
@@ -447,8 +448,8 @@
 				type: "checkmark"
 			}]
 			title: "Alcohol Warmth"
-			x: 1.0d
-			y: 1.0d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0B953C1C60CA1413"]
@@ -466,7 +467,7 @@
 				type: "checkmark"
 			}]
 			title: "Kyanite"
-			x: 4.5d
+			x: 3.5d
 			y: 1.5d
 		}
 		{
@@ -499,7 +500,7 @@
 				type: "checkmark"
 			}]
 			title: "Manganese"
-			x: 5.5d
+			x: 4.5d
 			y: -1.0d
 		}
 		{
@@ -528,7 +529,7 @@
 				type: "checkmark"
 			}]
 			title: "Titanium"
-			x: 3.0d
+			x: 2.0d
 			y: 3.0d
 		}
 		{
@@ -548,7 +549,7 @@
 				type: "checkmark"
 			}]
 			title: "Kaolinite"
-			x: 4.5d
+			x: 3.5d
 			y: -1.5d
 		}
 		{
@@ -565,7 +566,7 @@
 				type: "checkmark"
 			}]
 			title: "Oil Shale"
-			x: 3.5d
+			x: 2.5d
 			y: -1.0d
 		}
 		{
@@ -598,7 +599,7 @@
 				type: "checkmark"
 			}]
 			title: "Tungsten"
-			x: 3.0d
+			x: 2.0d
 			y: 5.0d
 		}
 		{
@@ -616,7 +617,7 @@
 				type: "checkmark"
 			}]
 			title: "Industrial Furnace"
-			x: 4.5d
+			x: 3.5d
 			y: 3.0d
 		}
 		{
@@ -637,7 +638,7 @@
 				type: "checkmark"
 			}]
 			title: "Metalworks Forge"
-			x: 1.5d
+			x: 0.5d
 			y: 3.0d
 		}
 		{
@@ -660,7 +661,7 @@
 				type: "checkmark"
 			}]
 			title: "Thermal Expansion"
-			x: -0.5d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
@@ -674,14 +675,14 @@
 				type: "checkmark"
 			}]
 			title: "Electric Kiln"
-			x: -1.5d
+			x: -2.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["72E147C62CBCC9E9"]
 			description: [
-				"The &lPyrolyzer&r is able to process wood into charcoal, and further process coals into Coke, producing &lCreosote Oil&r as a byproduct."
-				"Additionally, it can also process oil shales."
+				"The &lPyrolyzer&r is able to process wood into charcoal, and further process Coal into Coke, producing &lCreosote Oil&r as a byproduct."
+				"Additionally, it can also process oil shales and liquefy mineral coals into Crude Oil."
 			]
 			icon: "thermal:machine_pyrolyzer"
 			id: "3A886E3875BD9567"
@@ -691,7 +692,7 @@
 				type: "checkmark"
 			}]
 			title: "Pyrolyzer"
-			x: -0.5d
+			x: -1.5d
 			y: 4.5d
 		}
 		{
@@ -705,8 +706,56 @@
 				type: "checkmark"
 			}]
 			title: "Electrolyzer"
-			x: 0.5d
+			x: -0.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["75B46FAA46D43E53"]
+			description: ["&6Flint and Pyrite&r is an early-game alternative to Flint and Steel, made simply by combining a flint and Pyrite"]
+			icon: {
+				Count: 1
+				id: "kubejs:flint_and_pyrite"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4C00025FBB7CAC74"
+			tasks: [{
+				id: "352057E8ED7E8ED3"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Flint and Pyrite"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3FFD60F6DD717CFF"]
+			description: ["Burners can heat up Crucibles."]
+			icon: "createdieselgenerators:burner"
+			id: "104041EAF88BC20E"
+			tasks: [{
+				id: "6486BD27CBF78823"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Create Diesel Generators"
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["529000CCCC295A5F"]
+			description: ["Bricks are slightly harder and more resilient to explosives."]
+			icon: "tfc:rock/cracked_bricks/andesite"
+			id: "0A8133B33B8CF4DB"
+			tasks: [{
+				id: "5AA30CC8484EDDEE"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Brick Toughness"
+			x: -9.5d
+			y: 2.0d
 		}
 	]
 	title: "About the Modpack"

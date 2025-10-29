@@ -9,7 +9,7 @@ ServerEvents.loaded((event) => {
 	event.server.persistentData.gameRules = true;
 });
 
-const UPDATE_FREQUENCY = 400;
+const UPDATE_FREQUENCY = 200;
 
 PlayerEvents.tick((event) => {
 	let player = event.player;
@@ -73,6 +73,12 @@ BlockEvents.placed((e) => {
 	) {
 		e.server.runCommandSilent(
 			`data modify block ${x} ${y} ${z} Enabled set value 1b`
+		);
+	}
+
+	if (e.block.id == 'createdieselgenerators:chemical_turret') {
+		e.server.runCommandSilent(
+			`data modify block ${x} ${y} ${z} LighterUpgrade set value 1b`
 		);
 	}
 });

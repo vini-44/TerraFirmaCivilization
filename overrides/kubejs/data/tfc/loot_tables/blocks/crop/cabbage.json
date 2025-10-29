@@ -46,7 +46,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/cabbage"
+          "name": "tfc:seeds/cabbage",
           "functions": [
             {
               "function": "minecraft:set_count",

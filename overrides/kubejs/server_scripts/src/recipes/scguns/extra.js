@@ -227,7 +227,7 @@ ServerEvents.recipes((event) => {
     event.shapeless('scguns:diamond_steel_boots', [['textile:black_bear_boots', 'textile:grizzly_bear_boots'], 'kubejs:unfinished_diamond_steel_boots'])
     event.shapeless('scguns:diamond_steel_helmet', [['textile:black_bear_hat', 'textile:grizzly_bear_hat'], 'kubejs:unfinished_diamond_steel_helmet'])
 
-
+    event.shapeless('6x scguns:sandbag', ['#minecraft:sand', ['#tfc:sewing_light_cloth', '#tfc:sewing_dark_cloth']])
 });
 
 

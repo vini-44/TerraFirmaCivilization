@@ -5,7 +5,7 @@ ServerEvents.recipes((e) => {
 	e.remove({ mod: 'refurbished_furniture' });
 	e.remove({ output: /everycomp:rfm.*/ });
 
-	WOOD_TYPES.forEach((type) => {
+	TFC_WOOD_TYPES.forEach((type) => {
 		//toilet
 		e.shaped(`everycomp:rfm/tfc/${type}_toilet`, ['A ', 'BA', 'BB'], {
 			A: `tfc:wood/lumber/${type}`,
@@ -99,6 +99,12 @@ ServerEvents.recipes((e) => {
 				B: '#forge:chests/wooden',
 			}
 		);
+
+		//crate
+		e.shaped(`everycomp:rfm/tfc/${type}_crate`, ['ABA', 'ABA', 'ABA'], {
+			A: `tfc:wood/lumber/${type}`,
+			B: '#forge:chests/wooden',
+		});
 
 		//lattice fence
 		e.shaped(`everycomp:rfm/tfc/${type}_lattice_fence`, ['ABA', 'BAB'], {
@@ -218,6 +224,12 @@ ServerEvents.recipes((e) => {
 				B: '#forge:chests/wooden',
 			}
 		);
+
+		//crate
+		e.shaped(`everycomp:rfm/afc/${type}_crate`, ['ABA', 'ABA', 'ABA'], {
+			A: `afc:wood/lumber/${type}`,
+			B: '#forge:chests/wooden',
+		});
 
 		//lattice fence
 		e.shaped(`everycomp:rfm/afc/${type}_lattice_fence`, ['ABA', 'BAB'], {
@@ -344,7 +356,7 @@ ServerEvents.recipes((e) => {
 		'createaddition:connector',
 	]);
 
-	WOOD_TYPES.forEach((type) => {
+	TFC_WOOD_TYPES.forEach((type) => {
 		e.shaped(
 			`everycomp:rfm/tfc/${type}_light_ceiling_fan`,
 			[' A ', 'ABA', ' A '],
@@ -386,9 +398,15 @@ ServerEvents.recipes((e) => {
 		]);
 	});
 
-    e.shaped('refurbished_furniture:wrench', ['A', 'B'], { A: 'kubejs:metal/ingot/aluminum', B: '#forge:rods/wooden' });
+	e.shaped('refurbished_furniture:wrench', ['A', 'B'], {
+		A: 'kubejs:metal/ingot/aluminum',
+		B: '#forge:rods/wooden',
+	});
 
-    e.shaped('refurbished_furniture:white_trampoline', [' A ','ABA',' A '], {A: 'tfc:metal/rod/wrought_iron',B: 'afc:rubber_bar'})
+	e.shaped('refurbished_furniture:white_trampoline', [' A ', 'ABA', ' A '], {
+		A: 'tfc:metal/rod/wrought_iron',
+		B: 'afc:rubber_bar',
+	});
 });
 
 let limit = [];
@@ -401,5 +419,5 @@ limit.forEach((item) => {
 
 ServerEvents.tags('block', (event) => {
 	event.add('kubejs:ceiling_fans', /.*ceiling_fan.*/);
-    event.add('kubejs:electricity_generators', /.*electricity_generator.*/)
+	event.add('kubejs:electricity_generators', /.*electricity_generator.*/);
 });

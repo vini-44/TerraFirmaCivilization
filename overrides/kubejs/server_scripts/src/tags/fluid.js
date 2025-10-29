@@ -3,6 +3,8 @@ const usableInAllBuckets = [
 	'thermal:creosote',
 	'kubejs:kaolinite_sludge',
 	'kubejs:alumina_slurry',
+    'kubejs:sugarcane_juice',
+        'kubejs:lubricant',
 ];
 const usableInMetalBuckets = [
 	'createdieselgenerators:crude_oil',
@@ -11,21 +13,29 @@ const usableInMetalBuckets = [
 	'createdieselgenerators:biodiesel',
 	'createdieselgenerators:diesel',
 	'kubejs:kerosene',
+    'kubejs:liquid_petroleum_gas',
+    //'kubejs:molten_plastic'
 ];
 const usableInBarrels = [
 	'createdieselgenerators:plant_oil',
 	'kubejs:kaolinite_sludge',
 	'kubejs:alumina_slurry',
+    'kubejs:sugarcane_juice',
+    'kubejs:lubricant',
+
 ];
 const usableInPot = [
 	'createdieselgenerators:plant_oil',
 	'kubejs:kaolinite_sludge',
 	'kubejs:alumina_slurry',
+    'kubejs:sugarcane_juice'
+
 ];
 const usableInJug = [
 	'createdieselgenerators:plant_oil',
 	'kubejs:kaolinite_sludge',
 	'kubejs:alumina_slurry',
+    'kubejs:sugarcane_juice'
 ];
 
 const moltenMetals = [
@@ -34,6 +44,7 @@ const moltenMetals = [
 	'kubejs:molten_mangalloy',
 	'kubejs:molten_titanium',
 	'kubejs:molten_tungsten',
+    'kubejs:molten_carotine_steel'
 ];
 
 ServerEvents.tags('fluid', (event) => {
@@ -55,4 +66,6 @@ ServerEvents.tags('fluid', (event) => {
 	event.add('tfc:usable_in_ingot_mold', moltenMetals);
 
 	event.add('c:hidden_from_recipe_viewers', REMOVED_FLUIDS);
+
+    //event.add('kubejs:lpg_ingredients', ['createdieselgenerators:gasoline', 'createdieselgenerators:diesel', 'kubejs:kerosene']);
 });

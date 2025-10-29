@@ -84,7 +84,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:seeds/red_bell_pepper"
+          "name": "tfc:seeds/red_bell_pepper",
 		  
           "functions": [
             {

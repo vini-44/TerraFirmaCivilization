@@ -96,6 +96,14 @@ const SIZE_DEFS = {
 	'scguns:lockewood': ['large', 'heavy'],
 	'scguns:krauser': ['small', 'medium'],
 	'scguns:uppercut': ['small', 'medium'],
+	'scguns:m22_waltz': ['small', 'medium'],
+	'scguns:waltz_conversion': ['small', 'medium'],
+	'scguns:plasgun': ['large', 'heavy'],
+	'scguns:cogloader': ['very_large', 'heavy'],
+	'scguns:gale': ['very_large', 'heavy'],
+	'scguns:cr4k_mining_laser': ['very_large', 'heavy'],
+	'scguns:dozier_rl': ['huge', 'very_heavy'],
+	'scguns:gauss_rifle': ['huge', 'very_heavy'],
 
 	'createbigcannons:mortar_stone': ['large', 'heavy'],
 	'createbigcannons:bag_of_grapeshot': ['large', 'heavy'],
@@ -116,4 +124,12 @@ TFCEvents.data((event) => {
 	for (const [item, def] of Object.entries(SIZE_DEFS)) {
 		event.itemSize(Ingredient.of(item), def[0], def[1]);
 	}
+});
+
+TFCEvents.data(event => {
+    event.itemSize(
+        Ingredient.of('#functionalstorage:drawer'),
+        'huge',
+        'very_heavy'
+    );
 });

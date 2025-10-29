@@ -1,0 +1,20 @@
+{
+    "fluid": "kubejs:kerosene",
+    "sound_pitch": 2,
+    "normal": {
+        "speed": 256.0,
+        "strength": 16384.0,
+        "burn_rate": 0.2
+    },
+    "modular": {
+        "speed": 256.0,
+        "strength": 16384.0,
+        "burn_rate": 0.2
+    },
+    "huge": {
+        "speed": 256.0,
+        "strength": 32768.0,
+        "burn_rate": 0.2
+    },
+    "burner_multiplier": 1.25
+}

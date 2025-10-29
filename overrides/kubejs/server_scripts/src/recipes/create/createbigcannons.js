@@ -158,8 +158,7 @@ ServerEvents.recipes((e) => {
 			V: '#create:valve_handles',
 			C: Item.of(
 				'createdieselgenerators:canister',
-				'{BlockEntityTag:{Tanks:[{Level:{Speed:0.25f,Target:1.0f,Value:1.0f},TankContent:{Amount:16000,FluidName:"createdieselgenerators:' +
-					fuel +
+				'{BlockEntityTag:{Tanks:[{Level:{Speed:0.25f,Target:1.0f,Value:1.0f},TankContent:{Amount:16000,FluidName:"' + fuel +
 					'"}}]}}'
 			).strongNBT(),
 		});
@@ -385,9 +384,9 @@ ServerEvents.recipes((e) => {
 		'createbigcannons:very_large_cast_mould',
 		'createbigcannons:screw_breech_cast_mould',
 		'createbigcannons:sliding_breech_cast_mould',
-		//'createbigcannons:autocannon_breech_cast_mould',
-		//'createbigcannons:autocannon_recoil_spring_cast_mould',
-		//'createbigcannons:autocannon_barrel_cast_mould',
+		'createbigcannons:autocannon_breech_cast_mould',
+		'createbigcannons:autocannon_recoil_spring_cast_mould',
+		'createbigcannons:autocannon_barrel_cast_mould',
 		'createbigcannons:cannon_end_cast_mould',
 		'createbigcannons:very_small_cast_mould',
 	].forEach((mould) => {

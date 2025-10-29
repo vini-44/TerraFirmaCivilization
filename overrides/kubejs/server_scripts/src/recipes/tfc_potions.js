@@ -75,7 +75,7 @@ ServerEvents.lowPriorityData((event) => {
 					type: 'tfc:not_rotten',
 					ingredient: [
 						{
-							tag: 'tfc:foods/fruits',
+							tag: 'kubejs:brew_fruit_ingredients',
 						},
 					],
 				},

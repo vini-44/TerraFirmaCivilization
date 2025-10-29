@@ -137,6 +137,10 @@ ServerEvents.recipes((e) => {
 		.heating(`kubejs:scrap`, 400)
 		.resultFluid(Fluid.of(`tfc:metal/unknown`, 50));
 
+	e.recipes.tfc
+		.heating('tfc:powder/salt', 800)
+		.resultFluid(Fluid.of('kubejs:molten_salt', 100))
+
 	for (const def of ORE_DEFS) {
 		e.recipes.tfc
 			.heating(`tfc:powder/${def.ore}`, def.meltingTemp)
@@ -454,7 +458,81 @@ ServerEvents.recipes((e) => {
 					.keepHeldItem(),
 			])
 			.transitionalItem(ingredient)
-			.loops(16);
+			.loops(16);	e.recipes.create
+
+			.sequenced_assembly([recipe.originalRecipeResult], ingredient, [
+
+				e.recipes.create
+
+					.deploying(ingredient, [
+
+						ingredient,
+
+						[
+
+							'#tfcscraping:line_scraping',
+
+							'#tfcscraping:quarter_scraping',
+
+						],
+
+					])
+
+					.keepHeldItem(),
+
+			])
+
+			.transitionalItem(ingredient)
+
+			.loops(4);
+
+
+
+		e.recipes.create
+
+			.sequenced_assembly([recipe.originalRecipeResult], ingredient, [
+
+				e.recipes.create
+
+					.deploying(ingredient, [
+
+						ingredient,
+
+						['#tfcscraping:half_scraping'],
+
+					])
+
+					.keepHeldItem(),
+
+			])
+
+			.transitionalItem(ingredient)
+
+			.loops(2);
+
+
+
+		e.recipes.create
+
+			.sequenced_assembly([recipe.originalRecipeResult], ingredient, [
+
+				e.recipes.create
+
+					.deploying(ingredient, [
+
+						ingredient,
+
+						['#tfcscraping:full_scraping'],
+
+					])
+
+					.keepHeldItem(),
+
+			])
+
+			.transitionalItem(ingredient)
+
+			.loops(1);
 	});
 
 	e.recipes.create.splashing(
@@ -530,37 +608,32 @@ ServerEvents.recipes((e) => {
 		'tfc:powder/charcoal',
 	]).id('tfc:crafting/gunpowder');
 
-	WOOD_TYPES.forEach((wood) => {
-		e.replaceInput(
-			{ output: `everycomp:q/tfc/${wood}_ladder` },
-			`tfc:wood/planks/${wood}`,
-			`tfc:wood/lumber/${wood}`
-		);
+	TFC_WOOD_TYPES.forEach((wood) => {
+		e.remove({ id: `everycomp:q/tfc/${wood}_ladder` });
+
+		e.shaped(`4x everycomp:q/tfc/${wood}_ladder`, ['A A', 'ABA', 'A A'], {
+			A: '#forge:rods/wooden',
+			B: `tfc:wood/lumber/${wood}`,
+		});
 	});
+
 	AFC_WOOD_TYPES.forEach((wood) => {
-		e.replaceInput(
-			{ output: `everycomp:q/afc/${wood}_ladder` },
-			`afc:wood/planks/${wood}`,
-			`afc:wood/lumber/${wood}`
-		);
+		e.remove({ id: `everycomp:q/afc/${wood}_ladder` });
+
+		e.shaped(`4x everycomp:q/afc/${wood}_ladder`, ['A A', 'ABA', 'A A'], {
+			A: '#forge:rods/wooden',
+			B: `afc:wood/lumber/${wood}`,
+		});
 	});
 
 	e.remove({ output: /everycomp:q\/tfc\/.*_chest/ });
 	e.remove({ output: /everycomp:q\/afc\/.*_chest/ });
 	e.remove({ output: /everycomp.*storage_jar.*/ });
 
-	let remove_sns = [
-		'sns:quiver',
-		'sns:straw_basket',
-		'sns:hiking_boots',
-		'sns:steel_toe_hiking_boots',
-		'sns:black_steel_toe_hiking_boots',
-		'sns:blue_steel_toe_hiking_boots',
-		'sns:red_steel_toe_hiking_boots',
-		'sns:buckle',
-	].forEach((item) => {
+	REMOVE_SNS.forEach((item) => {
 		e.remove({ output: item });
 	});
+
 
 	e.shaped('sns:straw_basket', ['AA', 'BB'], {
 		A: 'tfc:straw',
@@ -635,7 +708,7 @@ ServerEvents.recipes((e) => {
 			Item.of('minecraft:sugar', 5),
 			Fluid.of('kubejs:sugarcane_juice', 500)
 		)
-		.lowheated();
+		.heated();
 
 	e.remove({ id: 'sns:crafting/straw_basket' });
 	e.remove({ id: 'sns:crafting/seed_pouch' });
@@ -717,7 +790,6 @@ ServerEvents.recipes((e) => {
 		'tfc:jute_fiber',
 		'textile:flax_fiber',
 	]);
-
 
 	e.recipes.create
 		.sequenced_assembly(

@@ -41,17 +41,10 @@ ServerEvents.recipes((e) => {
 
     e.shaped('quark:pickarang', ['SLC', '  L', '  S'], {
         L: '#tfc:lumber',
-        S: 'tfc:metal/sheet/wrought_iron',
+        S: 'tfc:metal/sheet/blue_steel',
         C: 'quark:diamond_heart',
     });
 
-    e.recipes.tfc
-        .welding(
-            'quark:flamerang',
-            'quark:pickarang',
-            'tfc:metal/double_sheet/black_steel'
-        )
-        .tier(5);
 
     e.shaped('8x quark:rope', ['A', 'A',], { A: 'supplementaries:rope' });
 
@@ -118,7 +111,7 @@ ServerEvents.recipes((e) => {
 
     e.shaped('quark:redstone_randomizer', [' T ', 'TBT', 'SSS'], {
         T: 'minecraft:redstone_torch',
-        B: 'tfc:metal/ingot/bismuth',
+        B: ['lithiccoins:blank_coin/bismuth', '#lithiccoins:coins/bismuth'],
         S: '#forge:smooth_stone'
     })
 
@@ -139,6 +132,37 @@ ServerEvents.recipes((e) => {
     e.remove({id: 'sns:crafting/ore_sack'})
 
     e.shapeless('minecraft:lime_dye', ['quark:moss_paste'])
+
+    e.recipes.tfc
+        .anvil('quark:iron_rod', 'tfc:metal/double_ingot/wrought_iron', [
+            'bend_last',
+            'draw_second_last',
+            'draw_third_last',
+        ])
+        .tier(3);
+
+    ADDED_ANVIL_RECIPES.push(['quark:iron_rod', 'tfc:metal/double_ingot/wrought_iron', 3]);
+
+    e.recipes.tfc
+        .anvil('quark:iron_rod', 'tfc:metal/double_ingot/steel', [
+            'bend_last',
+            'draw_second_last',
+            'draw_third_last',
+        ])
+        .tier(4);
+
+    ADDED_ANVIL_RECIPES.push(['quark:iron_rod', 'tfc:metal/double_ingot/steel', 4]);
+
+    e.shaped('quark:chute', ['LCL', 'L L', ' L '], {
+        L: '#tfc:lumber',
+        C: 'create:cogwheel'
+    });
+
+    e.shaped('quark:ender_watcher', [' E ', 'SPS', ' E '], {
+        E: 'create:electron_tube',
+        S: 'tfc:metal/sheet/steel',
+        P: 'create:precision_mechanism'
+    });
 });
 
 LootJS.modifiers((e) => {

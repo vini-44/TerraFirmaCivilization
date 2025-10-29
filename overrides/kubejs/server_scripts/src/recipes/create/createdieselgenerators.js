@@ -18,7 +18,7 @@ ServerEvents.recipes((e) => {
 
 	e.shapeless('4x createdieselgenerators:oil_barrel', [
 		'tfc:metal/sheet/wrought_iron',
-		'4x create:fluid_tank',
+		'4x firmaciv:copper_bolt',
 	]);
 
 	for (const [key, amount] of Object.entries(WOODEN_STUFF)) {
@@ -217,6 +217,28 @@ ServerEvents.recipes((e) => {
 		],
 	});
 
+	//lpg
+	/*e.custom({
+		type: 'createdieselgenerators:distillation',
+		ingredients: [
+			{
+				fluidTag: 'kubejs:lpg_ingredients',
+				amount: 100,
+			},
+		],
+		heatRequirement: 'heated',
+		processingTime: 100,
+		results: [
+			{
+				fluid: 'kubejs:liquid_petroleum_gas',
+				amount: 30,
+			},
+		],
+	});*/
+
+    //e.recipes.thermal.crystallizer('kubejs:plastic', [Fluid.of('kubejs:liquid_petroleum_gas', 90), 'kubejs:ilmenite_powder', 'tfc:powder/graphite']);
+    //e.recipes.thermal.crystallizer('afc:rubber_bar', [Fluid.of('kubejs:liquid_petroleum_gas', 90), 'kubejs:ilmenite_powder', 'tfc:powder/sulfur']);
+
 	//aslphalt
 
 	e.recipes.create.mixing('8x createdieselgenerators:asphalt_block', [
@@ -297,6 +319,14 @@ ServerEvents.recipes((e) => {
 				Fluid.of(`createdieselgenerators:${type}`, 1000),
 				`kubejs:empty_fuel_can`,
 			]);
+
+			e.recipes.create.emptying(
+				[
+					Fluid.of(`createdieselgenerators:${type}`, 1000),
+					`kubejs:empty_fuel_can`,
+				],
+				`kubejs:${type}_fuel_can`
+			);
 		}
 	);
 
