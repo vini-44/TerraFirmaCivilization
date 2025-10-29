@@ -111,7 +111,7 @@ ServerEvents.recipes((e) => {
 
     e.shaped('quark:redstone_randomizer', [' T ', 'TBT', 'SSS'], {
         T: 'minecraft:redstone_torch',
-        B: 'tfc:metal/ingot/bismuth',
+        B: ['lithiccoins:blank_coin/bismuth', '#lithiccoins:coins/bismuth'],
         S: '#forge:smooth_stone'
     })
 

@@ -74,7 +74,7 @@ ServerEvents.recipes((e) => {
 	e.shapeless('create:electron_tube', [
 		'tfc:lamp_glass',
 		'kubejs:chromium_wire',
-		'#lithiccoins:coins/zinc',
+		['lithiccouns:blank_coin/zinc', '#lithiccoins:coins/zinc']
 	]);
 
 	e.recipes.create

@@ -67,6 +67,8 @@ ServerEvents.recipes((e) => {
 	  ]
 	)
 
+	e.remove({ input: 'tfcbetterbf:insulation', type: 'tfc:heating' });
+
 	
 	e.remove([
 		{id: 'tfc:crafting/dough/barley_dough_8'},

@@ -1,6 +1,8 @@
 // priority: 50
 
 ServerEvents.recipes((event) => {
+	event.remove({ type: 'minecraft:smelting' });
+
 	event.remove({ input: /.*chainmail.*/, not: { type: 'smithing_trim' } });
 	event.remove({ output: /.*chainmail.*/, not: { type: 'smithing_trim' } });
 
@@ -77,4 +79,10 @@ ServerEvents.recipes((event) => {
         A: '#forge:smooth_stone',
         B: ['tfc:ore/poor_magnetite', 'tfc:ore/normal_magnetite', 'tfc:ore/rich_magnetite']
     })
+
+	event.shaped('dispenser', ['CCC', 'CBC', 'CRC'], {
+		C: '#forge:cobblestone',
+		B: 'bow',
+		R: 'redstone'
+	});
 });
