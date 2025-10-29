@@ -41,8 +41,6 @@ ServerEvents.tags('item', (e) => {
 
 	e.add('kubejs:brew_ingredients', BREW_INGREDIENTS);
 	e.add('kubejs:brew_fruit_ingredients', BREW_FRUIT_INGREDIENTS);
-	e.add('createbigcannons:nitropowder', 'scguns:nitro_powder');
-	e.remove('createbigcannons:nitropowder', 'createbigcannons:nitropowder');
 
 	e.add('tfc:axes_that_log', 'thermal:flux_saw');
 

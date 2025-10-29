@@ -55,35 +55,6 @@ const $HitResultType = Java.loadClass(
 	'net.minecraft.world.phys.HitResult$Type'
 );
 
-const $RocketEntity = Java.loadClass(
-	'top.ribs.scguns.entity.projectile.RocketEntity'
-);
-
-ForgeEvents.onEvent('top.ribs.scguns.event.GunProjectileHitEvent', (event) => {
-	/**@type {Internal.Projectile} */
-	let projectile = event.projectile;
-
-	/**@type {Internal.BlockHitResult} */
-	let rayTrace = event.getRayTrace();
-
-	/**@type {Internal.Level} */
-	let level = projectile.getLevel();
-
-	if (rayTrace.getType() === $HitResultType.BLOCK) {
-		let block = level.getBlock(rayTrace.getBlockPos());
-		let dir = rayTrace.getDirection().getOpposite();
-
-		if (block.hasTag('createbigcannons:spark_effect_on_impact')) {
-			let pos = rayTrace.getBlockPos();
-			level.runCommandSilent(
-				`particle tfc:spark ${pos.x} ${pos.y} ${pos.z} ${dir.x} ${dir.y} ${dir.z} 0.5 100 force`
-			);
-
-			//level.runCommandSilent(`playsound tfc:block.anvil.hit block @a ${pos.x} ${pos.y} ${pos.z} 1 ${Math.random()*1.5+0.5} 0`)
-		}
-	}
-});
-
 const $ServerLevel = Java.loadClass('net.minecraft.server.level.ServerLevel');
 const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity');
 const $MobEffectInstance = Java.loadClass(

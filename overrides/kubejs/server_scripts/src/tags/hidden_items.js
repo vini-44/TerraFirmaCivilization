@@ -3833,7 +3833,6 @@ const REMOVED_ITEMS = [
 	'scguns:felix_memorial',
 	'scguns:enemy_turret',
 	'scguns:plasma_block',
-	'createbigcannons:nitropowder',
 	'createbigcannons:guncotton',
 	'thermal:upgrade_augment_1',
 	'thermal:upgrade_augment_2',

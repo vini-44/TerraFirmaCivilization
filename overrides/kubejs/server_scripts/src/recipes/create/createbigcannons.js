@@ -31,15 +31,11 @@ ServerEvents.recipes((e) => {
 		'redstone',
 	]);
 
-	e.shapeless('2x scguns:nitro_powder', [
+	e.shapeless('2x createbigcannons:nitropowder', [
 		'tfc:pure_nitrogen',
 		'tfc:powder/sulfur',
 		'tfc:powder/graphite',
 	]);
-	e.shapeless('9x scguns:nitro_powder_dust', ['scguns:nitro_powder']);
-	e.shaped('scguns:nitro_powder', ['AAA', 'AAA', 'AAA'], {
-		A: 'scguns:nitro_powder_dust',
-	});
 
 	e.recipes.create.compacting('createbigcannons:packed_gunpowder', [
 		'3x gunpowder',
@@ -72,10 +68,21 @@ ServerEvents.recipes((e) => {
 	);
 
 	e.shapeless('createbigcannons:machine_gun_round', [
-		'scguns:large_brass_casing',
-		'scguns:nitro_powder_dust',
-		'scguns:hardened_bullet',
+		'createbigcannons:empty_machine_gun_round',
+		'createbigcannons:nitropowder',
+		'magistuarmory:steel_nugget',
 	]);
+
+	e.recipes.tfc
+		.anvil(
+			'16x createbigcannons:empty_machine_gun_round',
+			'tfc:metal/sheet/brass',
+			['punch_last', 'bend_second_last', 'draw_third_last']
+		)
+		.tier(2);
+
+        ADDED_ANVIL_RECIPES.push(['8x createbigcannons:empty_machine_gun_round', 'tfc:metal/sheet/brass', 2] );
+
 
 	e.recipes.tfc
 		.anvil(
@@ -267,7 +274,7 @@ ServerEvents.recipes((e) => {
 	e.shapeless('createbigcannons:ap_shell', [
 		'tfc:metal/sheet/brass',
 		'createbigcannons:ap_shot',
-		'scguns:nitro_powder',
+		'createbigcannons:nitropowder',
 	]);
 	e.shapeless('createbigcannons:drop_mortar_shell', [
 		'tfc:metal/sheet/brass',
@@ -284,15 +291,15 @@ ServerEvents.recipes((e) => {
 	]);
 	e.shapeless('createbigcannons:he_shell', [
 		'tfc:metal/sheet/brass',
-		'2x scguns:nitro_powder',
+		'2x createbigcannons:nitropowder',
 	]);
 	e.shapeless('createbigcannons:shrapnel_shell', [
 		'tfc:metal/sheet/brass',
-		'scguns:nitro_powder',
+		'createbigcannons:nitropowder',
 		'4x kubejs:musket_ball',
 	]);
 
-	//e.shapeless('createbigcannons:ap_shell', ['createbigcannons:ap_shot', 'scguns:nitro_powder'])
+	//e.shapeless('createbigcannons:ap_shell', ['createbigcannons:ap_shot', 'createbigcannons:nitropowder'])
 
 	//loader stuff
 
@@ -484,7 +491,6 @@ ServerEvents.recipes((e) => {
 		.heating('createbigcannons:bronze_scrap', 985)
 		.resultFluid(Fluid.of(`tfc:metal/bronze`, 5));
 
-	e.replaceInput({}, 'createbigcannons:nitropowder', 'scguns:nitro_powder');
 
 	e.shaped('createbigcannons:gas_mask', ['ABA', 'ACA', ' D '], {
 		A: 'afc:rubber_bar',
